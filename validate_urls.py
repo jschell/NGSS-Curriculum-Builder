@@ -22,12 +22,14 @@ from typing import Dict, List, Optional, Tuple
 import orjson
 import pypdf
 import io
+import dataclasses
 
 # =============================================================================
 # DATA MODELS
 # =============================================================================
 
 
+@dataclasses.dataclass
 class ValidationResult:
     """Result of validating a single URL"""
 
@@ -43,6 +45,7 @@ class ValidationResult:
     notes: str
 
 
+@dataclasses.dataclass
 class ValidationReport:
     """Summary of validation results"""
 
