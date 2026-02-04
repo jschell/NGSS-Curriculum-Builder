@@ -430,11 +430,7 @@ async def main():
         output_json = script_dir / "validation_results.json"
         output_report = script_dir / "reports" / "url_validation_report.md"
 
-        import asyncio
-
-        asyncio.run(
-            validate_states(states_data, state_filter, output_json, output_report)
-        )
+        await validate_states(states_data, state_filter, output_json, output_report)
 
 
 if __name__ == "__main__":
