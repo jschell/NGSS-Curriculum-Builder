@@ -1,11 +1,18 @@
 # NGSS Curriculum Builder - Feature Backlog
 
 ## In Progress
-- [ ] Data validation & URL verification
+- [ ] None
 
 ## Todo
+
+### URL Validation & Updates (3 incremental plans)
+- [ ] Plan 1: Execute URL validation & generate reports → .claude/plan/active/url-validation-execution.md
+- [ ] Plan 2: Document URL update workflow → .claude/plan/active/url-update-workflow-documentation.md
+- [ ] Plan 3: Apply Tier 1 URL updates (5-10 states) → .claude/plan/active/url-updates-tier1-application.md
+
+### Other Features
 - [ ] Add page_range data for all 80 documents
-- [ ] Fix broken URLs (Washington, California, Hawaii, Texas)
+- [ ] Apply Tier 2-4 URL updates (remaining states after Plan 3)
 - [ ] Implement document content caching
 - [ ] Add full-text search across standards
 - [ ] Complete Texas high school standards (grades 9-12)

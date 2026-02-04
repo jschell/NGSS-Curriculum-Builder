@@ -1,5 +1,16 @@
 # Plan: Data Validation & URL Verification
 
+**STATUS: SUPERSEDED** - This plan was split into 3 incremental Obra-aligned plans on 2026-02-04:
+1. `.claude/plan/active/url-validation-execution.md` - Execute validation & generate reports (2-3 hours)
+2. `.claude/plan/active/url-update-workflow-documentation.md` - Document update workflows (1 hour)
+3. `.claude/plan/active/url-updates-tier1-application.md` - Apply Tier 1 URL updates (2-3 hours)
+
+**Reason for split:** Original plan had 8-12 hour scope with large steps (1-2 hours each). New plans follow Obra standard of 5-30 minute steps with incremental validation gates.
+
+**Original plan preserved below for reference:**
+
+---
+
 ## Context
 
 The NGSS Curriculum Builder's parser infrastructure is complete and functional. However, many URLs in `data/states.json` return HTTP 404/403 errors, preventing automatic grade section extraction. This plan creates a validation system to systematically verify, document, and update broken URLs.
