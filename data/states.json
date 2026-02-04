@@ -160,14 +160,16 @@
       },
       {
         "title": "Grade K Standards with Guidance",
-        "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%20K%20Science%20Standards%20with%20Guidance.pdf",
+        "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Kindergarten%20Science%20Standards%20with%20Guidance.pdf",
         "grade_levels": [
           "K"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/Pages/default.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 1 Standards with Guidance",
