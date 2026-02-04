@@ -330,37 +330,37 @@ def generate_validation_report(results: List[ValidationResult], output_path: Pat
             report_lines.append(f"  - URL: {r.url[:70]}...")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(report_lines))
+    output_path.write_text("".join(report_lines))
 
 
 def generate_validation_json(results: List[ValidationResult], output_path: Path):
     """Generate structured JSON output"""
     from datetime import datetime
-    
+
     validation_date = datetime.now().strftime("%Y-%m-%d")
     validator_version = "1.0"
-    
+
     report_data = {
         "validation_date": validation_date,
         "validator_version": validator_version,
         "total_urls": len(results),
         "results": {r.url: r.to_dict() for r in results},
         "summary": {
-            "working_pdf": sum(1 for r in results if r.http_status == 200 and r.content_type == "pdf"),
+            "working_pdf": sum(
+                1 for r in results if r.http_status == 200 and r.content_type == "pdf"
+            ),
             "broken": sum(1 for r in results if r.http_status != 200),
-            "other_issues": sum(1 for r in results if r.http_status == 200 and r.content_type != "pdf"),
-        }
+            "other_issues": sum(
+                1 for r in results if r.http_status == 200 and r.content_type != "pdf"
+            ),
+        },
     }
-    
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(orjson.dumps(report_data, indent=2))
-            for r in results
-        ],
-    }
-    
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
 
 
 # =============================================================================
