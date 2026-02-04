@@ -318,3 +318,127 @@ print(f"Texas Grade 11: {has_grade_11}")  # False (TX only has K-8)
 4. **Result:** All documents covering that specific grade
 
 **Key Insight:** The "grade-agnostic" design comes from storing grade coverage as **data** (JSON arrays) rather than **code** (if/else logic). This allows querying any grade without modifying the program.
+
+---
+
+## Grade-Specific Section Mapping (Enhancement)
+
+### Overview
+
+Beyond filtering documents by grade, the system can now identify **specific pages or sections** within documents that contain each grade's standards.
+
+### Enhanced Data Structure
+
+Documents may include `grade_sections` mapping:
+
+```json
+{
+  "documents": [
+    {
+      "title": "Washington State K-12 Science Learning Standards",
+      "url": "https://ospi.k12.wa.us/sites/default/files/...",
+      "grade_levels": ["K", "1", "2", "3", ...],
+      "grade_sections": {
+        "3": {
+          "page_ranges": [[22, 28]],
+          "section_ids": [],
+          "confidence": "high",
+          "needs_review": false
+        }
+      }
+    }
+  ]
+}
+```
+
+### Section Mapping Types
+
+**Single-Range Documents** (grade-organized):
+```json
+{
+  "grade_sections": {
+    "3": {
+      "page_ranges": [[22, 28]],
+      "confidence": "high"
+    }
+  }
+}
+```
+
+**Multi-Range Documents** (topic-organized):
+```json
+{
+  "grade_sections": {
+    "3": {
+      "page_ranges": [[18, 24], [52, 56], [89, 93]],
+      "notes": "Physical Science: p18-24, Life Science: p52-56, Earth Science: p89-93",
+      "confidence": "medium",
+      "needs_review": true
+    }
+  }
+}
+```
+
+### Confidence Levels
+
+- **High**: Clear grade heading, sequential page organization
+- **Medium**: Topic-based organization, multiple sections per grade
+- **Low**: Ambiguous patterns, small page ranges (<2 pages)
+
+### Querying Grade Sections
+
+Use the `sections` command:
+
+```bash
+# Show all grade sections for Washington
+python state_science_standards_system.py sections WA
+
+# Show Grade 3 sections only
+python state_science_standards_system.py sections WA 3
+```
+
+### Example Output
+
+```
+Washington (WA) - GRADE-SPECIFIC SECTIONS
+
+Grade 3 sections:
+
+Document: Washington State K-12 Science Learning Standards
+  URL: https://ospi.k12.wa.us/sites/default/files/...
+  Pages: 22-28
+  Confidence: High
+
+Document: WSSLS DCI Arrangement
+  URL: https://ospi.k12.wa.us/sites/default/files/...
+  Pages: 18-24 (Physical Science), 52-56 (Life Science), 89-93 (Earth Science)
+  Confidence: Medium
+  [!] Needs manual review
+```
+
+### Auto-Generation with Parser
+
+Use `parse_standards.py` to auto-generate section mappings:
+
+```bash
+# Parse specific states
+uv run parse_standards.py parse --states WA,CA,OR
+
+# Parse all states
+uv run parse_standards.py parse --all
+```
+
+The parser:
+1. Fetches documents from URLs
+2. Extracts text page-by-page
+3. Detects document organization (by_grade vs by_topic)
+4. Identifies grade heading locations
+5. Generates `grade_sections` mappings
+6. Creates JSON patches and Markdown reports
+
+### Notes
+
+- `grade_sections` is optional for backward compatibility
+- Documents without section mappings work normally
+- Manual review flags help prioritize validation efforts
+- Page numbers are 1-indexed for display (0-indexed internally)

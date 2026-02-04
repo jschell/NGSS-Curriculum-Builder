@@ -1,20 +1,37 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 #!/usr/bin/env python3
 """
 State Science Standards Tracker
 A comprehensive, grade-agnostic system for tracking K-12 science learning standards
 across all 50 US states + District of Columbia.
+Enhanced with grade-specific page/section mapping support.
 """
 
 from dataclasses import dataclass, field
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 import sys
 import json
 import os
 
 
 @dataclass
+class GradeSection:
+    """Maps a grade to specific location(s) within a document"""
+
+    page_ranges: List[Tuple[int, int]] = field(default_factory=list)
+    section_ids: List[str] = field(default_factory=list)
+    confidence: str = "high"
+    notes: Optional[str] = None
+    needs_review: bool = False
+
+
+@dataclass
 class StandardsDocument:
     """Represents a single standards document"""
+
     title: str
     url: str
     grade_levels: List[str]  # ["K"], ["3"], ["K-12"], ["3", "4", "5"], etc.
@@ -22,11 +39,15 @@ class StandardsDocument:
     format: str = "PDF"  # "PDF", "HTML", "Interactive"
     page_range: Optional[str] = None  # "18-21" for specific pages
     notes: Optional[str] = None
+    grade_sections: Dict[str, GradeSection] = field(
+        default_factory=dict
+    )  # Grade-specific page/section mappings
 
 
 @dataclass
 class Assessment:
     """Represents a state assessment"""
+
     name: str
     grade_levels: List[str]  # Which grades are tested
     url: Optional[str] = None
@@ -37,6 +58,7 @@ class Assessment:
 @dataclass
 class StateStandards:
     """Complete standards information for a state"""
+
     # Basic Info
     state_name: str
     state_abbrev: str
@@ -56,9 +78,13 @@ class StateStandards:
     assessments: List[Assessment] = field(default_factory=list)
 
     # Organization (defaults to standard K-12 structure)
-    elementary_grades: List[str] = field(default_factory=lambda: ["K", "1", "2", "3", "4", "5"])
+    elementary_grades: List[str] = field(
+        default_factory=lambda: ["K", "1", "2", "3", "4", "5"]
+    )
     middle_grades: List[str] = field(default_factory=lambda: ["6", "7", "8"])
-    high_school_grades: List[str] = field(default_factory=lambda: ["9", "10", "11", "12"])
+    high_school_grades: List[str] = field(
+        default_factory=lambda: ["9", "10", "11", "12"]
+    )
 
     # Contacts & Resources
     contacts: Dict[str, str] = field(default_factory=dict)
@@ -74,6 +100,7 @@ class StateStandards:
 # DATA LOADING
 # ============================================================================
 
+
 def load_states_data(json_path: str = None) -> Dict[str, StateStandards]:
     """
     Load state standards data from JSON file.
@@ -87,33 +114,39 @@ def load_states_data(json_path: str = None) -> Dict[str, StateStandards]:
     if json_path is None:
         # Default to data/states.json in the same directory as this script
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        json_path = os.path.join(script_dir, 'data', 'states.json')
+        json_path = os.path.join(script_dir, "data", "states.json")
 
     if not os.path.exists(json_path):
         raise FileNotFoundError(f"States data file not found: {json_path}")
 
-    with open(json_path, 'r', encoding='utf-8') as f:
+    with open(json_path, "r", encoding="utf-8") as f:
         states_dict = json.load(f)
 
     # Convert dictionaries back to dataclasses
     states_db = {}
     for state_abbrev, state_data in states_dict.items():
         # Convert documents
-        documents = [
-            StandardsDocument(**doc)
-            for doc in state_data.get('documents', [])
-        ]
+        documents = []
+        for doc in state_data.get("documents", []):
+            # Parse grade_sections if present
+            grade_sections = {}
+            for grade, section_data in doc.get("grade_sections", {}).items():
+                grade_sections[grade] = GradeSection(**section_data)
+
+            # Create document with grade_sections
+            doc_copy = doc.copy()
+            doc_copy["grade_sections"] = grade_sections
+            documents.append(StandardsDocument(**doc_copy))
 
         # Convert assessments
         assessments = [
-            Assessment(**assess)
-            for assess in state_data.get('assessments', [])
+            Assessment(**assess) for assess in state_data.get("assessments", [])
         ]
 
         # Create StateStandards object
         state_data_copy = state_data.copy()
-        state_data_copy['documents'] = documents
-        state_data_copy['assessments'] = assessments
+        state_data_copy["documents"] = documents
+        state_data_copy["assessments"] = assessments
 
         states_db[state_abbrev] = StateStandards(**state_data_copy)
 
@@ -124,10 +157,10 @@ def load_states_data(json_path: str = None) -> Dict[str, StateStandards]:
 STATES_DB = load_states_data()
 
 
-
 # ============================================================================
 # HELPER FUNCTIONS
 # ============================================================================
+
 
 def expand_grade_range(grade_spec: str) -> List[str]:
     """
@@ -169,7 +202,9 @@ def get_all_grades_from_list(grade_list: List[str]) -> List[str]:
     return list(dict.fromkeys(all_grades))  # Remove duplicates, preserve order
 
 
-def get_documents_for_grade(state: StateStandards, grade: str) -> List[StandardsDocument]:
+def get_documents_for_grade(
+    state: StateStandards, grade: str
+) -> List[StandardsDocument]:
     """Get all documents that cover a specific grade."""
     matching_docs = []
 
@@ -212,13 +247,14 @@ def get_coverage_summary(state: StateStandards) -> Dict[str, List[StandardsDocum
 # CLI COMMANDS
 # ============================================================================
 
+
 def cmd_search(grade: str):
     """Search all states for standards documents covering a specific grade."""
     grade = normalize_grade(grade)
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"STATES WITH STANDARDS FOR GRADE {grade}")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     found_states = []
 
@@ -266,9 +302,9 @@ def cmd_state(state_abbrev: str, grade: str = None):
 
     state = STATES_DB[state_abbrev]
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"{state.state_name} ({state_abbrev}) - SCIENCE STANDARDS")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     print(f"Agency: {state.agency_name}")
     print(f"Website: {state.website}")
@@ -282,9 +318,9 @@ def cmd_state(state_abbrev: str, grade: str = None):
 
     if grade:
         grade = normalize_grade(grade)
-        print(f"\n{'='*80}")
+        print(f"\n{'=' * 80}")
         print(f"GRADE {grade} STANDARDS")
-        print(f"{'='*80}\n")
+        print(f"{'=' * 80}\n")
 
         docs = get_documents_for_grade(state, grade)
 
@@ -371,9 +407,9 @@ def cmd_range(state_abbrev: str):
     state = STATES_DB[state_abbrev]
     coverage = get_coverage_summary(state)
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"{state.state_name} ({state_abbrev}) - K-12 COVERAGE")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     all_grades = ["K", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
@@ -399,16 +435,16 @@ def cmd_range(state_abbrev: str):
         else:
             print(f"  Grade {grade:>2}: ✗ (no documents)")
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
 
 
 def cmd_compare(grade: str):
     """Compare all states for a specific grade."""
     grade = normalize_grade(grade)
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"GRADE {grade} STANDARDS - STATE COMPARISON")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     ngss_states = []
     framework_states = []
@@ -432,7 +468,9 @@ def cmd_compare(grade: str):
 
     print(f"\nStates with Framework-Based Standards ({len(framework_states)}):")
     for state_abbrev, state, docs in framework_states:
-        print(f"  {state_abbrev}: {state.state_name} ({state.standards_name}) - {len(docs)} document(s)")
+        print(
+            f"  {state_abbrev}: {state.state_name} ({state.standards_name}) - {len(docs)} document(s)"
+        )
 
     if no_data_states:
         print(f"\nStates without grade {grade} data ({len(no_data_states)}):")
@@ -450,13 +488,13 @@ def cmd_queries(state_abbrev: str, grade: str = None):
     state = STATES_DB[state_abbrev]
     state_name = state.state_name
 
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"RESEARCH QUERIES FOR {state_name} ({state_abbrev})")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     queries = [
         f'"{state_name} department of education" science standards',
-        f'site:{state.website.replace("https://", "").replace("http://", "")} science standards K-12',
+        f"site:{state.website.replace('https://', '').replace('http://', '')} science standards K-12",
         f'"{state_name} science standards" PDF',
         f'"{state_name} NGSS adoption"',
         f'"{state_name} science assessment"',
@@ -464,11 +502,13 @@ def cmd_queries(state_abbrev: str, grade: str = None):
 
     if grade:
         grade = normalize_grade(grade)
-        queries.extend([
-            f'"{state_name} grade {grade} science standards"',
-            f'"{state_name} science standards" "grade {grade}"',
-            f'"{state_name} science assessment" grade {grade}',
-        ])
+        queries.extend(
+            [
+                f'"{state_name} grade {grade} science standards"',
+                f'"{state_name} science standards" "grade {grade}"',
+                f'"{state_name} science assessment" grade {grade}',
+            ]
+        )
 
     print("Suggested search queries:\n")
     for i, query in enumerate(queries, 1):
@@ -482,9 +522,9 @@ def cmd_queries(state_abbrev: str, grade: str = None):
 
 def cmd_list():
     """List all states in the database with their status."""
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"STATE SCIENCE STANDARDS DATABASE")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     complete_states = []
     pending_states = []
@@ -510,16 +550,102 @@ def cmd_list():
         for state_abbrev, state in pending_states:
             print(f"  {state_abbrev}: {state.state_name}")
 
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
     print(f"Total: {len(STATES_DB)} states")
     print(f"Complete: {len(complete_states)}")
     print(f"Pending: {len(pending_states)}")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
+
+
+def cmd_sections(state_abbrev: str, grade: str = None):
+    """Show grade-specific page/section information for a state."""
+    state_abbrev = state_abbrev.upper()
+
+    if state_abbrev not in STATES_DB:
+        print(f"Error: State '{state_abbrev}' not found in database.")
+        print(f"Available states: {', '.join(sorted(STATES_DB.keys()))}")
+        return
+
+    state = STATES_DB[state_abbrev]
+
+    print(f"\n{'=' * 80}")
+    print(f"{state.state_name} ({state_abbrev}) - GRADE-SPECIFIC SECTIONS")
+    print(f"{'=' * 80}\n")
+
+    if grade:
+        grade = normalize_grade(grade)
+        show_grade_sections(state, grade)
+    else:
+        show_all_grade_sections(state)
+
+
+def show_grade_sections(state: StateStandards, grade: str):
+    """Display sections for a specific grade."""
+    docs = get_documents_for_grade(state, grade)
+
+    if not docs:
+        print(f"No documents found for grade {grade}")
+        return
+
+    print(f"Grade {grade} sections:\n")
+
+    for doc in docs:
+        section = doc.grade_sections.get(grade)
+
+        print(f"Document: {doc.title}")
+        print(f"  URL: {doc.url}")
+
+        if section:
+            if section.page_ranges:
+                pages = ", ".join(f"{r[0] + 1}-{r[1]}" for r in section.page_ranges)
+                print(f"  Pages: {pages}")
+
+            if section.section_ids:
+                print(f"  Section IDs: {', '.join(section.section_ids)}")
+
+            print(f"  Confidence: {section.confidence}")
+
+            if section.needs_review:
+                print(f"  [!] This section needs manual review")
+
+            if section.notes:
+                print(f"  Notes: {section.notes}")
+        else:
+            print(f"  [!] No specific section mapping found")
+
+        print()
+
+
+def show_all_grade_sections(state: StateStandards):
+    """Display sections for all grades in a state."""
+    all_grades = ["K", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+
+    for grade in all_grades:
+        docs = get_documents_for_grade(state, grade)
+
+        if not docs:
+            continue
+
+        print(f"\nGrade {grade} sections:")
+
+        for doc in docs:
+            section = doc.grade_sections.get(grade)
+            if section:
+                if section.page_ranges:
+                    pages = ", ".join(f"{r[0] + 1}-{r[1]}" for r in section.page_ranges)
+                    print(f"  • {doc.title}: {pages}")
+                else:
+                    print(f"  • {doc.title}")
+            else:
+                print(f"  • {doc.title}: (no section mapping)")
+
+    print()
 
 
 # ============================================================================
 # MAIN CLI
 # ============================================================================
+
 
 def print_usage():
     """Print usage information."""
@@ -534,27 +660,32 @@ Commands:
 
   search <grade>
       Search all states for standards covering a specific grade
-      Example: python state-science-standards-system.py search 3
+      Example: python state_science_standards_system.py search 3
 
   state <ST> [grade]
       Get detailed information about a state's standards
       Optionally specify a grade to see grade-specific info
-      Example: python state-science-standards-system.py state WA 5
+      Example: python state_science_standards_system.py state WA 5
 
   range <ST>
       Show complete K-12 coverage for a state
-      Example: python state-science-standards-system.py range CA
+      Example: python state_science_standards_system.py range CA
 
   compare <grade>
       Compare all states for a specific grade
-      Example: python state-science-standards-system.py compare 5
+      Example: python state_science_standards_system.py compare 5
 
   queries <ST> [grade]
       Generate search queries for researching a state
-      Example: python state-science-standards-system.py queries IL 4
+      Example: python state_science_standards_system.py queries IL 4
 
-Grades: Use K for Kindergarten, or numbers 1-12
-State abbreviations: Use two-letter codes (WA, CA, TX, etc.)
+  sections <ST> [grade]
+      Show grade-specific page/section information for a state
+      Optionally specify a grade to see grade-specific sections
+      Example: python state_science_standards_system.py sections WA 3
+
+  Grades: Use K for Kindergarten, or numbers 1-12
+  State abbreviations: Use two-letter codes (WA, CA, TX, etc.)
 """)
 
 
@@ -571,35 +702,46 @@ def main():
     elif command == "search":
         if len(sys.argv) < 3:
             print("Error: search command requires a grade")
-            print("Usage: python state-science-standards-system.py search <grade>")
+            print("Usage: python state_science_standards_system.py search <grade>")
             return
         cmd_search(sys.argv[2])
     elif command == "state":
         if len(sys.argv) < 3:
             print("Error: state command requires a state abbreviation")
-            print("Usage: python state-science-standards-system.py state <ST> [grade]")
+            print("Usage: python state_science_standards_system.py state <ST> [grade]")
             return
         grade = sys.argv[3] if len(sys.argv) > 3 else None
         cmd_state(sys.argv[2], grade)
     elif command == "range":
         if len(sys.argv) < 3:
             print("Error: range command requires a state abbreviation")
-            print("Usage: python state-science-standards-system.py range <ST>")
+            print("Usage: python state_science_standards_system.py range <ST>")
             return
         cmd_range(sys.argv[2])
     elif command == "compare":
         if len(sys.argv) < 3:
             print("Error: compare command requires a grade")
-            print("Usage: python state-science-standards-system.py compare <grade>")
+            print("Usage: python state_science_standards_system.py compare <grade>")
             return
         cmd_compare(sys.argv[2])
     elif command == "queries":
         if len(sys.argv) < 3:
             print("Error: queries command requires a state abbreviation")
-            print("Usage: python state-science-standards-system.py queries <ST> [grade]")
+            print(
+                "Usage: python state_science_standards_system.py queries <ST> [grade]"
+            )
             return
         grade = sys.argv[3] if len(sys.argv) > 3 else None
         cmd_queries(sys.argv[2], grade)
+    elif command == "sections":
+        if len(sys.argv) < 3:
+            print("Error: sections command requires a state abbreviation")
+            print(
+                "Usage: python state_science_standards_system.py sections <ST> [grade]"
+            )
+            return
+        grade = sys.argv[3] if len(sys.argv) > 3 else None
+        cmd_sections(sys.argv[2], grade)
     else:
         print(f"Error: Unknown command '{command}'")
         print_usage()

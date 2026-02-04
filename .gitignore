@@ -18,3 +18,12 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Project specific - cached documents
+cached/
+*.pdf
+*.html
+
+# Generated reports and patches
+reports/
+patches/
