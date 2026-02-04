@@ -357,9 +357,10 @@ def generate_validation_json(results: List[ValidationResult], output_path: Path)
             for r in results
         ],
     }
-
+    
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
+
 
 
 # =============================================================================
