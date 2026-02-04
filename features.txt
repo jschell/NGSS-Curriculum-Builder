@@ -1,0 +1,24 @@
+# NGSS Curriculum Builder - Feature Backlog
+
+## In Progress
+- [ ] Data validation & URL verification
+
+## Todo
+- [ ] Add page_range data for all 80 documents
+- [ ] Fix broken URLs (Washington, California, Hawaii, Texas)
+- [ ] Implement document content caching
+- [ ] Add full-text search across standards
+- [ ] Complete Texas high school standards (grades 9-12)
+- [ ] Add CSV/Excel export functionality
+- [ ] Create web API layer (REST endpoints)
+- [ ] Build web interface (browser-based UI)
+
+## Done
+- [x] Complete 51 states/jurisdictions metadata collection
+- [x] Create JSON data structure (data/states.json)
+- [x] Implement grade filtering system
+- [x] Refactor state data to external JSON file
+- [x] Create grade section mapping system
+- [x] Build PDF/HTML parser (parse_standards.py)
+- [x] Add comprehensive grade filtering documentation
+- [x] Create URL validation utility (validate_urls.py)
