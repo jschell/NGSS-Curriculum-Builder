@@ -208,6 +208,8 @@ class URLValidator:
             result.confidence = "low"
             return result
 
+        return result
+
     async def validate_urls_batch(
         self, items: List[Tuple[str, str, str]]
     ) -> List[ValidationResult]:
@@ -238,13 +240,17 @@ class URLValidator:
 # =============================================================================
 
 
-def generate_validation_report(results: List[ValidationReport], output_path: Path):
+def generate_validation_report(results: List[ValidationResult], output_path: Path):
     """Generate human-readable validation report"""
+    from datetime import datetime
+
+    validation_date = datetime.now().strftime("%Y-%m-%d")
+    validator_version = "1.0"
 
     report_lines = [
         "# URL Validation Report\n",
-        f"**Validation Date:** {results[0].validation_date}\n",
-        f"**Validator Version:** {results[0].validator_version}\n",
+        f"**Validation Date:** {validation_date}\n",
+        f"**Validator Version:** {validator_version}\n",
         "---\n\n",
     ]
 
@@ -327,26 +333,27 @@ def generate_validation_report(results: List[ValidationReport], output_path: Pat
     output_path.write_text("\n".join(report_lines))
 
 
-def generate_validation_json(results: List[ValidationReport], output_path: Path):
+def generate_validation_json(results: List[ValidationResult], output_path: Path):
     """Generate structured JSON output"""
+    from datetime import datetime
+    
+    validation_date = datetime.now().strftime("%Y-%m-%d")
+    validator_version = "1.0"
+    
     report_data = {
-        "validation_date": results[0].validation_date,
-        "validator_version": results[0].validator_version,
+        "validation_date": validation_date,
+        "validator_version": validator_version,
         "total_urls": len(results),
-        "summary": results[0].summary,
-        "results": [
-            {
-                "state_abbrev": r.state_abbrev,
-                "title": r.title,
-                "url": r.url,
-                "status": r.http_status,
-                "content_type": r.content_type,
-                "file_size_kb": r.file_size_kb,
-                "error": r.error,
-                "redirect_chain": r.redirect_chain,
-                "confidence": r.confidence,
-                "notes": r.notes,
-            }
+        "results": {r.url: r.to_dict() for r in results},
+        "summary": {
+            "working_pdf": sum(1 for r in results if r.http_status == 200 and r.content_type == "pdf"),
+            "broken": sum(1 for r in results if r.http_status != 200),
+            "other_issues": sum(1 for r in results if r.http_status == 200 and r.content_type != "pdf"),
+        }
+    }
+    
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(orjson.dumps(report_data, indent=2))
             for r in results
         ],
     }
