@@ -154,7 +154,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Complete K-12 standards in one document"
+        "notes": "Complete K-12 standards in one document",
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade K Standards with Guidance",
@@ -176,7 +178,9 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 2 Standards with Guidance",
@@ -187,7 +191,9 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 3 Standards with Guidance",
@@ -198,7 +204,9 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 4 Standards with Guidance",
@@ -209,7 +217,9 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 5 Standards with Guidance",
@@ -220,7 +230,9 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
