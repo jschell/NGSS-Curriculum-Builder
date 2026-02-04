@@ -43,6 +43,22 @@ class ValidationResult:
     redirect_chain: List[str]
     confidence: str  # "high", "medium", "low"
     notes: str
+    content_validation: Optional[Dict] = None  # PDF content validation results
+
+    def to_dict(self):
+        return {
+            "url": self.url,
+            "title": self.title,
+            "state_abbrev": self.state_abbrev,
+            "http_status": self.http_status,
+            "content_type": self.content_type,
+            "file_size_kb": self.file_size_kb,
+            "error": self.error,
+            "redirect_chain": self.redirect_chain,
+            "confidence": self.confidence,
+            "notes": self.notes,
+            "content_validation": self.content_validation,
+        }
 
 
 @dataclasses.dataclass
@@ -72,6 +88,120 @@ class ValidationReport:
 # =============================================================================
 
 
+def validate_pdf_content(
+    url: str, expected_grades: List[str], expected_state: str, expected_title: str
+) -> Dict:
+    """
+    Validate PDF contains expected content.
+
+    Returns:
+        dict: Content validation results with confidence score
+    """
+    try:
+        response = httpx.get(url, timeout=30, follow_redirects=True)
+        if response.status_code != 200:
+            return {
+                "error": f"HTTP {response.status_code}",
+                "grade_level_found": False,
+                "state_name_found": False,
+                "science_keyword_found": False,
+                "metadata_title_match": "error",
+                "confidence_score": 0.0,
+                "warnings": [f"HTTP {response.status_code} when downloading PDF"],
+                "validation_status": "http_error",
+            }
+
+        pdf_file = io.BytesIO(response.content)
+        reader = pypdf.PdfReader(pdf_file)
+
+        # Extract text from first 5 pages
+        text = ""
+        for page in reader.pages[:5]:
+            try:
+                text += page.extract_text() + "\n"
+            except:
+                pass
+
+        # Extract metadata
+        metadata = reader.metadata or {}
+        pdf_title = metadata.get("/Title", "") if metadata else ""
+
+        # Check for expected content
+        grade_found = False
+        for grade in expected_grades:
+            if (
+                str(grade) in text
+                or f"Grade {grade}" in text
+                or f"grade {grade}" in text
+            ):
+                grade_found = True
+                break
+
+        state_found = expected_state in text or expected_state.split()[-1] in text
+        science_found = any(
+            keyword in text.lower()
+            for keyword in ["science", "ngss", "standards", "performance expectations"]
+        )
+        title_match = expected_title in pdf_title if pdf_title else False
+
+        # Calculate confidence
+        confidence = 0.0
+        if grade_found:
+            confidence += 0.4
+        if state_found:
+            confidence += 0.3
+        if science_found:
+            confidence += 0.2
+        if title_match:
+            confidence += 0.1
+
+        # Generate warnings
+        warnings = []
+        if not grade_found:
+            warnings.append(f"grade levels {expected_grades} not found in PDF")
+        if not state_found:
+            warnings.append(f"state name '{expected_state}' not found in PDF")
+        if not science_found:
+            warnings.append("science keyword not found in PDF")
+
+        # Determine validation status
+        if confidence >= 0.8:
+            status = "content_verified"
+        elif confidence >= 0.5:
+            status = "content_questionable"
+        elif confidence >= 0.3:
+            status = "content_questionable"
+        else:
+            status = "wrong_document"
+
+        if confidence < 0.5:
+            warnings.append(
+                f"low confidence score ({confidence:.2f}) suggests wrong document"
+            )
+
+        return {
+            "grade_level_found": grade_found,
+            "state_name_found": state_found,
+            "science_keyword_found": science_found,
+            "metadata_title_match": "exact" if title_match else "none",
+            "confidence_score": confidence,
+            "warnings": warnings,
+            "validation_status": status,
+        }
+
+    except Exception as e:
+        return {
+            "error": str(e),
+            "grade_level_found": False,
+            "state_name_found": False,
+            "science_keyword_found": False,
+            "metadata_title_match": "error",
+            "confidence_score": 0.0,
+            "warnings": [f"content validation failed: {e}"],
+            "validation_status": "validation_error",
+        }
+
+
 class URLValidator:
     """Validates document URLs"""
 
@@ -94,9 +224,16 @@ class URLValidator:
         return self.client
 
     async def validate_url(
-        self, url: str, title: str, state_abbrev: str
+        self,
+        url: str,
+        title: str,
+        state_abbrev: str,
+        grade_levels: Optional[List[str]] = None,
+        state_name: str = "",
     ) -> ValidationResult:
         """Validate a single URL"""
+        if grade_levels is None:
+            grade_levels = []
         client = await self.get_client()
         result = ValidationResult(
             url=url,
@@ -109,6 +246,7 @@ class URLValidator:
             redirect_chain=[],
             confidence="medium",
             notes="",
+            content_validation=None,
         )
 
         try:
@@ -208,21 +346,42 @@ class URLValidator:
             result.confidence = "low"
             return result
 
+        # Run content validation if we have a valid PDF
+        if result.http_status == 200 and result.content_type == "pdf":
+            result.content_validation = validate_pdf_content(
+                url, grade_levels, state_name, title
+            )
+            # Update confidence based on content validation
+            if result.content_validation.get("confidence_score", 0) < 0.5:
+                result.confidence = "low"
+                result.error = result.content_validation.get("warnings", ["Unknown"])[0]
+
         return result
 
     async def validate_urls_batch(
-        self, items: List[Tuple[str, str, str]]
+        self, items: List[Tuple[str, str, str, Optional[List[str]], str]]
     ) -> List[ValidationResult]:
         """Validate multiple URLs in batches"""
         results = []
 
-        for state_abbrev, title, url in items:
-            result = await self.validate_url(url, title, state_abbrev)
+        for state_abbrev, title, url, grade_levels, state_name in items:
+            result = await self.validate_url(
+                url, title, state_abbrev, grade_levels, state_name
+            )
             results.append(result)
 
             print(f"  {state_abbrev}: {title[:40]}...")
             if result.http_status == 200 and result.content_type == "pdf":
-                print(f"    Status: Working PDF {result.file_size_kb}KB")
+                if result.content_validation:
+                    confidence = result.content_validation.get("confidence_score", 0)
+                    status = result.content_validation.get(
+                        "validation_status", "unknown"
+                    )
+                    print(
+                        f"    Status: PDF {result.file_size_kb}KB - Confidence: {confidence:.2f} ({status})"
+                    )
+                else:
+                    print(f"    Status: Working PDF {result.file_size_kb}KB")
             elif result.http_status == 200:
                 print(
                     f"    Status: {result.content_type.upper()} - {result.error or 'OK'}"
@@ -330,7 +489,7 @@ def generate_validation_report(results: List[ValidationResult], output_path: Pat
             report_lines.append(f"  - URL: {r.url[:70]}...")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("".join(report_lines))
+    output_path.write_text("".join(report_lines), encoding="utf-8")
 
 
 def generate_validation_json(results: List[ValidationResult], output_path: Path):
@@ -353,11 +512,26 @@ def generate_validation_json(results: List[ValidationResult], output_path: Path)
             "other_issues": sum(
                 1 for r in results if r.http_status == 200 and r.content_type != "pdf"
             ),
+            "content_verified": sum(
+                1
+                for r in results
+                if r.content_validation
+                and r.content_validation.get("confidence_score", 0) >= 0.8
+            ),
+            "content_questionable": sum(
+                1
+                for r in results
+                if r.content_validation
+                and 0.5 <= r.content_validation.get("confidence_score", 0) < 0.8
+            ),
+            "wrong_document": sum(
+                1
+                for r in results
+                if r.content_validation
+                and r.content_validation.get("confidence_score", 0) < 0.5
+            ),
         },
     }
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
@@ -382,8 +556,12 @@ async def validate_states(
         if state_filter and state_abbrev not in state_filter:
             continue
 
+        state_name = state_data.get("state_name", "")
         for doc in state_data.get("documents", []):
-            items.append((state_abbrev, doc["title"], doc["url"]))
+            grade_levels = doc.get("grade_levels", [])
+            items.append(
+                (state_abbrev, doc["title"], doc["url"], grade_levels, state_name)
+            )
 
     print(f"\nValidating {len(items)} document URLs...\n")
 
