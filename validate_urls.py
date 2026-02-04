@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# /// script
+# dependencies = [
+#     "httpx>=0.27.0",
+#     "orjson>=3.9.0",
+#     "pypdf>=3.0.0",
+# ]
+# ///
 # -*- coding: utf-8 -*-
 """
 URL Validation Utility
@@ -13,6 +20,8 @@ import httpx
 import hashlib
 from typing import Dict, List, Optional, Tuple
 import orjson
+import pypdf
+import io
 
 # =============================================================================
 # DATA MODELS
