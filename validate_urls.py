@@ -397,6 +397,8 @@ async def validate_states(
         f"\nWorking PDFs: {sum(1 for r in results if r.http_status == 200 and r.content_type == 'pdf')}"
     )
 
+    return results
+
 
 async def main():
     if len(sys.argv) < 2:
