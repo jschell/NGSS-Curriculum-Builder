@@ -912,7 +912,7 @@
     "documents": [
       {
         "title": "Delaware Science Standards K-12",
-        "url": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
+        "url": "https://education.delaware.gov/wp-content/uploads/2025/03/topical-arrangement-ngss.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -931,7 +931,9 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Organized into grade band content standards (K-3, 4-5, 6-8, 9-12)"
+        "notes": "Organized into grade band content standards (K-3, 4-5, 6-8, 9-12)",
+        "url_source": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
