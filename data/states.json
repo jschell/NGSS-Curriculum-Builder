@@ -1940,7 +1940,7 @@
     "documents": [
       {
         "title": "NM STEM Ready! Science Standards",
-        "url": "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/nm-stem-ready-science-standards/",
+        "url": "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1959,7 +1959,9 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "NGSS plus six New Mexico-specific science standards"
+        "notes": "NGSS plus six New Mexico-specific science standards",
+        "url_source": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
