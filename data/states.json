@@ -2231,7 +2231,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012)",
+        "url_source": "https://www.alabamaachieves.org/acad-stand/",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
