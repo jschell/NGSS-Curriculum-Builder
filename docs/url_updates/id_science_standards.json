@@ -1,16 +1,23 @@
 {
   "state_abbr": "ID",
   "state_name": "Idaho",
-  "research_date": null,
-  "researcher": "automated_research.py",
-  "doe_visited": null,
-  "pages_visited": [],
-  "urls_tested": [],
-  "working_url": null,
-  "working_url_source": null,
-  "confidence": null,
-  "notes": "",
-  "issues_encountered": [],
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.sde.idaho.gov/ (searched via web_search)",
+  "pages_visited": [
+    "IYPP (Idaho Content Standards) page"
+  ],
+  "urls_tested": [
+    "https://www.sde.idaho.gov/wp-content/uploads/2025/09/Idaho-K-12-State-Standards-for-Science.pdf"
+  ],
+  "working_url": "https://www.sde.idaho.gov/wp-content/uploads/2025/09/Idaho-K-12-State-Standards-for-Science.pdf",
+  "working_url_source": "https://www.sde.idaho.gov/wp-content/uploads/",
+  "confidence": "High",
+  "notes": "Found IYPP page with free PDF copies of standards. Located 'Idaho K-12 State Standards for Science' PDF. Same URL structure as states.json (sde.idaho.gov). This is the correct K-12 document.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ],
   "current_url": "https://www.sde.idaho.gov/wp-content/uploads/2025/09/Idaho-K-12-State-Standards-for-Science.pdf",
   "document_title": "Idaho K-12 State Standards for Science",
   "doe_url": "https://www.sde.idaho.gov/",
@@ -19,7 +26,7 @@
     "/curriculum/standards"
   ],
   "search_terms": [
-    "Idaho science standards",
+    "Idaho science standards PDF",
     "NGSS Idaho"
   ]
 }

@@ -1,25 +1,32 @@
 {
   "state_abbr": "AZ",
   "state_name": "Arizona",
-  "research_date": null,
-  "researcher": "automated_research.py",
-  "doe_visited": null,
-  "pages_visited": [],
-  "urls_tested": [],
-  "working_url": null,
-  "working_url_source": null,
-  "confidence": null,
-  "notes": "",
-  "issues_encountered": [],
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.azed.gov/ (searched via web_search)",
+  "pages_visited": [
+    "Standards: Science Standards page"
+  ],
+  "urls_tested": [
+    "https://www.azed.gov/sites/default/files/2018/10/Full%20Set%20of%20Standards%20K_12_%20Updated_10_19_19.pdf"
+  ],
+  "working_url": "https://www.azed.gov/sites/default/files/2018/10/Full%20Set%20of%20Standards%20K_12_%20Updated_10_19_19.pdf",
+  "working_url_source": "https://www.azed.gov/sites/default/files/",
+  "confidence": "High",
+  "notes": "Found 'Full Set of Standards K-12 Updated 10/19/19.pdf' - appears to be complete K-12 document. Same URL as existing states.json entry - confirms document is correct.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ],
   "current_url": "https://www.azed.gov/sites/default/files/2018/10/Full%20Set%20of%20Standards%20K_12_%20Updated_10_19_19.pdf",
   "document_title": "Arizona Science Standards 2018 - Complete K-12",
   "doe_url": "https://www.azed.gov/",
   "science_page_patterns": [
-    "/standards/science",
-    "/curriculum/science"
+    "/standards-practices/k-12standards/standards-science",
+    "/standards-practices/k-12standards/computer-science"
   ],
   "search_terms": [
-    "Arizona science standards",
-    "NGSS Arizona"
+    "Arizona science standards PDF",
+    "AzSS NGSS"
   ]
 }
