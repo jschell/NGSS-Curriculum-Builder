@@ -988,7 +988,7 @@
     "documents": [
       {
         "title": "DC Next Generation Science Standards",
-        "url": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
+        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1007,7 +1007,9 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on National Research Council's Framework for K-12 Science Education"
+        "notes": "Based on National Research Council's Framework for K-12 Science Education",
+        "url_source": "https://osse.dc.gov/publication/2016-next-generation-science-standards-faq-overview",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
@@ -1061,7 +1063,7 @@
     "documents": [
       {
         "title": "Hawaii NGSS Standards K-12",
-        "url": "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx",
+        "url": "https://manoa.hawaii.edu/sealearning/sites/default/files/NGSSReduced.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1080,7 +1082,9 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Three-dimensional approach integrating practices, concepts, and core ideas"
+        "notes": "Three-dimensional approach integrating practices, concepts, and core ideas",
+        "url_source": "https://manoa.hawaii.edu/sealearning/standards-alignment/next-generation-science-standards-ngss",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
@@ -2074,7 +2078,7 @@
     "documents": [
       {
         "title": "Vermont NGSS Standards",
-        "url": "https://education.vermont.gov/student-learning/content-areas/science",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2093,7 +2097,9 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Organized in grade bands K-2, 3-5, 6-8, 9-12"
+        "notes": "Organized in grade bands K-2, 3-5, 6-8, 9-12",
+        "url_source": "https://www.nextgenscience.org/lead-state-vermont",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
