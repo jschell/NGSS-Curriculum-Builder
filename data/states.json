@@ -351,69 +351,81 @@
       },
       {
         "title": "Kindergarten CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/kindergarten.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangsskinder-topicdci.pdf",
         "grade_levels": [
           "K"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 1 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade1.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr1-dci.pdf",
         "grade_levels": [
           "1"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 2 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade2.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr2-dci.pdf",
         "grade_levels": [
           "2"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 3 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade3.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
         "grade_levels": [
           "3"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 4 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade4.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr4-dci.pdf",
         "grade_levels": [
           "4"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grade 5 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade5.pdf",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf",
         "grade_levels": [
           "5"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
