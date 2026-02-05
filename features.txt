@@ -5,14 +5,11 @@
 
 ## Todo
 
-### URL Validation & Updates (3 incremental plans)
-- [ ] Plan 1: Execute URL validation & generate reports → .claude/plan/active/url-validation-execution.md
-- [ ] Plan 2: Document URL update workflow → .claude/plan/active/url-update-workflow-documentation.md
-- [ ] Plan 3: Apply Tier 1 URL updates (5-10 states) → .claude/plan/active/url-updates-tier1-application.md
+### High Priority
+- [ ] Validate remaining 36 states URLs → .claude/plan/active/validate-remaining-36-states.md
+- [ ] Add page_range data for all 80 documents → .claude/plan/active/add-page-range-data.md
 
 ### Other Features
-- [ ] Add page_range data for all 80 documents
-- [ ] Apply Tier 2-4 URL updates (remaining states after Plan 3)
 - [ ] Implement document content caching
 - [ ] Add full-text search across standards
 - [ ] Complete Texas high school standards (grades 9-12)
@@ -29,3 +26,6 @@
 - [x] Build PDF/HTML parser (parse_standards.py)
 - [x] Add comprehensive grade filtering documentation
 - [x] Create URL validation utility (validate_urls.py)
+- [x] Execute URL validation & generate reports (Plan 1)
+- [x] Document URL update workflow (Plan 2)
+- [x] Apply Tier 1 URL updates - 15 states verified (Plan 3)
