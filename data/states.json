@@ -1233,7 +1233,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on NGSS Performance Expectations, revised 2025"
+        "notes": "Based on NGSS Performance Expectations, revised 2025",
+        "url_source": "https://educate.iowa.gov/pk-12/standards/academics/science",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
