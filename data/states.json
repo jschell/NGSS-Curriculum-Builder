@@ -642,7 +642,9 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Pre-K through Grade 2"
+        "notes": "Pre-K through Grade 2",
+        "url_source": "https://www.nysed.gov/curriculum",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grades 3-5 Science Learning Standards",
@@ -655,7 +657,9 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": null
+        "notes": null,
+        "url_source": "https://www.nysed.gov/curriculum",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
@@ -668,7 +672,9 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Middle School"
+        "notes": "Middle School",
+        "url_source": "https://www.nysed.gov/curriculum",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "High School Science Learning Standards",
@@ -682,7 +688,9 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Grades 9-12"
+        "notes": "Grades 9-12",
+        "url_source": "https://www.nysed.gov/curriculum",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
