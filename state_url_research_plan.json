@@ -1,0 +1,1349 @@
+{
+  "total_states": 35,
+  "states": [
+    {
+      "state_abbr": "AK",
+      "state_name": "Alaska",
+      "doe_url": "https://education.alaska.gov/",
+      "documents": [
+        {
+          "title": "K-12 Science Standards for Alaska",
+          "url": "https://education.alaska.gov/akstandards/science/science-standards-for-alaska.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Based on NGSS with strong focus on Alaskan contexts"
+        }
+      ],
+      "search_terms": [
+        "Alaska science standards",
+        "Alaska NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "AR",
+      "state_name": "Arkansas",
+      "doe_url": "https://adeducation.k12.ar.us/",
+      "documents": [
+        {
+          "title": "Arkansas K-12 Science Standards",
+          "url": "https://www.nextgenscience.org/sites/default/files/Arkansas%20K-12%20Science%20Standards.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Based on A Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "Arkansas science standards",
+        "Arkansas NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "AZ",
+      "state_name": "Arizona",
+      "doe_url": "https://www.azed.gov/",
+      "documents": [
+        {
+          "title": "Arizona Science Standards 2018 - Complete K-12",
+          "url": "https://www.azed.gov/sites/default/files/2018/10/Full%20Set%20of%20Standards%20K_12_%20Updated_10_19_19.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Three-dimensional approach based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "Arizona science standards",
+        "Arizona NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "CO",
+      "state_name": "Colorado",
+      "doe_url": "https://www.cde.state.co.us/",
+      "documents": [
+        {
+          "title": "2020 Colorado Academic Standards: Science",
+          "url": "https://www.cde.state.co.us/coscience/2020cas-sc",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Three main standards: Physical Science, Life Science, Earth/Space Science"
+        }
+      ],
+      "search_terms": [
+        "Colorado science standards",
+        "Colorado NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "CT",
+      "state_name": "Connecticut",
+      "doe_url": "https://portal.ct.gov/SDE",
+      "documents": [
+        {
+          "title": "Connecticut Next Generation Science Standards",
+          "url": "https://www.nextgenscience.org/sites/default/files/Connecticut%20NGSS%20K-12.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Adopted by unanimous vote of State Board of Education"
+        }
+      ],
+      "search_terms": [
+        "Connecticut science standards",
+        "Connecticut NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "FL",
+      "state_name": "Florida",
+      "doe_url": "https://www.fldoe.org/",
+      "documents": [
+        {
+          "title": "Florida NGSSS Science Standards",
+          "url": "https://www.cpalms.org/public/search/Standard",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "Interactive",
+          "page_range": null,
+          "notes": "Searchable database via CPALMS. Four Bodies of Knowledge: Nature of Science, Life Science, Earth Science, Physical Science"
+        }
+      ],
+      "search_terms": [
+        "Florida science standards",
+        "Florida NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "GA",
+      "state_name": "Georgia",
+      "doe_url": "https://www.gadoe.org/",
+      "documents": [
+        {
+          "title": "Georgia Science Standards of Excellence K-12",
+          "url": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks"
+        }
+      ],
+      "search_terms": [
+        "Georgia science standards",
+        "Georgia NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "ID",
+      "state_name": "Idaho",
+      "doe_url": "https://www.sde.idaho.gov/",
+      "documents": [
+        {
+          "title": "Idaho K-12 State Standards for Science",
+          "url": "https://www.sde.idaho.gov/wp-content/uploads/2025/09/Idaho-K-12-State-Standards-for-Science.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Three dimensions: disciplinary core ideas, crosscutting concepts, and science/engineering practices"
+        }
+      ],
+      "search_terms": [
+        "Idaho science standards",
+        "Idaho NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "IN",
+      "state_name": "Indiana",
+      "doe_url": "https://www.in.gov/doe/",
+      "documents": [
+        {
+          "title": "Indiana Academic Standards for Science K-12",
+          "url": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education and NGSS"
+        }
+      ],
+      "search_terms": [
+        "Indiana science standards",
+        "Indiana NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "LA",
+      "state_name": "Louisiana",
+      "doe_url": "https://www.louisianabelieves.com/",
+      "documents": [
+        {
+          "title": "K-12 Louisiana Student Standards for Science",
+          "url": "https://doe.louisiana.gov/educators/instructional-support/planning-resources/k-12-science-resources",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Louisiana Student Standards for Science"
+        }
+      ],
+      "search_terms": [
+        "Louisiana science standards",
+        "Louisiana NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MA",
+      "state_name": "Massachusetts",
+      "doe_url": "https://www.doe.mass.edu/",
+      "documents": [
+        {
+          "title": "Massachusetts Science and Technology/Engineering Curriculum Framework 2016",
+          "url": "https://www.doe.mass.edu/frameworks/scitech/2016-04.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Includes life, physical, Earth/space science, and technology/engineering"
+        }
+      ],
+      "search_terms": [
+        "Massachusetts science standards",
+        "Massachusetts NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MD",
+      "state_name": "Maryland",
+      "doe_url": "https://www.marylandpublicschools.org/",
+      "documents": [
+        {
+          "title": "Maryland NGSS K-12",
+          "url": "https://www.nextgenscience.org/standards",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Maryland is a Lead State for NGSS"
+        }
+      ],
+      "search_terms": [
+        "Maryland science standards",
+        "Maryland NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "ME",
+      "state_name": "Maine",
+      "doe_url": "https://www.maine.gov/doe/",
+      "documents": [
+        {
+          "title": "Maine Science and Engineering Standards",
+          "url": "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Heavily adapted from NGSS. Arranged in grade bands K-2, 3-5, 6-8, 9-12"
+        }
+      ],
+      "search_terms": [
+        "Maine science standards",
+        "Maine NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MN",
+      "state_name": "Minnesota",
+      "doe_url": "https://education.mn.gov/",
+      "documents": [
+        {
+          "title": "Minnesota Academic Standards in Science 2019",
+          "url": "https://education.mn.gov/MDE/dse/stds/sci/",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        }
+      ],
+      "search_terms": [
+        "Minnesota science standards",
+        "Minnesota NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MO",
+      "state_name": "Missouri",
+      "doe_url": "https://dese.mo.gov/",
+      "documents": [
+        {
+          "title": "Missouri Learning Standards Science K-12",
+          "url": "https://dese.mo.gov/media/file/curr-mls-standards-sci-k-12-sboe-2016",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "Excel",
+          "page_range": null,
+          "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "Missouri science standards",
+        "Missouri NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MS",
+      "state_name": "Mississippi",
+      "doe_url": "https://www.mdek12.org/",
+      "documents": [
+        {
+          "title": "2018 MS College- and Career-Readiness Standards for Science K-12",
+          "url": "https://www.mdek12.org/sites/default/files/documents/Secondary%20Ed/2018-ms_ccrs---sci_k-12_final_20171006.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        }
+      ],
+      "search_terms": [
+        "Mississippi science standards",
+        "Mississippi NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "MT",
+      "state_name": "Montana",
+      "doe_url": "https://opi.mt.gov/",
+      "documents": [
+        {
+          "title": "Montana Science Content Standards 2016",
+          "url": "https://opi.mt.gov/Portals/182/Page%20Files/K-12%20Content%20Standards%20&%20Revision/Science/Montana-Science-Content-Standards-2016.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Includes crosscutting concepts and science/engineering practices"
+        },
+        {
+          "title": "Montana Science Model Curriculum Guide",
+          "url": "https://opi.mt.gov/Portals/182/Page%20Files/K-12%20Content%20Standards%20&%20Revision/Science/Montana-Science-Standard-Model-Curriculum-Guide-2016.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Implementation guide"
+        }
+      ],
+      "search_terms": [
+        "Montana science standards",
+        "Montana NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 2
+    },
+    {
+      "state_abbr": "NC",
+      "state_name": "North Carolina",
+      "doe_url": "https://www.dpi.nc.gov/",
+      "documents": [
+        {
+          "title": "2023 North Carolina K-12 Science Standards",
+          "url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "First update since 2009, emphasizes Science and Engineering Practices"
+        }
+      ],
+      "search_terms": [
+        "North Carolina science standards",
+        "North Carolina NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "ND",
+      "state_name": "North Dakota",
+      "doe_url": "https://www.nd.gov/dpi/",
+      "documents": [
+        {
+          "title": "North Dakota Science Content Standards K-12",
+          "url": "https://www.nd.gov/dpi/sites/www/files/documents/Academic%20Support/FINAL%20ND%20Science%20Content%20Standards_rev2.12.10.19.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Multi-dimensional standards based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "North Dakota science standards",
+        "North Dakota NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "NE",
+      "state_name": "Nebraska",
+      "doe_url": "https://www.education.ne.gov/",
+      "documents": [
+        {
+          "title": "Nebraska College and Career Ready Standards for Science",
+          "url": "https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Written at four grade bands: K-2, 3-5, 6-8, 9-12. Based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "Nebraska science standards",
+        "Nebraska NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "NH",
+      "state_name": "New Hampshire",
+      "doe_url": "https://www.education.nh.gov/",
+      "documents": [
+        {
+          "title": "New Hampshire NGSS Standards",
+          "url": "https://www.nextgenscience.org/standards",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "K-5 grade-by-grade, middle school and high school standards"
+        }
+      ],
+      "search_terms": [
+        "New Hampshire science standards",
+        "New Hampshire NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "NJ",
+      "state_name": "New Jersey",
+      "doe_url": "https://www.nj.gov/education/",
+      "documents": [
+        {
+          "title": "NJ Student Learning Standards Science K-5",
+          "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_K-5.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "document_type": "grade_band",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Elementary K-5 standards"
+        },
+        {
+          "title": "NJ Student Learning Standards Science 6-12",
+          "url": "https://www.nj.gov/education/standards/science/",
+          "grade_levels": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "grade_band",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Middle and high school standards"
+        }
+      ],
+      "search_terms": [
+        "New Jersey science standards",
+        "New Jersey NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 2
+    },
+    {
+      "state_abbr": "NV",
+      "state_name": "Nevada",
+      "doe_url": "https://doe.nv.gov/",
+      "documents": [
+        {
+          "title": "Nevada Academic Content Standards for Science",
+          "url": "https://doe.nv.gov/uploadedFiles/nde.doe.nv.gov/content/Nevada_Academic_Standards/Science/NSACCSScienceTopics.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Based on NGSS, adopted February 2014"
+        }
+      ],
+      "search_terms": [
+        "Nevada science standards",
+        "Nevada NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "OH",
+      "state_name": "Ohio",
+      "doe_url": "https://education.ohio.gov/",
+      "documents": [
+        {
+          "title": "Ohio's Learning Standards for Science and Model Curriculum",
+          "url": "https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/Science/Ohios-Learning-Standards-and-MC/SciFinalStandardsMC060719.pdf.aspx",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Adopted February 2018, covers K-8 and high school"
+        }
+      ],
+      "search_terms": [
+        "Ohio science standards",
+        "Ohio NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "OK",
+      "state_name": "Oklahoma",
+      "doe_url": "https://sde.ok.gov/",
+      "documents": [
+        {
+          "title": "2020 Oklahoma Academic Standards for Science PreK-12",
+          "url": "https://oklahoma.gov/content/dam/ok/en/osde/documents/services/literacy-policy-and-programs/oklahoma-academic-standards/2020-OAS-Science-Standards.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Informed by Framework for K-12 Science Education and NGSS"
+        }
+      ],
+      "search_terms": [
+        "Oklahoma science standards",
+        "Oklahoma NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "PA",
+      "state_name": "Pennsylvania",
+      "doe_url": "https://www.education.pa.gov/",
+      "documents": [
+        {
+          "title": "K-12 STEELS Standards",
+          "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/instruction/assessment-and-accountability/pssa/assessment-anchors/k-12%20steels%20standards_2023.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "K-12 sequence across strands"
+        },
+        {
+          "title": "Pennsylvania Integrated Standards K-5",
+          "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/stateboard/documents/regulations-and-statements/state-academic-standards/pa%20integrated%20standards%20for%20science%20environment%20ecology%20technology%20and%20engineering-%20k-5.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "document_type": "grade_band",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Elementary standards"
+        }
+      ],
+      "search_terms": [
+        "Pennsylvania science standards",
+        "Pennsylvania NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 2
+    },
+    {
+      "state_abbr": "RI",
+      "state_name": "Rhode Island",
+      "doe_url": "https://www.ride.ri.gov/",
+      "documents": [
+        {
+          "title": "Rhode Island NGSS Standards",
+          "url": "https://www.nextgenscience.org/standards",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Rhode Island was first state to adopt NGSS"
+        }
+      ],
+      "search_terms": [
+        "Rhode Island science standards",
+        "Rhode Island NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "SC",
+      "state_name": "South Carolina",
+      "doe_url": "https://ed.sc.gov/",
+      "documents": [
+        {
+          "title": "South Carolina College- and Career-Ready Science Standards 2021",
+          "url": "https://ed.sc.gov/instruction/standards/science/standards/",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Three-dimensional approach across four science/engineering domains"
+        }
+      ],
+      "search_terms": [
+        "South Carolina science standards",
+        "South Carolina NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "SD",
+      "state_name": "South Dakota",
+      "doe_url": "https://doe.sd.gov/",
+      "documents": [
+        {
+          "title": "South Dakota Science Standards 2024",
+          "url": "https://doe.sd.gov/contentstandards/documents/24-SciStandards.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Four domains: Life, Physical, Earth/Space, and Engineering/Technology. Based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "South Dakota science standards",
+        "South Dakota NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "TN",
+      "state_name": "Tennessee",
+      "doe_url": "https://www.tn.gov/education/",
+      "documents": [
+        {
+          "title": "Tennessee Academic Standards for Science",
+          "url": "https://www.tn.gov/content/dam/tn/stateboardofeducation/documents/standards/science/New%2010-28-22%20Science%20Standards.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "Tennessee science standards",
+        "Tennessee NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "UT",
+      "state_name": "Utah",
+      "doe_url": "https://www.schools.utah.gov/",
+      "documents": [
+        {
+          "title": "Utah SEEd Standards",
+          "url": "https://schools.utah.gov/curr/science/_science_/UtahSEEdStandards.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Written by Utah educators using Framework for K-12 Science Education and NGSS"
+        }
+      ],
+      "search_terms": [
+        "Utah science standards",
+        "Utah NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "VA",
+      "state_name": "Virginia",
+      "doe_url": "https://www.doe.virginia.gov/",
+      "documents": [
+        {
+          "title": "2018 Science Standards of Learning K-Physics",
+          "url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Includes scientific and engineering practices connected to science concepts"
+        }
+      ],
+      "search_terms": [
+        "Virginia science standards",
+        "Virginia NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "WI",
+      "state_name": "Wisconsin",
+      "doe_url": "https://dpi.wi.gov/",
+      "documents": [
+        {
+          "title": "Wisconsin Standards for Science",
+          "url": "https://dpi.wi.gov/sites/default/files/imce/standards/New%20pdfs/ScienceStandards2017.pdf",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "PDF",
+          "page_range": null,
+          "notes": "Built from NRC Framework and NGSS, organized in grade bands K-2, 3-5, 6-8, 9-12"
+        }
+      ],
+      "search_terms": [
+        "Wisconsin science standards",
+        "Wisconsin NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "WV",
+      "state_name": "West Virginia",
+      "doe_url": "https://wvde.us/",
+      "documents": [
+        {
+          "title": "WV College- and Career-Readiness Standards for Science",
+          "url": "https://wvde.us/middle-secondary-learning/science/standards-and-guidance/",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Based on Framework for K-12 Science Education"
+        }
+      ],
+      "search_terms": [
+        "West Virginia science standards",
+        "West Virginia NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    },
+    {
+      "state_abbr": "WY",
+      "state_name": "Wyoming",
+      "doe_url": "https://edu.wyoming.gov/",
+      "documents": [
+        {
+          "title": "2023 Wyoming Content and Performance Standards for Science",
+          "url": "https://edu.wyoming.gov/for-district-leadership/standards/science/",
+          "grade_levels": [
+            "K",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "document_type": "complete_k12",
+          "format": "HTML",
+          "page_range": null,
+          "notes": "Three dimensions: Crosscutting Concepts, Disciplinary Core Ideas, Science and Engineering Practices"
+        }
+      ],
+      "search_terms": [
+        "Wyoming science standards",
+        "Wyoming NGSS",
+        "science standards PDF",
+        "K-12 science"
+      ],
+      "expected_docs": 1
+    }
+  ]
+}
