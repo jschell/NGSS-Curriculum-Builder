@@ -6,8 +6,15 @@
 ## Todo
 
 ### High Priority
-- [ ] Add page_range data for all 80 documents → .claude/plan/active/add-page-range-data.md
 - [ ] Validate remaining 33 states URLs (manual research required, 8-12 hours)
+
+### Medium Priority (Deferred)
+- [ ] Add page_range data for all 80 documents → .claude/plan/active/add-page-range-data.md
+  - Status: PAUSED at Step 1 (proof of concept complete)
+  - Step 1 complete: Alabama PDF successfully extracted 9 grade markers
+  - Remaining: Steps 2-8 (extraction script, run on 80 docs, integration)
+  - Estimated time to complete: 3-4 hours
+  - Marked "not critical" - can resume when prioritized
 
 ### Other Features
 - [ ] Implement document content caching
@@ -31,3 +38,4 @@
 - [x] Apply Tier 1 URL updates - 15 states verified (Plan 3)
 - [x] Validate remaining 36 states - found 3 working URLs (AL, AR, CT)
 - [x] Create research guide for 33 remaining unverified states
+- [x] Analyze page range patterns (Step 1 of page_range plan) - proof of concept validated

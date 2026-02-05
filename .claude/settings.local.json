@@ -4,7 +4,12 @@
       "Bash(ls:*)",
       "Bash(uv run:*)",
       "Bash(python:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(tee:*)",
+      "WebFetch(domain:dese.ade.arkansas.gov)",
+      "Bash(curl:*)",
+      "WebFetch(domain:www.marylandpublicschools.org)"
     ]
   }
 }
