@@ -1140,7 +1140,7 @@
     "documents": [
       {
         "title": "Illinois Learning Standards for Science (NGSS)",
-        "url": "https://www.isbe.net/Documents/Next-Gen-Science-Std.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1159,7 +1159,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on NGSS, adopted 2014"
+        "notes": "Based on NGSS, adopted 2014",
+        "url_source": "https://www.nextgenscience.org/lead-state-illinois",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
@@ -1630,7 +1632,7 @@
     "documents": [
       {
         "title": "Michigan K-12 Science Standards",
-        "url": "https://www.michigan.gov/documents/mde/K-12_Science_Performance_Expectations_v5_496901_7.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1649,7 +1651,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Derived from NGSS with Michigan-specific contexts"
+        "notes": "Derived from NGSS with Michigan-specific contexts",
+        "url_source": "https://www.nextgenscience.org/lead-state-michigan",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
