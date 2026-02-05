@@ -328,7 +328,7 @@
     "documents": [
       {
         "title": "California NGSS Searchable Standards Database",
-        "url": "https://www2.cde.ca.gov/cacs/science",
+        "url": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "grade_levels": [
           "K",
           "1",
@@ -347,7 +347,9 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Interactive, searchable database"
+        "notes": "Interactive, searchable database",
+        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "Kindergarten CA NGSS Standards",
