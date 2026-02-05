@@ -1,0 +1,307 @@
+invalid pdf header: b'<html'
+EOF marker not found
+invalid pdf header: b'\r\n<!D'
+EOF marker not found
+invalid pdf header: b'\r\n<!D'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b' <!DO'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'\n<!DO'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'\n<!DO'
+EOF marker not found
+invalid pdf header: b'\n\n\n\n\n'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+================================================================================
+EXTRACTING PAGE RANGES FROM ALL 80 DOCUMENTS
+================================================================================
+
+
+AK: Alaska
+  K-12 Science Standards for Alaska
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+AL: Alabama
+  2023 Alabama Course of Study: Science
+    -> 9 grade ranges extracted
+
+AR: Arkansas
+  Arkansas K-12 Science Standards
+    -> No page range (single-grade or no TOC)
+
+AZ: Arizona
+  Arizona Science Standards 2018 - Complete K-12
+    -> ERROR: HTTP 403
+
+CA: California
+  California NGSS Searchable Standards Database
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+  Kindergarten CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+  Grade 1 CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+  Grade 2 CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+  Grade 3 CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+  Grade 4 CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+  Grade 5 CA NGSS Standards
+    -> No page range (single-grade or no TOC)
+
+CO: Colorado
+  2020 Colorado Academic Standards: Science
+    -> ERROR: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (
+
+CT: Connecticut
+  Connecticut Next Generation Science Standards
+    -> No page range (single-grade or no TOC)
+
+DC: District of Columbia
+  DC Next Generation Science Standards
+    -> No page range (single-grade or no TOC)
+
+DE: Delaware
+  Delaware Science Standards K-12
+    -> ERROR: HTTP 403
+
+FL: Florida
+  Florida NGSSS Science Standards
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+GA: Georgia
+  Georgia Science Standards of Excellence K-12
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+HI: Hawaii
+  Hawaii NGSS Standards K-12
+    -> 1 grade ranges extracted
+
+IA: Iowa
+  Iowa Academic Standards for Science
+    -> 1 grade ranges extracted
+
+ID: Idaho
+  Idaho K-12 State Standards for Science
+    -> 6 grade ranges extracted
+
+IL: Illinois
+  Illinois Learning Standards for Science (NGSS)
+    -> ERROR: HTTP 202
+
+IN: Indiana
+  Indiana Academic Standards for Science K-12
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+KS: Kansas
+  Kansas Science Standards
+    -> ERROR: HTTP 202
+
+KY: Kentucky
+  Kentucky Academic Standards for Science 2022
+    -> ERROR: HTTP 403
+  High School Science Course Standards
+    -> ERROR: HTTP 403
+
+LA: Louisiana
+  K-12 Louisiana Student Standards for Science
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+MA: Massachusetts
+  Massachusetts Science and Technology/Engineering Curriculum Framework 2016
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+MD: Maryland
+  Maryland NGSS K-12
+    -> ERROR: HTTP 202
+
+ME: Maine
+  Maine Science and Engineering Standards
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+MI: Michigan
+  Michigan K-12 Science Standards
+    -> ERROR: HTTP 202
+
+MN: Minnesota
+  Minnesota Academic Standards in Science 2019
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+MO: Missouri
+  Missouri Learning Standards Science K-12
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+MS: Mississippi
+  2018 MS College- and Career-Readiness Standards for Science K-12
+    -> 1 grade ranges extracted
+
+MT: Montana
+  Montana Science Content Standards 2016
+    -> 1 grade ranges extracted
+  Montana Science Model Curriculum Guide
+    -> 1 grade ranges extracted
+
+NC: North Carolina
+  2023 North Carolina K-12 Science Standards
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+ND: North Dakota
+  North Dakota Science Content Standards K-12
+    -> 1 grade ranges extracted
+
+NE: Nebraska
+  Nebraska College and Career Ready Standards for Science
+    -> ERROR: HTTP 403
+
+NH: New Hampshire
+  New Hampshire NGSS Standards
+    -> ERROR: HTTP 202
+
+NJ: New Jersey
+  NJ Student Learning Standards Science K-5
+    -> 6 grade ranges extracted
+  NJ Student Learning Standards Science 6-12
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+NM: New Mexico
+  NM STEM Ready! Science Standards
+    -> ERROR: HTTP 202
+
+NV: Nevada
+  Nevada Academic Content Standards for Science
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+NY: New York
+  P-2 Science Learning Standards
+    -> No page range (single-grade or no TOC)
+  Grades 3-5 Science Learning Standards
+    -> No page range (single-grade or no TOC)
+  Grades 6-8 Science Learning Standards
+    -> ERROR: HTTP 404
+  High School Science Learning Standards
+    -> No page range (single-grade or no TOC)
+
+OH: Ohio
+  Ohio's Learning Standards for Science and Model Curriculum
+    -> 9 grade ranges extracted
+
+OK: Oklahoma
+  2020 Oklahoma Academic Standards for Science PreK-12
+    -> 9 grade ranges extracted
+
+OR: Oregon
+  K-12 Oregon Science Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade K Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade 1 Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade 2 Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade 3 Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade 4 Standards with Guidance
+    -> No page range (single-grade or no TOC)
+  Grade 5 Standards with Guidance
+    -> No page range (single-grade or no TOC)
+
+PA: Pennsylvania
+  K-12 STEELS Standards
+    -> 1 grade ranges extracted
+  Pennsylvania Integrated Standards K-5
+    -> No page range (single-grade or no TOC)
+
+RI: Rhode Island
+  Rhode Island NGSS Standards
+    -> ERROR: HTTP 202
+
+SC: South Carolina
+  South Carolina College- and Career-Ready Science Standards 2021
+    -> ERROR: PdfStreamError: Stream has ended unexpectedly
+
+SD: South Dakota
+  South Dakota Science Standards 2024
+    -> 1 grade ranges extracted
+
+TN: Tennessee
+  Tennessee Academic Standards for Science
+    -> ERROR: ConnectError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+TX: Texas
+  Kindergarten Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 1 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 2 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 3 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 4 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 5 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 6 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 7 Science TEKS
+    -> No page range (single-grade or no TOC)
+  Grade 8 Science TEKS
+    -> No page range (single-grade or no TOC)
+
+UT: Utah
+  Utah SEEd Standards
+    -> 1 grade ranges extracted
+
+VA: Virginia
+  2018 Science Standards of Learning K-Physics
+    -> ERROR: HTTP 403
+
+VT: Vermont
+  Vermont NGSS Standards
+    -> ERROR: HTTP 202
+
+WA: Washington
+  Washington State K-12 Science Learning Standards
+    -> ERROR: HTTP 403
+  WSSLS DCI Arrangement
+    -> ERROR: HTTP 403
+  WSSLS Topic Arrangement
+    -> ERROR: HTTP 403
+
+WI: Wisconsin
+  Wisconsin Standards for Science
+    -> No page range (single-grade or no TOC)
+
+WV: West Virginia
+  WV College- and Career-Readiness Standards for Science
+    -> ERROR: HTTP 403
+
+WY: Wyoming
+  2023 Wyoming Content and Performance Standards for Science
+    -> ERROR: HTTP 403
+
+================================================================================
+EXTRACTION COMPLETE
+================================================================================
+
+Results saved to: C:\Users\JSchell\OneDrive - NWSchell\Documents\GitHub\NGSS-Curriculum-Builder\scripts\..\page_ranges_extracted.json
+
+Summary:
+  Total documents: 80
+  With page ranges: 14
+  Single-grade (null): 30
+  Errors: 36
+  Success rate: 14/80 (17.5%)
