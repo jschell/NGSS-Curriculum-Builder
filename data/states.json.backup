@@ -11,7 +11,7 @@
     "documents": [
       {
         "title": "Washington State K-12 Science Learning Standards",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_version_2.0.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -30,13 +30,11 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Single comprehensive K-12 document, identical to NGSS",
-        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "notes": "Single comprehensive K-12 document, identical to NGSS"
       },
       {
         "title": "WSSLS DCI Arrangement",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_dci_arrangement_version_2.0.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -55,13 +53,11 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by Disciplinary Core Ideas",
-        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "notes": "Organized by Disciplinary Core Ideas"
       },
       {
         "title": "WSSLS Topic Arrangement",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_topic_arrangement_version_2.0.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -80,9 +76,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by topics for easier curriculum planning",
-        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "notes": "Organized by topics for easier curriculum planning"
       }
     ],
     "assessments": [
@@ -166,16 +160,14 @@
       },
       {
         "title": "Grade K Standards with Guidance",
-        "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Kindergarten%20Science%20Standards%20with%20Guidance.pdf",
+        "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%20K%20Science%20Standards%20with%20Guidance.pdf",
         "grade_levels": [
           "K"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/Pages/default.aspx",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 1 Standards with Guidance",
@@ -328,7 +320,7 @@
     "documents": [
       {
         "title": "California NGSS Searchable Standards Database",
-        "url": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "url": "https://www2.cde.ca.gov/cacs/science",
         "grade_levels": [
           "K",
           "1",
@@ -347,87 +339,73 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Interactive, searchable database",
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": "Interactive, searchable database"
       },
       {
         "title": "Kindergarten CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangsskinder-topicdci.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/kindergarten.pdf",
         "grade_levels": [
           "K"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 1 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr1-dci.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade1.pdf",
         "grade_levels": [
           "1"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 2 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr2-dci.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade2.pdf",
         "grade_levels": [
           "2"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 3 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade3.pdf",
         "grade_levels": [
           "3"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 4 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr4-dci.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade4.pdf",
         "grade_levels": [
           "4"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 5 CA NGSS Standards",
-        "url": "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf",
+        "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade5.pdf",
         "grade_levels": [
           "5"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "notes": null
       }
     ],
     "assessments": [
@@ -495,120 +473,102 @@
     "documents": [
       {
         "title": "Kindergarten Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/K_Science_TEKS.pdf",
         "grade_levels": [
           "K"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 1 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_1_Science_TEKS.pdf",
         "grade_levels": [
           "1"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 2 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_2_Science_TEKS.pdf",
         "grade_levels": [
           "2"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 3 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_3_Science_TEKS.pdf",
         "grade_levels": [
           "3"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 4 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_4_Science_TEKS.pdf",
         "grade_levels": [
           "4"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 5 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_5_Science_TEKS.pdf",
         "grade_levels": [
           "5"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 6 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_6_Science_TEKS.pdf",
         "grade_levels": [
           "6"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 7 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_7_Science_TEKS.pdf",
         "grade_levels": [
           "7"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grade 8 Science TEKS",
-        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf",
+        "url": "https://tea.texas.gov/sites/default/files/Grade_8_Science_TEKS.pdf",
         "grade_levels": [
           "8"
         ],
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "notes": null
       }
     ],
     "assessments": [
@@ -674,9 +634,7 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Pre-K through Grade 2",
-        "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "notes": "Pre-K through Grade 2"
       },
       {
         "title": "Grades 3-5 Science Learning Standards",
@@ -689,9 +647,7 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
-        "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "notes": null
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
@@ -704,9 +660,7 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Middle School",
-        "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "notes": "Middle School"
       },
       {
         "title": "High School Science Learning Standards",
@@ -720,9 +674,7 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "Grades 9-12",
-        "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "notes": "Grades 9-12"
       }
     ],
     "assessments": [
@@ -958,7 +910,7 @@
     "documents": [
       {
         "title": "Delaware Science Standards K-12",
-        "url": "https://education.delaware.gov/wp-content/uploads/2025/03/topical-arrangement-ngss.pdf",
+        "url": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
         "grade_levels": [
           "K",
           "1",
@@ -977,9 +929,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Organized into grade band content standards (K-3, 4-5, 6-8, 9-12)",
-        "url_source": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
-        "last_verified": "2026-02-04"
+        "notes": "Organized into grade band content standards (K-3, 4-5, 6-8, 9-12)"
       }
     ],
     "assessments": [
@@ -1034,7 +984,7 @@
     "documents": [
       {
         "title": "DC Next Generation Science Standards",
-        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf",
+        "url": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
         "grade_levels": [
           "K",
           "1",
@@ -1053,9 +1003,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on National Research Council's Framework for K-12 Science Education",
-        "url_source": "https://osse.dc.gov/publication/2016-next-generation-science-standards-faq-overview",
-        "last_verified": "2026-02-04"
+        "notes": "Based on National Research Council's Framework for K-12 Science Education"
       }
     ],
     "assessments": [
@@ -1109,7 +1057,7 @@
     "documents": [
       {
         "title": "Hawaii NGSS Standards K-12",
-        "url": "https://manoa.hawaii.edu/sealearning/sites/default/files/NGSSReduced.pdf",
+        "url": "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -1128,9 +1076,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Three-dimensional approach integrating practices, concepts, and core ideas",
-        "url_source": "https://manoa.hawaii.edu/sealearning/standards-alignment/next-generation-science-standards-ngss",
-        "last_verified": "2026-02-04"
+        "notes": "Three-dimensional approach integrating practices, concepts, and core ideas"
       }
     ],
     "assessments": [
@@ -1186,7 +1132,7 @@
     "documents": [
       {
         "title": "Illinois Learning Standards for Science (NGSS)",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.isbe.net/Documents/Next-Gen-Science-Std.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1205,9 +1151,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on NGSS, adopted 2014",
-        "url_source": "https://www.nextgenscience.org/lead-state-illinois",
-        "last_verified": "2026-02-04"
+        "notes": "Based on NGSS, adopted 2014"
       }
     ],
     "assessments": [
@@ -1281,9 +1225,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on NGSS Performance Expectations, revised 2025",
-        "url_source": "https://educate.iowa.gov/pk-12/standards/academics/science",
-        "last_verified": "2026-02-04"
+        "notes": "Based on NGSS Performance Expectations, revised 2025"
       }
     ],
     "assessments": [
@@ -1339,7 +1281,7 @@
     "documents": [
       {
         "title": "Kansas Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.ksde.org/Portals/0/TLA/Accreditation/Science_Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1358,9 +1300,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Standards set in grade bands K-2, 3-4, 5-7, and 8-12",
-        "url_source": "https://www.nextgenscience.org/lead-state-kansas",
-        "last_verified": "2026-02-04"
+        "notes": "Standards set in grade bands K-2, 3-4, 5-7, and 8-12"
       }
     ],
     "assessments": [
@@ -1445,9 +1385,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education",
-        "url_source": "https://www.education.ky.gov/curriculum/standards/kyacadstand",
-        "last_verified": "2026-02-04"
+        "notes": "Based on Framework for K-12 Science Education"
       },
       {
         "title": "High School Science Course Standards",
@@ -1678,7 +1616,7 @@
     "documents": [
       {
         "title": "Michigan K-12 Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.michigan.gov/documents/mde/K-12_Science_Performance_Expectations_v5_496901_7.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1697,9 +1635,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Derived from NGSS with Michigan-specific contexts",
-        "url_source": "https://www.nextgenscience.org/lead-state-michigan",
-        "last_verified": "2026-02-04"
+        "notes": "Derived from NGSS with Michigan-specific contexts"
       }
     ],
     "assessments": [
@@ -1986,7 +1922,7 @@
     "documents": [
       {
         "title": "NM STEM Ready! Science Standards",
-        "url": "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf",
+        "url": "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/nm-stem-ready-science-standards/",
         "grade_levels": [
           "K",
           "1",
@@ -2005,9 +1941,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "NGSS plus six New Mexico-specific science standards",
-        "url_source": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science",
-        "last_verified": "2026-02-04"
+        "notes": "NGSS plus six New Mexico-specific science standards"
       }
     ],
     "assessments": [
@@ -2136,7 +2070,7 @@
     "documents": [
       {
         "title": "Vermont NGSS Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://education.vermont.gov/student-learning/content-areas/science",
         "grade_levels": [
           "K",
           "1",
@@ -2155,9 +2089,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Organized in grade bands K-2, 3-5, 6-8, 9-12",
-        "url_source": "https://www.nextgenscience.org/lead-state-vermont",
-        "last_verified": "2026-02-04"
+        "notes": "Organized in grade bands K-2, 3-5, 6-8, 9-12"
       }
     ],
     "assessments": [
