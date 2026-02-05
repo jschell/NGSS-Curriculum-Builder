@@ -1291,7 +1291,7 @@
     "documents": [
       {
         "title": "Kansas Science Standards",
-        "url": "https://www.ksde.org/Portals/0/TLA/Accreditation/Science_Standards.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1310,7 +1310,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Standards set in grade bands K-2, 3-4, 5-7, and 8-12"
+        "notes": "Standards set in grade bands K-2, 3-4, 5-7, and 8-12",
+        "url_source": "https://www.nextgenscience.org/lead-state-kansas",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
