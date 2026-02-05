@@ -1,0 +1,26 @@
+{
+  "state_abbr": "VA",
+  "state_name": "Virginia",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
+  "document_title": "2018 Science Standards of Learning K-Physics",
+  "doe_url": "https://www.doe.virginia.gov/",
+  "science_page_patterns": [
+    "/instruction/science",
+    "/testing/statewide-assessments/science"
+  ],
+  "search_terms": [
+    "science standards",
+    "science SOL",
+    "Standards of Learning"
+  ]
+}

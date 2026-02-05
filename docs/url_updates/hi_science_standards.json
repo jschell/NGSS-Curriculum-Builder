@@ -1,0 +1,25 @@
+{
+  "state_abbr": "HI",
+  "state_name": "Hawaii",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://manoa.hawaii.edu/sealearning/sites/default/files/NGSSReduced.pdf",
+  "document_title": "Hawaii NGSS Standards K-12",
+  "doe_url": "https://www.hawaiipublicschools.org/",
+  "science_page_patterns": [
+    "/teaching-and-learning/standards-and-curriculum",
+    "/curriculum/science"
+  ],
+  "search_terms": [
+    "Hawaii science standards",
+    "NGSS Hawaii"
+  ]
+}

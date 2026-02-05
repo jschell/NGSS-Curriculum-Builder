@@ -1,0 +1,25 @@
+{
+  "state_abbr": "NE",
+  "state_name": "Nebraska",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf",
+  "document_title": "Nebraska College and Career Ready Standards for Science",
+  "doe_url": "https://www.education.ne.gov/",
+  "science_page_patterns": [
+    "/curriculum/science",
+    "/teach/standards/science"
+  ],
+  "search_terms": [
+    "Nebraska science standards",
+    "science standards"
+  ]
+}

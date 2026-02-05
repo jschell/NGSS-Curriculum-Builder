@@ -1,0 +1,25 @@
+{
+  "state_abbr": "KY",
+  "state_name": "Kentucky",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://www.education.ky.gov/curriculum/standards/kyacadstand/Documents/Kentucky_Academic_Standards_for_Science_2022.pdf",
+  "document_title": "Kentucky Academic Standards for Science 2022",
+  "doe_url": "https://education.ky.gov/",
+  "science_page_patterns": [
+    "/curriculum/science",
+    "/standards/science"
+  ],
+  "search_terms": [
+    "Kentucky science standards",
+    "KAS science"
+  ]
+}

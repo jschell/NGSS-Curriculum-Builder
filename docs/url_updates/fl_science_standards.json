@@ -1,0 +1,25 @@
+{
+  "state_abbr": "FL",
+  "state_name": "Florida",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://www.cpalms.org/public/search/Standard",
+  "document_title": "Florida NGSSS Science Standards",
+  "doe_url": "https://www.fldoe.org/",
+  "science_page_patterns": [
+    "/academics/standards/science",
+    "/curriculum/science"
+  ],
+  "search_terms": [
+    "Florida science standards",
+    "BEST science"
+  ]
+}

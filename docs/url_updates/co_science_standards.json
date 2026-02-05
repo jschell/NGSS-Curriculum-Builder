@@ -1,0 +1,24 @@
+{
+  "state_abbr": "CO",
+  "state_name": "Colorado",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://www.cde.state.co.us/coscience/2020cas-sc",
+  "document_title": "2020 Colorado Academic Standards: Science",
+  "doe_url": "https://www.cde.state.co.us/",
+  "science_page_patterns": [
+    "/standardsandinstruction/science/"
+  ],
+  "search_terms": [
+    "Colorado science standards",
+    "CAS science"
+  ]
+}

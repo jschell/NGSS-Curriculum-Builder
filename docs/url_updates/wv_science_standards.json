@@ -1,0 +1,26 @@
+{
+  "state_abbr": "WV",
+  "state_name": "West Virginia",
+  "research_date": null,
+  "researcher": "automated_research.py",
+  "doe_visited": null,
+  "pages_visited": [],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": null,
+  "notes": "",
+  "issues_encountered": [],
+  "current_url": "https://wvde.us/middle-secondary-learning/science/standards-and-guidance/",
+  "document_title": "WV College- and Career-Readiness Standards for Science",
+  "doe_url": "https://wvde.us/",
+  "science_page_patterns": [
+    "/academics/middle-secondary-education/science",
+    "/academics/content-standards-policies"
+  ],
+  "search_terms": [
+    "science standards",
+    "science content standards",
+    "Policy 2520"
+  ]
+}
