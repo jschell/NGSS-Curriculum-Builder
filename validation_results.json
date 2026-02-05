@@ -3,35 +3,22 @@
   "validator_version": "1.0",
   "total_urls": 80,
   "results": {
-    "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_version_2.0.pdf": {
-      "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_version_2.0.pdf",
-      "title": "Washington State K-12 Science Learning Standards",
-      "state_abbrev": "WA",
-      "http_status": 403,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 403",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_dci_arrangement_version_2.0.pdf": {
-      "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_dci_arrangement_version_2.0.pdf",
-      "title": "WSSLS DCI Arrangement",
-      "state_abbrev": "WA",
-      "http_status": 403,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 403",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_topic_arrangement_version_2.0.pdf": {
-      "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_topic_arrangement_version_2.0.pdf",
+    "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf": {
+      "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
       "title": "WSSLS Topic Arrangement",
+      "state_abbrev": "WA",
+      "http_status": 403,
+      "content_type": "unknown",
+      "file_size_kb": null,
+      "error": "HTTP 403",
+      "redirect_chain": [],
+      "confidence": "low",
+      "notes": "",
+      "content_validation": null
+    },
+    "https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf": {
+      "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf",
+      "title": "WSSLS DCI Arrangement",
       "state_abbrev": "WA",
       "http_status": 403,
       "content_type": "unknown",
@@ -55,18 +42,26 @@
       "notes": "",
       "content_validation": null
     },
-    "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%20K%20Science%20Standards%20with%20Guidance.pdf": {
-      "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%20K%20Science%20Standards%20with%20Guidance.pdf",
+    "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Kindergarten%20Science%20Standards%20with%20Guidance.pdf": {
+      "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Kindergarten%20Science%20Standards%20with%20Guidance.pdf",
       "title": "Grade K Standards with Guidance",
       "state_abbrev": "OR",
-      "http_status": 404,
-      "content_type": "unknown",
+      "http_status": 200,
+      "content_type": "pdf",
       "file_size_kb": null,
-      "error": "HTTP 404",
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
     "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%201%20Science%20Standards%20with%20Guidance.pdf": {
       "url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/Grade%201%20Science%20Standards%20with%20Guidance.pdf",
@@ -141,211 +136,168 @@
       "notes": "",
       "content_validation": null
     },
-    "https://www2.cde.ca.gov/cacs/science": {
-      "url": "https://www2.cde.ca.gov/cacs/science",
+    "https://www.cde.ca.gov/ci/pl/ngssstandards.asp": {
+      "url": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
       "title": "California NGSS Searchable Standards Database",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
+      "http_status": 200,
+      "content_type": "html",
       "file_size_kb": null,
-      "error": "HTTP 404",
+      "error": "Returns HTML instead of PDF",
       "redirect_chain": [],
       "confidence": "low",
-      "notes": "",
+      "notes": "No redirects",
       "content_validation": null
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/kindergarten.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/kindergarten.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangsskinder-topicdci.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangsskinder-topicdci.pdf",
       "title": "Kindergarten CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 363,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/grade1.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade1.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangssgr1-dci.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr1-dci.pdf",
       "title": "Grade 1 CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 180,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/grade2.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade2.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangssgr2-dci.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr2-dci.pdf",
       "title": "Grade 2 CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 203,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/grade3.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade3.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
       "title": "Grade 3 CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 239,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/grade4.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade4.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangssgr4-dci.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr4-dci.pdf",
       "title": "Grade 4 CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 228,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://www.cde.ca.gov/pd/ca/sc/documents/grade5.pdf": {
-      "url": "https://www.cde.ca.gov/pd/ca/sc/documents/grade5.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf": {
+      "url": "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf",
       "title": "Grade 5 CA NGSS Standards",
       "state_abbrev": "CA",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
+      "http_status": 200,
+      "content_type": "pdf",
+      "file_size_kb": 212,
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
+      "confidence": "high",
+      "notes": "No redirects",
+      "content_validation": {
+        "grade_level_found": true,
+        "state_name_found": true,
+        "science_keyword_found": true,
+        "metadata_title_match": "none",
+        "confidence_score": 0.8999999999999999,
+        "warnings": [],
+        "validation_status": "content_verified"
+      }
     },
-    "https://tea.texas.gov/sites/default/files/K_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/K_Science_TEKS.pdf",
-      "title": "Kindergarten Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_1_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_1_Science_TEKS.pdf",
-      "title": "Grade 1 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_2_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_2_Science_TEKS.pdf",
-      "title": "Grade 2 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_3_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_3_Science_TEKS.pdf",
-      "title": "Grade 3 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_4_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_4_Science_TEKS.pdf",
-      "title": "Grade 4 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_5_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_5_Science_TEKS.pdf",
+    "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf": {
+      "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
       "title": "Grade 5 Science TEKS",
       "state_abbrev": "TX",
-      "http_status": 404,
+      "http_status": 0,
       "content_type": "unknown",
       "file_size_kb": null,
-      "error": "HTTP 404",
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
+      "confidence": "medium",
       "notes": "",
       "content_validation": null
     },
-    "https://tea.texas.gov/sites/default/files/Grade_6_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_6_Science_TEKS.pdf",
-      "title": "Grade 6 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_7_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_7_Science_TEKS.pdf",
-      "title": "Grade 7 Science TEKS",
-      "state_abbrev": "TX",
-      "http_status": 404,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "HTTP 404",
-      "redirect_chain": [],
-      "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://tea.texas.gov/sites/default/files/Grade_8_Science_TEKS.pdf": {
-      "url": "https://tea.texas.gov/sites/default/files/Grade_8_Science_TEKS.pdf",
+    "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf": {
+      "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf",
       "title": "Grade 8 Science TEKS",
       "state_abbrev": "TX",
-      "http_status": 404,
+      "http_status": 0,
       "content_type": "unknown",
       "file_size_kb": null,
-      "error": "HTTP 404",
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
+      "confidence": "medium",
       "notes": "",
       "content_validation": null
     },
@@ -427,8 +379,8 @@
       "notes": "",
       "content_validation": null
     },
-    "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/": {
-      "url": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
+    "https://education.delaware.gov/wp-content/uploads/2025/03/topical-arrangement-ngss.pdf": {
+      "url": "https://education.delaware.gov/wp-content/uploads/2025/03/topical-arrangement-ngss.pdf",
       "title": "Delaware Science Standards K-12",
       "state_abbrev": "DE",
       "http_status": 0,
@@ -440,8 +392,8 @@
       "notes": "",
       "content_validation": null
     },
-    "https://osse.dc.gov/service/next-generation-science-standards-ngss-page": {
-      "url": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
+    "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf": {
+      "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf",
       "title": "DC Next Generation Science Standards",
       "state_abbrev": "DC",
       "http_status": 0,
@@ -453,27 +405,27 @@
       "notes": "",
       "content_validation": null
     },
-    "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx": {
-      "url": "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx",
+    "https://manoa.hawaii.edu/sealearning/sites/default/files/NGSSReduced.pdf": {
+      "url": "https://manoa.hawaii.edu/sealearning/sites/default/files/NGSSReduced.pdf",
       "title": "Hawaii NGSS Standards K-12",
       "state_abbrev": "HI",
-      "http_status": 403,
+      "http_status": 0,
       "content_type": "unknown",
       "file_size_kb": null,
-      "error": "HTTP 403",
+      "error": null,
       "redirect_chain": [],
-      "confidence": "low",
+      "confidence": "medium",
       "notes": "",
       "content_validation": null
     },
-    "https://www.isbe.net/Documents/Next-Gen-Science-Std.pdf": {
-      "url": "https://www.isbe.net/Documents/Next-Gen-Science-Std.pdf",
-      "title": "Illinois Learning Standards for Science (NGSS)",
-      "state_abbrev": "IL",
-      "http_status": 404,
+    "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf": {
+      "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+      "title": "Vermont NGSS Standards",
+      "state_abbrev": "VT",
+      "http_status": 202,
       "content_type": "unknown",
       "file_size_kb": null,
-      "error": "HTTP 404",
+      "error": "HTTP 202",
       "redirect_chain": [],
       "confidence": "low",
       "notes": "",
@@ -489,19 +441,6 @@
       "error": null,
       "redirect_chain": [],
       "confidence": "medium",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://www.ksde.org/Portals/0/TLA/Accreditation/Science_Standards.pdf": {
-      "url": "https://www.ksde.org/Portals/0/TLA/Accreditation/Science_Standards.pdf",
-      "title": "Kansas Science Standards",
-      "state_abbrev": "KS",
-      "http_status": 0,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": "Connection error: ConnectError",
-      "redirect_chain": [],
-      "confidence": "low",
       "notes": "",
       "content_validation": null
     },
@@ -557,19 +496,6 @@
       "notes": "",
       "content_validation": null
     },
-    "https://www.michigan.gov/documents/mde/K-12_Science_Performance_Expectations_v5_496901_7.pdf": {
-      "url": "https://www.michigan.gov/documents/mde/K-12_Science_Performance_Expectations_v5_496901_7.pdf",
-      "title": "Michigan K-12 Science Standards",
-      "state_abbrev": "MI",
-      "http_status": 0,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": null,
-      "redirect_chain": [],
-      "confidence": "medium",
-      "notes": "",
-      "content_validation": null
-    },
     "https://doe.nv.gov/uploadedFiles/nde.doe.nv.gov/content/Nevada_Academic_Standards/Science/NSACCSScienceTopics.pdf": {
       "url": "https://doe.nv.gov/uploadedFiles/nde.doe.nv.gov/content/Nevada_Academic_Standards/Science/NSACCSScienceTopics.pdf",
       "title": "Nevada Academic Content Standards for Science",
@@ -609,29 +535,16 @@
       "notes": "No redirects",
       "content_validation": null
     },
-    "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/nm-stem-ready-science-standards/": {
-      "url": "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/nm-stem-ready-science-standards/",
+    "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf": {
+      "url": "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf",
       "title": "NM STEM Ready! Science Standards",
       "state_abbrev": "NM",
-      "http_status": 0,
+      "http_status": 202,
       "content_type": "unknown",
       "file_size_kb": null,
-      "error": "Connection error: ConnectError",
+      "error": "HTTP 202",
       "redirect_chain": [],
       "confidence": "low",
-      "notes": "",
-      "content_validation": null
-    },
-    "https://education.vermont.gov/student-learning/content-areas/science": {
-      "url": "https://education.vermont.gov/student-learning/content-areas/science",
-      "title": "Vermont NGSS Standards",
-      "state_abbrev": "VT",
-      "http_status": 0,
-      "content_type": "unknown",
-      "file_size_kb": null,
-      "error": null,
-      "redirect_chain": [],
-      "confidence": "medium",
       "notes": "",
       "content_validation": null
     },
@@ -1035,10 +948,10 @@
     }
   },
   "summary": {
-    "working_pdf": 2,
-    "broken": 72,
-    "other_issues": 6,
-    "content_verified": 2,
+    "working_pdf": 9,
+    "broken": 64,
+    "other_issues": 7,
+    "content_verified": 9,
     "content_questionable": 0,
     "wrong_document": 0
   }
