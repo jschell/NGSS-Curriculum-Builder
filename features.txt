@@ -6,8 +6,8 @@
 ## Todo
 
 ### High Priority
-- [ ] Validate remaining 36 states URLs → .claude/plan/active/validate-remaining-36-states.md
 - [ ] Add page_range data for all 80 documents → .claude/plan/active/add-page-range-data.md
+- [ ] Validate remaining 33 states URLs (manual research required, 8-12 hours)
 
 ### Other Features
 - [ ] Implement document content caching
@@ -29,3 +29,5 @@
 - [x] Execute URL validation & generate reports (Plan 1)
 - [x] Document URL update workflow (Plan 2)
 - [x] Apply Tier 1 URL updates - 15 states verified (Plan 3)
+- [x] Validate remaining 36 states - found 3 working URLs (AL, AR, CT)
+- [x] Create research guide for 33 remaining unverified states
