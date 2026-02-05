@@ -11,7 +11,7 @@
     "documents": [
       {
         "title": "Washington State K-12 Science Learning Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -31,12 +31,12 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Single comprehensive K-12 document, identical to NGSS",
-        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04"
       },
       {
         "title": "WSSLS DCI Arrangement",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -56,12 +56,12 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Organized by Disciplinary Core Ideas",
-        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04"
       },
       {
         "title": "WSSLS Topic Arrangement",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -81,7 +81,7 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Organized by topics for easier curriculum planning",
-        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04"
       }
     ],
