@@ -11,7 +11,7 @@
     "documents": [
       {
         "title": "Washington State K-12 Science Learning Standards",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_version_2.0.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -30,11 +30,13 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Single comprehensive K-12 document, identical to NGSS"
+        "notes": "Single comprehensive K-12 document, identical to NGSS",
+        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "WSSLS DCI Arrangement",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_dci_arrangement_version_2.0.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -53,11 +55,13 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by Disciplinary Core Ideas"
+        "notes": "Organized by Disciplinary Core Ideas",
+        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "WSSLS Topic Arrangement",
-        "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/washington_state_k-12_science_learning_standards_topic_arrangement_version_2.0.pdf",
+        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -76,7 +80,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by topics for easier curriculum planning"
+        "notes": "Organized by topics for easier curriculum planning",
+        "url_source": "https://www.nextgenscience.org/lead-state-washington",
+        "last_verified": "2026-02-04"
       }
     ],
     "assessments": [
