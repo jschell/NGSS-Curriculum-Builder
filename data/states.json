@@ -790,7 +790,7 @@
     "documents": [
       {
         "title": "Arkansas K-12 Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/Arkansas%20K-12%20Science%20Standards.pdf",
+        "url": "https://dese.ade.arkansas.gov/Files/Kindergarten-general_science_LS.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -809,7 +809,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on A Framework for K-12 Science Education"
+        "notes": "Arkansas provides grade-specific PDFs. Full list at: https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
+        "url_source": "https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
@@ -863,7 +865,7 @@
     "documents": [
       {
         "title": "Connecticut Next Generation Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/Connecticut%20NGSS%20K-12.pdf",
+        "url": "https://portal.ct.gov/-/media/sde/science/ngss_boards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -882,7 +884,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Adopted by unanimous vote of State Board of Education"
+        "notes": "Adopted by unanimous vote of State Board of Education (November 2015)",
+        "url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
