@@ -1397,7 +1397,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education"
+        "notes": "Based on Framework for K-12 Science Education",
+        "url_source": "https://www.education.ky.gov/curriculum/standards/kyacadstand",
+        "last_verified": "2026-02-04"
       },
       {
         "title": "High School Science Course Standards",
