@@ -362,6 +362,8 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   URL: {doc.url}")
                 print(f"   Covers Grades: {', '.join(doc.grade_levels)}")
                 print(f"   Format: {doc.format}")
+                if doc.page_range:
+                    print(f"   Pages: {doc.page_range}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
 
