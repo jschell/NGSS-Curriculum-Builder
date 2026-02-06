@@ -1,0 +1,39 @@
+{
+  "state_abbr": "IN",
+  "state_name": "Indiana",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.in.gov/doe/",
+  "pages_visited": [
+    "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/"
+  ],
+  "urls_tested": [
+    "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf"
+  ],
+  "working_url": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf",
+  "working_url_source": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
+  "confidence": "medium",
+  "notes": "Indiana does NOT provide a single comprehensive K-12 PDF. Instead, they provide separate PDFs for each grade (K, 1, 2, 3, 4, 5, 6, 7, 8) and each high school course (Biology, Chemistry, Earth/Space, ICP, Physics, etc.). Using Grade 3 PDF as representative document. All grade-specific PDFs are available on the Indiana DOE website.",
+  "issues_encountered": [
+    "No comprehensive K-12 document available - only grade-specific and course-specific PDFs",
+    "SSL certificate error on original URL may have been temporary"
+  ],
+  "batch": "Batch 4 (SSL/Connection Errors)",
+  "original_error": "SSL certificate error",
+  "special_structure": "grade_specific_documents",
+  "all_grade_urls": {
+    "K": "https://media.doe.in.gov/standards/indiana-academic-standards-kindergarten-science.pdf",
+    "1": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-1-science.pdf",
+    "2": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-2-science.pdf",
+    "3": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf",
+    "4": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-4-science.pdf",
+    "5": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-5-science.pdf",
+    "6": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-6-science.pdf",
+    "7": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-7-science.pdf",
+    "8": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-8-science.pdf",
+    "Biology": "https://media.doe.in.gov/standards/indiana-academic-standards-biology.pdf",
+    "Chemistry": "https://media.doe.in.gov/standards/indiana-academic-standards-chemistry.pdf",
+    "Earth_Space": "https://media.doe.in.gov/standards/indiana-academic-standards-earth-and-space-science.pdf",
+    "Physics_I": "https://media.doe.in.gov/standards/indiana-academic-standards-physics-i.pdf"
+  }
+}

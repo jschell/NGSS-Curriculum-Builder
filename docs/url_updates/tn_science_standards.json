@@ -1,0 +1,21 @@
+{
+  "state_abbr": "TN",
+  "state_name": "Tennessee",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.tn.gov/education/",
+  "pages_visited": [
+    "https://bestforall.tnedu.gov/academic-standards/science",
+    "https://www.tn.gov/education/districts/academic-standards/science-standards.html"
+  ],
+  "urls_tested": [
+    "https://www.tn.gov/content/dam/tn/stateboardofeducation/documents/standards/science/New%2010-28-22%20Science%20Standards.pdf"
+  ],
+  "working_url": "https://www.tn.gov/content/dam/tn/stateboardofeducation/documents/standards/science/New%2010-28-22%20Science%20Standards.pdf",
+  "working_url_source": "https://www.tn.gov/education/districts/academic-standards/science-standards.html",
+  "confidence": "high",
+  "notes": "Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education.",
+  "issues_encountered": [],
+  "batch": "Batch 4 (SSL/Connection Errors)",
+  "original_error": "Connection error when attempting to download PDF"
+}

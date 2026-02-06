@@ -1,0 +1,27 @@
+{
+  "state_abbr": "GA",
+  "state_name": "Georgia",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://gadoe.org/",
+  "pages_visited": [
+    "https://gadoe.org/learning/science/",
+    "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx"
+  ],
+  "urls_tested": [
+    "https://www.georgiastandards.org/Georgia-Standards/Documents/Science-Sixth-Grade-Georgia-Standards.pdf"
+  ],
+  "working_url": "https://www.georgiastandards.org/Georgia-Standards/Documents/Science-Sixth-Grade-Georgia-Standards.pdf",
+  "working_url_source": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
+  "confidence": "medium",
+  "notes": "Georgia does NOT provide a single comprehensive K-12 PDF. Instead, they provide separate PDFs for each grade band (K-5 by grade, 6-8 by grade, 9-12 by course). The GeorgiaStandards.org website has bot detection/firewall that blocks automated access. Using Grade 6 PDF as representative document. Georgia Standards of Excellence (GSE) for Science are available on GeorgiaStandards.org.",
+  "issues_encountered": [
+    "No comprehensive K-12 document available - only grade-specific and course-specific PDFs",
+    "Website has firewall/bot detection that blocks automated access (Attack ID: 20000051)",
+    "Connection error may have been due to bot detection"
+  ],
+  "batch": "Batch 4 (SSL/Connection Errors)",
+  "original_error": "Connection error",
+  "special_structure": "grade_specific_documents",
+  "note_about_access": "GeorgiaStandards.org requires manual browser access due to security restrictions"
+}
