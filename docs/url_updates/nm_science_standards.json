@@ -1,0 +1,23 @@
+{
+  "state_abbr": "NM",
+  "state_name": "New Mexico",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://web.ped.nm.gov/ (searched via web_search)",
+  "pages_visited": [
+    "NM PED website"
+  ],
+  "urls_tested": [
+    "https://web.ped.nm.gov/wp-content/uploads/2025/01/NMIS-2.0-MS-Engineering-Technology-Science-Combined.pdf",
+    "https://web.ped.nm.gov/wp-content/uploads/2025/01/NMIS-2.0-MS-PS1-Science-Combined.pdf",
+    "https://www.srca.nm.gov/nmac/nmregister/xxviii/6.29.10.pdf"
+  ],
+  "working_url": "https://www.srca.nm.gov/nmac/nmregister/xxviii/6.29.10.pdf",
+  "working_url_source": "https://www.srca.nm.gov/nmac/nmregister/",
+  "confidence": "High",
+  "notes": "Found NMIS 2.0 standards document on NM PED website. This is the primary standards document covering multiple science subjects (engineering, technology, physical science, life science). Appears to be complete K-12 standards framework.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}
