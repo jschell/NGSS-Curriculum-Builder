@@ -370,9 +370,10 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Interactive, searchable database | Special structure: grade_specific_documents | Special structure: grade_specific_documents",
+        "notes": "Interactive, searchable database | Special structure: grade_specific_documents | Special structure: grade_specific_documents | California provides separate grade-specific PDFs. Elementary (K-5): one per grade. Middle School (6-8): two models available (Integrated and Discipline-Specific). High School (9-12): organized by discipline.",
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "special_structure": "grade_specific_documents"
       },
       {
         "title": "Kindergarten CA NGSS Standards",
@@ -506,7 +507,7 @@
       "framework": "https://www.cde.ca.gov/ci/sc/cf/",
       "ep_and_c": "https://www.cde.ca.gov/pd/ca/sc/ngssepcs.asp"
     },
-    "notes": "California adopted NGSS in September 2013 with modifications to include California Environmental Principles & Concepts (EP&Cs).",
+    "notes": "California adopted NGSS in September 2013 with modifications to include California Environmental Principles & Concepts (EP&Cs). | California provides separate grade-specific PDFs. Elementary (K-5): one per grade. Middle School (6-8): two models available (Integrated and Discipline-Specific). High School (9-12): organized by discipline.",
     "research_status": "COMPLETE",
     "last_updated": "2026-02-06"
   },
@@ -531,9 +532,10 @@
         "page_range": {
           "K": "0-1, 4-5, 8-9, 12-13, 16-17, 21-22"
         },
-        "notes": "None | Special structure: three_level_documents | Special structure: three_level_documents",
+        "notes": "None | Special structure: three_level_documents | Special structure: three_level_documents | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "special_structure": "level_specific_documents"
       },
       {
         "title": "Grade 1 Science TEKS",
@@ -694,7 +696,7 @@
       "teks_guide": "https://teksguide.org/",
       "resource_system": "https://www.teksresourcesystem.net/"
     },
-    "notes": "Texas uses TEKS framework, NOT NGSS. K-8 TEKS revised December 2021, HS TEKS revised November 2020. Comprehensive TEKS Guide available at teksguide.org.",
+    "notes": "Texas uses TEKS framework, NOT NGSS. K-8 TEKS revised December 2021, HS TEKS revised November 2020. Comprehensive TEKS Guide available at teksguide.org. | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
     "research_status": "COMPLETE",
     "last_updated": "2026-02-06"
   },
@@ -2639,7 +2641,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks | Special structure: grade_specific_documents | Special structure: grade_specific_documents"
+        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Georgia provides separate PDFs organized by grade band (K-5, 6-8, 9-12). No comprehensive K-12 document available.",
+        "special_structure": "grade_band_documents"
       }
     ],
     "assessments": [
@@ -2677,9 +2680,9 @@
       "email": "science@gadoe.org"
     },
     "resources": {},
-    "notes": "Georgia science standards first implemented 2017-18 school year. Focus on disciplinary core ideas and crosscutting concepts.",
+    "notes": "Georgia science standards first implemented 2017-18 school year. Focus on disciplinary core ideas and crosscutting concepts. | Georgia provides separate PDFs organized by grade band (K-5, 6-8, 9-12). No comprehensive K-12 document available.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "IN": {
     "state_name": "Indiana",
@@ -2712,7 +2715,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and NGSS | Special structure: grade_specific_documents | Special structure: grade_specific_documents"
+        "notes": "Based on Framework for K-12 Science Education and NGSS | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Indiana provides separate PDFs for each grade K-8 and for each high school course (Biology, Chemistry, Physics, etc.). No comprehensive K-12 document available.",
+        "special_structure": "grade_specific_documents"
       }
     ],
     "assessments": [
@@ -2762,9 +2766,9 @@
       "email": "science@doe.in.gov"
     },
     "resources": {},
-    "notes": "Indiana adopted streamlined K-12 science standards in 2023, effective fall 2023. Three-dimensional standards integrate practices, crosscutting concepts, and core ideas.",
+    "notes": "Indiana adopted streamlined K-12 science standards in 2023, effective fall 2023. Three-dimensional standards integrate practices, crosscutting concepts, and core ideas. | Indiana provides separate PDFs for each grade K-8 and for each high school course (Biology, Chemistry, Physics, etc.). No comprehensive K-12 document available.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "MA": {
     "state_name": "Massachusetts",
@@ -2975,7 +2979,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "First update since 2009, emphasizes Science and Engineering Practices | Special structure: grade_band_specific_documents"
+        "notes": "First update since 2009, emphasizes Science and Engineering Practices | Special structure: grade_band_specific_documents | North Carolina 2023 standards organized in grade bands: K-2, 3-5, 6-8, and high school course-specific documents. No comprehensive K-12 PDF.",
+        "special_structure": "grade_band_documents"
       }
     ],
     "assessments": [
@@ -3025,9 +3030,9 @@
       "email": "science@dpi.nc.gov"
     },
     "resources": {},
-    "notes": "North Carolina updated standards approved 2023, required implementation 2024. Designed to foster conceptual understanding and scientific literacy.",
+    "notes": "North Carolina updated standards approved 2023, required implementation 2024. Designed to foster conceptual understanding and scientific literacy. | North Carolina 2023 standards organized in grade bands: K-2, 3-5, 6-8, and high school course-specific documents. No comprehensive K-12 PDF.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "OH": {
     "state_name": "Ohio",
@@ -3711,7 +3716,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Louisiana Student Standards for Science | Special structure: web_based_or_grade_specific"
+        "notes": "Louisiana Student Standards for Science | Special structure: web_based_or_grade_specific | Louisiana Student Standards for Science (LSSS) organized by grade level with web-based access and implementation guides. LSSS/NGSS crosswalks available for all grades.",
+        "special_structure": "web_based_grade_specific"
       }
     ],
     "assessments": [
@@ -3749,9 +3755,9 @@
       "email": "science@la.gov"
     },
     "resources": {},
-    "notes": "Louisiana Student Standards for Science include sample scope and sequence documents for K-12 implementation.",
+    "notes": "Louisiana Student Standards for Science include sample scope and sequence documents for K-12 implementation. | Louisiana Student Standards for Science (LSSS) organized by grade level with web-based access and implementation guides. LSSS/NGSS crosswalks available for all grades.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "MS": {
     "state_name": "Mississippi",
