@@ -1,0 +1,25 @@
+{
+  "state_abbr": "DC",
+  "state_name": "District of Columbia",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://osse.dc.gov/",
+  "pages_visited": [
+    "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
+    "https://osse.dc.gov/science"
+  ],
+  "urls_tested": [
+    "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/DCPS-horiz-science.pdf"
+  ],
+  "working_url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/DCPS-horiz-science.pdf",
+  "working_url_source": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
+  "confidence": "high",
+  "notes": "District of Columbia adopted NGSS directly in December 2013 (voted 8-1 by DC State Board of Education). DC was the ninth jurisdiction to adopt NGSS. DC provides a comprehensive Pre-K through Grade 12 science standards document. The standards are based on the National Research Council's Framework for K-12 Science Education.",
+  "issues_encountered": [],
+  "batch": "Batch 6 (Low Priority)",
+  "original_error": "Low priority - not previously researched",
+  "adoption_details": "DC State Board of Education adopted NGSS on December 18, 2013. Implementation began in 2016-17 school year.",
+  "ngss_status": "direct_adoption",
+  "assessment": "DC Science Assessment is the District's statewide NGSS-aligned assessment, administered in grades 5 and 8. It is an online assessment focusing on sense-making and problem solving in science.",
+  "additional_info": "DC requires four years of science for high school graduation. OSSE provides extensive professional development and implementation support for NGSS through their Teaching and Learning division."
+}

@@ -1,0 +1,45 @@
+{
+  "state_abbr": "CA",
+  "state_name": "California",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.cde.ca.gov/",
+  "pages_visited": [
+    "https://www.cde.ca.gov/pd/ca/sc/ngssstandards.asp",
+    "https://www.cde.ca.gov/ci/pl/ngssstandards.asp"
+  ],
+  "urls_tested": [
+    "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
+    "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf"
+  ],
+  "working_url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
+  "working_url_source": "https://www.cde.ca.gov/pd/ca/sc/ngssstandards.asp",
+  "confidence": "high",
+  "notes": "California provides separate grade-specific PDFs for K-5, not a single comprehensive K-12 document. Using Grade 3 PDF as representative document. All grade-specific PDFs are available on CDE website under 'Standards Arranged by Disciplinary Core Ideas (Life, Earth and Space, and Physical Science)'.",
+  "issues_encountered": [
+    "No comprehensive K-12 document available - only grade-specific PDFs for K-5, plus separate middle school (6-8) and high school (9-12) documents"
+  ],
+  "batch": "Batch 5 (Special Cases)",
+  "original_error": "Multiple document structure",
+  "special_structure": "grade_specific_documents",
+  "all_grade_urls": {
+    "K": "https://www.cde.ca.gov/ci/pl/documents/cangsskinder-topicdci.pdf",
+    "1": "https://www.cde.ca.gov/ci/pl/documents/cangssgr1-dci.pdf",
+    "2": "https://www.cde.ca.gov/ci/pl/documents/cangssgr2-dci.pdf",
+    "3": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
+    "4": "https://www.cde.ca.gov/ci/pl/documents/cangssgr4-dci.pdf",
+    "5": "https://www.cde.ca.gov/ci/pl/documents/cangss-disccoreideasgr5.pdf",
+    "6_integrated": "https://www.cde.ca.gov/ci/pl/documents/cangsspfintegrgr6.pdf",
+    "7_integrated": "https://www.cde.ca.gov/ci/pl/documents/preferredintegratedgr7.pdf",
+    "8_integrated": "https://www.cde.ca.gov/ci/pl/documents/preferredintegratedgr8.pdf",
+    "6_discipline_specific": "https://www.cde.ca.gov/ci/pl/documents/cangss-discspecificgr6.pdf",
+    "7_discipline_specific": "https://www.cde.ca.gov/ci/pl/documents/cangss-discspecificgr7.pdf",
+    "8_discipline_specific": "https://www.cde.ca.gov/ci/pl/documents/cangss-discspecificgr8.pdf",
+    "9-12_physical_science": "https://www.cde.ca.gov/ci/pl/documents/ngsshsphyicalscidci.pdf",
+    "9-12_life_science": "https://www.cde.ca.gov/ci/pl/documents/cangsshs-dcilifesci.pdf",
+    "9-12_earth_space": "https://www.cde.ca.gov/ci/pl/documents/cangsshsearthspace-dci.pdf",
+    "9-12_engineering_design": "https://www.cde.ca.gov/ci/pl/documents/cangsshsengdesign-dci.pdf"
+  },
+  "middle_school_note": "California offers TWO models for middle school: Integrated Learning Progression (preferred) and Discipline Specific (alternative). Both are valid implementations of CA NGSS.",
+  "document_organization": "California NGSS are organized by Disciplinary Core Ideas (DCI): Life Sciences, Earth and Space Sciences, and Physical Sciences. Each grade-level document shows how the three dimensions of NGSS (Practices, DCIs, Crosscutting Concepts) integrate."
+}
