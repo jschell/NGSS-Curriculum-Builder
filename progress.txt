@@ -695,3 +695,35 @@ Files created:
 
 Files modified:
 - data/states.json (TN & AZ grade sections added)
+
+[2026-02-06 16:00] Wyoming Extraction from TOC - ALL STATES COMPLETE
+---------------------------------------------------------------------
+Task: Extract Wyoming using TOC from page 6 of 2021 standards
+
+Discovery:
+- User identified TOC on page 6 with grade-level listings
+- WY has unique structure: K-5 by grade, 6-8 and 9-12 by subject domain
+
+Actions:
+1. Extracted TOC text from page 6
+2. Manually created grade sections based on TOC page numbers
+3. Updated WY URL to 2021 standards (77 pages, 3.2 MB)
+4. Applied grade ranges from TOC
+
+Results:
+✓ Wyoming: 8 grade entries (K-5, 6-8, 9-12)
+  - K-5: Individual grades (pages 8-34)
+  - 6-8: Middle School by subject (pages 35-49)
+  - 9-12: High School by subject (pages 51-68)
+
+FINAL PROJECT STATUS: 100% COMPLETE
+- Total states processed: 18/18 (100%)
+- States extracted: 17/18 (94%)
+- States documented: 1/18 (ME grade-specific)
+- Total grade ranges: 119 (67 Phase 1 + 52 Phases 2-4)
+- Overall coverage: 30/51 US states (59%) with page ranges
+
+Manual Page Range Extraction Plan: COMPLETE
+
+Files modified:
+- data/states.json (WY URL updated + grade sections added)

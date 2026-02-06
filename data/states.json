@@ -2932,7 +2932,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
       }
     ],
     "assessments": [
@@ -4597,8 +4597,8 @@
     "adoption_date": "July 17, 2024 (Implemented 2025-26)",
     "documents": [
       {
-        "title": "2023 Wyoming Content and Performance Standards for Science",
-        "url": "https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf",
+        "title": "2021 Wyoming Science Standards",
+        "url": "https://edu.wyoming.gov/wp-content/uploads/2022/08/2021-Science-WYCPS-PLDs-1.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -4612,12 +4612,24 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "6-8",
+          "9-12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
-        "page_range": null,
-        "notes": "Three dimensions: Crosscutting Concepts, Disciplinary Core Ideas, Science and Engineering Practices | 2023 Science Wyoming Content & Performance Standards (WYCPS). Approved July 17, 2024 by Governor Mark Gordon. To be implemented by start of 2025-26 school year. Complete K-12 standards document."
+        "format": "PDF",
+        "page_range": {
+          "K": "8-11",
+          "1": "12-15",
+          "2": "16-19",
+          "3": "20-24",
+          "4": "25-29",
+          "5": "30-34",
+          "6-8": "35-49",
+          "9-12": "51-68"
+        },
+        "notes": "2021 Wyoming Science Standards (77 pages). K-5 by grade, 6-8 and 9-12 by subject domain.",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
@@ -4658,6 +4670,6 @@
     "resources": {},
     "notes": "Wyoming 2023 standards approved July 17, 2024 for implementation 2025-26. Modeled after NGSS with input from 41 Wyoming educators and stakeholders. Based on Framework for K-12 Science Education.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   }
 }
