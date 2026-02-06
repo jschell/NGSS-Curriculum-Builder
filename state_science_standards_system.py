@@ -44,6 +44,7 @@ class StandardsDocument:
     )  # Grade-specific page/section mappings
     url_source: Optional[str] = None  # Source URL where document was found
     last_verified: Optional[str] = None  # Last verification date (YYYY-MM-DD)
+    special_structure: Optional[str] = None  # Special document structure type
 
 
 @dataclass
