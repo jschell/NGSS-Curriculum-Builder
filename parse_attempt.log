@@ -1,0 +1,10 @@
+Parsing documents for 5 states...
+Error fetching https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf: Client error '403 Forbidden' for url 'https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Error fetching https://www.tn.gov/content/dam/tn/stateboardofeducation/documents/standards/science/New%2010-28-22%20Science%20Standards.pdf: 
+Generating JSON patch...
+Generating Markdown report...
+
+[OK] Complete!
+  Patch: patches\grade_sections.json
+  Report: reports\grade_sections_analysis.md

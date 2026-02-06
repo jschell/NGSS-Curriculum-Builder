@@ -1,0 +1,9 @@
+Parsing documents for 5 states...
+Error fetching https://www.cde.state.co.us/coscience/2020cas-sc: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)
+Error fetching https://community.ksde.org/Default.aspx?tabid=5785: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)
+Generating JSON patch...
+Generating Markdown report...
+
+[OK] Complete!
+  Patch: patches\grade_sections.json
+  Report: reports\grade_sections_analysis.md

@@ -1,0 +1,9 @@
+Parsing documents for 5 states...
+Error fetching https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf: Client error '403 Forbidden' for url 'https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Generating JSON patch...
+Generating Markdown report...
+
+[OK] Complete!
+  Patch: patches\grade_sections.json
+  Report: reports\grade_sections_analysis.md
