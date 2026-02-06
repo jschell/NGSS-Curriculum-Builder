@@ -160,7 +160,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Complete K-12 standards in one document",
+        "notes": "Complete K-12 standards in one document | 2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed.",
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
       },
@@ -314,7 +314,7 @@
     "resources": {},
     "notes": "Oregon adopted NGSS in March 2014. 2022 update added climate change connections (^) and clarification statements for K-5.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-05"
   },
   "CA": {
     "state_name": "California",
@@ -328,7 +328,7 @@
     "documents": [
       {
         "title": "California NGSS Searchable Standards Database",
-        "url": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -347,7 +347,7 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Interactive, searchable database",
+        "notes": "Interactive, searchable database | Special structure: grade_specific_documents",
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04"
       },
@@ -481,7 +481,7 @@
     },
     "notes": "California adopted NGSS in September 2013 with modifications to include California Environmental Principles & Concepts (EP&Cs).",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-05"
   },
   "TX": {
     "state_name": "Texas",
@@ -502,7 +502,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": null,
+        "notes": "None | Special structure: three_level_documents",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
       },
@@ -651,7 +651,7 @@
     },
     "notes": "Texas uses TEKS framework, NOT NGSS. K-8 TEKS revised December 2021, HS TEKS revised November 2020. Comprehensive TEKS Guide available at teksguide.org.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-05"
   },
   "NY": {
     "state_name": "New York",
@@ -1038,7 +1038,7 @@
     "documents": [
       {
         "title": "DC Next Generation Science Standards",
-        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf",
+        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/DCPS-horiz-science.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1099,7 +1099,7 @@
     "resources": {},
     "notes": "DC State Board of Education adopted NGSS in December 2013 with an 8-1 vote, becoming the ninth jurisdiction to adopt these standards. Implementation began in 2016-17 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "HI": {
     "state_name": "Hawaii",
@@ -1190,7 +1190,7 @@
     "documents": [
       {
         "title": "Illinois Learning Standards for Science (NGSS)",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.isbe.net/Documents/K-12-SS-Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1252,7 +1252,7 @@
     "resources": {},
     "notes": "Illinois became one of 26 state partners in 2011 to guide NGSS development. Climate change education requirement takes effect in 2026-27 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "IA": {
     "state_name": "Iowa",
@@ -1522,7 +1522,7 @@
     "documents": [
       {
         "title": "Maine Science and Engineering Standards",
-        "url": "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen",
+        "url": "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx",
         "grade_levels": [
           "K",
           "1",
@@ -1582,7 +1582,7 @@
     "resources": {},
     "notes": "Maine was a Lead State Partner in NGSS development. Current standards signed into law April 19, 2019.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MD": {
     "state_name": "Maryland",
@@ -1596,7 +1596,7 @@
     "documents": [
       {
         "title": "Maryland NGSS K-12",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://marylandpublicschools.org/programs/Documents/CTE/Computer%20Science/K-12StandardsLandscape.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1668,7 +1668,7 @@
     "resources": {},
     "notes": "Maryland was a Lead State for NGSS adoption on June 25, 2013. Full implementation by 2017-18 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MI": {
     "state_name": "Michigan",
@@ -1682,7 +1682,7 @@
     "documents": [
       {
         "title": "Michigan K-12 Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science-Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1744,7 +1744,7 @@
     "resources": {},
     "notes": "Michigan was a lead partner in NGSS development. Adopted November 10, 2015, becoming the 17th state to adopt NGSS. Standards include Michigan-specific contexts for Great Lakes Basin and state-specific flora/fauna.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NV": {
     "state_name": "Nevada",
@@ -1758,7 +1758,7 @@
     "documents": [
       {
         "title": "Nevada Academic Content Standards for Science",
-        "url": "https://doe.nv.gov/uploadedFiles/nde.doe.nv.gov/content/Nevada_Academic_Standards/Science/NSACCSScienceTopics.pdf",
+        "url": "https://webapp-strapi-paas-prod-nde-001.azurewebsites.net/uploads/nvacss_dci_arrangements_226290ea15.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1818,7 +1818,7 @@
     "resources": {},
     "notes": "Nevada State Board of Education unanimously adopted NGSS in February 2014, becoming the tenth NGSS adopter.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NH": {
     "state_name": "New Hampshire",
@@ -1832,7 +1832,7 @@
     "documents": [
       {
         "title": "New Hampshire NGSS Standards",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://www.nextgenscience.org/rhode-island",
         "grade_levels": [
           "K",
           "1",
@@ -1851,7 +1851,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "K-5 grade-by-grade, middle school and high school standards"
+        "notes": "K-5 grade-by-grade, middle school and high school standards | Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents."
       }
     ],
     "assessments": [
@@ -1892,7 +1892,7 @@
     "resources": {},
     "notes": "Over 90% of New Hampshire local communities were already implementing NGSS before state adoption. Standards incorporate 3-dimensional learning strategy.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NJ": {
     "state_name": "New Jersey",
@@ -1990,7 +1990,7 @@
     "documents": [
       {
         "title": "NM STEM Ready! Science Standards",
-        "url": "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf",
+        "url": "https://www.srca.nm.gov/nmac/nmregister/xxviii/6.29.10.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2052,7 +2052,7 @@
     "resources": {},
     "notes": "New Mexico approved NGSS in 2018, adding six New Mexico-specific science standards. Standards became effective July 1, 2018.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "RI": {
     "state_name": "Rhode Island",
@@ -2066,7 +2066,7 @@
     "documents": [
       {
         "title": "Rhode Island NGSS Standards",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://www.nextgenscience.org/rhode-island",
         "grade_levels": [
           "K",
           "1",
@@ -2085,7 +2085,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Rhode Island was first state to adopt NGSS"
+        "notes": "Rhode Island was first state to adopt NGSS | Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document."
       }
     ],
     "assessments": [
@@ -2126,7 +2126,7 @@
     "resources": {},
     "notes": "Rhode Island was the first state to adopt NGSS in spring 2013 and served as a Lead State Partner in NGSS development. Standards reaffirmed by Board of Education in 2024.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "VT": {
     "state_name": "Vermont",
@@ -2527,7 +2527,7 @@
     "documents": [
       {
         "title": "Georgia Science Standards of Excellence K-12",
-        "url": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
+        "url": "https://www.georgiastandards.org/Georgia-Standards/Documents/Science-Sixth-Grade-Georgia-Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2546,7 +2546,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks"
+        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks | Special structure: grade_specific_documents"
       }
     ],
     "assessments": [
@@ -2586,7 +2586,7 @@
     "resources": {},
     "notes": "Georgia science standards first implemented 2017-18 school year. Focus on disciplinary core ideas and crosscutting concepts.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "IN": {
     "state_name": "Indiana",
@@ -2600,7 +2600,7 @@
     "documents": [
       {
         "title": "Indiana Academic Standards for Science K-12",
-        "url": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
+        "url": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2619,7 +2619,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and NGSS"
+        "notes": "Based on Framework for K-12 Science Education and NGSS | Special structure: grade_specific_documents"
       }
     ],
     "assessments": [
@@ -2671,7 +2671,7 @@
     "resources": {},
     "notes": "Indiana adopted streamlined K-12 science standards in 2023, effective fall 2023. Three-dimensional standards integrate practices, crosscutting concepts, and core ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MA": {
     "state_name": "Massachusetts",
@@ -2768,7 +2768,7 @@
     "documents": [
       {
         "title": "Minnesota Academic Standards in Science 2019",
-        "url": "https://education.mn.gov/MDE/dse/stds/sci/",
+        "url": "https://www.lrl.mn.gov/docs/2025/mandated/251893.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2787,7 +2787,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
       }
     ],
     "assessments": [
@@ -2837,7 +2837,7 @@
     "resources": {},
     "notes": "2019 standards adopted September 27, 2021, fully implemented 2024-25 school year. Emphasize three dimensions: practices, crosscutting concepts, and disciplinary core ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NC": {
     "state_name": "North Carolina",
@@ -3119,7 +3119,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education"
+        "notes": "Based on Framework for K-12 Science Education | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education."
       }
     ],
     "assessments": [
@@ -3161,7 +3161,7 @@
     },
     "notes": "Tennessee adopted revised standards October 2022, implemented in classrooms 2025-26 school year. Four disciplinary core ideas: physical, life, earth/space, and engineering/technology.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "UT": {
     "state_name": "Utah",
@@ -3447,7 +3447,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on NGSS with strong focus on Alaskan contexts"
+        "notes": "Based on NGSS with strong focus on Alaskan contexts | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format."
       }
     ],
     "assessments": [
@@ -3488,7 +3488,7 @@
     "resources": {},
     "notes": "Alaska adopted science standards in 2019, shaped around NGSS with strong focus on relevance to Alaskan contexts. Three-dimensional design for science sense making.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "ID": {
     "state_name": "Idaho",
@@ -3722,7 +3722,7 @@
     "documents": [
       {
         "title": "Missouri Learning Standards Science K-12",
-        "url": "https://dese.mo.gov/media/file/curr-mls-standards-sci-k-12-sboe-2016",
+        "url": "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-k-5-sboe-2016",
         "grade_levels": [
           "K",
           "1",
@@ -3741,7 +3741,7 @@
         "document_type": "complete_k12",
         "format": "Excel",
         "page_range": null,
-        "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education"
+        "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education | Special structure: two_documents | Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website."
       }
     ],
     "assessments": [
@@ -3781,7 +3781,7 @@
     "resources": {},
     "notes": "Missouri Learning Standards approved April 19, 2016 for implementation beginning 2016-17 school year. Adapted from Framework for K-12 Science Education (NRC 2012).",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MT": {
     "state_name": "Montana",
@@ -4112,7 +4112,7 @@
     "documents": [
       {
         "title": "South Carolina College- and Career-Ready Science Standards 2021",
-        "url": "https://ed.sc.gov/instruction/standards/science/standards/",
+        "url": "https://ed.sc.gov/sites/scdoe/assets/file/agency/ccr/Standards-Learning/documents/South_Carolina_Academic_Standards_and_Performance_Indicators_for_Science_2014.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -4131,7 +4131,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Three-dimensional approach across four science/engineering domains"
+        "notes": "Three-dimensional approach across four science/engineering domains | South Carolina Academic Standards and Performance Indicators for Science 2014. Complete K-12 document (115 pages). PDF confirmed accessible."
       }
     ],
     "assessments": [
@@ -4182,7 +4182,7 @@
     "resources": {},
     "notes": "South Carolina 2021 standards use three-dimensional approach: Science and Engineering Practices, Crosscutting Concepts, and Disciplinary Core Ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "SD": {
     "state_name": "South Dakota",
