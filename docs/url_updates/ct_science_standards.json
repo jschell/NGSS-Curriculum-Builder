@@ -1,0 +1,26 @@
+{
+  "state_abbr": "CT",
+  "state_name": "Connecticut",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://portal.ct.gov/sde",
+  "pages_visited": [
+    "https://portal.ct.gov/sde/science/science-standards-and-resources"
+  ],
+  "urls_tested": [
+    "https://www.nextgenscience.org/connecticut"
+  ],
+  "working_url": "https://www.nextgenscience.org/connecticut",
+  "working_url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
+  "confidence": "high",
+  "notes": "Connecticut adopted NGSS directly on November 4, 2015 by unanimous vote of CT State Board of Education. Connecticut uses the standard NGSS documents from nextgenscience.org. No state-specific comprehensive PDF document - references national NGSS resources.",
+  "issues_encountered": [
+    "No Connecticut-branded comprehensive PDF available",
+    "State references nextgenscience.org for standards documents"
+  ],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "Adopted November 4, 2015 by unanimous vote",
+  "ngss_status": "direct_adoption",
+  "note_about_access": "Connecticut provides extensive implementation resources and professional development but uses standard NGSS documents from nextgenscience.org rather than state-branded PDFs"
+}

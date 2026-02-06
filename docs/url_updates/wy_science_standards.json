@@ -1,0 +1,22 @@
+{
+  "state_abbr": "WY",
+  "state_name": "Wyoming",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://edu.wyoming.gov/",
+  "pages_visited": [
+    "https://edu.wyoming.gov/sups-memo/08-12-2024-chapter-10-rules-on-standards-in-effect-as-of-july-17/"
+  ],
+  "urls_tested": [
+    "https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf"
+  ],
+  "working_url": "https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf",
+  "working_url_source": "https://edu.wyoming.gov/sups-memo/08-12-2024-chapter-10-rules-on-standards-in-effect-as-of-july-17/",
+  "confidence": "high",
+  "notes": "2023 Science Wyoming Content & Performance Standards (WYCPS). Approved July 17, 2024 by Governor Mark Gordon. To be implemented by start of 2025-26 school year. Complete K-12 standards document.",
+  "issues_encountered": [],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "2023 standards approved July 2024, implementation required by 2025-26 school year",
+  "recent_update": "Very recent standards (2023), newly approved in 2024"
+}

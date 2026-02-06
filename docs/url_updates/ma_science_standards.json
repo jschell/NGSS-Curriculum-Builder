@@ -1,0 +1,23 @@
+{
+  "state_abbr": "MA",
+  "state_name": "Massachusetts",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.doe.mass.edu/",
+  "pages_visited": [
+    "https://www.doe.mass.edu/stem/ste/",
+    "https://www.doe.mass.edu/stem/ste/standards.html"
+  ],
+  "urls_tested": [
+    "https://www.doe.mass.edu/frameworks/scitech/2016-04.pdf"
+  ],
+  "working_url": "https://www.doe.mass.edu/frameworks/scitech/2016-04.pdf",
+  "working_url_source": "https://www.doe.mass.edu/frameworks/current.html",
+  "confidence": "high",
+  "notes": "Massachusetts Science and Technology/Engineering Curriculum Framework (2016, revised 2020). Complete PK-12 framework based on Framework for K-12 Science Education (NRC, 2012). Similar to NGSS but with Massachusetts-specific additions including more emphasis on technology/engineering and grade-by-grade standards for elementary.",
+  "issues_encountered": [],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "Framework approved 2016, minor revisions 2020",
+  "special_features": "Includes more technology/engineering content than NGSS, grade-by-grade elementary standards, applications of science in engineering contexts"
+}

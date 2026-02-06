@@ -1,0 +1,27 @@
+{
+  "state_abbr": "VT",
+  "state_name": "Vermont",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://education.vermont.gov/",
+  "pages_visited": [
+    "https://education.vermont.gov/student-learning/content-areas/science",
+    "https://education.vermont.gov/student-learning/content-areas"
+  ],
+  "urls_tested": [
+    "https://www.nextgenscience.org/vermont"
+  ],
+  "working_url": "https://www.nextgenscience.org/vermont",
+  "working_url_source": "https://education.vermont.gov/student-learning/content-areas",
+  "confidence": "high",
+  "notes": "Vermont adopted NGSS directly (September 2013). Vermont uses the standard NGSS documents from nextgenscience.org. No state-specific comprehensive PDF document. Vermont was an early NGSS adopter (#4 overall).",
+  "issues_encountered": [
+    "No Vermont-branded comprehensive PDF available",
+    "State references nextgenscience.org for standards documents"
+  ],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "Adopted September 2013 - fourth state to adopt NGSS",
+  "ngss_status": "direct_adoption",
+  "note_about_access": "Vermont provides implementation resources and evidence-based practices guidance but uses standard NGSS documents from nextgenscience.org"
+}
