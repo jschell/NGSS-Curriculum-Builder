@@ -1,0 +1,26 @@
+{
+  "state_abbr": "ME",
+  "state_name": "Maine",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.maine.gov/doe/",
+  "pages_visited": [
+    "https://www.maine.gov/doe/learning/content/science/review",
+    "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen"
+  ],
+  "urls_tested": [
+    "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx"
+  ],
+  "working_url": "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx",
+  "working_url_source": "https://www.maine.gov/doe/learning/content/science/review",
+  "confidence": "medium",
+  "notes": "Maine Learning Results: Science, Technology, and Engineering standards (2019). Maine adopted NGSS-based standards. Comprehensive document available but in DOCX (Word) format, not PDF. Maine also provides individual grade-band documents as separate PDF/DOCX files.",
+  "issues_encountered": [
+    "Maine does not provide a single comprehensive PDF - only Word document (.docx) or separate grade-band documents",
+    "Returns HTML instead of PDF when accessing through automated tools"
+  ],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Returns HTML instead of PDF",
+  "document_format": "docx",
+  "alternative_approach": "Maine provides separate grade-band documents in PDF format if Word document is not acceptable"
+}

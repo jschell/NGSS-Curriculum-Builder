@@ -1,0 +1,20 @@
+{
+  "state_abbr": "MN",
+  "state_name": "Minnesota",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://education.mn.gov/",
+  "pages_visited": [
+    "https://education.mn.gov/MDE/dse/stds/sci/"
+  ],
+  "urls_tested": [
+    "https://www.lrl.mn.gov/docs/2025/mandated/251893.pdf"
+  ],
+  "working_url": "https://www.lrl.mn.gov/docs/2025/mandated/251893.pdf",
+  "working_url_source": "https://education.mn.gov/MDE/dse/stds/sci/",
+  "confidence": "high",
+  "notes": "Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library.",
+  "issues_encountered": [],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Connection error when attempting to download PDF"
+}

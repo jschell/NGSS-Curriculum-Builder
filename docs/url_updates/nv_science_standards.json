@@ -1,0 +1,20 @@
+{
+  "state_abbr": "NV",
+  "state_name": "Nevada",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://doe.nv.gov/",
+  "pages_visited": [
+    "https://doe.nv.gov/offices/office-of-teaching-and-learning/science"
+  ],
+  "urls_tested": [
+    "https://webapp-strapi-paas-prod-nde-001.azurewebsites.net/uploads/nvacss_dci_arrangements_226290ea15.pdf"
+  ],
+  "working_url": "https://webapp-strapi-paas-prod-nde-001.azurewebsites.net/uploads/nvacss_dci_arrangements_226290ea15.pdf",
+  "working_url_source": "https://doe.nv.gov/offices/office-of-teaching-and-learning/science",
+  "confidence": "high",
+  "notes": "Nevada Academic Content Standards for Science (NVACSS) DCI Arrangements. Nevada adopted NGSS as their standards in February 2014. This PDF contains the complete K-12 standards organized by Disciplinary Core Ideas.",
+  "issues_encountered": [],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Connection error when attempting to download PDF"
+}
