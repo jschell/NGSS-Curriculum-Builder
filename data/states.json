@@ -1596,7 +1596,7 @@
     "documents": [
       {
         "title": "Maine Science and Engineering Standards",
-        "url": "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx",
+        "url": "https://www.maine.gov/doe/learning/content/science/review",
         "grade_levels": [
           "K",
           "1",
@@ -1612,10 +1612,13 @@
           "11",
           "12"
         ],
-        "document_type": "complete_k12",
+        "document_type": "grade_specific",
         "format": "HTML",
         "page_range": null,
-        "notes": "Heavily adapted from NGSS. Arranged in grade bands K-2, 3-5, 6-8, 9-12"
+        "notes": "Maine provides grade-specific PDF documents organized by disciplinary core idea (e.g., K-ESS2, 1-LS1, 3-PS2). No comprehensive K-12 document available. Standards based on NGSS with Maine-specific adaptations.",
+        "last_verified": "2026-02-06",
+        "url_source": "https://www.maine.gov/doe/learning/content/science/review",
+        "special_structure": "grade_specific_documents"
       }
     ],
     "assessments": [
@@ -1656,7 +1659,7 @@
     "resources": {},
     "notes": "Maine was a Lead State Partner in NGSS development. Current standards signed into law April 19, 2019.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "MD": {
     "state_name": "Maryland",
@@ -1756,7 +1759,7 @@
     "documents": [
       {
         "title": "Michigan K-12 Science Standards",
-        "url": "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science-Standards.pdf",
+        "url": "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science_Standards.pdf?rev=a63819680d47402ca6c3858a191f6827",
         "grade_levels": [
           "K",
           "1",
@@ -1774,10 +1777,18 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-5, 4-7, 6-9",
+          "1": "1-2, 7-8",
+          "2": "1-2, 8-9",
+          "3": "1-2, 9-10",
+          "4": "1-2, 11-12",
+          "5": "1-2, 13-14",
+          "7": "3-4"
+        },
         "notes": "Derived from NGSS with Michigan-specific contexts",
-        "url_source": "https://www.nextgenscience.org/lead-state-michigan",
-        "last_verified": "2026-02-04"
+        "url_source": "https://www.michigan.gov/mde/services/academic-standards",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
@@ -1818,7 +1829,7 @@
     "resources": {},
     "notes": "Michigan was a lead partner in NGSS development. Adopted November 10, 2015, becoming the 17th state to adopt NGSS. Standards include Michigan-specific contexts for Great Lakes Basin and state-specific flora/fauna.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "NV": {
     "state_name": "Nevada",
