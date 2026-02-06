@@ -9,7 +9,26 @@
       "Bash(tee:*)",
       "WebFetch(domain:dese.ade.arkansas.gov)",
       "Bash(curl:*)",
-      "WebFetch(domain:www.marylandpublicschools.org)"
+      "WebFetch(domain:www.marylandpublicschools.org)",
+      "mcp__MCP_DOCKER__brave_web_search",
+      "mcp__MCP_DOCKER__fetch",
+      "mcp__MCP_DOCKER__browser_navigate",
+      "mcp__MCP_DOCKER__browser_snapshot",
+      "mcp__MCP_DOCKER__browser_click",
+      "Bash(if [ -f \"patches/grade_sections.json\" ])",
+      "Bash(then echo \"[OK] Patch file created\")",
+      "Bash(else echo \"[!] No patch file created\")",
+      "Bash(fi)",
+      "Bash(if [ -f \"reports/grade_sections_analysis.md\" ])",
+      "Bash(then cat reports/grade_sections_analysis.md)",
+      "Bash(else echo \"[!] No report generated\")",
+      "Bash(if [ -f \"progress.txt\" ])",
+      "Bash(then tail -20 progress.txt)",
+      "Bash(else echo \"[!] No progress.txt found\")",
+      "Bash(if [ -f \"features.txt\" ])",
+      "Bash(then cat features.txt)",
+      "Bash(else echo \"[!] No features.txt found\")",
+      "Bash(git mv:*)"
     ]
   }
 }
