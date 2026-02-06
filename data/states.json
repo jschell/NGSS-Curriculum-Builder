@@ -2911,7 +2911,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
       }
     ],
     "assessments": [
@@ -4327,11 +4327,23 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "12-23",
+          "1": "24-35",
+          "2": "36-49",
+          "3": "50-67",
+          "4": "68-84",
+          "5": "85-100",
+          "6": "101-121",
+          "7": "122-147",
+          "8": "148-199",
+          "9-12": "200-214, 215-235"
+        },
         "notes": "South Carolina College- and Career-Ready Science Standards 2021. Complete K-12 document (279 pages). PDF directly served by URL.",
         "last_verified": "2026-02-06"
       }
@@ -4384,7 +4396,7 @@
     "resources": {},
     "notes": "South Carolina 2021 standards use three-dimensional approach: Science and Engineering Practices, Crosscutting Concepts, and Disciplinary Core Ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-05"
+    "last_updated": "2026-02-06"
   },
   "SD": {
     "state_name": "South Dakota",

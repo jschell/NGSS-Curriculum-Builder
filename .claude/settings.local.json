@@ -31,7 +31,8 @@
       "Bash(git mv:*)",
       "mcp__MCP_DOCKER__browser_wait_for",
       "mcp__MCP_DOCKER__browser_take_screenshot",
-      "mcp__MCP_DOCKER__browser_evaluate"
+      "mcp__MCP_DOCKER__browser_evaluate",
+      "mcp__MCP_DOCKER__browser_press_key"
     ]
   }
 }

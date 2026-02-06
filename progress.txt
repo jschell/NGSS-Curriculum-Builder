@@ -590,3 +590,35 @@ Files modified:
 - data/states.json (SC document updated)
 
 Remaining Phase 2 states: TN, WY, AZ, WA (SC moves to manual extraction queue)
+
+[2026-02-06 13:20] SC Manual Extraction Complete
+-------------------------------------------------
+Task: Download SC PDF and parse with full grade names ("Kindergarten", "First Grade", etc.)
+
+Actions:
+1. Downloaded sc_2021_standards.pdf (4.8 MB, 279 pages)
+2. Created parse_sc_manual.py with pypdf text search
+3. Searched for "Kindergarten", "First Grade", "Second Grade", etc.
+4. Found all K-8 grades + Chemistry & Physics (HS subjects)
+5. Applied manual extraction to states.json
+
+Results:
+✓ SC fully extracted with 10 grade entries:
+  - K: pages 12-23
+  - 1-8: pages 24-199 (individual grade sections)
+  - 9-12: pages 200-235 (Chemistry 200-214, Physics 215-235)
+✓ Used text search instead of TOC page numbers (more accurate)
+✓ High confidence, no review needed
+
+Files created:
+- parse_sc_manual.py (extraction script with uv inline deps)
+- patches/sc_manual_grades.json (manual extraction results)
+- sc_2021_standards.pdf (downloaded PDF)
+
+Files modified:
+- data/states.json (SC grade sections added)
+
+Phase 2 Progress: 13/18 states extracted (72%)
+- Extracted (13): All from Phase 1 (11) + MI, SC
+- Documented grade-specific (1): ME
+- Remaining (4): TN, WY, AZ, WA
