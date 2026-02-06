@@ -2,6 +2,15 @@
 
 A comprehensive, grade-agnostic system for tracking K-12 science learning standards across all 50 US states + District of Columbia, with grade-specific page/section mapping support.
 
+## Recent Accomplishments
+
+✅ **30/51 states** (59%) now have page range data
+✅ **119 grade ranges** extracted across 18 states
+✅ **94% success rate** using multi-phase parsing approach
+✅ **Automated + manual methods** documented in `docs/LESSONS_LEARNED.md`
+
+**Project Status:** Production-ready metadata system with extensive page range coverage
+
 ## Features
 
 - Track state science standards by grade (K-12)
@@ -96,22 +105,33 @@ Document: Washington State K-12 Science Learning Standards
 
 ### Parsing Documents
 
-Use the `parse_standards.py` utility to auto-generate grade section mappings:
+Use parsing tools in the `scripts/` directory to extract grade section data:
 
 **Parse specific states:**
 ```bash
+cd scripts/parsing
 uv run parse_standards.py parse --states WA,CA,OR
 ```
 
 **Parse all states:**
 ```bash
+cd scripts/parsing
 uv run parse_standards.py parse --all
 ```
 
-**Generate report from existing patch:**
+**Validate URLs:**
 ```bash
-uv run parse_standards.py report patches/grade_sections.json
+cd scripts/validation
+uv run validate_urls.py
 ```
+
+**Apply extracted page ranges:**
+```bash
+cd scripts/validation
+uv run apply_page_ranges.py
+```
+
+See `scripts/README.md` for detailed documentation of all parsing and validation tools.
 
 ## Data Structure
 
@@ -258,3 +278,21 @@ uv run state_science_standards_system.py list
 ## License
 
 See LICENSE file for details.
+
+## Scripts
+
+The `scripts/` directory contains organized tools for working with standards data:
+
+- **`scripts/parsing/`** - Document parsing and grade extraction tools
+- **`scripts/validation/`** - URL validation and data integrity checks
+- **`scripts/research/`** - Research utilities and examples
+
+See `scripts/README.md` for complete documentation.
+
+## Documentation
+
+- **`docs/LESSONS_LEARNED.md`** - Parsing approaches, MCP patterns, and success metrics from extraction project
+- **`scripts/README.md`** - Complete guide to parsing and validation tools
+- **`.claude/CLAUDE.md`** - Project context and development guidelines
+- **`.claude/guide.md`** - Autonomous workflow (Obra) guide
+

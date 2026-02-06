@@ -1,9 +1,0 @@
-Parsing documents for 2 states...
-Error fetching https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx: Client error '404 Not Found' for url 'https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/2019%20MLR%20Science%20and%20Engineering.docx'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
-Generating JSON patch...
-Generating Markdown report...
-
-[OK] Complete!
-  Patch: patches\grade_sections.json
-  Report: reports\grade_sections_analysis.md
