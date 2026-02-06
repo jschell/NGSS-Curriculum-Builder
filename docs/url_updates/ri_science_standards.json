@@ -1,0 +1,21 @@
+{
+  "state_abbr": "RI",
+  "state_name": "Rhode Island",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.nextgenscience.org/rhode-island (via web_search)",
+  "pages_visited": [
+    "nextgenscience.org Rhode Island page"
+  ],
+  "urls_tested": [
+    "https://www.nextgenscience.org/rhode-island"
+  ],
+  "working_url": "https://www.nextgenscience.org/rhode-island",
+  "url_source": "https://www.nextgenscience.org/rhode-island",
+  "confidence": "High",
+  "notes": "Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}
