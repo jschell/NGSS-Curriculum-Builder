@@ -1,0 +1,15 @@
+Parsing documents for 2 states...
+Error fetching https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf: Client error '403 Forbidden' for url 'https://ospi.k12.wa.us/sites/default/files/2023-08/dci-arrangements-next-generation-science-standards.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Error fetching https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf: Client error '403 Forbidden' for url 'https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Error fetching https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf: Client error '403 Forbidden' for url 'https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Error fetching https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf: Client error '403 Forbidden' for url 'https://edu.wyoming.gov/wp-content/uploads/2024/01/Science-Ch.-10-WYCPS.pdf'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+Generating JSON patch...
+Generating Markdown report...
+
+[OK] Complete!
+  Patch: patches\grade_sections.json
+  Report: reports\grade_sections_analysis.md

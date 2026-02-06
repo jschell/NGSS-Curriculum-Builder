@@ -25,11 +25,20 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "4-7",
+          "1": "8-11",
+          "2": "12-16",
+          "3": "17-21",
+          "4": "22-26",
+          "5": "27-53",
+          "9-12": "54-64, 65-95"
+        },
         "notes": "Single comprehensive K-12 document, identical to NGSS",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04"
@@ -127,7 +136,7 @@
     },
     "notes": "Washington adopted NGSS in October 2013, updated to version 2.0 in 2024. Standards are identical to NGSS.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "OR": {
     "state_name": "Oregon",
