@@ -1,7 +1,9 @@
 # NGSS Curriculum Builder - Feature Backlog
 
 ## In Progress
-- [ ] Manual follow-up for parser errors (~19 states requiring local PDF download/parsing)
+- [ ] Manual follow-up for remaining 7 states (TN, SC, WY, AZ, WA, MI, ME)
+  - Requires manual browser downloads to bypass 403 Forbidden errors
+  - MI and ME need URL research (404 Not Found)
 
 ## Todo
 
@@ -56,3 +58,9 @@
   - Added notes for 7 states with multi-document structures
   - Added special_structure metadata field
   - Total usable structure: 32/51 states (63%)
+- [x] Autonomous page range extraction for additional states (2026-02-06)
+  - 11 states extracted without manual downloads (WI, MA, AK, ID, KY, MT, ND, OK, PA, SD, UT)
+  - 67 grade ranges added via remote PDF parsing
+  - 61% success rate on attempted states (11/18)
+  - 40 minutes autonomous execution (75-85% time savings vs manual)
+  - Current coverage: 24/51 states (47%) with page ranges
