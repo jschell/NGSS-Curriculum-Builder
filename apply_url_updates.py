@@ -24,14 +24,15 @@ from datetime import datetime
 STATES_JSON = Path("data/states.json")
 RESEARCH_DIR = Path("docs/url_updates")
 
-# States to update (Batches 2-6)
+# States to update (Batches 2-7)
 BATCH_2 = ["IL", "MD", "NM", "MI", "NH", "RI"]
 BATCH_3 = ["AK", "OR", "NV", "MN", "MO", "ME"]
 BATCH_4 = ["GA", "IN", "SC", "TN"]
 BATCH_5 = ["CA", "TX"]
 BATCH_6 = ["DC"]
+BATCH_7 = ["MA", "WI", "WY", "CT", "VT", "LA", "NC", "KS"]
 
-STATES_TO_UPDATE = BATCH_2 + BATCH_3 + BATCH_4 + BATCH_5 + BATCH_6
+STATES_TO_UPDATE = BATCH_2 + BATCH_3 + BATCH_4 + BATCH_5 + BATCH_6 + BATCH_7
 
 def load_research_file(state_abbr: str) -> dict:
     """Load research JSON file for a state"""
@@ -120,7 +121,7 @@ def main():
     skipped = 0
 
     # Apply updates by batch
-    for batch_num, batch_states in enumerate([BATCH_2, BATCH_3, BATCH_4, BATCH_5, BATCH_6], start=2):
+    for batch_num, batch_states in enumerate([BATCH_2, BATCH_3, BATCH_4, BATCH_5, BATCH_6, BATCH_7], start=2):
         print(f"\n{'='*80}")
         print(f"Batch {batch_num}: {len(batch_states)} states")
         print(f"{'='*80}\n")
