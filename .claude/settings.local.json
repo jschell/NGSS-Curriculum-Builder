@@ -28,7 +28,10 @@
       "Bash(if [ -f \"features.txt\" ])",
       "Bash(then cat features.txt)",
       "Bash(else echo \"[!] No features.txt found\")",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "mcp__MCP_DOCKER__browser_wait_for",
+      "mcp__MCP_DOCKER__browser_take_screenshot",
+      "mcp__MCP_DOCKER__browser_evaluate"
     ]
   }
 }

@@ -535,3 +535,58 @@ Phase 2 Progress:
 
 Testing 403 Forbidden states with browser tools...
 
+
+
+=== Phase 2: MCP Tools Investigation Complete: 2026-02-06 10:10 ===
+
+Results:
+✅ Michigan (MI): Working URL found and extracted (7 grade sections)
+✅ Maine (ME): Identified as grade-specific document structure (no K-12 PDF)
+
+URL Research Success:
+- MI: https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science_Standards.pdf?rev=a63819680d47402ca6c3858a191f6827
+- ME: Grade-specific PDFs only (documented structure)
+
+403 Forbidden States Investigation:
+- Browser tools can access PDFs (tested TN successfully)
+- However, can't download/parse PDFs through browser tools
+- Would require manual browser download + local parsing
+
+Phase 2 Summary:
+- 1 additional state extracted: MI (7 grade ranges)
+- 1 state documented as grade-specific: ME
+- Total Phase 1+2: 12 states with new page ranges (11 + 1)
+- 74 total grade ranges added (67 + 7)
+- 5 states remain (TN, SC, WY, AZ, WA) - require manual downloads
+
+
+[2026-02-06 13:15] Phase 2 - South Carolina Investigation
+---------------------------------------------------------
+Task: Investigate SC standards at https://standards.ed.sc.gov/ and https://ed.sc.gov/instruction/standards/science/standards/
+
+Actions:
+1. Navigated to SC DOE science standards page
+2. Found "South Carolina College- and Career-Ready Science Standards 2021" link
+3. Discovered PDF viewer serving 279-page comprehensive K-12 document
+4. Verified contentType: application/pdf
+5. Tested parser with old 2014 URL - failed (organization: unsupported)
+
+Results:
+✓ Found correct 2021 URL: https://ed.sc.gov/instruction/standards/science/standards/south-carolina-college-and-career-ready-science-standards-2021-approved/
+✓ Updated states.json:
+  - URL: 2014 PDF → 2021 PDF
+  - Format: HTML → PDF
+  - Pages: 115 → 279
+  - Verified: 2026-02-06
+✓ Re-parsed SC with correct URL
+✗ Automatic extraction unreliable:
+  - Detected K across 46 page ranges (entire document)
+  - Parser picking up mentions of "K" rather than boundaries
+  - Needs manual extraction or parser improvements
+
+SC Status: URL updated, awaiting manual extraction
+
+Files modified:
+- data/states.json (SC document updated)
+
+Remaining Phase 2 states: TN, WY, AZ, WA (SC moves to manual extraction queue)

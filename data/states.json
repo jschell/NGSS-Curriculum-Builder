@@ -2911,7 +2911,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science\u2014Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
       }
     ],
     "assessments": [
@@ -4313,7 +4313,7 @@
     "documents": [
       {
         "title": "South Carolina College- and Career-Ready Science Standards 2021",
-        "url": "https://ed.sc.gov/sites/scdoe/assets/file/agency/ccr/Standards-Learning/documents/South_Carolina_Academic_Standards_and_Performance_Indicators_for_Science_2014.pdf",
+        "url": "https://ed.sc.gov/instruction/standards/science/standards/south-carolina-college-and-career-ready-science-standards-2021-approved/",
         "grade_levels": [
           "K",
           "1",
@@ -4330,9 +4330,10 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
+        "format": "PDF",
         "page_range": null,
-        "notes": "Three-dimensional approach across four science/engineering domains | South Carolina Academic Standards and Performance Indicators for Science 2014. Complete K-12 document (115 pages). PDF confirmed accessible. | South Carolina Academic Standards and Performance Indicators for Science 2014. Complete K-12 document (115 pages). PDF confirmed accessible."
+        "notes": "South Carolina College- and Career-Ready Science Standards 2021. Complete K-12 document (279 pages). PDF directly served by URL.",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
