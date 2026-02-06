@@ -1,4 +1,4 @@
-import sys
+#!/usr/bin/env python3
 import json
 from pathlib import Path
 
@@ -34,7 +34,7 @@ VERIFIED_URLS = {
         "notes": "Arizona Science Standards 2018 - Complete K-12. Same URL as existing states.json entry - confirms document is correct.",
     },
     "FL": {
-        "url": "https://info.fldoe.org/docushare/dsweb/Get/Document/6516/dps-2012-140b.pdf",
+        "url": "https://info.fldoe.org/docushare/dsweb/Get/Document/6516/dps2012-140b.pdf",
         "url_source": "https://info.fldoe.org/",
         "notes": "Florida NGSSS: 9-12 Science Standards Body of Knowledge. FLDoe.org hosting.",
     },
@@ -53,36 +53,30 @@ VERIFIED_URLS = {
 
 def load_states_data():
     """Load states.json"""
-    # Use Path.resolve() to get absolute path from current working directory
-    current_dir = Path.cwd().resolve()
-    script_dir = Path(__file__).resolve().parent
-
-    # Navigate from script dir to project root if needed
-    while script_dir.name != "scripts":
-        script_dir = script_dir.parent
-
-    states_file = script_dir / "data" / "states.json"
+    states_file = Path(__file__).parent / "data" / "states.json"
 
     if not states_file.exists():
         print(f"ERROR: states.json not found at {states_file}")
         return None
 
-    with open(states_file, 'r', encoding='utf-8') as f:
+    with open(states_file, "r", encoding="utf-8") as f:
         data = json.load(f)
         return data
 
 
 def save_states_data(states_data):
     """Save states.json"""
-    states_file = script_dir / "data" / "states.json"
+    states_file = Path(__file__).parent / "data" / "states.json"
 
-    with open(states_file, 'w', encoding='utf-8') as f:
+    with open(states_file, "w", encoding="utf-8") as f:
         json.dump(states_data, f, indent=2)
 
     print(f"Saved {states_file}")
 
 
-def apply_url_update(state_abbr: str, states_data: dict, verified_url: str, url_source: str):
+def apply_url_update(
+    state_abbr: str, states_data: dict, verified_url: str, url_source: str
+):
     """Apply URL update to state's first science document"""
     if state_abbr not in states_data:
         print(f"  [SKIP] State {state_abbr} not found")
@@ -110,7 +104,9 @@ def apply_url_update(state_abbr: str, states_data: dict, verified_url: str, url_
             return True
         else:
             # URL doesn't match - add as new field
-            print(f"  {state_abbr}: {doc_title[:40]} - Skipped (URL not in verified list)")
+            print(
+                f"  {state_abbr}: {doc_title[:40]} - Skipped (URL not in verified list)"
+            )
             return False
 
     print(f"  {state_abbr}: {doc_title[:40]} - Skipped (URL not in verified list)")
@@ -146,7 +142,9 @@ def main():
         sys.exit(1)
 
     state_abbrevs = [arg.upper() for arg in sys.argv[1:]]
-    print(f"\nApplying updates for {len(state_abbrevs)} state(s): {', '.join(state_abbrevs)}")
+    print(
+        f"\nApplying updates for {len(state_abbrevs)} state(s): {', '.join(state_abbrevs)}"
+    )
     print()
 
     # Apply updates
@@ -154,7 +152,12 @@ def main():
     skipped = 0
     for state_abbr in state_abbrevs:
         if state_abbr in VERIFIED_URLS:
-            if apply_url_update(state_abbr, states_data, VERIFIED_URLS[state_abbr]["url"], VERIFIED_URLS[state_abbr]["url_source"]):
+            if apply_url_update(
+                state_abbr,
+                states_data,
+                VERIFIED_URLS[state_abbr]["url"],
+                VERIFIED_URLS[state_abbr]["url_source"],
+            ):
                 updated += 1
         else:
             skipped += 1
@@ -169,6 +172,11 @@ def main():
     print("SUMMARY")
     print("=" * 80)
     print(f"  States Updated: {updated}")
+    print(f"  references: {updated}")
     print(f"  States Skipped: {skipped}")
     print(f"  Total Processed: {updated + skipped}")
     print()
+
+
+if __name__ == "__main__":
+    main()

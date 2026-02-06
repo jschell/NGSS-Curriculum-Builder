@@ -1,0 +1,23 @@
+{
+  "state_abbr": "IL",
+  "state_name": "Illinois",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.isbe.net/ (searched via web_search)",
+  "pages_visited": [
+    "IL Learning Standards page via web_search"
+  ],
+  "urls_tested": [
+    "https://www.isbe.net/Documents/IL-Social-Science-Standards.pdf",
+    "https://www.isbe.net/Documents/Illinois-Computer-Science-Standards.pdf",
+    "https://www.isbe.net/Documents/K-12-SS-Standards.pdf"
+  ],
+  "working_url": "https://www.isbe.net/Documents/K-12-SS-Standards.pdf",
+  "working_url_source": "https://www.isbe.net/Documents/",
+  "confidence": "High",
+  "notes": "Found Illinois K-12 Science Standards (SS.9.12) PDF. This is combined K-12 document covering multiple subjects. Need to verify if science-specific section exists or if this is the complete K-12 framework.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}
