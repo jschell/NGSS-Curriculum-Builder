@@ -1,17 +1,36 @@
 # NGSS Curriculum Builder - Feature Backlog
 
 ## In Progress
-- [ ] Manual follow-up for remaining 7 states (TN, SC, WY, AZ, WA, MI, ME)
-  - Requires manual browser downloads to bypass 403 Forbidden errors
-  - MI and ME need URL research (404 Not Found)
+
+### Active Plans
+- [ ] Clean up 18 states with partial/messy page range data
+  - Plan: `.claude/plan/active/cleanup-messy-page-ranges.md`
+  - States: AR, CA, IL, MT, PA, TX (only K), AK, AL, ND, NV (missing grades), IA, ID, KY, MA, NJ, NY, WI (messy)
+  - Estimated: 3-4 hours
+  - Priority: High
+
+- [ ] Extract page ranges for remaining 23 states
+  - Plan: `.claude/plan/active/extract-remaining-23-states.md`
+  - States: CO, CT, DC, DE, FL, GA, HI, IN, KS, LA, MD, ME, MN, MO, MS, NC, NE, NH, NM, RI, VA, VT, WV
+  - Estimated: 4-5 hours
+  - Priority: High
+
+- [ ] Migrate to grade_sections metadata format
+  - Plan: `.claude/plan/active/migrate-to-grade-sections-format.md`
+  - Add confidence scoring, section IDs, review flags
+  - Estimated: 2-3 hours
+  - Priority: Medium (after cleanup/extraction)
+
+- [ ] Create comprehensive validation suite
+  - Plan: `.claude/plan/active/comprehensive-validation-suite.md`
+  - URL, page range, data integrity, special structure validation
+  - Estimated: 2-3 hours
+  - Priority: High (supports all other work)
 
 ## Todo
 
 ### High Priority
-- [ ] Manual page range extraction for states with parser errors (requires local PDF downloads)
-  - High priority: TN, SC, WI, WY, MA (PDFs verified but parser failed)
-  - Medium priority: AZ, WA (403), MI, ME (404)
-  - Low priority: ~11 states with SSL/connection errors
+- None (moved to active plans)
 
 ### Medium Priority (Deferred)
 - [ ] None
