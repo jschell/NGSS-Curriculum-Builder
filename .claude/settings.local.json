@@ -34,7 +34,10 @@
       "mcp__MCP_DOCKER__browser_evaluate",
       "mcp__MCP_DOCKER__browser_press_key",
       "mcp__MCP_DOCKER__browser_run_code",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(git -C \"/c/Users/JScholl/.claude-worktrees/NGSS-Curriculum-Builder/determined-ritchie\" log --oneline main..interesting-rubin)"
     ]
   }
 }
