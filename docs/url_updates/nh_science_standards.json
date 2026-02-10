@@ -1,0 +1,21 @@
+{
+  "state_abbr": "NH",
+  "state_name": "New Hampshire",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://education.nh.gov/ (would check manually)",
+  "pages_visited": [
+    "nextgenscience.org via web_search"
+  ],
+  "urls_tested": [
+    "https://www.nextgenscience.org/rhode-island"
+  ],
+  "working_url": "https://www.nextgenscience.org/rhode-island",
+  "working_url_source": "https://www.nextgenscience.org/rhode-island",
+  "confidence": "Medium",
+  "notes": "Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}

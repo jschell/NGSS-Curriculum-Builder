@@ -1,0 +1,33 @@
+{
+  "state_abbr": "NE",
+  "state_name": "Nebraska",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.education.ne.gov/ (searched via web_search)",
+  "pages_visited": [
+    "Nebraska Department of Education website via web_search",
+    "Content Area Standards page"
+  ],
+  "urls_tested": [
+    "https://www.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf"
+  ],
+  "working_url": "https://www.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf",
+  "working_url_source": "https://www.education.ne.gov/wp-content/uploads/",
+  "confidence": "High",
+  "notes": "Found Nebraska CCR Science Standards PDF via web search. Document appears to be current (Nebraska Revised Statute 79-760.01 requires academic content standards).",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ],
+  "current_url": "https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf",
+  "document_title": "Nebraska College and Career Ready Standards for Science",
+  "doe_url": "https://www.education.ne.gov/",
+  "science_page_patterns": [
+    "/curriculum/science",
+    "/teach/standards/science",
+    "/contentareastandards"
+  ],
+  "search_terms": [
+    "Nebraska science standards PDF K-12"
+  ]
+}

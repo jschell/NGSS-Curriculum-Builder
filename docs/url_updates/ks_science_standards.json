@@ -1,0 +1,25 @@
+{
+  "state_abbr": "KS",
+  "state_name": "Kansas",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.ksde.org/",
+  "pages_visited": [
+    "https://community.ksde.org/Default.aspx?tabid=5785"
+  ],
+  "urls_tested": [],
+  "working_url": "https://community.ksde.org/Default.aspx?tabid=5785",
+  "working_url_source": "https://community.ksde.org/Default.aspx?tabid=5785",
+  "confidence": "medium",
+  "notes": "Kansas adopted NGSS in June 2013 as the Kansas College and Career Ready Standards for Science. The KSDE community website lists 'final standards documents and appendices' but SSL certificate errors prevented access. Kansas likely uses NGSS documents from nextgenscience.org or has Kansas-branded versions on their community site.",
+  "issues_encountered": [
+    "SSL certificate error on community.ksde.org",
+    "Unable to verify PDF accessibility",
+    "Standards page exists but couldn't be fetched"
+  ],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "Adopted NGSS as Kansas College and Career Ready Standards for Science in June 2013",
+  "ngss_status": "direct_adoption",
+  "note_about_access": "KSDE community website has SSL issues preventing automated access. Manual verification recommended."
+}

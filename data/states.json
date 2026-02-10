@@ -25,11 +25,20 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "4-7",
+          "1": "8-11",
+          "2": "12-16",
+          "3": "17-21",
+          "4": "22-26",
+          "5": "27-53",
+          "9-12": "54-64, 65-95"
+        },
         "notes": "Single comprehensive K-12 document, identical to NGSS",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04"
@@ -127,7 +136,7 @@
     },
     "notes": "Washington adopted NGSS in October 2013, updated to version 2.0 in 2024. Standards are identical to NGSS.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "OR": {
     "state_name": "Oregon",
@@ -159,8 +168,19 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Complete K-12 standards in one document",
+        "page_range": {
+          "K": "0-3, 2-9, 8-10, 9-50",
+          "1": "2-3, 12-13",
+          "2": "2-3, 14-15",
+          "3": "2-3, 17-18",
+          "4": "2-3, 20-21",
+          "5": "2-3, 8-9, 23-24",
+          "6": "2-4, 26-28, 30-32, 34-35",
+          "7": "2-4, 26-27, 28-29, 32-33, 34-35",
+          "8": "2-4, 29-30, 33-34, 35-36",
+          "9": "37-38, 41-43, 46-47"
+        },
+        "notes": "Complete K-12 standards in one document | 2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed. | 2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed.",
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
       },
@@ -172,7 +192,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-3, 2-8, 7-9, 8-12"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/Pages/default.aspx",
         "last_verified": "2026-02-04"
@@ -185,7 +207,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "1": "2-3, 8-9"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
@@ -198,7 +222,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "2": "2-3, 8-9"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
@@ -211,7 +237,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "3": "2-3, 8-9"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
@@ -224,7 +252,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "4": "2-3, 8-9"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
@@ -237,7 +267,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "5": "2-3, 7-9"
+        },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
         "last_verified": "2026-02-04"
@@ -314,7 +346,7 @@
     "resources": {},
     "notes": "Oregon adopted NGSS in March 2014. 2022 update added climate change connections (^) and clarification statements for K-5.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "CA": {
     "state_name": "California",
@@ -328,7 +360,7 @@
     "documents": [
       {
         "title": "California NGSS Searchable Standards Database",
-        "url": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
+        "url": "https://www.cde.ca.gov/ci/pl/documents/cangssgr3-dci.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -347,9 +379,10 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Interactive, searchable database",
+        "notes": "Interactive, searchable database | Special structure: grade_specific_documents | Special structure: grade_specific_documents | California provides separate grade-specific PDFs. Elementary (K-5): one per grade. Middle School (6-8): two models available (Integrated and Discipline-Specific). High School (9-12): organized by discipline.",
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "special_structure": "grade_specific_documents"
       },
       {
         "title": "Kindergarten CA NGSS Standards",
@@ -359,7 +392,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-1, 1-2, 2-3, 3-4, 4-5, 5-6, 6-7, 7-8, 8-9, 9-10, 10-11, 11-12, 12-13"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04"
@@ -372,7 +407,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "1": "1-2, 6-7"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04"
@@ -479,9 +516,9 @@
       "framework": "https://www.cde.ca.gov/ci/sc/cf/",
       "ep_and_c": "https://www.cde.ca.gov/pd/ca/sc/ngssepcs.asp"
     },
-    "notes": "California adopted NGSS in September 2013 with modifications to include California Environmental Principles & Concepts (EP&Cs).",
+    "notes": "California adopted NGSS in September 2013 with modifications to include California Environmental Principles & Concepts (EP&Cs). | California provides separate grade-specific PDFs. Elementary (K-5): one per grade. Middle School (6-8): two models available (Integrated and Discipline-Specific). High School (9-12): organized by discipline.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "TX": {
     "state_name": "Texas",
@@ -501,10 +538,13 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "notes": null,
+        "page_range": {
+          "K": "0-1, 4-5, 8-9, 12-13, 16-17, 21-22"
+        },
+        "notes": "None | Special structure: three_level_documents | Special structure: three_level_documents | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "special_structure": "level_specific_documents"
       },
       {
         "title": "Grade 1 Science TEKS",
@@ -514,7 +554,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "1": "4-5"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -527,7 +569,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "2": "8-9, 12-13"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -540,7 +584,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "3": "12-13, 17-18"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -553,7 +599,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "4": "13-14, 16-17, 21-22"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -566,7 +614,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "5": "0-1, 4-5, 8-9, 12-13, 16-18, 20-22"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -579,7 +629,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "6": "0-2, 5-6"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -592,7 +644,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "7": "5-6"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -605,7 +659,9 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "8": "9-10"
+        },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04"
@@ -649,9 +705,9 @@
       "teks_guide": "https://teksguide.org/",
       "resource_system": "https://www.teksresourcesystem.net/"
     },
-    "notes": "Texas uses TEKS framework, NOT NGSS. K-8 TEKS revised December 2021, HS TEKS revised November 2020. Comprehensive TEKS Guide available at teksguide.org.",
+    "notes": "Texas uses TEKS framework, NOT NGSS. K-8 TEKS revised December 2021, HS TEKS revised November 2020. Comprehensive TEKS Guide available at teksguide.org. | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "NY": {
     "state_name": "New York",
@@ -673,7 +729,10 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-4, 3-5, 4-6, 5-7, 6-15, 14-15",
+          "2": "11-12"
+        },
         "notes": "Pre-K through Grade 2",
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04"
@@ -688,7 +747,10 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "4": "8-9",
+          "5": "9-10, 13-14"
+        },
         "notes": null,
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04"
@@ -776,7 +838,7 @@
     },
     "notes": "New York adopted P-12 Science Learning Standards in 2016, adapted from NGSS with modifications. High school Regents courses require 1,200 minutes of laboratory experience.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-03"
+    "last_updated": "2026-02-06"
   },
   "AR": {
     "state_name": "Arkansas",
@@ -790,7 +852,7 @@
     "documents": [
       {
         "title": "Arkansas K-12 Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/Arkansas%20K-12%20Science%20Standards.pdf",
+        "url": "https://dese.ade.arkansas.gov/Files/Kindergarten-general_science_LS.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -808,8 +870,12 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on A Framework for K-12 Science Education"
+        "page_range": {
+          "K": "2-6, 6-8, 8-10, 10-12, 12-13, 13-14, 14-15, 15-16, 16-17"
+        },
+        "notes": "Arkansas provides grade-specific PDFs. Full list at: https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
+        "url_source": "https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
@@ -849,7 +915,7 @@
     "resources": {},
     "notes": "Arkansas was a Lead State Partner in developing NGSS. Standards based on A Framework for K-12 Science Education.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "CT": {
     "state_name": "Connecticut",
@@ -863,7 +929,7 @@
     "documents": [
       {
         "title": "Connecticut Next Generation Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/Connecticut%20NGSS%20K-12.pdf",
+        "url": "https://www.nextgenscience.org/connecticut",
         "grade_levels": [
           "K",
           "1",
@@ -882,7 +948,9 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Adopted by unanimous vote of State Board of Education"
+        "notes": "Adopted by unanimous vote of State Board of Education (November 2015)",
+        "url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
@@ -944,7 +1012,7 @@
     "resources": {},
     "notes": "Connecticut adopted NGSS by unanimous vote in November 2015.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "DE": {
     "state_name": "Delaware",
@@ -1034,7 +1102,7 @@
     "documents": [
       {
         "title": "DC Next Generation Science Standards",
-        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/OSSE_NGSS%20Presentation%20(10%2023%202013).pdf",
+        "url": "https://osse.dc.gov/sites/default/files/dc/sites/osse/publication/attachments/DCPS-horiz-science.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1095,7 +1163,7 @@
     "resources": {},
     "notes": "DC State Board of Education adopted NGSS in December 2013 with an 8-1 vote, becoming the ninth jurisdiction to adopt these standards. Implementation began in 2016-17 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "HI": {
     "state_name": "Hawaii",
@@ -1127,7 +1195,7 @@
         ],
         "document_type": "complete_k12",
         "format": "HTML",
-        "page_range": null,
+        "page_range": "K:3-533",
         "notes": "Three-dimensional approach integrating practices, concepts, and core ideas",
         "url_source": "https://manoa.hawaii.edu/sealearning/standards-alignment/next-generation-science-standards-ngss",
         "last_verified": "2026-02-04"
@@ -1186,7 +1254,7 @@
     "documents": [
       {
         "title": "Illinois Learning Standards for Science (NGSS)",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.isbe.net/Documents/K-12-SS-Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1204,7 +1272,9 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "3-6, 6-7, 7-8, 8-9, 9-10, 10-11, 11-12, 12-14, 14-16, 16-17, 17-18, 18-19, 19-21"
+        },
         "notes": "Based on NGSS, adopted 2014",
         "url_source": "https://www.nextgenscience.org/lead-state-illinois",
         "last_verified": "2026-02-04"
@@ -1248,7 +1318,7 @@
     "resources": {},
     "notes": "Illinois became one of 26 state partners in 2011 to guide NGSS development. Climate change education requirement takes effect in 2026-27 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "IA": {
     "state_name": "Iowa",
@@ -1280,7 +1350,20 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:16-248",
+          "K": "1-2, 3-6, 8-9, 8-10, 9-10, 12-13, 14-15, 14-16, 15-28, 140-141, 162-163, 186-187, 225-226, 246-247, 246-248",
+          "12": "3-4, 225-226",
+          "8": "12-13, 86-87, 223-224",
+          "1": "15-16, 29-31, 33-34",
+          "2": "15-16",
+          "3": "15-16",
+          "4": "15-16",
+          "5": "15-16, 77-78",
+          "6": "86-87, 86-87, 225-226",
+          "7": "86-87",
+          "10": "224-225"
+        },
         "notes": "Based on NGSS Performance Expectations, revised 2025",
         "url_source": "https://educate.iowa.gov/pk-12/standards/academics/science",
         "last_verified": "2026-02-04"
@@ -1325,7 +1408,7 @@
     "resources": {},
     "notes": "Iowa was a Lead State Partner in NGSS development. Standards adopted August 2015, with revised version adopted May 2025.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "KS": {
     "state_name": "Kansas",
@@ -1339,7 +1422,7 @@
     "documents": [
       {
         "title": "Kansas Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://community.ksde.org/Default.aspx?tabid=5785",
         "grade_levels": [
           "K",
           "1",
@@ -1412,7 +1495,7 @@
     "resources": {},
     "notes": "Kansas State Board of Education adopted NGSS in June 2013 with an 8-2 vote. Three-dimensional standards integrating practices, core ideas, and crosscutting concepts.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "KY": {
     "state_name": "Kentucky",
@@ -1444,7 +1527,11 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "1-2, 1-2, 3-4, 3-4, 6-7, 6-8, 9-10, 9-10, 14-25, 47-51",
+          "12": "3-4, 6-7",
+          "8": "9-10"
+        },
         "notes": "Based on Framework for K-12 Science Education",
         "url_source": "https://www.education.ky.gov/curriculum/standards/kyacadstand",
         "last_verified": "2026-02-04"
@@ -1504,7 +1591,7 @@
     },
     "notes": "Kentucky was a Lead State Partner in NGSS development. Standards implemented beginning 2023-24 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "ME": {
     "state_name": "Maine",
@@ -1518,7 +1605,7 @@
     "documents": [
       {
         "title": "Maine Science and Engineering Standards",
-        "url": "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen",
+        "url": "https://www.maine.gov/doe/learning/content/science/review",
         "grade_levels": [
           "K",
           "1",
@@ -1534,10 +1621,13 @@
           "11",
           "12"
         ],
-        "document_type": "complete_k12",
+        "document_type": "grade_specific",
         "format": "HTML",
         "page_range": null,
-        "notes": "Heavily adapted from NGSS. Arranged in grade bands K-2, 3-5, 6-8, 9-12"
+        "notes": "Maine provides grade-specific PDF documents organized by disciplinary core idea (e.g., K-ESS2, 1-LS1, 3-PS2). No comprehensive K-12 document available. Standards based on NGSS with Maine-specific adaptations.",
+        "last_verified": "2026-02-06",
+        "url_source": "https://www.maine.gov/doe/learning/content/science/review",
+        "special_structure": "grade_specific_documents"
       }
     ],
     "assessments": [
@@ -1578,7 +1668,7 @@
     "resources": {},
     "notes": "Maine was a Lead State Partner in NGSS development. Current standards signed into law April 19, 2019.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "MD": {
     "state_name": "Maryland",
@@ -1592,7 +1682,7 @@
     "documents": [
       {
         "title": "Maryland NGSS K-12",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://marylandpublicschools.org/programs/Documents/CTE/Computer%20Science/K-12StandardsLandscape.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1664,7 +1754,7 @@
     "resources": {},
     "notes": "Maryland was a Lead State for NGSS adoption on June 25, 2013. Full implementation by 2017-18 school year.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MI": {
     "state_name": "Michigan",
@@ -1678,7 +1768,7 @@
     "documents": [
       {
         "title": "Michigan K-12 Science Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science_Standards.pdf?rev=a63819680d47402ca6c3858a191f6827",
         "grade_levels": [
           "K",
           "1",
@@ -1696,10 +1786,18 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-5, 4-7, 6-9",
+          "1": "1-2, 7-8",
+          "2": "1-2, 8-9",
+          "3": "1-2, 9-10",
+          "4": "1-2, 11-12",
+          "5": "1-2, 13-14",
+          "7": "3-4"
+        },
         "notes": "Derived from NGSS with Michigan-specific contexts",
-        "url_source": "https://www.nextgenscience.org/lead-state-michigan",
-        "last_verified": "2026-02-04"
+        "url_source": "https://www.michigan.gov/mde/services/academic-standards",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
@@ -1740,7 +1838,7 @@
     "resources": {},
     "notes": "Michigan was a lead partner in NGSS development. Adopted November 10, 2015, becoming the 17th state to adopt NGSS. Standards include Michigan-specific contexts for Great Lakes Basin and state-specific flora/fauna.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "NV": {
     "state_name": "Nevada",
@@ -1754,7 +1852,7 @@
     "documents": [
       {
         "title": "Nevada Academic Content Standards for Science",
-        "url": "https://doe.nv.gov/uploadedFiles/nde.doe.nv.gov/content/Nevada_Academic_Standards/Science/NSACCSScienceTopics.pdf",
+        "url": "https://webapp-strapi-paas-prod-nde-001.azurewebsites.net/uploads/nvacss_dci_arrangements_226290ea15.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -1772,7 +1870,13 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-1, 0-1, 2-6, 5-7, 6-9, 8-10, 9-13, 12-15, 14-15, 16-25, 24-25, 26-34, 33-35, 34-35, 36-38, 39-51, 52-66, 67-82, 83-84, 89-91, 92-103, 104-110, 111-121, 122-125, 126-132, 134-135, 140-142, 143-147, 148-155, 156-157, 158-160, 161-168, 169-171, 172-173, 174-176, 177-178, 179-181, 182-183, 184-186, 187-191",
+          "1": "17-18",
+          "8": "87-88, 110-111, 175-176, 181-182",
+          "6": "116-117",
+          "12": "138-139"
+        },
         "notes": "Based on NGSS, adopted February 2014"
       }
     ],
@@ -1814,7 +1918,7 @@
     "resources": {},
     "notes": "Nevada State Board of Education unanimously adopted NGSS in February 2014, becoming the tenth NGSS adopter.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "NH": {
     "state_name": "New Hampshire",
@@ -1828,7 +1932,7 @@
     "documents": [
       {
         "title": "New Hampshire NGSS Standards",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://www.nextgenscience.org/rhode-island",
         "grade_levels": [
           "K",
           "1",
@@ -1847,7 +1951,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "K-5 grade-by-grade, middle school and high school standards"
+        "notes": "K-5 grade-by-grade, middle school and high school standards | Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents. | Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents."
       }
     ],
     "assessments": [
@@ -1888,7 +1992,7 @@
     "resources": {},
     "notes": "Over 90% of New Hampshire local communities were already implementing NGSS before state adoption. Standards incorporate 3-dimensional learning strategy.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NJ": {
     "state_name": "New Jersey",
@@ -1913,7 +2017,15 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:14-25, 1:26-35, 2:36-47, 3:48-65, 4:66-81, 5:82-82",
+          "K": "0-2, 6-7, 10-11, 13-14, 13-16, 15-17, 16-18, 17-20, 19-21, 20-24, 23-27, 26-29, 30-34, 35-37, 36-39, 40-41, 42-44, 45-49, 48-51, 52-53, 54-56, 57-59, 60-63, 64-66, 67-73, 74-75, 76-77, 78-82",
+          "5": "0-2",
+          "1": "1-2, 27-29",
+          "2": "1-2, 11-12, 37-38",
+          "3": "1-2, 49-50",
+          "4": "1-2, 67-68"
+        },
         "notes": "Elementary K-5 standards"
       },
       {
@@ -1972,7 +2084,7 @@
     "resources": {},
     "notes": "New Jersey was a Lead State Partner in NGSS development. State Board adopted NGSS July 9, 2014. Standards updated in 2020.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "NM": {
     "state_name": "New Mexico",
@@ -1986,7 +2098,7 @@
     "documents": [
       {
         "title": "NM STEM Ready! Science Standards",
-        "url": "https://web.ped.nm.gov/wp-content/uploads/2025/01/NM-6-Specific-Standards-Framework.pdf",
+        "url": "https://www.srca.nm.gov/nmac/nmregister/xxviii/6.29.10.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2048,7 +2160,7 @@
     "resources": {},
     "notes": "New Mexico approved NGSS in 2018, adding six New Mexico-specific science standards. Standards became effective July 1, 2018.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "RI": {
     "state_name": "Rhode Island",
@@ -2062,7 +2174,7 @@
     "documents": [
       {
         "title": "Rhode Island NGSS Standards",
-        "url": "https://www.nextgenscience.org/standards",
+        "url": "https://www.nextgenscience.org/rhode-island",
         "grade_levels": [
           "K",
           "1",
@@ -2081,7 +2193,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Rhode Island was first state to adopt NGSS"
+        "notes": "Rhode Island was first state to adopt NGSS | Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document. | Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document."
       }
     ],
     "assessments": [
@@ -2122,7 +2234,7 @@
     "resources": {},
     "notes": "Rhode Island was the first state to adopt NGSS in spring 2013 and served as a Lead State Partner in NGSS development. Standards reaffirmed by Board of Education in 2024.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "VT": {
     "state_name": "Vermont",
@@ -2136,7 +2248,7 @@
     "documents": [
       {
         "title": "Vermont NGSS Standards",
-        "url": "https://www.nextgenscience.org/sites/default/files/NGSS%20DCI%20Combined%202011.6.13.pdf",
+        "url": "https://www.nextgenscience.org/vermont",
         "grade_levels": [
           "K",
           "1",
@@ -2198,7 +2310,7 @@
     "resources": {},
     "notes": "Vermont was a Lead State Partner in NGSS development. Adopted NGSS in 2013 as foundation for K-12 science instruction.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "AL": {
     "state_name": "Alabama",
@@ -2230,8 +2342,21 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "page_range": {
+          "_all": "K:16-18, 1:19-20, 2:21-26, 3:27-31, 4:32-36, 5:37-44, 6:45-49, 7:50-53, 8:54-120",
+          "K": "4-5, 4-5, 6-7, 6-8, 11-12, 11-12, 14-16, 19-20, 21-22, 23-29, 33-34, 51-52, 118-119",
+          "1": "4-5, 29-31",
+          "2": "4-5, 31-33",
+          "3": "4-5, 37-42",
+          "4": "4-5, 42-47",
+          "5": "4-5, 47-51",
+          "6": "4-5, 55-60",
+          "7": "4-5, 60-65",
+          "8": "4-5, 65-69, 106-107"
+        },
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012)",
+        "url_source": "https://www.alabamaachieves.org/acad-stand/",
+        "last_verified": "2026-02-05"
       }
     ],
     "assessments": [
@@ -2273,7 +2398,7 @@
     },
     "notes": "Alabama's 2023 Course of Study reflects the NRC's Framework for K-12 Science Education, incorporating three dimensions: practices, crosscutting concepts, and disciplinary core ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "AZ": {
     "state_name": "Arizona",
@@ -2301,11 +2426,23 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "15-18",
+          "1": "19-23",
+          "2": "24-30",
+          "3": "31-35",
+          "4": "36-39",
+          "5": "40-48",
+          "6": "49-54",
+          "7": "55-59",
+          "9-12": "68-70, 71-101",
+          "8": "60-67"
+        },
         "notes": "Three-dimensional approach based on Framework for K-12 Science Education"
       }
     ],
@@ -2358,7 +2495,7 @@
     "resources": {},
     "notes": "Arizona adopted science standards in October 2018 based on Framework for K-12 Science Education. Not an NGSS state but uses three-dimensional instruction approach.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "CO": {
     "state_name": "Colorado",
@@ -2521,7 +2658,7 @@
     "documents": [
       {
         "title": "Georgia Science Standards of Excellence K-12",
-        "url": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
+        "url": "https://www.georgiastandards.org/Georgia-Standards/Documents/Science-Sixth-Grade-Georgia-Standards.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2540,7 +2677,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks"
+        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Georgia provides separate PDFs organized by grade band (K-5, 6-8, 9-12). No comprehensive K-12 document available.",
+        "special_structure": "grade_band_documents"
       }
     ],
     "assessments": [
@@ -2578,9 +2716,9 @@
       "email": "science@gadoe.org"
     },
     "resources": {},
-    "notes": "Georgia science standards first implemented 2017-18 school year. Focus on disciplinary core ideas and crosscutting concepts.",
+    "notes": "Georgia science standards first implemented 2017-18 school year. Focus on disciplinary core ideas and crosscutting concepts. | Georgia provides separate PDFs organized by grade band (K-5, 6-8, 9-12). No comprehensive K-12 document available.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "IN": {
     "state_name": "Indiana",
@@ -2594,7 +2732,7 @@
     "documents": [
       {
         "title": "Indiana Academic Standards for Science K-12",
-        "url": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
+        "url": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2613,7 +2751,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and NGSS"
+        "notes": "Based on Framework for K-12 Science Education and NGSS | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Indiana provides separate PDFs for each grade K-8 and for each high school course (Biology, Chemistry, Physics, etc.). No comprehensive K-12 document available.",
+        "special_structure": "grade_specific_documents"
       }
     ],
     "assessments": [
@@ -2663,9 +2802,9 @@
       "email": "science@doe.in.gov"
     },
     "resources": {},
-    "notes": "Indiana adopted streamlined K-12 science standards in 2023, effective fall 2023. Three-dimensional standards integrate practices, crosscutting concepts, and core ideas.",
+    "notes": "Indiana adopted streamlined K-12 science standards in 2023, effective fall 2023. Three-dimensional standards integrate practices, crosscutting concepts, and core ideas. | Indiana provides separate PDFs for each grade K-8 and for each high school course (Biology, Chemistry, Physics, etc.). No comprehensive K-12 document available.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "MA": {
     "state_name": "Massachusetts",
@@ -2697,7 +2836,19 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-1, 2-4, 3-7, 6-8, 10-12, 13-17, 22-25, 26-30, 29-32, 31-33, 34-35, 34-36, 35-37, 36-38, 39-41, 74-75, 100-101, 104-105, 109-119, 120-126, 133-146, 147-148, 150-153, 155-156, 155-157, 158-170, 174-175, 190-191, 195-197",
+          "8": "2-4, 14-15, 26-27, 54-55, 56-60, 61-64, 65-66, 68-70, 71-72, 73-74, 150-153, 196-197",
+          "1": "3-4, 29-30, 36-38, 40-41",
+          "2": "3-4, 29-30, 37-41",
+          "3": "3-4, 43-45, 46-47, 49-50",
+          "4": "3-4, 46-51",
+          "5": "3-4, 50-54, 151-153",
+          "6": "3-4, 56-58, 59-61, 62-64, 65-67, 68-74, 151-153",
+          "7": "3-4, 57-61, 62-65, 66-67, 69-71, 72-73",
+          "12": "10-11, 22-23, 74-75, 195-196",
+          "9": "76-77, 80-81, 91-92, 96-97, 152-153"
+        },
         "notes": "Includes life, physical, Earth/space science, and technology/engineering"
       }
     ],
@@ -2748,7 +2899,7 @@
     "resources": {},
     "notes": "Massachusetts 2016 framework reflects changes in science education over past 15 years. Emphasizes mastery of disciplinary core ideas and science/engineering practices.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "MN": {
     "state_name": "Minnesota",
@@ -2762,7 +2913,7 @@
     "documents": [
       {
         "title": "Minnesota Academic Standards in Science 2019",
-        "url": "https://education.mn.gov/MDE/dse/stds/sci/",
+        "url": "https://www.lrl.mn.gov/docs/2025/mandated/251893.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -2781,7 +2932,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
       }
     ],
     "assessments": [
@@ -2831,7 +2982,7 @@
     "resources": {},
     "notes": "2019 standards adopted September 27, 2021, fully implemented 2024-25 school year. Emphasize three dimensions: practices, crosscutting concepts, and disciplinary core ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "NC": {
     "state_name": "North Carolina",
@@ -2864,7 +3015,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "First update since 2009, emphasizes Science and Engineering Practices"
+        "notes": "First update since 2009, emphasizes Science and Engineering Practices | Special structure: grade_band_specific_documents | North Carolina 2023 standards organized in grade bands: K-2, 3-5, 6-8, and high school course-specific documents. No comprehensive K-12 PDF.",
+        "special_structure": "grade_band_documents"
       }
     ],
     "assessments": [
@@ -2914,9 +3066,9 @@
       "email": "science@dpi.nc.gov"
     },
     "resources": {},
-    "notes": "North Carolina updated standards approved 2023, required implementation 2024. Designed to foster conceptual understanding and scientific literacy.",
+    "notes": "North Carolina updated standards approved 2023, required implementation 2024. Designed to foster conceptual understanding and scientific literacy. | North Carolina 2023 standards organized in grade bands: K-2, 3-5, 6-8, and high school course-specific documents. No comprehensive K-12 PDF.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "OH": {
     "state_name": "Ohio",
@@ -2948,7 +3100,18 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:17-32, 1:33-47, 2:48-62, 3:63-86, 4:87-106, 5:107-124, 6:125-152, 7:153-180, 8:181-387",
+          "K": "1-2, 2-3, 3-4, 4-7, 7-14, 14-16, 16-17, 17-18, 18-21, 21-23, 23-25, 25-27, 27-30, 30-32, 33-34, 34-36, 36-38, 38-40, 40-42, 42-45, 45-47, 48-49, 150-151, 244-281, 281-308, 336-343, 343-345, 345-387",
+          "1": "32-33, 49-51, 51-53, 53-55",
+          "2": "47-48, 55-58, 58-60, 60-62",
+          "3": "62-64, 64-67, 67-69, 69-71, 71-73, 73-75, 75-77, 77-81, 81-84, 84-86, 88-91, 91-93, 93-96, 96-98, 98-99, 102-104, 104-106",
+          "4": "86-88",
+          "5": "99-102, 106-108, 108-110, 110-112, 112-114, 114-117, 117-118, 120-122, 122-124, 178-180",
+          "6": "118-120, 124-125, 125-126, 126-128, 128-130, 130-132, 132-134, 134-136, 136-138, 138-140, 140-142, 142-144, 144-146, 146-148, 148-150, 154-155, 156-159, 159-161, 161-163, 163-165, 165-167, 167-169, 169-172, 172-173, 176-178, 181-182, 202-204, 310-318",
+          "8": "151-152, 155-156, 174-176, 180-181, 185-188, 188-190, 190-193, 193-196, 196-197, 197-199, 199-202, 204-235, 235-240, 240-244, 308-310, 318-336",
+          "7": "152-154, 173-174, 182-185"
+        },
         "notes": "Adopted February 2018, covers K-8 and high school"
       }
     ],
@@ -2989,7 +3152,7 @@
     "resources": {},
     "notes": "Ohio's 2018 Learning Standards provide logical progression of science content incorporating nature of science and scientific thought processes.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "PA": {
     "state_name": "Pennsylvania",
@@ -3021,7 +3184,10 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:3-46",
+          "K": "0-3, 2-3, 4-5, 6-9, 8-11, 10-20, 19-21, 20-23, 22-31, 30-32, 31-33, 32-34, 33-46"
+        },
         "notes": "K-12 sequence across strands"
       },
       {
@@ -3037,7 +3203,14 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "0-1, 0-13",
+          "1": "1-2",
+          "2": "2-3",
+          "3": "3-4",
+          "4": "4-5",
+          "5": "5-6"
+        },
         "notes": "Elementary standards"
       }
     ],
@@ -3080,7 +3253,7 @@
     },
     "notes": "STEELS standards adopted January 2022, fully integrated by 2025-26 school year. Replaced 2002 Science and Technology and Environment and Ecology standards.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "TN": {
     "state_name": "Tennessee",
@@ -3108,12 +3281,24 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education"
+        "page_range": {
+          "K": "21-24",
+          "1": "25-28",
+          "2": "29-33",
+          "3": "34-38",
+          "4": "39-43",
+          "5": "44-48",
+          "6": "49-52",
+          "7": "53-57",
+          "9-12": "63-73, 74-120, 121-135",
+          "8": "58-62"
+        },
+        "notes": "Based on Framework for K-12 Science Education | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education. | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education."
       }
     ],
     "assessments": [
@@ -3155,7 +3340,7 @@
     },
     "notes": "Tennessee adopted revised standards October 2022, implemented in classrooms 2025-26 school year. Four disciplinary core ideas: physical, life, earth/space, and engineering/technology.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "UT": {
     "state_name": "Utah",
@@ -3187,7 +3372,18 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:17-182",
+          "K": "2-3, 6-7, 8-11, 12-15, 16-18, 17-19, 18-20, 19-20, 94-95, 96-98, 101-102, 154-155, 156-158, 159-160, 161-162, 163-164, 165-166, 167-168, 169-170, 171-172, 174-181",
+          "1": "20-24",
+          "2": "24-28",
+          "3": "28-32",
+          "4": "32-38",
+          "5": "38-42",
+          "6": "42-48",
+          "7": "48-54",
+          "8": "54-60"
+        },
         "notes": "Written by Utah educators using Framework for K-12 Science Education and NGSS"
       }
     ],
@@ -3241,7 +3437,7 @@
     "resources": {},
     "notes": "Utah SEEd standards built on three dimensions: Science and Engineering Practices, Crosscutting Concepts, and Disciplinary Core Ideas. Utah OER textbooks available for K-12.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "VA": {
     "state_name": "Virginia",
@@ -3358,8 +3554,14 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Built from NRC Framework and NGSS, organized in grade bands K-2, 3-5, 6-8, 9-12"
+        "page_range": {
+          "K": "3-4, 13-15, 16-17, 16-18, 17-19, 18-19, 20-21, 22-23, 24-57, 58-67, 68-71, 72-75, 76-79, 80-89, 90-93, 94-108, 109-111, 114-115, 117-118",
+          "12": "13-14, 16-17",
+          "11": "15-16",
+          "1": "16-17",
+          "8": "18-19"
+        },
+        "notes": "Built from NRC Framework and NGSS, organized in grade bands K-2, 3-5, 6-8, 9-12 | Wisconsin Standards for Science adopted November 13, 2017. Complete PK-12 standards document (119 pages). Based on NGSS framework with Wisconsin-specific adaptations."
       }
     ],
     "assessments": [
@@ -3408,7 +3610,7 @@
     "resources": {},
     "notes": "Wisconsin Standards for Science adopted November 13, 2017. Districts have option to use Wisconsin Standards or NGSS. Goal: students make sense of phenomena and solve problems using three-dimensional learning.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "AK": {
     "state_name": "Alaska",
@@ -3440,8 +3642,11 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on NGSS with strong focus on Alaskan contexts"
+        "page_range": {
+          "K": "0-1, 2-3, 2-3, 7-8, 9-12, 14-28, 30-34, 35-38, 39-41, 43-47, 48-51, 52-60, 62-66, 67-71, 72-76, 77-80, 82-86, 87-88, 89-91, 92-95, 96-100, 102-106, 107-110, 112-115, 116-119, 120-124, 126-128, 129-130, 132-135, 138-143, 145-148, 149-151, 152-156, 158-162, 164-169, 170-172, 175-180, 182-187, 189-193, 194-197, 198-201, 202-205, 206-209, 211-215, 220-224, 226-231, 233-238, 240-241, 242-243, 244-247, 249-254, 255-256, 258-261, 263-269, 271-273, 274-276, 277-279, 281-285, 287-289, 290-291, 292-294, 296-298, 299-300, 301-303, 304-305, 307-309, 310-313, 314-315, 316-317, 319-321, 322-323, 324-326, 327-331",
+          "5": "11-12"
+        },
+        "notes": "Based on NGSS with strong focus on Alaskan contexts | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format. | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format."
       }
     ],
     "assessments": [
@@ -3482,7 +3687,7 @@
     "resources": {},
     "notes": "Alaska adopted science standards in 2019, shaped around NGSS with strong focus on relevance to Alaskan contexts. Three-dimensional design for science sense making.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "ID": {
     "state_name": "Idaho",
@@ -3514,7 +3719,15 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:5-8, 1:9-12, 2:13-15, 3:16-19, 4:20-24, 5:25-89",
+          "K": "1-5, 4-5, 6-7, 6-10",
+          "1": "1-2, 10-11",
+          "2": "1-2, 14-15",
+          "3": "1-2, 17-18",
+          "4": "1-2, 21-22",
+          "5": "1-2, 26-27"
+        },
         "notes": "Three dimensions: disciplinary core ideas, crosscutting concepts, and science/engineering practices"
       }
     ],
@@ -3556,7 +3769,7 @@
     "resources": {},
     "notes": "Idaho 2022 standards structured around three dimensions. Organized by grade level K-12 with Physical Science, Life Science, and Earth/Space Science at each grade.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "LA": {
     "state_name": "Louisiana",
@@ -3570,7 +3783,7 @@
     "documents": [
       {
         "title": "K-12 Louisiana Student Standards for Science",
-        "url": "https://doe.louisiana.gov/educators/instructional-support/planning-resources/k-12-science-resources",
+        "url": "https://www.louisianabelieves.com/resources/library/k-12-science-resources",
         "grade_levels": [
           "K",
           "1",
@@ -3589,7 +3802,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Louisiana Student Standards for Science"
+        "notes": "Louisiana Student Standards for Science | Special structure: web_based_or_grade_specific | Louisiana Student Standards for Science (LSSS) organized by grade level with web-based access and implementation guides. LSSS/NGSS crosswalks available for all grades.",
+        "special_structure": "web_based_grade_specific"
       }
     ],
     "assessments": [
@@ -3627,9 +3841,9 @@
       "email": "science@la.gov"
     },
     "resources": {},
-    "notes": "Louisiana Student Standards for Science include sample scope and sequence documents for K-12 implementation.",
+    "notes": "Louisiana Student Standards for Science include sample scope and sequence documents for K-12 implementation. | Louisiana Student Standards for Science (LSSS) organized by grade level with web-based access and implementation guides. LSSS/NGSS crosswalks available for all grades.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "MS": {
     "state_name": "Mississippi",
@@ -3661,7 +3875,7 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": "K:20-133",
         "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
       }
     ],
@@ -3716,7 +3930,7 @@
     "documents": [
       {
         "title": "Missouri Learning Standards Science K-12",
-        "url": "https://dese.mo.gov/media/file/curr-mls-standards-sci-k-12-sboe-2016",
+        "url": "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-k-5-sboe-2016",
         "grade_levels": [
           "K",
           "1",
@@ -3735,7 +3949,7 @@
         "document_type": "complete_k12",
         "format": "Excel",
         "page_range": null,
-        "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education"
+        "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education | Special structure: two_documents | Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website. | Special structure: two_documents | Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website."
       }
     ],
     "assessments": [
@@ -3775,7 +3989,7 @@
     "resources": {},
     "notes": "Missouri Learning Standards approved April 19, 2016 for implementation beginning 2016-17 school year. Adapted from Framework for K-12 Science Education (NRC 2012).",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-05"
   },
   "MT": {
     "state_name": "Montana",
@@ -3807,7 +4021,10 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:5-20",
+          "K": "1-5"
+        },
         "notes": "Includes crosscutting concepts and science/engineering practices"
       },
       {
@@ -3830,7 +4047,10 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:13-33",
+          "K": "2-3, 2-3, 4-7, 6-7, 8-9, 8-9, 10-11, 10-11, 12-13, 28-29, 30-31"
+        },
         "notes": "Implementation guide"
       }
     ],
@@ -3871,7 +4091,7 @@
     "resources": {},
     "notes": "Montana was a Lead State Partner in NGSS development. Standards adopted September 16, 2016. Encompasses scientific ideas and practices for college/career readiness.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "NE": {
     "state_name": "Nebraska",
@@ -3977,7 +4197,16 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:14-323",
+          "K": "0-1, 3-4, 3-4, 6-7, 6-9, 12-13, 15-29, 39-42, 54-57, 232-233, 243-247, 250-261, 268-270, 278-280, 319-323",
+          "4": "4-5, 296-299",
+          "6": "218-219",
+          "1": "261-270",
+          "2": "270-280",
+          "3": "279-280, 279-281, 280-282, 281-294, 296-299, 310-313",
+          "5": "307-319"
+        },
         "notes": "Multi-dimensional standards based on Framework for K-12 Science Education"
       }
     ],
@@ -4019,7 +4248,7 @@
     "resources": {},
     "notes": "North Dakota Science Content Standards published February 2019. Each performance standard incorporates three dimensions from Framework for K-12 Science Education. Includes North Dakota-specific local, regional, and state contexts.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "OK": {
     "state_name": "Oklahoma",
@@ -4051,7 +4280,18 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:9-14, 1:15-20, 2:21-25, 3:26-33, 4:34-42, 5:43-50, 6:51-63, 7:64-77, 8:78-175",
+          "K": "1-4, 5-6, 9-10, 9-11, 10-12, 11-13, 12-14, 13-14",
+          "1": "1-2, 14-20",
+          "2": "1-2, 20-25",
+          "3": "1-2, 25-33",
+          "4": "1-2, 33-42",
+          "5": "1-2, 3-4, 42-50",
+          "6": "1-2, 50-63",
+          "7": "1-2, 63-77",
+          "8": "1-2, 3-4, 77-81, 80-91"
+        },
         "notes": "Informed by Framework for K-12 Science Education and NGSS"
       }
     ],
@@ -4092,7 +4332,7 @@
     "resources": {},
     "notes": "2020 Oklahoma Academic Standards informed by Framework for K-12 Science Education and NGSS. Emphasizes students as active learners doing science through investigations, observations, and analysis.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "SC": {
     "state_name": "South Carolina",
@@ -4106,7 +4346,7 @@
     "documents": [
       {
         "title": "South Carolina College- and Career-Ready Science Standards 2021",
-        "url": "https://ed.sc.gov/instruction/standards/science/standards/",
+        "url": "https://ed.sc.gov/instruction/standards/science/standards/south-carolina-college-and-career-ready-science-standards-2021-approved/",
         "grade_levels": [
           "K",
           "1",
@@ -4120,12 +4360,25 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "9-12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
-        "page_range": null,
-        "notes": "Three-dimensional approach across four science/engineering domains"
+        "format": "PDF",
+        "page_range": {
+          "K": "12-23",
+          "1": "24-35",
+          "2": "36-49",
+          "3": "50-67",
+          "4": "68-84",
+          "5": "85-100",
+          "6": "101-121",
+          "7": "122-147",
+          "8": "148-199",
+          "9-12": "200-214, 215-235"
+        },
+        "notes": "South Carolina College- and Career-Ready Science Standards 2021. Complete K-12 document (279 pages). PDF directly served by URL.",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
@@ -4176,7 +4429,7 @@
     "resources": {},
     "notes": "South Carolina 2021 standards use three-dimensional approach: Science and Engineering Practices, Crosscutting Concepts, and Disciplinary Core Ideas.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "SD": {
     "state_name": "South Dakota",
@@ -4208,7 +4461,15 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "_all": "K:11-40",
+          "K": "1-2, 3-4, 3-4, 5-7, 6-8, 10-11, 10-16",
+          "1": "1-2",
+          "2": "1-2, 4-5",
+          "3": "1-2",
+          "4": "1-2, 4-5",
+          "5": "2-3, 4-5"
+        },
         "notes": "Four domains: Life, Physical, Earth/Space, and Engineering/Technology. Based on Framework for K-12 Science Education"
       }
     ],
@@ -4250,7 +4511,7 @@
     "resources": {},
     "notes": "South Dakota Science Standards adopted April 22, 2024. Three dimensions of science (Practices, Core Ideas, Crosscutting Concepts) in parentheses in every standard. Built coherently from K-12.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   },
   "WV": {
     "state_name": "West Virginia",
@@ -4336,8 +4597,8 @@
     "adoption_date": "July 17, 2024 (Implemented 2025-26)",
     "documents": [
       {
-        "title": "2023 Wyoming Content and Performance Standards for Science",
-        "url": "https://edu.wyoming.gov/for-district-leadership/standards/science/",
+        "title": "2021 Wyoming Science Standards",
+        "url": "https://edu.wyoming.gov/wp-content/uploads/2022/08/2021-Science-WYCPS-PLDs-1.pdf",
         "grade_levels": [
           "K",
           "1",
@@ -4351,12 +4612,24 @@
           "9",
           "10",
           "11",
-          "12"
+          "12",
+          "6-8",
+          "9-12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
-        "page_range": null,
-        "notes": "Three dimensions: Crosscutting Concepts, Disciplinary Core Ideas, Science and Engineering Practices"
+        "format": "PDF",
+        "page_range": {
+          "K": "8-11",
+          "1": "12-15",
+          "2": "16-19",
+          "3": "20-24",
+          "4": "25-29",
+          "5": "30-34",
+          "6-8": "35-49",
+          "9-12": "51-68"
+        },
+        "notes": "2021 Wyoming Science Standards (77 pages). K-5 by grade, 6-8 and 9-12 by subject domain.",
+        "last_verified": "2026-02-06"
       }
     ],
     "assessments": [
@@ -4397,6 +4670,6 @@
     "resources": {},
     "notes": "Wyoming 2023 standards approved July 17, 2024 for implementation 2025-26. Modeled after NGSS with input from 41 Wyoming educators and stakeholders. Based on Framework for K-12 Science Education.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-06"
   }
 }

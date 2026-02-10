@@ -1,0 +1,30 @@
+{
+  "state_abbr": "DE",
+  "state_name": "Delaware",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.doe.k12.de.us/ (searched via web_search)",
+  "pages_visited": [
+    "Next Generation Science Standards (NGSS) page"
+  ],
+  "urls_tested": [],
+  "working_url": null,
+  "working_url_source": null,
+  "confidence": "Low",
+  "notes": "Web search found 'Next Generation Science Standards (NGSS)' page but no direct PDF link visible. Current URL 'topical-arrangement-ngss.pdf' appears to be a NGSS framework document. Recommend: Manual investigation of DE DOE website or find alternative PDF hosting.",
+  "issues_encountered": [
+    "No direct PDF link found via web search",
+    "Current URL appears to be NGSS framework, not complete standards document"
+  ],
+  "current_url": "https://education.delaware.gov/wp-content/uploads/2025/03/topical-arrangement-ngss.pdf",
+  "document_title": "Delaware Science Standards K-12",
+  "doe_url": "https://www.doe.k12.de.us/",
+  "science_page_patterns": [
+    "/curriculum/science",
+    "/standards/science"
+  ],
+  "search_terms": [
+    "Delaware science standards K-12 PDF",
+    "NGSS Delaware PDF"
+  ]
+}

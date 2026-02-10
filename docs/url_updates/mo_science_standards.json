@@ -1,0 +1,26 @@
+{
+  "state_abbr": "MO",
+  "state_name": "Missouri",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://dese.mo.gov/",
+  "pages_visited": [
+    "https://dese.mo.gov/college-career-readiness/curriculum/science",
+    "https://dese.mo.gov/college-career-readiness/curriculum/missouri-learning-standards"
+  ],
+  "urls_tested": [
+    "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-k-5-sboe-2016",
+    "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-6-12-sboe-2016"
+  ],
+  "working_url": "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-k-5-sboe-2016",
+  "working_url_secondary": "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-6-12-sboe-2016",
+  "working_url_source": "https://dese.mo.gov/college-career-readiness/curriculum/science",
+  "confidence": "high",
+  "notes": "Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website.",
+  "issues_encountered": [
+    "Missouri has two separate PDF documents (K-5 and 6-12) instead of one comprehensive K-12 document"
+  ],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Connection error when attempting to download PDF",
+  "special_structure": "two_documents"
+}

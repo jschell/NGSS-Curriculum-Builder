@@ -1,0 +1,23 @@
+{
+  "state_abbr": "MD",
+  "state_name": "Maryland",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://marylandpublicschools.org/ (searched via web_search)",
+  "pages_visited": [
+    "Science Branch page",
+    "CTE Computer Science Standards page"
+  ],
+  "urls_tested": [
+    "https://marylandpublicschools.org/about/Pages/DCAA/Science/index.aspx",
+    "https://marylandpublicschools.org/programs/Documents/CTE/Computer%20Science/K-12StandardsLandscape.pdf"
+  ],
+  "working_url": "https://marylandpublicschools.org/programs/Documents/CTE/Computer%20Science/K-12StandardsLandscape.pdf",
+  "working_url_source": "https://marylandpublicschools.org/programs/Documents/",
+  "confidence": "Medium",
+  "notes": "Found Maryland K-12 Computer Science Standards (PDF). This is Computer Science, not general science standards. Need to verify if there is a separate general science K-12 document or if this is the only science standards available.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}

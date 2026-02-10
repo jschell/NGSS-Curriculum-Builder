@@ -1,0 +1,36 @@
+{
+  "state_abbr": "CO",
+  "state_name": "Colorado",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.cde.state.co.us/ (searched via web_search)",
+  "pages_visited": [
+    "Science Academic Standards page",
+    "Standards Documents by Grade Band page"
+  ],
+  "urls_tested": [
+    "https://ed.cde.state.co.us/coscience/2020cas-sc-introduction",
+    "https://ed.cde.state.co.us/standardsandinstruction/standards",
+    "https://ed.cde.state.co.us/coscience/statestandards"
+  ],
+  "working_url": "https://ed.cde.state.co.us/coscience/statestandards",
+  "working_url_source": "https://www.cde.state.co.us/coscience/",
+  "confidence": "High",
+  "notes": "Found 'Standards Documents by Grade Band (PDF, adopted 2018)' section on statestandards page. This page lists grade-band specific PDFs. Need to navigate to find K-12 complete document or determine correct document structure. Current states.json shows single K-12 document.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead",
+    "Multiple PDF options found (P-2, 3-5, MS, HS) - need verification"
+  ],
+  "current_url": "https://ed.cde.state.co.us/coscience/statestandards",
+  "document_title": "2020 Colorado Academic Standards: Science",
+  "doe_url": "https://www.cde.state.co.us/",
+  "science_page_patterns": [
+    "/standardsandinstruction/standards",
+    "/standardsandinstruction/science",
+  ],
+  "search_terms": [
+    "Colorado science standards PDF",
+    "CAS science"
+  ]
+}

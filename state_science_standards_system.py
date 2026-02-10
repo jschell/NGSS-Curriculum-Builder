@@ -44,6 +44,7 @@ class StandardsDocument:
     )  # Grade-specific page/section mappings
     url_source: Optional[str] = None  # Source URL where document was found
     last_verified: Optional[str] = None  # Last verification date (YYYY-MM-DD)
+    special_structure: Optional[str] = None  # Special document structure type
 
 
 @dataclass
@@ -362,6 +363,8 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   URL: {doc.url}")
                 print(f"   Covers Grades: {', '.join(doc.grade_levels)}")
                 print(f"   Format: {doc.format}")
+                if doc.page_range:
+                    print(f"   Pages: {doc.page_range}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
 

@@ -1,0 +1,32 @@
+{
+  "state_abbr": "VA",
+  "state_name": "Virginia",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.doe.virginia.gov/ (403 Forbidden)",
+  "pages_visited": [
+    "Homepage (blocked - 403)",
+    "Web search results via brave_web_search"
+  ],
+  "urls_tested": [
+    "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning"
+  ],
+  "working_url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
+  "working_url_source": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/",
+  "confidence": "High",
+  "notes": "Found via web search - same URL structure as existing states.json entry. Homepage returns 403 Forbidden (bot detection) but subpages accessible.",
+  "issues_encountered": [
+    "DOE homepage returns 403 Forbidden (bot detection issue)",
+    "Cannot directly navigate to science section via browser automation"
+  ],
+  "current_url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
+  "document_title": "2018 Science Standards of Learning K-Physics",
+  "doe_url": "https://www.doe.virginia.gov/",
+  "science_page_patterns": [
+    "/teaching-learning-assessment/k-12-standards-instruction/science",
+    "/teaching-learning-assessment/instruction/science",
+  ],
+  "search_terms": [
+    "Virginia science standards K-12 PDF"
+  ]
+}

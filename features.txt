@@ -1,18 +1,41 @@
 # NGSS Curriculum Builder - Feature Backlog
 
 ## In Progress
-- [ ] None
+
+### Active Plans
+- [ ] Clean up 18 states with partial/messy page range data
+  - Plan: `.claude/plan/active/cleanup-messy-page-ranges.md`
+  - States: AR, CA, IL, MT, PA, TX (only K), AK, AL, ND, NV (missing grades), IA, ID, KY, MA, NJ, NY, WI (messy)
+  - Estimated: 3-4 hours
+  - Priority: High
+
+- [ ] Extract page ranges for remaining 23 states
+  - Plan: `.claude/plan/active/extract-remaining-23-states.md`
+  - States: CO, CT, DC, DE, FL, GA, HI, IN, KS, LA, MD, ME, MN, MO, MS, NC, NE, NH, NM, RI, VA, VT, WV
+  - Estimated: 4-5 hours
+  - Priority: High
+
+- [ ] Migrate to grade_sections metadata format
+  - Plan: `.claude/plan/active/migrate-to-grade-sections-format.md`
+  - Add confidence scoring, section IDs, review flags
+  - Estimated: 2-3 hours
+  - Priority: Medium (after cleanup/extraction)
+
+- [ ] Create comprehensive validation suite
+  - Plan: `.claude/plan/active/comprehensive-validation-suite.md`
+  - URL, page range, data integrity, special structure validation
+  - Estimated: 2-3 hours
+  - Priority: High (supports all other work)
 
 ## Todo
 
-### URL Validation & Updates (3 incremental plans)
-- [ ] Plan 1: Execute URL validation & generate reports → .claude/plan/active/url-validation-execution.md
-- [ ] Plan 2: Document URL update workflow → .claude/plan/active/url-update-workflow-documentation.md
-- [ ] Plan 3: Apply Tier 1 URL updates (5-10 states) → .claude/plan/active/url-updates-tier1-application.md
+### High Priority
+- None (moved to active plans)
+
+### Medium Priority (Deferred)
+- [ ] None
 
 ### Other Features
-- [ ] Add page_range data for all 80 documents
-- [ ] Apply Tier 2-4 URL updates (remaining states after Plan 3)
 - [ ] Implement document content caching
 - [ ] Add full-text search across standards
 - [ ] Complete Texas high school standards (grades 9-12)
@@ -29,3 +52,34 @@
 - [x] Build PDF/HTML parser (parse_standards.py)
 - [x] Add comprehensive grade filtering documentation
 - [x] Create URL validation utility (validate_urls.py)
+- [x] Execute URL validation & generate reports (Plan 1)
+- [x] Document URL update workflow (Plan 2)
+- [x] Apply Tier 1 URL updates - 18 states verified (Plan 3 + batch 1)
+- [x] Validate remaining 36 states - found 3 working URLs (AL, AR, CT)
+- [x] Create research guide for 33 remaining unverified states
+- [x] Analyze page range patterns (Step 1 of page_range plan) - proof of concept validated
+- [x] Add page_range data for all 80 documents
+  - 14 documents with grade-specific page ranges (17.5% coverage)
+  - Created extraction, merge, and parsing scripts
+  - Updated CLI to display page ranges
+  - Added comprehensive DATA_SCHEMA.md documentation
+  - All 8 steps complete (2026-02-05)
+- [x] Complete URL research for all remaining states (2026-02-05)
+  - 38 states researched across 7 batches (100% complete)
+  - 36/38 URLs found and applied to states.json (95% success rate)
+  - Identified special document structures (CA, TX, IN, GA, NC, LA, MO)
+  - Total research time: ~8-9 hours (~13 min/state average)
+- [x] Apply extracted page ranges to states.json (2026-02-05)
+  - 12 states updated with grade-specific page ranges
+  - 84 grade-level page ranges added
+  - Page range coverage increased from 25% to 49% (+24%)
+- [x] Document grade-specific structures (2026-02-05)
+  - Added notes for 7 states with multi-document structures
+  - Added special_structure metadata field
+  - Total usable structure: 32/51 states (63%)
+- [x] Autonomous page range extraction for additional states (2026-02-06)
+  - 11 states extracted without manual downloads (WI, MA, AK, ID, KY, MT, ND, OK, PA, SD, UT)
+  - 67 grade ranges added via remote PDF parsing
+  - 61% success rate on attempted states (11/18)
+  - 40 minutes autonomous execution (75-85% time savings vs manual)
+  - Current coverage: 24/51 states (47%) with page ranges

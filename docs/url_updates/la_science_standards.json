@@ -1,0 +1,24 @@
+{
+  "state_abbr": "LA",
+  "state_name": "Louisiana",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.louisianabelieves.com/",
+  "pages_visited": [
+    "https://www.louisianabelieves.com/resources/library/k-12-science-resources",
+    "https://louisianabelieves.com/academics/academic-standards"
+  ],
+  "urls_tested": [],
+  "working_url": "https://www.louisianabelieves.com/resources/library/k-12-science-resources",
+  "working_url_source": "https://www.louisianabelieves.com/resources/library/k-12-science-resources",
+  "confidence": "medium",
+  "notes": "Louisiana has K-12 Louisiana Student Standards for Science (LSSS) listed on their resources page. Louisiana provides LSSS/NGSS crosswalks for all grades. The standards appear to be accessible through their resource library, but no single comprehensive K-12 PDF was found. Louisiana may have grade-specific or web-based standards.",
+  "issues_encountered": [
+    "No single comprehensive K-12 PDF found",
+    "Standards may be grade-specific or web-based only"
+  ],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "special_structure": "web_based_or_grade_specific",
+  "note_about_access": "Louisiana provides extensive implementation guides and crosswalks but comprehensive PDF document not located"
+}

@@ -1,0 +1,21 @@
+{
+  "state_abbr": "AK",
+  "state_name": "Alaska",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://education.alaska.gov/",
+  "pages_visited": [
+    "https://education.alaska.gov/akstandards/science",
+    "https://education.alaska.gov/standards/science"
+  ],
+  "urls_tested": [
+    "https://education.alaska.gov/akstandards/science/science-standards-for-alaska.pdf"
+  ],
+  "working_url": "https://education.alaska.gov/akstandards/science/science-standards-for-alaska.pdf",
+  "working_url_source": "https://education.alaska.gov/akstandards/science",
+  "confidence": "high",
+  "notes": "K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format.",
+  "issues_encountered": [],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Connection error when attempting to download PDF"
+}

@@ -1,0 +1,42 @@
+{
+  "state_abbr": "TX",
+  "state_name": "Texas",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://tea.texas.gov/",
+  "pages_visited": [
+    "https://tea.texas.gov/academics/subject-areas/science",
+    "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+    "https://tea.texas.gov/academics/curriculum-standards/teks-review/texas-essential-knowledge-and-skills"
+  ],
+  "urls_tested": [
+    "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf"
+  ],
+  "working_url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+  "working_url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+  "confidence": "high",
+  "notes": "Texas provides THREE comprehensive PDFs organized by school level (Elementary K-5, Middle School 6-8, High School 9-12), not a single K-12 document. These are the official Texas Essential Knowledge and Skills (TEKS) for Science, Chapter 112 of the Texas Administrative Code. All documents updated August 2024.",
+  "issues_encountered": [
+    "No single comprehensive K-12 document available - organized into three subchapters by school level"
+  ],
+  "batch": "Batch 5 (Special Cases)",
+  "original_error": "Multiple document structure",
+  "special_structure": "three_level_documents",
+  "all_level_urls": {
+    "elementary_K-5": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112a.pdf",
+    "middle_school_6-8": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112b.pdf",
+    "high_school_9-12": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf"
+  },
+  "individual_grade_urls": {
+    "K": "https://tea.texas.gov/academics/curriculum-standards/teks/kinder-teks-062024-updated.pdf",
+    "1": "https://tea.texas.gov/academics/curriculum-standards/teks/grade1-teks-062024.pdf",
+    "2": "https://tea.texas.gov/academics/curriculum-standards/teks/grade2-teks-062024.pdf",
+    "3": "https://tea.texas.gov/academics/curriculum-standards/teks/grade3-teks-062024.pdf",
+    "4": "https://tea.texas.gov/academics/curriculum-standards/teks/grade4-teks-062024.pdf",
+    "5": "https://tea.texas.gov/academics/curriculum-standards/teks/grade5-teks-062024-0.pdf"
+  },
+  "document_organization": "Texas TEKS for Science are organized in Chapter 112 of the Texas Administrative Code (19 TAC Chapter 112). Subchapter A covers Elementary (K-5), Subchapter B covers Middle School (6-8), and Subchapter C covers High School (9-12). Content is organized into recurring strands.",
+  "high_school_courses": "Texas high school science includes: Biology, Chemistry, Integrated Physics and Chemistry (IPC), Physics, Environmental Science, Earth Systems Science, Aquatic Science, and Astronomy. TEKS adopted November 2020 for Biology, Chemistry, IPC, and Physics.",
+  "recent_updates": "Elementary and Middle School TEKS updated August 2024. High School courses (Biology, Chemistry, IPC, Physics) adopted November 2020.",
+  "additional_resources": "Texas provides extensive support materials including TEKS Guide, TEKS in Focus documents, vertical alignment documents by discipline (Biology, Chemistry, Earth & Space, Physics), and engineering design challenge guides for each grade K-5."
+}

@@ -1,0 +1,25 @@
+{
+  "state_abbr": "MI",
+  "state_name": "Michigan",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.michigan.gov/ (searched via web_search)",
+  "pages_visited": [
+    "Michigan K-12 Standards page",
+    "Academic Standards page"
+  ],
+  "urls_tested": [
+    "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science-Standards.pdf",
+    "https://www.michigan.gov/mde/services/academic-standards",
+    "https://www.michigan.gov/-/media/Project/Websites/mde/Year/2019/04/03/CompSci_Standards_Accessible_Final_Draft.pdf",
+    "https://www.michigan.gov/documents/mde/MSS_Admin_Overview_526898_7.pdf"
+  ],
+  "working_url": "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Science-Standards.pdf",
+  "working_url_source": "https://www.michigan.gov/",
+  "confidence": "High",
+  "notes": "Found Michigan K-12 Standards Science (Framework). This is primary K-12 science standards document. Contains practices, crosscutting concepts, and core ideas. Same URL as existing states.json entry - confirms document is correct.",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ]
+}

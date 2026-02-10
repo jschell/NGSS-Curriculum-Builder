@@ -1,0 +1,32 @@
+{
+  "state_abbr": "WA",
+  "state_name": "Washington",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.k12.wa.us/ (searched via web_search)",
+  "pages_visited": [
+    "OSPI website via web_search",
+    "Science K-12 Learning Standards page"
+  ],
+  "urls_tested": [
+    "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards"
+  ],
+  "working_url": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
+  "working_url_source": "https://ospi.k12.wa.us/student-success/learning-standards-instructional-materials",
+  "confidence": "High",
+  "notes": "Found multiple resources on OSPI science standards page. Main standards page accessible. This URL represents the primary standards document. Note: OSPI homepage also has topic-arrangement PDF (2023).",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ],
+  "current_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/topic-arrangements-next-generation-science-standards.pdf",
+  "document_title": "Washington State K-12 Science Learning Standards",
+  "doe_url": "https://www.k12.wa.us/",
+  "science_page_patterns": [
+    "/student-success/learning-standards-instructional-materials/science/",
+    "/student-success/resources-subject-area/science/"
+  ],
+  "search_terms": [
+    "Washington State K-12 Science Learning Standards"
+  ]
+}

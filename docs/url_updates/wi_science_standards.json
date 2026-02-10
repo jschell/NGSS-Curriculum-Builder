@@ -1,0 +1,22 @@
+{
+  "state_abbr": "WI",
+  "state_name": "Wisconsin",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://dpi.wi.gov/",
+  "pages_visited": [
+    "https://dpi.wi.gov/science/standards",
+    "https://dpi.wi.gov/science"
+  ],
+  "urls_tested": [
+    "https://dpi.wi.gov/sites/default/files/imce/standards/New%20pdfs/ScienceStandards2017.pdf"
+  ],
+  "working_url": "https://dpi.wi.gov/sites/default/files/imce/standards/New%20pdfs/ScienceStandards2017.pdf",
+  "working_url_source": "https://dpi.wi.gov/science/standards",
+  "confidence": "high",
+  "notes": "Wisconsin Standards for Science adopted November 13, 2017. Complete PK-12 standards document (119 pages). Based on NGSS framework with Wisconsin-specific adaptations.",
+  "issues_encountered": [],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "Formally adopted November 13, 2017 by Wisconsin DPI"
+}

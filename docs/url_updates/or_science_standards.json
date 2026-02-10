@@ -1,0 +1,20 @@
+{
+  "state_abbr": "OR",
+  "state_name": "Oregon",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.oregon.gov/ode/",
+  "pages_visited": [
+    "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx"
+  ],
+  "urls_tested": [
+    "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/K-12%20%20Oregon%20Science%20Standards%20with%20Guidance.pdf"
+  ],
+  "working_url": "https://www.oregon.gov/ode/educator-resources/standards/science/Documents/K-12%20%20Oregon%20Science%20Standards%20with%20Guidance.pdf",
+  "working_url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/",
+  "confidence": "high",
+  "notes": "2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed.",
+  "issues_encountered": [],
+  "batch": "Batch 3 (PDF Parse Errors)",
+  "original_error": "Connection error when attempting to download PDF"
+}

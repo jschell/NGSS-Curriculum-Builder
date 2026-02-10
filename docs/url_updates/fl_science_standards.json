@@ -1,0 +1,32 @@
+{
+  "state_abbr": "FL",
+  "state_name": "Florida",
+  "research_date": "2026-02-05",
+  "researcher": "automated_research.py + web_search",
+  "doe_visited": "https://www.fldoe.org/ (searched via web_search)",
+  "pages_visited": [
+    "Science Standards page"
+  ],
+  "urls_tested": [
+    "https://info.fldoe.org/docushare/dsweb/Get/Document/6516/dps2012-140b.pdf"
+  ],
+  "working_url": "https://info.fldoe.org/docushare/dsweb/Get/Document/6516/dps2012-140b.pdf",
+  "working_url_source": "https://www.fldoe.org/",
+  "confidence": "High",
+  "notes": "Found 'NGSSS: 912 Science Standards Body of Knowledge' - appears to be complete K-12 document (9-12 grade range). Same URL structure as states.json (info.fldoe.org). Document adoption: February 2008 (NGSS).",
+  "issues_encountered": [
+    "Browser tools unavailable during this research",
+    "Used web search instead"
+  ],
+  "current_url": "https://info.fldoe.org/docushare/dsweb/Get/Document/6516/dps2012-140b.pdf",
+  "document_title": "Florida NGSSS Science Standards",
+  "doe_url": "https://www.fldoe.org/",
+  "science_page_patterns": [
+    "/academics/standards/science",
+    "/curriculum/science"
+  ],
+  "search_terms": [
+    "Florida science standards PDF",
+    "NGSSS BEST"
+  ]
+}

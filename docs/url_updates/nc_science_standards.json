@@ -1,0 +1,35 @@
+{
+  "state_abbr": "NC",
+  "state_name": "North Carolina",
+  "research_date": "2026-02-05",
+  "researcher": "automated_web_search",
+  "doe_visited": "https://www.dpi.nc.gov/",
+  "pages_visited": [
+    "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
+    "https://www.dpi.nc.gov/districts-schools/classroom-resources/office-teaching-and-learning/standard-course-study/science/standard-course-study-supporting-resources"
+  ],
+  "urls_tested": [
+    "https://www.dpi.nc.gov/documents/cte/curriculum/science/k-2-science-standards/open"
+  ],
+  "working_url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
+  "working_url_source": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
+  "confidence": "medium",
+  "notes": "North Carolina adopted NEW 2023 K-12 Science Standards (required implementation 2024). Standards are organized by grade bands (K-2, 3-5, 6-8) and high school courses (Biology, Chemistry, Physics, etc.). No single comprehensive K-12 PDF found - appears to be grade-band specific documents.",
+  "issues_encountered": [
+    "No single comprehensive K-12 PDF available",
+    "Standards organized in separate grade-band and course-specific documents"
+  ],
+  "batch": "Batch 7 (Remaining States)",
+  "original_error": "Not previously researched",
+  "adoption_details": "2023 standards approved, required implementation 2024",
+  "special_structure": "grade_band_specific_documents",
+  "recent_update": "Very recent standards (2023), newly required in 2024",
+  "grade_band_urls": {
+    "K-2": "https://www.dpi.nc.gov/documents/cte/curriculum/science/k-2-science-standards/open",
+    "3-5": "Available on DPI website",
+    "6-8": "https://www.dpi.nc.gov/documents/cte/curriculum/science/6-8-science-standards",
+    "Biology": "https://www.dpi.nc.gov/documents/cte/curriculum/science/biology-standards/open",
+    "Chemistry": "https://www.dpi.nc.gov/documents/cte/curriculum/science/chemistry-standards/open",
+    "Physics": "https://www.dpi.nc.gov/documents/cte/curriculum/science/physics-standards/open"
+  }
+}
