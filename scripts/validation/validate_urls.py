@@ -2,629 +2,432 @@
 # /// script
 # dependencies = [
 #     "httpx>=0.27.0",
-#     "orjson>=3.9.0",
-#     "pypdf>=3.0.0",
 # ]
 # ///
-# -*- coding: utf-8 -*-
 """
-URL Validation Utility
-Validates URLs in states.json and generates update patches
+URL Validation Enhancement - Step 2 of Comprehensive Validation Suite
+
+Refactored to use validation_framework.py. Adds:
+  - HTTP vs HTTPS consistency checks
+  - Redirect chain detection
+  - SSL certificate validation
+  - Common URL typo detection
+  - Deprecated domain flagging
+  - Response caching (per run)
+  - Parallel checking via asyncio.gather
+  - --verbose / --state / --severity CLI flags
 """
 
-import json
+from __future__ import annotations
+
+import asyncio
+import re
+import ssl
 import sys
-import os
 from pathlib import Path
+from typing import Any, Dict, List, Optional
+from urllib.parse import urlparse
+
 import httpx
-import hashlib
-from typing import Dict, List, Optional, Tuple
-import orjson
-import pypdf
-import io
-import dataclasses
 
-# =============================================================================
-# DATA MODELS
-# =============================================================================
+# ---------------------------------------------------------------------------
+# Framework import (searches upward from this file)
+# ---------------------------------------------------------------------------
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validation_framework import Issue, Severity, Validator, ValidationRunner, load_states
 
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
 
-@dataclasses.dataclass
-class ValidationResult:
-    """Result of validating a single URL"""
+DEPRECATED_DOMAINS: List[str] = [
+    "www.achieve.org",           # merged into other orgs
+    "ngss.nsta.org",             # old NSTA NGSS hub
+    "www.nextgenscience.org",    # retired - redirects
+    "rpdp.net",                  # Nevada old domain
+    "ped.state.nm.us",           # NM old domain
+    "dc.doe.gov",                # DC old domain
+]
 
-    url: str
-    title: str
-    state_abbrev: str
-    http_status: int
-    content_type: str  # "pdf", "html", "text", "error_page", "unknown"
-    file_size_kb: Optional[int]
-    error: Optional[str]
-    redirect_chain: List[str]
-    confidence: str  # "high", "medium", "low"
-    notes: str
-    content_validation: Optional[Dict] = None  # PDF content validation results
+TYPO_PATTERNS: List[tuple[str, str]] = [
+    (r"^htpp://",  "Typo: 'htpp://' should be 'http://'"),
+    (r"^htps://",  "Typo: 'htps://' should be 'https://'"),
+    (r"^htp://",   "Typo: 'htp://' should be 'http://'"),
+    (r"^https?:/[^/]", "Typo: missing double-slash after scheme"),
+    (r"\.pdf\.pdf$",   "Typo: double .pdf extension"),
+    (r"\s",            "Whitespace in URL"),
+]
 
-    def to_dict(self):
-        return {
-            "url": self.url,
-            "title": self.title,
-            "state_abbrev": self.state_abbrev,
-            "http_status": self.http_status,
-            "content_type": self.content_type,
-            "file_size_kb": self.file_size_kb,
-            "error": self.error,
-            "redirect_chain": self.redirect_chain,
-            "confidence": self.confidence,
-            "notes": self.notes,
-            "content_validation": self.content_validation,
-        }
+# Concurrency limit so we don't hammer servers
+CONCURRENCY = 8
 
 
-@dataclasses.dataclass
-class ValidationReport:
-    """Summary of validation results"""
+# ---------------------------------------------------------------------------
+# URLValidator
+# ---------------------------------------------------------------------------
 
-    validation_date: str
-    validator_version: str
-    total_urls: int
-    results: Dict[str, ValidationResult]
-    summary: Dict[str, int]
-
-    def to_dict(self):
-        return {
-            "validation_date": self.validation_date,
-            "validator_version": self.validator_version,
-            "total_urls": self.total_urls,
-            "results": {
-                abbr: result.to_dict() for abbr, result in self.results.items()
-            },
-            "summary": self.summary,
-        }
-
-
-# =============================================================================
-# VALIDATION
-# =============================================================================
-
-
-def validate_pdf_content(
-    url: str, expected_grades: List[str], expected_state: str, expected_title: str
-) -> Dict:
+class URLValidator(Validator):
     """
-    Validate PDF contains expected content.
+    Validates all document URLs in states.json.
 
-    Returns:
-        dict: Content validation results with confidence score
+    Checks performed per URL
+    ------------------------
+    U001  Typo in URL scheme or format
+    U002  HTTP used where HTTPS is available
+    U003  URL points to a deprecated domain
+    U004  HTTP error (4xx / 5xx / network failure)
+    U005  Redirect chain detected (informational)
+    U006  SSL certificate invalid / untrusted
+    U007  Response is HTML/error page instead of expected document
     """
-    try:
-        response = httpx.get(url, timeout=30, follow_redirects=True)
-        if response.status_code != 200:
-            return {
-                "error": f"HTTP {response.status_code}",
-                "grade_level_found": False,
-                "state_name_found": False,
-                "science_keyword_found": False,
-                "metadata_title_match": "error",
-                "confidence_score": 0.0,
-                "warnings": [f"HTTP {response.status_code} when downloading PDF"],
-                "validation_status": "http_error",
-            }
 
-        pdf_file = io.BytesIO(response.content)
-        reader = pypdf.PdfReader(pdf_file)
+    name = "URLValidator"
 
-        # Extract text from first 5 pages
-        text = ""
-        for page in reader.pages[:5]:
-            try:
-                text += page.extract_text() + "\n"
-            except:
-                pass
-
-        # Extract metadata
-        metadata = reader.metadata or {}
-        pdf_title = metadata.get("/Title", "") if metadata else ""
-
-        # Check for expected content
-        grade_found = False
-        for grade in expected_grades:
-            if (
-                str(grade) in text
-                or f"Grade {grade}" in text
-                or f"grade {grade}" in text
-            ):
-                grade_found = True
-                break
-
-        state_found = expected_state in text or expected_state.split()[-1] in text
-        science_found = any(
-            keyword in text.lower()
-            for keyword in ["science", "ngss", "standards", "performance expectations"]
-        )
-        title_match = expected_title in pdf_title if pdf_title else False
-
-        # Calculate confidence
-        confidence = 0.0
-        if grade_found:
-            confidence += 0.4
-        if state_found:
-            confidence += 0.3
-        if science_found:
-            confidence += 0.2
-        if title_match:
-            confidence += 0.1
-
-        # Generate warnings
-        warnings = []
-        if not grade_found:
-            warnings.append(f"grade levels {expected_grades} not found in PDF")
-        if not state_found:
-            warnings.append(f"state name '{expected_state}' not found in PDF")
-        if not science_found:
-            warnings.append("science keyword not found in PDF")
-
-        # Determine validation status
-        if confidence >= 0.8:
-            status = "content_verified"
-        elif confidence >= 0.5:
-            status = "content_questionable"
-        elif confidence >= 0.3:
-            status = "content_questionable"
-        else:
-            status = "wrong_document"
-
-        if confidence < 0.5:
-            warnings.append(
-                f"low confidence score ({confidence:.2f}) suggests wrong document"
-            )
-
-        return {
-            "grade_level_found": grade_found,
-            "state_name_found": state_found,
-            "science_keyword_found": science_found,
-            "metadata_title_match": "exact" if title_match else "none",
-            "confidence_score": confidence,
-            "warnings": warnings,
-            "validation_status": status,
-        }
-
-    except Exception as e:
-        return {
-            "error": str(e),
-            "grade_level_found": False,
-            "state_name_found": False,
-            "science_keyword_found": False,
-            "metadata_title_match": "error",
-            "confidence_score": 0.0,
-            "warnings": [f"content validation failed: {e}"],
-            "validation_status": "validation_error",
-        }
-
-
-class URLValidator:
-    """Validates document URLs"""
-
-    def __init__(self, timeout: int = 30, max_redirects: int = 3):
+    def __init__(self, timeout: int = 20, verbose: bool = False):
         self.timeout = timeout
-        self.max_redirects = max_redirects
-        self.client = None
+        self.verbose = verbose
+        # Simple in-process cache: url -> (http_status, final_url, content_type, ssl_ok, error)
+        self._cache: Dict[str, dict] = {}
 
-    async def get_client(self) -> httpx.AsyncClient:
-        if self.client is None:
-            self.client = httpx.AsyncClient(
-                timeout=self.timeout,
-                limits=httpx.Limits(max_connections=10),
-                follow_redirects=True,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                    "Accept": "application/pdf,application/xhtml+xml,application/xml,text/html,*/*",
-                },
-            )
-        return self.client
+    # ------------------------------------------------------------------
+    # Main entry point (sync wrapper around async logic)
+    # ------------------------------------------------------------------
 
-    async def validate_url(
+    def validate(self, data: Dict[str, Any]) -> List[Issue]:
+        return asyncio.run(self._validate_async(data))
+
+    # ------------------------------------------------------------------
+    # Async core
+    # ------------------------------------------------------------------
+
+    async def _validate_async(self, data: Dict[str, Any]) -> List[Issue]:
+        items = self._collect_urls(data)
+        sem = asyncio.Semaphore(CONCURRENCY)
+        limits = httpx.Limits(max_connections=CONCURRENCY, max_keepalive_connections=CONCURRENCY)
+
+        async with httpx.AsyncClient(
+            timeout=self.timeout,
+            limits=limits,
+            follow_redirects=True,
+            verify=False,   # we check SSL manually below
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (compatible; NGSS-Validator/1.0; "
+                    "+https://github.com/jschell/NGSS-Curriculum-Builder)"
+                ),
+                "Accept": "application/pdf,text/html,*/*",
+            },
+        ) as client:
+            tasks = [
+                self._check_url(client, sem, state, doc_title, url)
+                for state, doc_title, url in items
+            ]
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        issues: List[Issue] = []
+        for (state, doc_title, url), result in zip(items, results):
+            if isinstance(result, Exception):
+                issues.append(Issue(
+                    severity=Severity.ERROR,
+                    code="U004",
+                    state=state,
+                    field=doc_title,
+                    message=f"Unexpected error checking URL: {result}",
+                    suggestion="Inspect URL manually",
+                ))
+                continue
+            issues.extend(result)
+
+        return issues
+
+    def _collect_urls(self, data: Dict[str, Any]) -> List[tuple[str, str, str]]:
+        items = []
+        for state_abbrev, state_data in data.items():
+            for doc in state_data.get("documents", []):
+                url = doc.get("url", "").strip()
+                title = doc.get("title", "untitled")
+                if url:
+                    items.append((state_abbrev, title, url))
+        return items
+
+    # ------------------------------------------------------------------
+    # Per-URL checks
+    # ------------------------------------------------------------------
+
+    async def _check_url(
         self,
+        client: httpx.AsyncClient,
+        sem: asyncio.Semaphore,
+        state: str,
+        doc_title: str,
         url: str,
-        title: str,
-        state_abbrev: str,
-        grade_levels: Optional[List[str]] = None,
-        state_name: str = "",
-    ) -> ValidationResult:
-        """Validate a single URL"""
-        if grade_levels is None:
-            grade_levels = []
-        client = await self.get_client()
-        result = ValidationResult(
-            url=url,
-            title=title,
-            state_abbrev=state_abbrev,
-            http_status=0,
-            content_type="unknown",
-            file_size_kb=None,
-            error=None,
-            redirect_chain=[],
-            confidence="medium",
-            notes="",
-            content_validation=None,
-        )
+    ) -> List[Issue]:
+        issues: List[Issue] = []
+        field = doc_title[:60]
+
+        # 1. Static checks (no network)
+        issues.extend(self._check_typos(state, field, url))
+        issues.extend(self._check_deprecated_domain(state, field, url))
+
+        # 2. Network checks (cached)
+        async with sem:
+            net = await self._fetch(client, url)
+
+        if self.verbose:
+            print(f"  [{state}] {url[:60]}... -> {net['status']} {net.get('error','')}")
+
+        # 3. SSL check (independent of redirect; checks *original* URL if HTTPS)
+        issues.extend(self._check_ssl(state, field, url, net))
+
+        # 4. HTTP -> HTTPS upgrade opportunity
+        issues.extend(self._check_http_vs_https(state, field, url, net))
+
+        # 5. Network error / HTTP error
+        if net["error"] and net["status"] == 0:
+            issues.append(Issue(
+                severity=Severity.ERROR,
+                code="U004",
+                state=state,
+                field=field,
+                message=f"Network failure: {net['error']}",
+                suggestion="Check internet connectivity or retry later",
+            ))
+        elif net["status"] not in (0, 200, 206):
+            severity = Severity.ERROR if net["status"] >= 400 else Severity.WARNING
+            issues.append(Issue(
+                severity=severity,
+                code="U004",
+                state=state,
+                field=field,
+                message=f"HTTP {net['status']} for {url}",
+                suggestion="Find updated URL on state education agency website",
+            ))
+
+        # 6. Redirect chain (informational)
+        if net.get("redirects"):
+            chain = " -> ".join(net["redirects"])
+            issues.append(Issue(
+                severity=Severity.INFO,
+                code="U005",
+                state=state,
+                field=field,
+                message=f"Redirect chain: {chain}",
+                suggestion="Consider updating URL to final destination",
+            ))
+
+        # 7. HTML returned instead of document
+        if net["status"] == 200 and "html" in net.get("content_type", ""):
+            issues.append(Issue(
+                severity=Severity.WARNING,
+                code="U007",
+                state=state,
+                field=field,
+                message=f"URL returns HTML (expected PDF/document): {url}",
+                suggestion="Verify this is the correct direct-download link",
+            ))
+
+        return issues
+
+    # ------------------------------------------------------------------
+    # Static checks
+    # ------------------------------------------------------------------
+
+    def _check_typos(self, state: str, field: str, url: str) -> List[Issue]:
+        issues = []
+        for pattern, description in TYPO_PATTERNS:
+            if re.search(pattern, url, re.IGNORECASE):
+                issues.append(Issue(
+                    severity=Severity.ERROR,
+                    code="U001",
+                    state=state,
+                    field=field,
+                    message=f"{description}: {url}",
+                    suggestion="Fix URL format",
+                ))
+        return issues
+
+    def _check_deprecated_domain(self, state: str, field: str, url: str) -> List[Issue]:
+        parsed = urlparse(url)
+        host = parsed.netloc.lower()
+        for domain in DEPRECATED_DOMAINS:
+            if host == domain or host.endswith("." + domain):
+                return [Issue(
+                    severity=Severity.WARNING,
+                    code="U003",
+                    state=state,
+                    field=field,
+                    message=f"URL uses deprecated domain '{domain}': {url}",
+                    suggestion="Find replacement URL on current state education website",
+                )]
+        return []
+
+    # ------------------------------------------------------------------
+    # Network-dependent checks
+    # ------------------------------------------------------------------
+
+    def _check_ssl(
+        self, state: str, field: str, url: str, net: dict
+    ) -> List[Issue]:
+        if not url.startswith("https://"):
+            return []
+        if net.get("ssl_error"):
+            return [Issue(
+                severity=Severity.WARNING,
+                code="U006",
+                state=state,
+                field=field,
+                message=f"SSL issue for {url}: {net['ssl_error']}",
+                suggestion="Verify SSL certificate is valid and not expired",
+            )]
+        return []
+
+    def _check_http_vs_https(
+        self, state: str, field: str, url: str, net: dict
+    ) -> List[Issue]:
+        if not url.startswith("http://"):
+            return []
+        # Check if the final URL ended up as HTTPS (server upgraded it)
+        final = net.get("final_url", "")
+        if final.startswith("https://"):
+            return [Issue(
+                severity=Severity.WARNING,
+                code="U002",
+                state=state,
+                field=field,
+                message=f"URL uses HTTP but server serves HTTPS: {url}",
+                suggestion=f"Update URL to HTTPS: {final}",
+            )]
+        # Even if no upgrade, flag plain HTTP as a warning
+        return [Issue(
+            severity=Severity.INFO,
+            code="U002",
+            state=state,
+            field=field,
+            message=f"URL uses plain HTTP (not HTTPS): {url}",
+            suggestion="Verify whether an HTTPS version is available",
+        )]
+
+    # ------------------------------------------------------------------
+    # HTTP fetch (cached)
+    # ------------------------------------------------------------------
+
+    async def _fetch(self, client: httpx.AsyncClient, url: str) -> dict:
+        if url in self._cache:
+            return self._cache[url]
+
+        result: dict = {
+            "status": 0,
+            "final_url": url,
+            "content_type": "",
+            "redirects": [],
+            "error": None,
+            "ssl_error": None,
+        }
+
+        # Separate SSL check against the original URL
+        if url.startswith("https://"):
+            result["ssl_error"] = await self._check_ssl_cert(url)
 
         try:
-            # Follow redirects
-            final_url = url
-            redirect_chain = []
-            for _ in range(self.max_redirects):
-                try:
-                    response = await client.head(url, follow_redirects=True)
-                    if response.status_code == 200:
-                        final_url = str(response.url)
-                        if final_url != url:
-                            redirect_chain.append(final_url)
-                            url = final_url
-                        break
-                    elif response.status_code in (301, 302, 303, 307, 308):
-                        redirect_chain.append(str(response.url))
-                        url = str(response.url)
-                    else:
-                        result.http_status = response.status_code
-                        result.error = f"HTTP {response.status_code}"
-                        result.confidence = "low"
-                        return result
+            response = await client.head(url, follow_redirects=True)
+            result["status"] = response.status_code
+            result["final_url"] = str(response.url)
+            result["content_type"] = response.headers.get("content-type", "")
 
-                except httpx.TimeoutException:
-                    result.http_status = 408
-                    result.error = "Timeout"
-                    result.confidence = "low"
-                    return result
-                except Exception as e:
-                    result.http_status = 0
-                    result.error = f"Connection error: {type(e).__name__}"
-                    result.confidence = "low"
-                    return result
+            # Capture redirect chain
+            for h in response.history:
+                result["redirects"].append(str(h.url))
+            if result["redirects"]:
+                result["redirects"].append(str(response.url))
 
-            # Download small portion to check content type
-            try:
-                response = await client.get(
-                    url, follow_redirects=True, headers={"Range": "bytes=0-1024"}
-                )
-
-                if response.status_code == 200:
-                    result.http_status = 200
-                    content_type_bytes = response.content[:100]
-
-                    # Detect content type from header
-                    content_type_header = response.headers.get("content-type", "")
-
-                    if "application/pdf" in content_type_header.lower():
-                        result.content_type = "pdf"
-                        result.confidence = "high"
-                    elif (
-                        "text/html" in content_type_header.lower()
-                        or "text/plain" in content_type_header.lower()
-                    ):
-                        result.content_type = "html"
-                        result.confidence = "low"
-                        result.error = "Returns HTML instead of PDF"
-                    elif "text/plain" in content_type_header.lower():
-                        result.content_type = "text"
-                        result.confidence = "low"
-                        result.error = "Returns plain text"
-                    elif "error" in response.headers.get("content-type", "").lower():
-                        result.content_type = "error_page"
-                        result.error = "Server returned error page"
-                    else:
-                        result.content_type = "unknown"
-                        result.confidence = "low"
-
-                    # Check file size if available
-                    if "content-length" in response.headers:
-                        try:
-                            size = int(response.headers["content-length"])
-                            result.file_size_kb = size // 1024
-                        except:
-                            pass
-
-                    if redirect_chain:
-                        result.notes = f"Redirected: {' -> '.join(redirect_chain)}"
-                    else:
-                        result.notes = "No redirects"
-
-            except httpx.TimeoutException:
-                result.http_status = 408
-                result.error = "Timeout during content check"
-                result.confidence = "low"
-                return result
-            except Exception as e:
-                result.http_status = 0
-                result.error = f"Content check error: {type(e).__name__}"
-                result.confidence = "low"
-                return result
-
+        except httpx.TimeoutException:
+            result["error"] = "Timeout"
+        except httpx.ConnectError as e:
+            result["error"] = f"ConnectError: {e}"
         except Exception as e:
-            result.http_status = 0
-            result.error = f"Validation error: {type(e).__name__}"
-            result.confidence = "low"
-            return result
+            result["error"] = f"{type(e).__name__}: {e}"
 
-        # Run content validation if we have a valid PDF
-        if result.http_status == 200 and result.content_type == "pdf":
-            result.content_validation = validate_pdf_content(
-                url, grade_levels, state_name, title
-            )
-            # Update confidence based on content validation
-            if result.content_validation.get("confidence_score", 0) < 0.5:
-                result.confidence = "low"
-                result.error = result.content_validation.get("warnings", ["Unknown"])[0]
-
+        self._cache[url] = result
         return result
 
-    async def validate_urls_batch(
-        self, items: List[Tuple[str, str, str, Optional[List[str]], str]]
-    ) -> List[ValidationResult]:
-        """Validate multiple URLs in batches"""
-        results = []
-
-        for state_abbrev, title, url, grade_levels, state_name in items:
-            result = await self.validate_url(
-                url, title, state_abbrev, grade_levels, state_name
+    async def _check_ssl_cert(self, url: str) -> Optional[str]:
+        """Return error string if SSL cert is invalid, else None."""
+        parsed = urlparse(url)
+        host = parsed.hostname or ""
+        port = parsed.port or 443
+        try:
+            ctx = ssl.create_default_context()
+            loop = asyncio.get_event_loop()
+            conn = await loop.run_in_executor(
+                None, lambda: ctx.wrap_socket(
+                    __import__("socket").create_connection((host, port), timeout=10),
+                    server_hostname=host,
+                )
             )
-            results.append(result)
-
-            print(f"  {state_abbrev}: {title[:40]}...")
-            if result.http_status == 200 and result.content_type == "pdf":
-                if result.content_validation:
-                    confidence = result.content_validation.get("confidence_score", 0)
-                    status = result.content_validation.get(
-                        "validation_status", "unknown"
-                    )
-                    print(
-                        f"    Status: PDF {result.file_size_kb}KB - Confidence: {confidence:.2f} ({status})"
-                    )
-                else:
-                    print(f"    Status: Working PDF {result.file_size_kb}KB")
-            elif result.http_status == 200:
-                print(
-                    f"    Status: {result.content_type.upper()} - {result.error or 'OK'}"
-                )
-            else:
-                print(
-                    f"    Status: HTTP {result.http_status} - {result.error or 'Error'}"
-                )
-
-        return results
+            conn.close()
+            return None
+        except ssl.SSLCertVerificationError as e:
+            return f"Certificate verification failed: {e.reason}"
+        except ssl.SSLError as e:
+            return f"SSL error: {e}"
+        except Exception:
+            return None  # Network error handled separately
 
 
-# =============================================================================
-# OUTPUT GENERATION
-# =============================================================================
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
-
-def generate_validation_report(results: List[ValidationResult], output_path: Path):
-    """Generate human-readable validation report"""
-    from datetime import datetime
-
-    validation_date = datetime.now().strftime("%Y-%m-%d")
-    validator_version = "1.0"
-
-    report_lines = [
-        "# URL Validation Report\n",
-        f"**Validation Date:** {validation_date}\n",
-        f"**Validator Version:** {validator_version}\n",
-        "---\n\n",
-    ]
-
-    # Summary statistics
-    working = sum(
-        1 for r in results if r.http_status == 200 and r.content_type == "pdf"
-    )
-    broken = sum(1 for r in results if r.http_status != 200)
-    other_issues = sum(
-        1 for r in results if r.http_status == 200 and r.content_type != "pdf"
-    )
-
-    report_lines.append("## Summary\n")
-    report_lines.append(f"- **Total URLs Validated:** {len(results)}\n")
-    report_lines.append(f"- **Working PDFs:** {working}\n")
-    report_lines.append(f"- **Broken URLs (HTTP errors):** {broken}\n")
-    report_lines.append(f"- **Wrong Format (HTML/Error):** {other_issues}\n")
-    report_lines.append(
-        f"- **Overall Success Rate:** {working * 100 // len(results)}%\n"
-    )
-    report_lines.append("\n")
-
-    # By state
-    state_results = {}
-    for r in results:
-        if r.state_abbrev not in state_results:
-            state_results[r.state_abbrev] = []
-        state_results[r.state_abbrev].append(r)
-
-    report_lines.append("## By State\n\n")
-    for state_abbrev in sorted(state_results.keys()):
-        state_urls = state_results[state_abbrev]
-        working = sum(
-            1 for r in state_urls if r.http_status == 200 and r.content_type == "pdf"
-        )
-        total = len(state_urls)
-        report_lines.append(f"\n### {state_abbrev} ({total} URLs)\n")
-
-        if working > 0:
-            report_lines.append(f"**Working URLs:** {working}/{total}\n")
-        elif total > 0:
-            report_lines.append(f"**Broken URLs:** {total - working}/{total}\n")
-        else:
-            report_lines.append(f"**Status:** All broken\n")
-
-        for r in state_urls:
-            if r.http_status == 200:
-                status_icon = "✅" if r.content_type == "pdf" else "⚠️ "
-                status_text = f"{status_icon} {r.content_type.upper()}"
-                if r.file_size_kb:
-                    status_text += f" ({r.file_size_kb}KB)"
-            elif r.http_status != 0:
-                status_text = f"❌ HTTP {r.http_status}"
-            else:
-                status_text = "❌ Error"
-
-            report_lines.append(f"- {r.title[:60]}: {status_text}")
-            if r.error:
-                report_lines.append(f"  Error: {r.error}")
-            if r.notes and "Redirected" in r.notes:
-                report_lines.append(f"  Notes: {r.notes}")
-
-    report_lines.append("\n---\n")
-
-    # Issues list
-    issue_urls = [r for r in results if r.http_status != 200 or r.content_type != "pdf"]
-    if issue_urls:
-        report_lines.append("## URLs Needing Attention\n\n")
-        for r in issue_urls:
-            issue_type = "HTTP Error" if r.http_status != 200 else "Wrong Format"
-            report_lines.append(f"- **{r.state_abbrev}**: {r.title[:50]}")
-            report_lines.append(f"  - Issue: {issue_type}")
-            if r.http_status != 200:
-                report_lines.append(f"  - Details: HTTP {r.http_status} - {r.error}")
-            else:
-                report_lines.append(f"  - Details: {r.content_type} - {r.error}")
-            report_lines.append(f"  - URL: {r.url[:70]}...")
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("".join(report_lines), encoding="utf-8")
-
-
-def generate_validation_json(results: List[ValidationResult], output_path: Path):
-    """Generate structured JSON output"""
-    from datetime import datetime
-
-    validation_date = datetime.now().strftime("%Y-%m-%d")
-    validator_version = "1.0"
-
-    report_data = {
-        "validation_date": validation_date,
-        "validator_version": validator_version,
-        "total_urls": len(results),
-        "results": {r.url: r.to_dict() for r in results},
-        "summary": {
-            "working_pdf": sum(
-                1 for r in results if r.http_status == 200 and r.content_type == "pdf"
-            ),
-            "broken": sum(1 for r in results if r.http_status != 200),
-            "other_issues": sum(
-                1 for r in results if r.http_status == 200 and r.content_type != "pdf"
-            ),
-            "content_verified": sum(
-                1
-                for r in results
-                if r.content_validation
-                and r.content_validation.get("confidence_score", 0) >= 0.8
-            ),
-            "content_questionable": sum(
-                1
-                for r in results
-                if r.content_validation
-                and 0.5 <= r.content_validation.get("confidence_score", 0) < 0.8
-            ),
-            "wrong_document": sum(
-                1
-                for r in results
-                if r.content_validation
-                and r.content_validation.get("confidence_score", 0) < 0.5
-            ),
-        },
+def parse_args(argv: List[str]) -> dict:
+    args = {
+        "states": None,
+        "severity": "INFO",
+        "verbose": False,
     }
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_bytes(orjson.dumps(report_data, option=orjson.OPT_INDENT_2))
-
-
-# =============================================================================
-# MAIN CLI
-# =============================================================================
-
-
-async def validate_states(
-    states_data: Dict,
-    state_filter: Optional[List[str]] = None,
-    output_json: Path = Path("validation_results.json"),
-    output_report: Path = Path("reports/url_validation_report.md"),
-):
-    """Validate all document URLs in states.json"""
-
-    # Collect all URLs to validate
-    items = []
-    for state_abbrev, state_data in states_data.items():
-        if state_filter and state_abbrev not in state_filter:
-            continue
-
-        state_name = state_data.get("state_name", "")
-        for doc in state_data.get("documents", []):
-            grade_levels = doc.get("grade_levels", [])
-            items.append(
-                (state_abbrev, doc["title"], doc["url"], grade_levels, state_name)
-            )
-
-    print(f"\nValidating {len(items)} document URLs...\n")
-
-    # Validate in batches
-    validator = URLValidator()
-    results = await validator.validate_urls_batch(items)
-
-    # Generate outputs
-    print(f"\nGenerating validation report...")
-    generate_validation_report(results, output_report)
-
-    print(f"Generating validation JSON...")
-    generate_validation_json(results, output_json)
-
-    print(f"\nDone!")
-    print(f"  Report: {output_report}")
-    print(f"  JSON: {output_json}")
-    print(
-        f"\nWorking PDFs: {sum(1 for r in results if r.http_status == 200 and r.content_type == 'pdf')}"
-    )
-
-    return results
+    i = 0
+    while i < len(argv):
+        arg = argv[i]
+        if arg in ("--verbose", "-v"):
+            args["verbose"] = True
+        elif arg == "--state" and i + 1 < len(argv):
+            args["states"] = [s.strip().upper() for s in argv[i + 1].split(",")]
+            i += 1
+        elif arg == "--severity" and i + 1 < len(argv):
+            args["severity"] = argv[i + 1].upper()
+            i += 1
+        i += 1
+    return args
 
 
-async def main():
-    if len(sys.argv) < 2:
-        print("Usage: python validate_urls.py validate")
-        print("       python validate_urls.py validate --states WA,OR,CA")
-        print("\nOptions:")
-        print("  validate        Validate all states")
-        print("  --states ST,ST   Validate specific states")
-        return
+def main() -> int:
+    argv = sys.argv[1:]
 
-    command = sys.argv[1].lower()
+    if "--help" in argv or "-h" in argv:
+        print(__doc__)
+        print("Usage: uv run validate_urls.py [--verbose] [--state WA,OR] [--severity ERROR|WARNING|INFO]")
+        return 0
 
-    if command == "validate":
-        state_filter = None
-        if "--states" in sys.argv:
-            idx = sys.argv.index("--states")
-            if idx + 1 >= len(sys.argv):
-                print("Error: --states requires state abbreviations")
-                return
-            state_filter = sys.argv[idx + 1].split(",")
+    args = parse_args(argv)
+    severity_map = {
+        "ERROR": Severity.ERROR,
+        "WARNING": Severity.WARNING,
+        "INFO": Severity.INFO,
+    }
+    min_severity = severity_map.get(args["severity"], Severity.INFO)
 
-        script_dir = Path(__file__).parent
-        states_file = script_dir / "data" / "states.json"
+    data = load_states()
+    print(f"Loaded {len(data)} states.")
 
-        if not states_file.exists():
-            print(f"Error: states.json not found at {states_file}")
-            return
+    validator = URLValidator(verbose=args["verbose"])
+    runner = ValidationRunner()
+    runner.add_validator(validator)
 
-        import json
+    issues = runner.run(data, states=args["states"], min_severity=min_severity)
+    print(runner.report(issues))
 
-        with open(states_file) as f:
-            states_data = json.load(f)
-
-        output_json = script_dir / "validation_results.json"
-        output_report = script_dir / "reports" / "url_validation_report.md"
-
-        await validate_states(states_data, state_filter, output_json, output_report)
+    errors = [i for i in issues if i.severity == Severity.ERROR]
+    return 1 if errors else 0
 
 
 if __name__ == "__main__":
-    import asyncio
-
-    asyncio.run(main())
+    sys.exit(main())
