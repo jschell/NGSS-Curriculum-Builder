@@ -1,29 +1,55 @@
-# Plan: Extract Page Ranges for Remaining 23 States
+# Plan: Extract Page Ranges for Remaining States
 
-**Status:** BLOCKED — requires MCP browser tools or manual PDF downloads
+**Status:** Active — Partial progress 2026-02-11
 **Priority:** High
-**Estimated Time:** 4-5 hours
-**Dependencies:** cleanup-messy-page-ranges.md ✅ COMPLETE
+**Estimated Time:** 2-3 hours remaining
+**Dependencies:** None
 
-## Blocker (2026-02-11)
+## Progress Summary (2026-02-11)
 
-All state education PDF URLs return 403 Forbidden to automated HTTP access.
-Per docs/LESSONS_LEARNED.md, this requires either:
-- MCP browser tools (brave_web_search + browser_navigate)
-- Manual PDF download by the user
+**Started with**: 21 states needing page_range data (HI and MS were already done, not 23)
+**Completed this session**:
+- NE: Full K-8 + HS-by-subject extracted via browser TOC
+- DC: Full grade-band structure extracted via browser TOC
+- CO: Grade-band page ranges applied from CDE documentation (P-5/6-8/9-12)
+- 18 broken/wrong URLs fixed for CT, GA, IN, KS, LA, MD, ME, MN, MO, NC, NH, NM, RI, VA, VT, WV, DE notes
 
-This plan cannot proceed until one of the above is available.
+**Current state**: 33/51 states have page_range data (up from 30)
+
+## Remaining Work
+
+### States Without page_range (18) — Classified by Blocker
+
+**Direct NGSS adoption (no single K-12 PDF):**
+- CT, KS, MD, NH, NM, RI, VT — Use NGSS directly; page_ranges N/A
+
+**HTML/interactive standards (no extractable PDF):**
+- FL — CPALMS interactive database
+- GA — Grade-band PDFs per course (K-5, 6-8, 9-12 sections)
+- IN — 2023 grade/course-specific individual PDFs
+- LA — Individual grade PDFs (K-12 in ZIP archive)
+- ME — Grade-band PDFs (K-2, 3-5, 6-8, 9-12)
+- MO — Separate K-5 and 6-12 PDFs
+- NC — 2023 grade/course-specific PDFs
+- VA — Grade-specific PDFs per course
+- WV — Policy 2520.3C PDF (needs browser to access)
+
+**Needs MN PDF TOC read:**
+- MN — 104-page PDF accessible but downloads automatically; needs manual read
+
+**Needs DE structure analysis:**
+- DE — Topical (not grade-organized) arrangement of NGSS
 
 ## Overview
 
-Extract grade-level page ranges for the 23 states that currently have no page range data. Use the proven multi-phase approach: remote parsing, MCP browser tools, manual download, and TOC extraction.
+Extract grade-level page ranges for the remaining states. Use the proven multi-phase approach: remote parsing, MCP browser tools, manual download, and TOC extraction.
 
-## Problem Statement
+## Problem Statement (Updated)
 
-23 states still need page range extraction:
-CO, CT, DC, DE, FL, GA, HI, IN, KS, LA, MD, ME, MN, MO, MS, NC, NE, NH, NM, RI, VA, VT, WV
+21 states still need page range extraction (HI and MS already had data):
+CO, CT, DC, DE, FL, GA, IN, KS, LA, MD, ME, MN, MO, NC, NE, NH, NM, RI, VA, VT, WV
 
-This represents 45% of all states. Completing these will bring total coverage to 100% (51/51 states).
+After session work (2026-02-11): 18 states remain at null page_range.
 
 ## Prerequisites
 
