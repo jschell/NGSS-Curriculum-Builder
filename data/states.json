@@ -1633,7 +1633,7 @@
         "document_type": "grade_specific",
         "format": "HTML",
         "page_range": null,
-        "notes": "Maine Science and Engineering Standards (NGSS-based, 2017). Grade bands: K-2, 3-5, 6-8, 9-12.",
+        "notes": "Maine Science and Engineering Standards (NGSS-aligned, adopted 2019). Individual per-topic files (not grade-band PDFs): Elementary topics as PDF, MS/HS topics as DOCX. No combined grade-band document. Base URL: https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/",
         "last_verified": "2026-02-06",
         "url_source": "https://www.maine.gov/doe/learning/content/science/review",
         "special_structure": "grade_specific_documents"
@@ -2668,7 +2668,7 @@
     "documents": [
       {
         "title": "Georgia Science Standards of Excellence K-12",
-        "url": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
+        "url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Curriculum-and-Instruction/Pages/Science.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -2687,7 +2687,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Georgia Science Standards of Excellence. Grade-band PDFs: K-5, 6-8, 9-12 each with separate docs per course.",
+        "notes": "Georgia Standards of Excellence (GSE) for Science. Separate PDFs per course/grade. No combined K-12 document. georgiastandards.org is sunset; active host is gadoe.org.",
         "special_structure": "grade_band_documents"
       }
     ],
@@ -2940,8 +2940,19 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012) | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library. | Minnesota Academic Standards in Science—Final 1 May 2022 (edits October 2022). Complete K-12 standards document. PDF confirmed from Minnesota Legislative Reference Library."
+        "page_range": {
+          "K": "7-11",
+          "1": "12-17",
+          "2": "18-23",
+          "3": "24-28",
+          "4": "29-35",
+          "5": "36-42",
+          "6": "43-49",
+          "7": "50-58",
+          "8": "59-69",
+          "9-12": "70-104"
+        },
+        "notes": "2019 Minnesota Academic Standards in Science (Final, rule effective Sept 2021). 104-page PDF organized by grade (K-8) then 9-12. Standards encoded as grade-content codes (e.g. 0P=K-Physics, 1L=G1-Life). Page ranges extracted from benchmark code distribution."
       }
     ],
     "assessments": [
@@ -3456,7 +3467,7 @@
     "documents": [
       {
         "title": "2018 Science Standards of Learning K-Physics",
-        "url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000",
         "grade_levels": [
           "K",
           "1",
@@ -3475,7 +3486,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "2018 Science Standards of Learning (K-Physics). Grade-specific PDFs from standards page."
+        "notes": "2018 Science Standards of Learning (K through Physics), adopted October 2018. Combined 44-page PDF covering all grades K-12. VDOE blocks automated access (403) but URL confirmed."
       }
     ],
     "assessments": [
@@ -3804,7 +3815,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Louisiana Student Standards for Science (LSS, adopted March 2017). Individual grade PDFs in ZIP. HS by course.",
+        "notes": "Louisiana Student Standards for Science (LSS, adopted March 2017). Official download is a ZIP archive of individual grade/course PDFs: https://doe.louisiana.gov/docs/default-source/teacher-toolbox-resources/k-12-louisiana-student-standards-for-science.zip. No single combined K-12 PDF.",
         "special_structure": "web_based_grade_specific"
       }
     ],
@@ -3951,7 +3962,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Missouri Learning Standards for Science. Separate K-5 and 6-12 PDFs from standards page."
+        "notes": "Missouri Learning Standards for Science (2016). Two separate PDFs organized by discipline/topic (not by grade): K-5 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-k-5-sboe-2016.pdf) and 6-12 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-6-12-sboe-2016.pdf). Standards organized by topic with grade columns, not grade sections."
       }
     ],
     "assessments": [
@@ -4534,7 +4545,7 @@
     "documents": [
       {
         "title": "WV College- and Career-Readiness Standards for Science",
-        "url": "https://wvde.us/academics/middle-secondary-education/science/standards",
+        "url": "https://apps.sos.wv.gov/adlaw/csr/readfile.aspx?DocId=54673&Format=PDF",
         "grade_levels": [
           "K",
           "1",
@@ -4552,8 +4563,19 @@
         ],
         "document_type": "complete_k12",
         "format": "HTML",
-        "page_range": null,
-        "notes": "WV College- and Career-Readiness Standards for Science (Policy 2520.3C, August 2021). Framework-based NGSS."
+        "page_range": {
+          "K": "10-11",
+          "1": "12-12",
+          "2": "13-14",
+          "3": "15-17",
+          "4": "18-18",
+          "5": "19-20",
+          "6": "21-22",
+          "7": "23-25",
+          "8": "26-27",
+          "9-12": "28-56"
+        },
+        "notes": "WV College- and Career-Readiness Standards for Science (Policy 2520.3C, August 2021). 56-page image-based PDF. Grade sections identified via browser screenshot scanning. Organized K-8 by grade then HS (9-12) by content area."
       }
     ],
     "assessments": [
