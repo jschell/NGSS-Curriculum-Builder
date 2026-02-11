@@ -929,7 +929,7 @@
     "documents": [
       {
         "title": "Connecticut Next Generation Science Standards",
-        "url": "https://www.nextgenscience.org/connecticut",
+        "url": "https://portal.ct.gov/sde/science/science-standards-and-resources",
         "grade_levels": [
           "K",
           "1",
@@ -946,9 +946,9 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "PDF",
+        "format": "HTML",
         "page_range": null,
-        "notes": "Adopted by unanimous vote of State Board of Education (November 2015)",
+        "notes": "Connecticut adopted NGSS directly (Nov 2015). Standards and resources page.",
         "url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
         "last_verified": "2026-02-05"
       }
@@ -1045,7 +1045,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized into grade band content standards (K-3, 4-5, 6-8, 9-12)",
+        "notes": "Delaware uses topical arrangement of NGSS for grades 3-12 (not grade-organized). URL points to topical PDF.",
         "url_source": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
         "last_verified": "2026-02-04"
       }
@@ -1119,9 +1119,20 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "PDF",
-        "page_range": null,
-        "notes": "Based on National Research Council's Framework for K-12 Science Education",
+        "format": "HTML",
+        "page_range": {
+          "PreK-1": "4-9",
+          "2-5": "10-23",
+          "6": "24-29",
+          "7": "30-35",
+          "8": "36-41",
+          "HS-ESS": "42-45",
+          "HS-Bio": "46-51",
+          "HS-Chem": "52-59",
+          "HS-Phys": "60-67",
+          "HS-Env": "68-77"
+        },
+        "notes": "Organized by grade band (PreK-1, 2-5) then individual grades (6-8), then HS by subject. HS Biology p46, Chemistry p52, Physics p60, Environmental Science p68.",
         "url_source": "https://osse.dc.gov/publication/2016-next-generation-science-standards-faq-overview",
         "last_verified": "2026-02-04"
       }
@@ -1420,7 +1431,7 @@
     "documents": [
       {
         "title": "Kansas Science Standards",
-        "url": "https://community.ksde.org/Default.aspx?tabid=5785",
+        "url": "https://community.ksde.gov/science/KansasScienceStandards/KSScienceStandards.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -1439,7 +1450,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Standards set in grade bands K-2, 3-4, 5-7, and 8-12",
+        "notes": "Kansas adopted NGSS directly in June 2013 as Kansas College and Career Ready Standards for Science.",
         "url_source": "https://www.nextgenscience.org/lead-state-kansas",
         "last_verified": "2026-02-04"
       }
@@ -1622,7 +1633,7 @@
         "document_type": "grade_specific",
         "format": "HTML",
         "page_range": null,
-        "notes": "Maine provides grade-specific PDF documents organized by disciplinary core idea (e.g., K-ESS2, 1-LS1, 3-PS2). No comprehensive K-12 document available. Standards based on NGSS with Maine-specific adaptations.",
+        "notes": "Maine Science and Engineering Standards (NGSS-based, 2017). Grade bands: K-2, 3-5, 6-8, 9-12.",
         "last_verified": "2026-02-06",
         "url_source": "https://www.maine.gov/doe/learning/content/science/review",
         "special_structure": "grade_specific_documents"
@@ -1680,7 +1691,7 @@
     "documents": [
       {
         "title": "Maryland NGSS K-12",
-        "url": "https://marylandpublicschools.org/programs/Documents/CTE/Computer%20Science/K-12StandardsLandscape.pdf",
+        "url": "https://www.marylandpublicschools.org/about/Pages/DCAA/Science/index.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -1699,7 +1710,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Maryland is a Lead State for NGSS"
+        "notes": "Maryland adopted NGSS directly as Maryland Science Standards. No single K-12 PDF document."
       }
     ],
     "assessments": [
@@ -1929,7 +1940,7 @@
     "documents": [
       {
         "title": "New Hampshire NGSS Standards",
-        "url": "https://www.nextgenscience.org/rhode-island",
+        "url": "https://www.education.nh.gov/who-we-are/division-of-learner-support/bureau-of-instructional-support/science",
         "grade_levels": [
           "K",
           "1",
@@ -1948,7 +1959,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "K-5 grade-by-grade, middle school and high school standards | Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents. | Found Rhode Island NGSS standards page on nextgenscience.org. NH uses NGSS, so this page likely covers both states. Need to verify if there are separate NH-specific documents."
+        "notes": "New Hampshire adopted NGSS directly."
       }
     ],
     "assessments": [
@@ -2094,7 +2105,7 @@
     "documents": [
       {
         "title": "NM STEM Ready! Science Standards",
-        "url": "https://www.srca.nm.gov/nmac/nmregister/xxviii/6.29.10.pdf",
+        "url": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science/nm-stem-ready-science-standards/",
         "grade_levels": [
           "K",
           "1",
@@ -2113,7 +2124,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "NGSS plus six New Mexico-specific science standards",
+        "notes": "NM STEM Ready! = NGSS + 6 New Mexico-specific standards. Standards page with resources.",
         "url_source": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science",
         "last_verified": "2026-02-04"
       }
@@ -2170,7 +2181,7 @@
     "documents": [
       {
         "title": "Rhode Island NGSS Standards",
-        "url": "https://www.nextgenscience.org/rhode-island",
+        "url": "https://www.ride.ri.gov/StudentsFamilies/RIEducationData/RIAcademicStandards.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -2189,7 +2200,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Rhode Island was first state to adopt NGSS | Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document. | Found Rhode Island NGSS standards page on nextgenscience.org. RI uses NGSS exclusively - official state standards document."
+        "notes": "Rhode Island adopted NGSS directly."
       }
     ],
     "assessments": [
@@ -2244,7 +2255,7 @@
     "documents": [
       {
         "title": "Vermont NGSS Standards",
-        "url": "https://www.nextgenscience.org/vermont",
+        "url": "https://education.vermont.gov/student-learning/curriculum/science-technology-engineering-math/science-education",
         "grade_levels": [
           "K",
           "1",
@@ -2263,7 +2274,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Organized in grade bands K-2, 3-5, 6-8, 9-12",
+        "notes": "Vermont adopted NGSS directly as Vermont Science Standards.",
         "url_source": "https://www.nextgenscience.org/lead-state-vermont",
         "last_verified": "2026-02-04"
       }
@@ -2504,7 +2515,7 @@
     "documents": [
       {
         "title": "2020 Colorado Academic Standards: Science",
-        "url": "https://www.cde.state.co.us/coscience/2020cas-sc",
+        "url": "https://www.cde.state.co.us/coscience/cas-sc-standards-p12-2018",
         "grade_levels": [
           "K",
           "1",
@@ -2521,9 +2532,13 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
-        "page_range": null,
-        "notes": "Three main standards: Physical Science, Life Science, Earth/Space Science"
+        "format": "PDF",
+        "page_range": {
+          "P-5": "10-67",
+          "6-8": "68-114",
+          "9-12": "115-200"
+        },
+        "notes": "Organized by grade band: P-2, 3-5, MS (6-8), HS (9-12). P-5 starts p.10, 6-8 starts p.68, 9-12 starts p.115."
       }
     ],
     "assessments": [
@@ -2653,7 +2668,7 @@
     "documents": [
       {
         "title": "Georgia Science Standards of Excellence K-12",
-        "url": "https://www.georgiastandards.org/Georgia-Standards/Documents/Science-Sixth-Grade-Georgia-Standards.pdf",
+        "url": "https://www.georgiastandards.org/Georgia-Standards/Pages/Science.aspx",
         "grade_levels": [
           "K",
           "1",
@@ -2672,7 +2687,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and Project 2061 Benchmarks | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Georgia provides separate PDFs organized by grade band (K-5, 6-8, 9-12). No comprehensive K-12 document available.",
+        "notes": "Georgia Science Standards of Excellence. Grade-band PDFs: K-5, 6-8, 9-12 each with separate docs per course.",
         "special_structure": "grade_band_documents"
       }
     ],
@@ -2727,7 +2742,7 @@
     "documents": [
       {
         "title": "Indiana Academic Standards for Science K-12",
-        "url": "https://media.doe.in.gov/standards/indiana-academic-standards-grade-3-science.pdf",
+        "url": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
         "grade_levels": [
           "K",
           "1",
@@ -2746,7 +2761,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education and NGSS | Special structure: grade_specific_documents | Special structure: grade_specific_documents | Indiana provides separate PDFs for each grade K-8 and for each high school course (Biology, Chemistry, Physics, etc.). No comprehensive K-12 document available.",
+        "notes": "Indiana 2023 Academic Standards for Science. Grade/course-specific individual PDFs. No single K-12 document.",
         "special_structure": "grade_specific_documents"
       }
     ],
@@ -2906,8 +2921,8 @@
     "adoption_date": "2019 (Implemented 2024-25)",
     "documents": [
       {
-        "title": "Minnesota Academic Standards in Science 2019",
-        "url": "https://www.lrl.mn.gov/docs/2025/mandated/251893.pdf",
+        "title": "2019 Minnesota Academic Standards in Science (Final)",
+        "url": "https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD059214&RevisionSelectionMethod=latestReleased&Rendition=primary",
         "grade_levels": [
           "K",
           "1",
@@ -2990,7 +3005,7 @@
     "documents": [
       {
         "title": "2023 North Carolina K-12 Science Standards",
-        "url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
+        "url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/office-teaching-and-learning/standard-course-study/science",
         "grade_levels": [
           "K",
           "1",
@@ -3009,7 +3024,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "First update since 2009, emphasizes Science and Engineering Practices | Special structure: grade_band_specific_documents | North Carolina 2023 standards organized in grade bands: K-2, 3-5, 6-8, and high school course-specific documents. No comprehensive K-12 PDF.",
+        "notes": "2023 NC K-12 Science Standards. Grade and course-specific PDFs. No single K-12 combined document.",
         "special_structure": "grade_band_documents"
       }
     ],
@@ -3460,7 +3475,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Includes scientific and engineering practices connected to science concepts"
+        "notes": "2018 Science Standards of Learning (K-Physics). Grade-specific PDFs from standards page."
       }
     ],
     "assessments": [
@@ -3770,7 +3785,7 @@
     "documents": [
       {
         "title": "K-12 Louisiana Student Standards for Science",
-        "url": "https://www.louisianabelieves.com/resources/library/k-12-science-resources",
+        "url": "https://doe.louisiana.gov/educators/instructional-support/planning-resources/k-12-science-resources",
         "grade_levels": [
           "K",
           "1",
@@ -3789,7 +3804,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Louisiana Student Standards for Science | Special structure: web_based_or_grade_specific | Louisiana Student Standards for Science (LSSS) organized by grade level with web-based access and implementation guides. LSSS/NGSS crosswalks available for all grades.",
+        "notes": "Louisiana Student Standards for Science (LSS, adopted March 2017). Individual grade PDFs in ZIP. HS by course.",
         "special_structure": "web_based_grade_specific"
       }
     ],
@@ -3917,7 +3932,7 @@
     "documents": [
       {
         "title": "Missouri Learning Standards Science K-12",
-        "url": "https://dese.mo.gov/media/pdf/curr-mls-standards-sci-k-5-sboe-2016",
+        "url": "https://dese.mo.gov/college-career-readiness/curriculum/science",
         "grade_levels": [
           "K",
           "1",
@@ -3934,9 +3949,9 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "Excel",
+        "format": "HTML",
         "page_range": null,
-        "notes": "Three-dimensional standards adapted from Framework for K-12 Science Education | Special structure: two_documents | Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website. | Special structure: two_documents | Missouri Learning Standards for Science. Missouri publishes TWO separate documents: K-5 and 6-12. Both documents needed to cover complete K-12 standards. Both PDFs confirmed on Missouri DESE website."
+        "notes": "Missouri Learning Standards for Science. Separate K-5 and 6-12 PDFs from standards page."
       }
     ],
     "assessments": [
@@ -4108,8 +4123,21 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Written at four grade bands: K-2, 3-5, 6-8, 9-12. Based on Framework for K-12 Science Education"
+        "page_range": {
+          "K": "5-6",
+          "1": "7-8",
+          "2": "9-10",
+          "3": "11-13",
+          "4": "14-16",
+          "5": "17-19",
+          "6": "20-22",
+          "7": "23-26",
+          "8": "27-29",
+          "HS-PS": "30-33",
+          "HS-LS": "34-37",
+          "HS-ESS": "38-40"
+        },
+        "notes": "High school organized by subject: HS-PS (Physical Science), HS-LS (Life Science), HS-ESS (Earth and Space Science). HS Plus courses pages 41-53."
       }
     ],
     "assessments": [
@@ -4506,7 +4534,7 @@
     "documents": [
       {
         "title": "WV College- and Career-Readiness Standards for Science",
-        "url": "https://wvde.us/middle-secondary-learning/science/standards-and-guidance/",
+        "url": "https://wvde.us/academics/middle-secondary-education/science/standards",
         "grade_levels": [
           "K",
           "1",
@@ -4525,7 +4553,7 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education"
+        "notes": "WV College- and Career-Readiness Standards for Science (Policy 2520.3C, August 2021). Framework-based NGSS."
       }
     ],
     "assessments": [
