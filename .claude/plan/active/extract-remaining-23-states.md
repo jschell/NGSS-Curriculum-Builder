@@ -9,36 +9,36 @@
 
 **Started with**: 21 states needing page_range data (HI and MS were already done, not 23)
 **Completed this session**:
-- NE: Full K-8 + HS-by-subject extracted via browser TOC
-- DC: Full grade-band structure extracted via browser TOC
-- CO: Grade-band page ranges applied from CDE documentation (P-5/6-8/9-12)
-- 18 broken/wrong URLs fixed for CT, GA, IN, KS, LA, MD, ME, MN, MO, NC, NH, NM, RI, VA, VT, WV, DE notes
+- **MN**: K-12 ranges extracted from 104-page PDF via benchmark codes
+- **WV**: K-12 ranges extracted via browser screenshot TOC scanning (56-page image PDF)
+- 18 broken/wrong URLs fixed via scripts/apply_url_fixes.py
+- Updated notes for 7 states (GA, LA, ME, MN, MO, VA, WV) with structure details
+- Installed archive-retrieve and archive-url skills from jschell/Claude
 
-**Current state**: 33/51 states have page_range data (up from 30)
+**Final state**: 35/51 states have page_range data (up from 30 at session start, 33 at morning)
 
 ## Remaining Work
 
-### States Without page_range (18) — Classified by Blocker
+### States Without page_range (16) — Classified by Type
 
-**Direct NGSS adoption (no single K-12 PDF):**
-- CT, KS, MD, NH, NM, RI, VT — Use NGSS directly; page_ranges N/A
+**Type A: N/A by Design (9 states) — no single K-12 PDF, intentional**
 
-**HTML/interactive standards (no extractable PDF):**
-- FL — CPALMS interactive database
-- GA — Grade-band PDFs per course (K-5, 6-8, 9-12 sections)
-- IN — 2023 grade/course-specific individual PDFs
-- LA — Individual grade PDFs (K-12 in ZIP archive)
-- ME — Grade-band PDFs (K-2, 3-5, 6-8, 9-12)
-- MO — Separate K-5 and 6-12 PDFs
-- NC — 2023 grade/course-specific PDFs
-- VA — Grade-specific PDFs per course
-- WV — Policy 2520.3C PDF (needs browser to access)
+- CT, KS, MD, NH, NM, RI, VT — direct NGSS adoption
+- DE — topical (not grade-organized) arrangement of NGSS
+- FL — CPALMS interactive database (no PDF)
 
-**Needs MN PDF TOC read:**
-- MN — 104-page PDF accessible but downloads automatically; needs manual read
+**Type B: Multi-document states (7 states) — page_range N/A, no combined doc**
 
-**Needs DE structure analysis:**
-- DE — Topical (not grade-organized) arrangement of NGSS
+- GA — separate PDFs per course/grade band
+- IN — 14 separate PDFs per grade/course at media.doe.in.gov
+- LA — ZIP archive of individual grade PDFs
+- ME — individual per-topic DOCX/PDF files (not grade-band combined)
+- MO — topic-organized K-5 and 6-12 PDFs (not by grade)
+- NC — separate PDF per grade/course
+
+**Type C: Blocked/Inaccessible (1 state)**
+
+- VA — 44-page combined 2018 PDF exists but VDOE Akamai CDN blocks all access (403 on browser, 520 on archive.org)
 
 ## Overview
 
