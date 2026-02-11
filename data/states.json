@@ -3463,10 +3463,10 @@
     "science_page": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
     "ngss_status": "framework_based",
     "standards_name": "Virginia Science Standards of Learning (SOL)",
-    "adoption_date": "2018 (Expanded 2025)",
+    "adoption_date": "2018",
     "documents": [
       {
-        "title": "2018 Science Standards of Learning K-Physics",
+        "title": "2018 Science Standards of Learning (All Grades)",
         "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000",
         "grade_levels": [
           "K",
@@ -3484,33 +3484,220 @@
           "12"
         ],
         "document_type": "complete_k12",
-        "format": "HTML",
+        "format": "PDF",
         "page_range": null,
-        "notes": "2018 Science Standards of Learning (K through Physics), adopted October 2018. Combined 44-page PDF covering all grades K-12. VDOE blocks automated access (403) but URL confirmed."
-      }
-    ],
-    "assessments": [
-      {
-        "name": "Virginia Science SOL Test",
-        "grade_levels": [
-          "5",
-          "8"
-        ],
-        "url": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/assessment-resources",
-        "test_type": "state",
-        "notes": "Standards of Learning tests"
+        "notes": "Combined 44-page PDF covering 2018 standards K through Physics. BLOCKED: VDOE Akamai CDN returns 403 for automated access. Individual per-grade PDFs also blocked. Browser-only access via Chrome."
       },
       {
-        "name": "Virginia Science EOC Assessments",
+        "title": "2018 Science SOL - K",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23733/638043832182830000",
+        "grade_levels": [
+          "K"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for K. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 1",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23721/638043832153470000",
+        "grade_levels": [
+          "1"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 1. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 2",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000",
+        "grade_levels": [
+          "2"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 2. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 3",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23725/638043832162230000",
+        "grade_levels": [
+          "3"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 3. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 4",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23727/638043832167070000",
+        "grade_levels": [
+          "4"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 4. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 5",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23729/638043832173000000",
+        "grade_levels": [
+          "5"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 5. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - 6",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23731/638043832178300000",
+        "grade_levels": [
+          "6"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for 6. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Life Science",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23715/638043832141600000",
+        "grade_levels": [
+          "7"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Life Science. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Physical Science",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23717/638043832145330000",
+        "grade_levels": [
+          "8"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Physical Science. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Biology",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/15700/638035148700230000",
         "grade_levels": [
           "9",
           "10",
           "11",
           "12"
         ],
-        "url": null,
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Biology. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Chemistry",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/15704/638035148713200000",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Chemistry. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Earth Science",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/15708/638035148726800000",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Earth Science. BLOCKED: Akamai 403 for automated access."
+      },
+      {
+        "title": "2018 Science SOL - Physics",
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23719/638043832149700000",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "notes": "Individual 2018 SOL document for Physics. BLOCKED: Akamai 403 for automated access."
+      }
+    ],
+    "assessments": [
+      {
+        "name": "Virginia Science SOL Test - Grade 5",
+        "grade_levels": [
+          "5"
+        ],
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/30010/638046452519800000",
         "test_type": "state",
-        "notes": "Biology, Chemistry, Earth Science, Physics end-of-course tests"
+        "notes": "Grade 5 Science SOL Test Blueprint (includes Grade 4 and 5). PDF blocked by Akamai."
+      },
+      {
+        "name": "Virginia Science SOL Test - Grade 8",
+        "grade_levels": [
+          "8"
+        ],
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/30016/638046452530900000",
+        "test_type": "state",
+        "notes": "Grade 8 Science SOL Test Blueprint (includes Grade 6, Life Science, Physical Science). PDF blocked by Akamai."
+      },
+      {
+        "name": "Virginia Biology End-of-Course Test",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/39892/638070367764530000",
+        "test_type": "state",
+        "notes": "Biology EOC Test Blueprint. PDF blocked by Akamai."
+      },
+      {
+        "name": "Virginia Chemistry End-of-Course Test",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/29984/638046447720330000",
+        "test_type": "state",
+        "notes": "Chemistry SOL Test Blueprint (2010 and 2018 standards). PDF blocked by Akamai."
+      },
+      {
+        "name": "Virginia Earth Science End-of-Course Test",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/29986/638046447724100000",
+        "test_type": "state",
+        "notes": "Earth Science SOL Test Blueprint (2010 and 2018 standards). PDF blocked by Akamai."
       }
     ],
     "elementary_grades": [
@@ -3536,9 +3723,9 @@
       "email": "science@doe.virginia.gov"
     },
     "resources": {},
-    "notes": "Virginia Board of Education approved 2025 Expanded High School Science SOL in December 2025. 2018 K-Physics standards remain unchanged.",
+    "notes": "2018 Science SOL adopted Oct 2018, fully implemented 2022-2023. 2025 SOL in development for HS Level II courses and Environmental Science only (new courses without prior standards) - draft presented to Board spring 2025, implementation 2025-2026. K-Physics 2018 standards unchanged. Per-grade PDFs cataloged but blocked by Akamai CDN (403). Curriculum Framework documents also available per-grade at same page.",
     "research_status": "COMPLETE",
-    "last_updated": "2026-02-04"
+    "last_updated": "2026-02-11"
   },
   "WI": {
     "state_name": "Wisconsin",
