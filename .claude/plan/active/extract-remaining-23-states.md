@@ -1,29 +1,60 @@
-# Plan: Extract Page Ranges for Remaining 23 States
+# Plan: Extract Page Ranges for Remaining States
 
-**Status:** BLOCKED — requires MCP browser tools or manual PDF downloads
+**Status:** Active — Partial progress 2026-02-11
 **Priority:** High
-**Estimated Time:** 4-5 hours
-**Dependencies:** cleanup-messy-page-ranges.md ✅ COMPLETE
+**Estimated Time:** 2-3 hours remaining
+**Dependencies:** None
 
-## Blocker (2026-02-11)
+## Progress Summary (2026-02-11)
 
-All state education PDF URLs return 403 Forbidden to automated HTTP access.
-Per docs/LESSONS_LEARNED.md, this requires either:
-- MCP browser tools (brave_web_search + browser_navigate)
-- Manual PDF download by the user
+**Started with**: 21 states needing page_range data (HI and MS were already done, not 23)
+**Completed this session**:
+- **MN**: K-12 ranges extracted from 104-page PDF via benchmark codes
+- **WV**: K-12 ranges extracted via browser screenshot TOC scanning (56-page image PDF)
+- 18 broken/wrong URLs fixed via scripts/apply_url_fixes.py
+- Updated notes for 7 states (GA, LA, ME, MN, MO, VA, WV) with structure details
+- Installed archive-retrieve and archive-url skills from jschell/Claude
 
-This plan cannot proceed until one of the above is available.
+**Final state**: 35/51 states have page_range data (up from 30 at session start, 33 at morning)
+
+## Remaining Work
+
+### States Without page_range (16) — Classified by Type
+
+**Type A: N/A by Design (9 states) — no single K-12 PDF, intentional**
+
+- CT, KS, MD, NH, NM, RI, VT — direct NGSS adoption
+- DE — topical (not grade-organized) arrangement of NGSS
+- FL — CPALMS interactive database (no PDF)
+
+**Type B: Multi-document states (7 states) — page_range N/A, no combined doc**
+
+- GA — separate PDFs per course/grade band
+- IN — 14 separate PDFs per grade/course at media.doe.in.gov
+- LA — ZIP archive of individual grade PDFs
+- ME — individual per-topic DOCX/PDF files (not grade-band combined)
+- MO — topic-organized K-5 and 6-12 PDFs (not by grade)
+- NC — separate PDF per grade/course
+
+**Type C: Blocked/Inaccessible (1 state) — NEEDS MANUAL DOWNLOAD**
+
+- VA — 44-page combined 2018 PDF exists but VDOE Akamai CDN blocks all automated access
+  - **Root cause**: Akamai serves an HTML wrapper (`<embed src='about:blank'>`) as the 200 response — actual PDF bytes loaded by Chrome's native PDF plugin internally, not via a standard HTTP request
+  - **Confirmed**: DevTools "Save response body" captures the HTML wrapper, not PDF bytes
+  - **archive.org**: Returns 520 (Akamai blocks all crawlers)
+  - **Resolution**: User must open URL in Chrome and click ↓ (download) in PDF viewer toolbar, save as `cached_va_2018.pdf` in project root, then run `uv run --with pypdf python scripts/parsing/extract_remaining_states.py VA`
+  - **URL**: https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000
 
 ## Overview
 
-Extract grade-level page ranges for the 23 states that currently have no page range data. Use the proven multi-phase approach: remote parsing, MCP browser tools, manual download, and TOC extraction.
+Extract grade-level page ranges for the remaining states. Use the proven multi-phase approach: remote parsing, MCP browser tools, manual download, and TOC extraction.
 
-## Problem Statement
+## Problem Statement (Updated)
 
-23 states still need page range extraction:
-CO, CT, DC, DE, FL, GA, HI, IN, KS, LA, MD, ME, MN, MO, MS, NC, NE, NH, NM, RI, VA, VT, WV
+21 states still need page range extraction (HI and MS already had data):
+CO, CT, DC, DE, FL, GA, IN, KS, LA, MD, ME, MN, MO, NC, NE, NH, NM, RI, VA, VT, WV
 
-This represents 45% of all states. Completing these will bring total coverage to 100% (51/51 states).
+After session work (2026-02-11): 18 states remain at null page_range.
 
 ## Prerequisites
 
