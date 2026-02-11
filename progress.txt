@@ -8,6 +8,46 @@ YYYY-MM-DD HH:MM - Action description
 2026-02-04 15:40 - Initialized progress.txt for session logging
 2026-02-04 15:40 - Beginning Tier 1-3 infrastructure implementation
 
+2026-02-11 19:00 - SESSION: Resumed from session handoff, branch claude/review-session-handoff-y6MEQ
+
+2026-02-11 19:05 - Validated Step 2 of comprehensive-validation-suite was incomplete
+2026-02-11 19:10 - Rewrote validate_urls.py to properly extend Validator framework
+                   Added: HTTP/HTTPS check, SSL validation, typo detection, deprecated domains,
+                   per-run caching, parallel asyncio.gather, --verbose/--state/--severity flags
+
+2026-02-11 19:20 - Implemented Steps 3-6 of comprehensive-validation-suite:
+                   - validate_page_ranges.py (PR001-PR009)
+                   - validate_data_integrity.py (DI001-DI014)
+                   - validate_special_structures.py (SS001-SS006)
+                   - validate_all.py (master orchestrator, HTML + Markdown reports)
+                   First full run: 485 issues (2 errors, 460 warnings, 23 info)
+
+2026-02-11 19:30 - Step 7: Added scripts/validation/README.md documentation
+                   Marked comprehensive-validation-suite plan COMPLETE
+
+2026-02-11 20:00 - Starting cleanup-messy-page-ranges plan
+                   All target state education PDFs return 403 Forbidden (bot protection)
+                   Pivoted to data cleanup without network access
+
+2026-02-11 20:15 - Wrote scripts/parsing/extract_grade_ranges.py (TOC-first PDF extractor)
+                   Wrote scripts/parsing/cleanup_page_ranges.py (artifact cleanup)
+                   Applied 35 fixes to data/states.json:
+                   * HI, MS: plain-string page_range → null (PR001 errors: 2 → 0)
+                   * NJ, AL, OH, OK, ID: _all multi-grade data → individual grade keys
+                   * 9 states: format field HTML → PDF corrected
+                   * 13 states: scattered/artifact K ranges removed
+                   * CA, AR, IL, KY, MT, PA: cascading K ranges consolidated
+                   * All _all artifact keys removed (12 → 0)
+
+2026-02-11 20:30 - cleanup-messy-page-ranges plan marked COMPLETE
+                   extract-remaining-23-states plan marked BLOCKED:
+                     All state PDFs 403 Forbidden, requires MCP browser tools or manual download
+                   migrate-to-grade-sections-format plan: depends on blocked extraction
+
+BLOCKER: extract-remaining-23-states and migrate-to-grade-sections-format
+         require MCP browser tools (brave_web_search + browser_navigate) or
+         manual PDF download by user. See docs/LESSONS_LEARNED.md for workflow.
+
 2026-02-04 15:42 - Created .claude/CLAUDE.md (350+ lines)
 2026-02-04 15:42 - Documented technology stack, rules, and workflow
 2026-02-04 15:42 - Added test commands and stop conditions
