@@ -36,9 +36,14 @@
 - MO — topic-organized K-5 and 6-12 PDFs (not by grade)
 - NC — separate PDF per grade/course
 
-**Type C: Blocked/Inaccessible (1 state)**
+**Type C: Blocked/Inaccessible (1 state) — NEEDS MANUAL DOWNLOAD**
 
-- VA — 44-page combined 2018 PDF exists but VDOE Akamai CDN blocks all access (403 on browser, 520 on archive.org)
+- VA — 44-page combined 2018 PDF exists but VDOE Akamai CDN blocks all automated access
+  - **Root cause**: Akamai serves an HTML wrapper (`<embed src='about:blank'>`) as the 200 response — actual PDF bytes loaded by Chrome's native PDF plugin internally, not via a standard HTTP request
+  - **Confirmed**: DevTools "Save response body" captures the HTML wrapper, not PDF bytes
+  - **archive.org**: Returns 520 (Akamai blocks all crawlers)
+  - **Resolution**: User must open URL in Chrome and click ↓ (download) in PDF viewer toolbar, save as `cached_va_2018.pdf` in project root, then run `uv run --with pypdf python scripts/parsing/extract_remaining_states.py VA`
+  - **URL**: https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000
 
 ## Overview
 
