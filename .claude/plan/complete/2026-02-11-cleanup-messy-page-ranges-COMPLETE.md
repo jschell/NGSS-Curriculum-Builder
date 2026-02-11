@@ -1,8 +1,28 @@
 # Plan: Clean Up 18 States with Messy Page Range Data
 
-**Status:** Active
+**Status:** COMPLETE (cleanup done; new extraction BLOCKED — see note below)
 **Priority:** High
 **Estimated Time:** 3-4 hours
+**Completed:** 2026-02-11
+
+## Completion Note
+
+Cleanup portion complete. New grade extraction (Steps 3-4) is BLOCKED:
+all state education PDFs return 403 Forbidden to automated access.
+Extraction requires MCP browser tools or manual PDF download per docs/LESSONS_LEARNED.md.
+
+Steps completed:
+- Step 1 (validate_page_ranges.py): ✅ Done in comprehensive-validation-suite
+- Step 2 (prioritize states): ✅ All target PDFs confirmed 403-blocked
+- Step 5 (clean messy artifacts): ✅ Complete — 35 changes across states.json
+- Step 6 (final validation): ✅ PR001 errors 2→0, all _all keys removed
+
+What was actually fixed:
+- HI, MS: plain-string page_range → null (data type corrected)
+- NJ, AL, OH, OK, ID: _all multi-grade data promoted → individual grade keys
+- 9 states: format field HTML→PDF (DE, DC, HI, MD, NM, GA, IN, MN + AR)
+- 13 states: scattered/artifact K ranges removed
+- CA, AR, IL, KY, MT, PA: cascading K ranges consolidated
 **Dependencies:** None
 
 ## Overview

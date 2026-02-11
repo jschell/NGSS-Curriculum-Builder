@@ -1,9 +1,18 @@
 # Plan: Extract Page Ranges for Remaining 23 States
 
-**Status:** Active
+**Status:** BLOCKED — requires MCP browser tools or manual PDF downloads
 **Priority:** High
 **Estimated Time:** 4-5 hours
-**Dependencies:** cleanup-messy-page-ranges.md (recommended to complete first)
+**Dependencies:** cleanup-messy-page-ranges.md ✅ COMPLETE
+
+## Blocker (2026-02-11)
+
+All state education PDF URLs return 403 Forbidden to automated HTTP access.
+Per docs/LESSONS_LEARNED.md, this requires either:
+- MCP browser tools (brave_web_search + browser_navigate)
+- Manual PDF download by the user
+
+This plan cannot proceed until one of the above is available.
 
 ## Overview
 
