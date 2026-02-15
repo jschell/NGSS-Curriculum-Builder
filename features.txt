@@ -3,18 +3,18 @@
 ## In Progress
 
 ### Active Plans
-- [ ] Extract Virginia page ranges via manual download
-  - Plan: `.claude/plan/active/extract-va-manual-download.md`
-  - Blocker: User must manually download PDF from VDOE (Akamai CDN blocks automation)
-  - Priority: High
-
 - [ ] Complete Texas high school standards (grades 9-12)
   - Plan: `.claude/plan/active/texas-high-school-standards.md`
   - Priority: Medium
 
+## Holding (Blocked / Future)
+
+- [ ] Extract Virginia page ranges via manual download
+  - Plan: `.claude/plan/holding/extract-va-manual-download.md`
+  - Blocker: User must manually download PDF from VDOE (Akamai CDN blocks automation)
+
 - [ ] Add CSV/Excel export functionality
-  - Plan: `.claude/plan/active/csv-excel-export.md`
-  - Priority: Medium
+  - Plan: `.claude/plan/holding/csv-excel-export.md`
 
 ## Todo
 
