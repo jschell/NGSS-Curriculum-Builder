@@ -1208,7 +1208,16 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "32-37",
+          "1": "38-43",
+          "2": "44-52",
+          "3": "53-62",
+          "4": "63-70",
+          "5": "71-82",
+          "6-8": "83-116",
+          "9-12": "117-159"
+        },
         "notes": "Three-dimensional approach integrating practices, concepts, and core ideas",
         "url_source": "https://manoa.hawaii.edu/sealearning/standards-alignment/next-generation-science-standards-ngss",
         "last_verified": "2026-02-04"
@@ -4090,7 +4099,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) URL returns 404 (2026-02-15); page_range extraction blocked until working URL found."
       }
     ],
     "assessments": [
