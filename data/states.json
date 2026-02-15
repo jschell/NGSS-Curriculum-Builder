@@ -1295,6 +1295,140 @@
             "needs_review": false
           }
         }
+      },
+      {
+        "title": "Biology TEKS (§112.42)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Biology — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Chemistry TEKS (§112.43)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Chemistry — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Integrated Physics and Chemistry TEKS (§112.44)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "IPC — alternative to separate Chemistry+Physics; grades 9-10; adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Physics TEKS (§112.45)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Physics — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Aquatic Science TEKS (§112.47)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Astronomy TEKS (§112.48)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Earth Systems Science TEKS (§112.49)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective (formerly \"Earth and Space Science\") — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Environmental Systems TEKS (§112.50)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
       }
     ],
     "assessments": [
