@@ -258,6 +258,44 @@ def get_coverage_summary(state: StateStandards) -> Dict[str, List[StandardsDocum
 # ============================================================================
 
 
+def format_doc_pages(doc: "StandardsDocument", grade: str = None) -> Optional[str]:
+    """Return a human-readable page summary, preferring grade_sections over page_range.
+
+    If grade is provided, returns page info only for that grade.
+    If grade is None, returns a compact summary of all mapped grades.
+    Returns None if no page data is available.
+    """
+    # Prefer grade_sections (rich format)
+    if doc.grade_sections:
+        if grade:
+            section = doc.grade_sections.get(grade)
+            if section and section.page_ranges:
+                pages = ", ".join(f"{r[0]}-{r[1]}" for r in section.page_ranges)
+                return f"pp. {pages} (confidence: {section.confidence})"
+        else:
+            # Compact summary of all grades
+            parts = []
+            for g, section in sorted(
+                doc.grade_sections.items(),
+                key=lambda x: (x[0] != "K", int(x[0]) if x[0].isdigit() else 0, x[0]),
+            ):
+                if section.page_ranges:
+                    pages = ", ".join(f"{r[0]}-{r[1]}" for r in section.page_ranges)
+                    parts.append(f"{g}:{pages}")
+            if parts:
+                return "Sections: " + " | ".join(parts)
+
+    # Fall back to page_range only if it is a plain string
+    if isinstance(doc.page_range, str) and doc.page_range:
+        return doc.page_range
+
+    # Show status label if available
+    if doc.page_range_status:
+        return PAGE_RANGE_STATUS_LABELS.get(doc.page_range_status, doc.page_range_status)
+
+    return None
+
+
 def cmd_search(grade: str):
     """Search all states for standards documents covering a specific grade."""
     grade = normalize_grade(grade)
@@ -344,10 +382,9 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   Format: {doc.format}")
                 print(f"   Type: {doc.document_type.replace('_', ' ').title()}")
                 print(f"   Covers Grades: {', '.join(doc.grade_levels)}")
-                if doc.page_range:
-                    print(f"   Pages: {doc.page_range}")
-                elif doc.page_range_status:
-                    print(f"   Pages: {PAGE_RANGE_STATUS_LABELS.get(doc.page_range_status, doc.page_range_status)}")
+                pages_info = format_doc_pages(doc, grade)
+                if pages_info:
+                    print(f"   Pages: {pages_info}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
                 print()
@@ -372,10 +409,9 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   URL: {doc.url}")
                 print(f"   Covers Grades: {', '.join(doc.grade_levels)}")
                 print(f"   Format: {doc.format}")
-                if doc.page_range:
-                    print(f"   Pages: {doc.page_range}")
-                elif doc.page_range_status:
-                    print(f"   Pages: {PAGE_RANGE_STATUS_LABELS.get(doc.page_range_status, doc.page_range_status)}")
+                pages_info = format_doc_pages(doc)
+                if pages_info:
+                    print(f"   Pages: {pages_info}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
 
@@ -573,7 +609,7 @@ def cmd_list():
     print(f"{'=' * 80}\n")
 
 
-def cmd_sections(state_abbrev: str, grade: str = None):
+def cmd_sections(state_abbrev: str, grade: str = None, show_confidence: bool = False):
     """Show grade-specific page/section information for a state."""
     state_abbrev = state_abbrev.upper()
 
@@ -590,12 +626,12 @@ def cmd_sections(state_abbrev: str, grade: str = None):
 
     if grade:
         grade = normalize_grade(grade)
-        show_grade_sections(state, grade)
+        show_grade_sections(state, grade, show_confidence=show_confidence)
     else:
-        show_all_grade_sections(state)
+        show_all_grade_sections(state, show_confidence=show_confidence)
 
 
-def show_grade_sections(state: StateStandards, grade: str):
+def show_grade_sections(state: StateStandards, grade: str, show_confidence: bool = False):
     """Display sections for a specific grade."""
     docs = get_documents_for_grade(state, grade)
 
@@ -613,26 +649,29 @@ def show_grade_sections(state: StateStandards, grade: str):
 
         if section:
             if section.page_ranges:
-                pages = ", ".join(f"{r[0] + 1}-{r[1]}" for r in section.page_ranges)
+                pages = ", ".join(f"{r[0]}-{r[1]}" for r in section.page_ranges)
                 print(f"  Pages: {pages}")
 
             if section.section_ids:
                 print(f"  Section IDs: {', '.join(section.section_ids)}")
 
-            print(f"  Confidence: {section.confidence}")
+            confidence_label = {"high": "High ✓", "medium": "Medium ~", "low": "Low !"}.get(
+                section.confidence, section.confidence
+            )
+            print(f"  Confidence: {confidence_label}")
 
             if section.needs_review:
-                print(f"  [!] This section needs manual review")
+                print(f"  [!] Flagged for manual review")
 
-            if section.notes:
-                print(f"  Notes: {section.notes}")
+            if show_confidence and section.notes:
+                print(f"  Method: {section.notes}")
         else:
-            print(f"  [!] No specific section mapping found")
+            print(f"  [No section mapping — use 'sections' command for full detail]")
 
         print()
 
 
-def show_all_grade_sections(state: StateStandards):
+def show_all_grade_sections(state: StateStandards, show_confidence: bool = False):
     """Display sections for all grades in a state."""
     all_grades = ["K", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
@@ -648,8 +687,10 @@ def show_all_grade_sections(state: StateStandards):
             section = doc.grade_sections.get(grade)
             if section:
                 if section.page_ranges:
-                    pages = ", ".join(f"{r[0] + 1}-{r[1]}" for r in section.page_ranges)
-                    print(f"  • {doc.title}: {pages}")
+                    pages = ", ".join(f"{r[0]}-{r[1]}" for r in section.page_ranges)
+                    confidence_tag = f" [{section.confidence}]" if show_confidence else ""
+                    review_tag = " [needs review]" if section.needs_review else ""
+                    print(f"  • {doc.title}: pp.{pages}{confidence_tag}{review_tag}")
                 else:
                     print(f"  • {doc.title}")
             else:
@@ -695,10 +736,12 @@ Commands:
       Generate search queries for researching a state
       Example: python state_science_standards_system.py queries IL 4
 
-  sections <ST> [grade]
+  sections <ST> [grade] [--show-confidence]
       Show grade-specific page/section information for a state
       Optionally specify a grade to see grade-specific sections
+      Use --show-confidence to display extraction method details
       Example: python state_science_standards_system.py sections WA 3
+      Example: python state_science_standards_system.py sections WA --show-confidence
 
   Grades: Use K for Kindergarten, or numbers 1-12
   State abbreviations: Use two-letter codes (WA, CA, TX, etc.)
@@ -756,8 +799,11 @@ def main():
                 "Usage: python state_science_standards_system.py sections <ST> [grade]"
             )
             return
-        grade = sys.argv[3] if len(sys.argv) > 3 else None
-        cmd_sections(sys.argv[2], grade)
+        args = sys.argv[3:]
+        show_confidence = "--show-confidence" in args
+        grade_args = [a for a in args if not a.startswith("--")]
+        grade = grade_args[0] if grade_args else None
+        cmd_sections(sys.argv[2], grade, show_confidence=show_confidence)
     else:
         print(f"Error: Unknown command '{command}'")
         print_usage()
