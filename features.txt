@@ -3,10 +3,6 @@
 ## In Progress
 
 ### Active Plans
-- [ ] Re-extract HI and MS page ranges (data regression fix)
-  - Plan: `.claude/plan/active/extract-hi-ms-page-ranges.md`
-  - Priority: High
-
 - [ ] Extract Virginia page ranges via manual download
   - Plan: `.claude/plan/active/extract-va-manual-download.md`
   - Blocker: User must manually download PDF from VDOE (Akamai CDN blocks automation)
@@ -84,7 +80,14 @@
   - CLI updated: grade_sections preferred, --show-confidence flag added
   - DATA_SCHEMA.md updated with deprecation timeline for page_range
 - [x] Extract page ranges for remaining states — 51/51 accounted for (2026-02-15)
-  - 33 states: page_range data extracted (65%)
-  - 15 states: documented as intentionally N/A via page_range_status field
-  - 2 states (HI, MS): data regression — re-extraction in progress
-  - 1 state (VA): Akamai CDN blocker — manual download required
+  - 33 states: page_range / grade_sections data extracted (65%)
+  - 15 states: documented as N/A via page_range_status field (ngss_reference, multi_document, interactive_database)
+  - HI: re-extracted from ToC with +29 page offset (K–9-12, 8 entries)
+  - MS: PDF URL broken (404), deferred — page_range stays null
+  - VA: Akamai CDN blocker — manual download required (see active plan)
+- [x] Record N/A page_range_status for 15 states (2026-02-15)
+  - CT, DE, KS, MD, NH, NM, RI, VT: not_applicable_ngss_reference
+  - GA, IN, LA, ME, MO, NC: not_applicable_multi_document
+  - FL: not_applicable_interactive_database
+  - CLI displays meaningful N/A messages for each status type
+  - close-extraction-record-na-states plan complete
