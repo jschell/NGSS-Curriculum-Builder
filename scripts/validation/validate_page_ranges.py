@@ -264,16 +264,180 @@ class PageRangeValidator(Validator):
 
 
 # ---------------------------------------------------------------------------
+# grade_sections confidence validator
+# ---------------------------------------------------------------------------
+
+class GradeSectionsConfidenceValidator(Validator):
+    """
+    Validates grade_sections metadata quality.
+
+    GS001  grade_sections missing on a document that has page_range data
+    GS002  grade_sections grade entry missing required keys
+    GS003  grade with confidence=low flagged for mandatory review
+    GS004  grade with needs_review=True (informational report)
+    GS005  grade_sections page_ranges disagree with page_range string values
+    GS006  --confidence-report: summary of confidence distribution
+    """
+    name = "GradeSectionsConfidenceValidator"
+
+    VALID_CONFIDENCE = {"high", "medium", "low"}
+    REQUIRED_KEYS = {"page_ranges", "section_ids", "confidence", "notes", "needs_review"}
+
+    def __init__(self, confidence_report: bool = False, verbose: bool = False):
+        self.confidence_report = confidence_report
+        self.verbose = verbose
+
+    def validate(self, data: Dict[str, Any]) -> List[Issue]:
+        issues: List[Issue] = []
+        confidence_counts: Dict[str, int] = {"high": 0, "medium": 0, "low": 0}
+        needs_review_count = 0
+        total_grade_entries = 0
+
+        for state_abbrev, state_data in data.items():
+            for doc in state_data.get("documents", []):
+                issues.extend(self._validate_doc(state_abbrev, doc, confidence_counts))
+                gs = doc.get("grade_sections", {})
+                for grade, entry in gs.items():
+                    total_grade_entries += 1
+                    if entry.get("needs_review"):
+                        needs_review_count += 1
+
+        if self.confidence_report:
+            issues.extend(self._confidence_report(
+                confidence_counts, needs_review_count, total_grade_entries
+            ))
+
+        return issues
+
+    def _validate_doc(self, state: str, doc: dict, confidence_counts: dict) -> List[Issue]:
+        issues: List[Issue] = []
+        title = doc.get("title", "untitled")[:60]
+        pr = doc.get("page_range")
+        gs = doc.get("grade_sections", {})
+
+        has_page_range = isinstance(pr, dict) and len(pr) > 0
+
+        # GS001: page_range exists but no grade_sections
+        if has_page_range and not gs:
+            issues.append(Issue(
+                severity=Severity.WARNING,
+                code="GS001",
+                state=state,
+                field=title,
+                message="Document has page_range data but no grade_sections",
+                suggestion="Run migration script to convert page_range → grade_sections",
+            ))
+            return issues
+
+        if not gs:
+            return issues
+
+        for grade, entry in gs.items():
+            if not isinstance(entry, dict):
+                continue
+
+            # GS002: missing required keys
+            missing_keys = self.REQUIRED_KEYS - set(entry.keys())
+            if missing_keys:
+                issues.append(Issue(
+                    severity=Severity.ERROR,
+                    code="GS002",
+                    state=state,
+                    field=title,
+                    message=f"Grade {grade}: grade_sections entry missing keys: {sorted(missing_keys)}",
+                    suggestion="Re-run migration script to add missing fields",
+                ))
+
+            # Track confidence distribution
+            confidence = entry.get("confidence", "unknown")
+            if confidence in confidence_counts:
+                confidence_counts[confidence] += 1
+
+            # GS003: low confidence → flag as warning
+            if confidence == "low":
+                issues.append(Issue(
+                    severity=Severity.WARNING,
+                    code="GS003",
+                    state=state,
+                    field=title,
+                    message=f"Grade {grade}: low confidence — manual verification required",
+                    suggestion="Re-extract page ranges for this grade manually",
+                ))
+
+            # GS004: needs_review flag (informational)
+            if entry.get("needs_review") and self.verbose:
+                issues.append(Issue(
+                    severity=Severity.INFO,
+                    code="GS004",
+                    state=state,
+                    field=title,
+                    message=f"Grade {grade}: flagged needs_review ({entry.get('notes', '')})",
+                    suggestion="Manually verify page range for this grade",
+                ))
+
+            # GS005: cross-check page_ranges against page_range string (if both exist)
+            if has_page_range and isinstance(pr, dict):
+                pr_str = pr.get(grade)
+                gs_ranges = entry.get("page_ranges", [])
+                if pr_str and isinstance(pr_str, str) and gs_ranges:
+                    expected_spans, _ = _parse_range_string(pr_str)
+                    # Compare first span start page
+                    if expected_spans and gs_ranges:
+                        pr_start = expected_spans[0][0]
+                        gs_start = gs_ranges[0][0]
+                        if abs(pr_start - gs_start) > 2:
+                            issues.append(Issue(
+                                severity=Severity.WARNING,
+                                code="GS005",
+                                state=state,
+                                field=title,
+                                message=(
+                                    f"Grade {grade}: page_range starts at {pr_start} but "
+                                    f"grade_sections starts at {gs_start} (difference > 2)"
+                                ),
+                                suggestion="Verify migration was applied correctly",
+                            ))
+
+        return issues
+
+    def _confidence_report(
+        self, counts: dict, needs_review: int, total: int
+    ) -> List[Issue]:
+        """Generate INFO issues summarizing confidence distribution."""
+        if total == 0:
+            return []
+        return [
+            Issue(
+                severity=Severity.INFO,
+                code="GS006",
+                state="_ALL_",
+                field="confidence_report",
+                message=(
+                    f"Confidence distribution: high={counts['high']} "
+                    f"({counts['high']*100//total}%), "
+                    f"medium={counts['medium']} ({counts['medium']*100//total}%), "
+                    f"low={counts['low']} ({counts['low']*100//total}%) "
+                    f"| needs_review={needs_review}/{total} "
+                    f"({needs_review*100//total}%)"
+                ),
+                suggestion="Focus re-extraction efforts on low/medium confidence grades",
+            )
+        ]
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
 def parse_args(argv: List[str]) -> dict:
-    args = {"states": None, "severity": "INFO", "verbose": False}
+    args = {"states": None, "severity": "INFO", "verbose": False, "confidence_report": False}
     i = 0
     while i < len(argv):
         a = argv[i]
         if a in ("--verbose", "-v"):
             args["verbose"] = True
+        elif a == "--confidence-report":
+            args["confidence_report"] = True
         elif a == "--state" and i + 1 < len(argv):
             args["states"] = [s.strip().upper() for s in argv[i+1].split(",")]
             i += 1
@@ -292,9 +456,12 @@ def main() -> int:
     data = load_states()
     print(f"Loaded {len(data)} states.")
 
-    validator = PageRangeValidator(verbose=args["verbose"])
     runner = ValidationRunner()
-    runner.add_validator(validator)
+    runner.add_validator(PageRangeValidator(verbose=args["verbose"]))
+    runner.add_validator(GradeSectionsConfidenceValidator(
+        confidence_report=args["confidence_report"],
+        verbose=args["verbose"],
+    ))
 
     issues = runner.run(data, states=args["states"], min_severity=min_severity)
     print(runner.report(issues))
