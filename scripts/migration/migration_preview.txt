@@ -1,0 +1,173 @@
+Loading /home/user/NGSS-Curriculum-Builder/data/states.json ...
+
+======================================================================
+  MIGRATION REPORT [DRY RUN] - 2026-02-15 16:44
+======================================================================
+
+[CONVERT] WA: Washington State K-12 Science Learning Standards
+          Grades: K, 1, 2, 3, 4, 5, 9-12
+          Confidence: high=7 medium=0 low=0
+[CONVERT] OR: K-12 Oregon Science Standards with Guidance
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, 9
+          Confidence: high=0 medium=10 low=0
+[CONVERT] OR: Grade K Standards with Guidance
+          Grades: K
+          Confidence: high=0 medium=1 low=0
+[CONVERT] OR: Grade 1 Standards with Guidance
+          Grades: 1
+          Confidence: high=0 medium=1 low=0
+[CONVERT] OR: Grade 2 Standards with Guidance
+          Grades: 2
+          Confidence: high=0 medium=1 low=0
+[CONVERT] OR: Grade 3 Standards with Guidance
+          Grades: 3
+          Confidence: high=0 medium=1 low=0
+[CONVERT] OR: Grade 4 Standards with Guidance
+          Grades: 4
+          Confidence: high=0 medium=1 low=0
+[CONVERT] OR: Grade 5 Standards with Guidance
+          Grades: 5
+          Confidence: high=0 medium=1 low=0
+[CONVERT] CA: Kindergarten CA NGSS Standards
+          Grades: K
+          Confidence: high=0 medium=1 low=0
+[CONVERT] CA: Grade 1 CA NGSS Standards
+          Grades: 1
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Kindergarten Science TEKS
+          Grades: K
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 1 Science TEKS
+          Grades: 1
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 2 Science TEKS
+          Grades: 2
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 3 Science TEKS
+          Grades: 3
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 4 Science TEKS
+          Grades: 4
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 5 Science TEKS
+          Grades: 5
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 6 Science TEKS
+          Grades: 6
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 7 Science TEKS
+          Grades: 7
+          Confidence: high=0 medium=1 low=0
+[CONVERT] TX: Grade 8 Science TEKS
+          Grades: 8
+          Confidence: high=0 medium=1 low=0
+[CONVERT] NY: P-2 Science Learning Standards
+          Grades: K, 2
+          Confidence: high=0 medium=2 low=0
+[CONVERT] NY: Grades 3-5 Science Learning Standards
+          Grades: 4, 5
+          Confidence: high=0 medium=2 low=0
+[CONVERT] AR: Arkansas K-12 Science Standards
+          Grades: K
+          Confidence: high=0 medium=1 low=0
+[CONVERT] DC: DC Next Generation Science Standards
+          Grades: PreK-1, 2-5, 6, 7, 8, HS-ESS, HS-Bio, HS-Chem, HS-Phys, HS-Env
+          Confidence: high=0 medium=10 low=0
+[CONVERT] HI: Hawaii NGSS Standards K-12
+          Grades: K, 1, 2, 3, 4, 5, 6-8, 9-12
+          Confidence: high=8 medium=0 low=0
+[CONVERT] IL: Illinois Learning Standards for Science (NGSS)
+          Grades: K
+          Confidence: high=0 medium=1 low=0
+[CONVERT] IA: Iowa Academic Standards for Science
+          Grades: 12, 8, 1, 2, 3, 4, 5, 6, 7, 10
+          Confidence: high=0 medium=10 low=0
+[CONVERT] KY: Kentucky Academic Standards for Science 2022
+          Grades: K, 12, 8
+          Confidence: high=3 medium=0 low=0
+[CONVERT] MI: Michigan K-12 Science Standards
+          Grades: K, 1, 2, 3, 4, 5, 7
+          Confidence: high=7 medium=0 low=0
+[CONVERT] NV: Nevada Academic Content Standards for Science
+          Grades: 1, 8, 6, 12
+          Confidence: high=0 medium=4 low=0
+[CONVERT] NJ: NJ Student Learning Standards Science K-5
+          Grades: K, 5, 1, 2, 3, 4
+          Confidence: high=5 medium=1 low=0
+          ⚠ Needs review: 1 grade(s)
+[CONVERT] AL: 2023 Alabama Course of Study: Science
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8
+          Confidence: high=9 medium=0 low=0
+[CONVERT] AZ: Arizona Science Standards 2018 - Complete K-12
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 9-12, 8
+          Confidence: high=10 medium=0 low=0
+[CONVERT] CO: 2020 Colorado Academic Standards: Science
+          Grades: P-5, 6-8, 9-12
+          Confidence: high=0 medium=3 low=0
+[CONVERT] MA: Massachusetts Science and Technology/Engineering Curric
+          Grades: 8, 1, 2, 3, 4, 5, 6, 7, 12, 9
+          Confidence: high=10 medium=0 low=0
+[CONVERT] MN: 2019 Minnesota Academic Standards in Science (Final)
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, 9-12
+          Confidence: high=0 medium=10 low=0
+[CONVERT] OH: Ohio's Learning Standards for Science and Model Curricu
+          Grades: K, 1, 2, 3, 4, 5, 6, 8, 7
+          Confidence: high=9 medium=0 low=0
+[CONVERT] PA: K-12 STEELS Standards
+          Grades: K
+          Confidence: high=1 medium=0 low=0
+[CONVERT] PA: Pennsylvania Integrated Standards K-5
+          Grades: K, 1, 2, 3, 4, 5
+          Confidence: high=6 medium=0 low=0
+[CONVERT] TN: Tennessee Academic Standards for Science
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 9-12, 8
+          Confidence: high=10 medium=0 low=0
+[CONVERT] UT: Utah SEEd Standards
+          Grades: 1, 2, 3, 4, 5, 6, 7, 8
+          Confidence: high=8 medium=0 low=0
+[CONVERT] WI: Wisconsin Standards for Science
+          Grades: 12, 11, 1, 8
+          Confidence: high=4 medium=0 low=0
+[CONVERT] AK: K-12 Science Standards for Alaska
+          Grades: 5
+          Confidence: high=0 medium=1 low=0
+[CONVERT] ID: Idaho K-12 State Standards for Science
+          Grades: K, 1, 2, 3, 4, 5
+          Confidence: high=6 medium=0 low=0
+[CONVERT] MT: Montana Science Content Standards 2016
+          Grades: K
+          Confidence: high=1 medium=0 low=0
+[CONVERT] MT: Montana Science Model Curriculum Guide
+          Grades: K
+          Confidence: high=1 medium=0 low=0
+[CONVERT] NE: Nebraska College and Career Ready Standards for Science
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, HS-PS, HS-LS, HS-ESS
+          Confidence: high=0 medium=12 low=0
+[CONVERT] ND: North Dakota Science Content Standards K-12
+          Grades: 4, 6, 1, 2, 3, 5
+          Confidence: high=6 medium=0 low=0
+[CONVERT] OK: 2020 Oklahoma Academic Standards for Science PreK-12
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8
+          Confidence: high=9 medium=0 low=0
+[CONVERT] SC: South Carolina College- and Career-Ready Science Standa
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, 9-12
+          Confidence: high=10 medium=0 low=0
+[CONVERT] SD: South Dakota Science Standards 2024
+          Grades: K, 1, 2, 3, 4, 5
+          Confidence: high=6 medium=0 low=0
+[CONVERT] WV: WV College- and Career-Readiness Standards for Science
+          Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, 9-12
+          Confidence: high=0 medium=10 low=0
+          ⚠ Needs review: 2 grade(s)
+[CONVERT] WY: 2021 Wyoming Science Standards
+          Grades: K, 1, 2, 3, 4, 5, 6-8, 9-12
+          Confidence: high=8 medium=0 low=0
+
+──────────────────────────────────────────────────────────────────────
+SUMMARY
+  Total documents:    93
+  Migrated:           52
+  Skipped (null):     41
+  Already migrated:   0
+
+Dry run complete. No files modified. Run with --execute to apply.
