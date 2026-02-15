@@ -6,6 +6,7 @@
     "website": "https://ospi.k12.wa.us",
     "science_page": "https://ospi.k12.wa.us/student-success/resources-subject-area/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Washington State K-12 Science Learning Standards (WSSLS)",
     "adoption_date": "October 2013 (Updated 2024)",
     "documents": [
@@ -235,6 +236,7 @@
     "website": "https://www.oregon.gov/ode",
     "science_page": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Oregon K-12 Science Standards",
     "adoption_date": "March 2014 (Updated June 2022)",
     "documents": [
@@ -767,6 +769,7 @@
     "website": "https://www.cde.ca.gov",
     "science_page": "https://www.cde.ca.gov/pd/ca/sc/ngssstandards.asp",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "California Next Generation Science Standards (CA NGSS)",
     "adoption_date": "September 4, 2013",
     "documents": [
@@ -971,6 +974,7 @@
     "website": "https://tea.texas.gov",
     "science_page": "https://tea.texas.gov/academics/curriculum-standards/teks/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.2,
     "standards_name": "Texas Essential Knowledge and Skills (TEKS) for Science",
     "adoption_date": "December 2021 (K-8), November 2020 (HS)",
     "documents": [
@@ -1480,6 +1484,7 @@
     "website": "https://www.nysed.gov",
     "science_page": "https://www.nysed.gov/curriculum-instruction/science-learning-standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "New York State P-12 Science Learning Standards (NYSP12SLS)",
     "adoption_date": "2016",
     "documents": [
@@ -1687,6 +1692,7 @@
     "website": "https://dese.ade.arkansas.gov",
     "science_page": "https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Arkansas K-12 Science Standards",
     "adoption_date": "2013",
     "documents": [
@@ -1778,6 +1784,7 @@
     "website": "https://portal.ct.gov/SDE",
     "science_page": "https://portal.ct.gov/sde/science/science-standards-and-resources",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Connecticut Next Generation Science Standards (CT NGSS)",
     "adoption_date": "November 4, 2015",
     "documents": [
@@ -1876,6 +1883,7 @@
     "website": "https://education.delaware.gov",
     "science_page": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Delaware Science Standards (NGSS)",
     "adoption_date": "September 19, 2013",
     "documents": [
@@ -1953,6 +1961,7 @@
     "website": "https://osse.dc.gov",
     "science_page": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Next Generation Science Standards (NGSS)",
     "adoption_date": "December 18, 2013",
     "documents": [
@@ -2161,6 +2170,7 @@
     "website": "https://hawaiipublicschools.org",
     "science_page": "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Hawaii Next Generation Science Standards",
     "adoption_date": "February 2016",
     "documents": [
@@ -2345,6 +2355,7 @@
     "website": "https://www.isbe.net",
     "science_page": "https://www.isbe.net/Pages/Science-Standards.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Illinois Learning Standards for Science",
     "adoption_date": "2014",
     "documents": [
@@ -2437,6 +2448,7 @@
     "website": "https://educate.iowa.gov",
     "science_page": "https://educate.iowa.gov/pk-12/standards/academics/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Iowa Academic Standards for Science",
     "adoption_date": "August 6, 2015 (Revised May 8, 2025)",
     "documents": [
@@ -2679,6 +2691,7 @@
     "website": "https://www.ksde.org",
     "science_page": "https://community.ksde.org/Default.aspx?tabid=5785",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Kansas College and Career Ready Standards for Science",
     "adoption_date": "June 2013",
     "documents": [
@@ -2767,6 +2780,7 @@
     "website": "https://www.education.ky.gov",
     "science_page": "https://www.education.ky.gov/curriculum/conpro/science/Pages/default.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Kentucky Academic Standards for Science",
     "adoption_date": "2013 (Revised 2022)",
     "documents": [
@@ -2917,6 +2931,7 @@
     "website": "https://www.maine.gov/doe",
     "science_page": "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Maine Science and Engineering Standards",
     "adoption_date": "April 19, 2019",
     "documents": [
@@ -2995,6 +3010,7 @@
     "website": "https://www.marylandpublicschools.org",
     "science_page": "https://www.marylandpublicschools.org/about/Pages/DCAA/Science/index.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Maryland Next Generation Science Standards (NGSS)",
     "adoption_date": "June 25, 2013",
     "documents": [
@@ -3082,6 +3098,7 @@
     "website": "https://www.michigan.gov/mde",
     "science_page": "https://www.michigan.gov/mde/services/academic-standards/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Michigan K-12 Science Standards",
     "adoption_date": "November 10, 2015",
     "documents": [
@@ -3280,6 +3297,7 @@
     "website": "https://doe.nv.gov",
     "science_page": "https://doe.nv.gov/offices/office-of-teaching-and-learning/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Nevada Academic Content Standards for Science (NVACSS)",
     "adoption_date": "February 2014",
     "documents": [
@@ -3421,6 +3439,7 @@
     "website": "https://www.education.nh.gov",
     "science_page": "https://www.education.nh.gov/who-we-are/division-of-learner-support/bureau-of-instructional-support/career-and-college-ready-standards",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "New Hampshire College and Career Ready Science Standards (NGSS)",
     "adoption_date": "2016",
     "documents": [
@@ -3496,6 +3515,7 @@
     "website": "https://www.nj.gov/education",
     "science_page": "https://www.nj.gov/education/standards/science/curriculum.shtml",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "New Jersey Student Learning Standards for Science (NJSLS-S)",
     "adoption_date": "July 9, 2014 (Updated 2020)",
     "documents": [
@@ -3661,6 +3681,7 @@
     "website": "https://webnew.ped.state.nm.us",
     "science_page": "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "NM STEM Ready! Science Standards",
     "adoption_date": "2018",
     "documents": [
@@ -3738,6 +3759,7 @@
     "website": "https://ride.ri.gov",
     "science_page": "https://www.ride.ri.gov/instructionassessment/science.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Rhode Island Next Generation Science Standards",
     "adoption_date": "Spring 2013 (Reaffirmed 2024)",
     "documents": [
@@ -3813,6 +3835,7 @@
     "website": "https://education.vermont.gov",
     "science_page": "https://education.vermont.gov/student-learning/content-areas/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Vermont Next Generation Science Standards",
     "adoption_date": "2013",
     "documents": [
@@ -3890,6 +3913,7 @@
     "website": "https://www.alabamaachieves.org",
     "science_page": "https://www.alabamaachieves.org/acad-stand/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.35,
     "standards_name": "Alabama Course of Study: Science",
     "adoption_date": "2023",
     "documents": [
@@ -4087,6 +4111,7 @@
     "website": "https://www.azed.gov",
     "science_page": "https://www.azed.gov/standards-practices/k-12standards/standards-science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "Arizona Science Standards",
     "adoption_date": "October 2018",
     "documents": [
@@ -4310,6 +4335,7 @@
     "website": "https://www.cde.state.co.us",
     "science_page": "https://www.cde.state.co.us/coscience/statestandards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Colorado Academic Standards (CAS) - Science",
     "adoption_date": "2020",
     "documents": [
@@ -4426,6 +4452,7 @@
     "website": "https://www.fldoe.org",
     "science_page": "https://www.fldoe.org/academics/standards/subject-areas/math-science/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.15,
     "standards_name": "Next Generation Sunshine State Standards (NGSSS) for Science",
     "adoption_date": "February 2008",
     "documents": [
@@ -4502,6 +4529,7 @@
     "website": "https://gadoe.org",
     "science_page": "https://gadoe.org/learning/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Georgia Standards of Excellence (GSE) - Science",
     "adoption_date": "2016 (Implemented 2017-18)",
     "documents": [
@@ -4577,6 +4605,7 @@
     "website": "https://www.in.gov/doe",
     "science_page": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.4,
     "standards_name": "Indiana Academic Standards for Science",
     "adoption_date": "2023",
     "documents": [
@@ -4664,6 +4693,7 @@
     "website": "https://www.doe.mass.edu",
     "science_page": "https://www.doe.mass.edu/stem/ste/standards.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Massachusetts Science and Technology/Engineering Curriculum Framework",
     "adoption_date": "2016",
     "documents": [
@@ -5040,6 +5070,7 @@
     "website": "https://education.mn.gov",
     "science_page": "https://education.mn.gov/MDE/dse/stds/sci/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.5,
     "standards_name": "Minnesota Academic Standards in Science",
     "adoption_date": "2019 (Implemented 2024-25)",
     "documents": [
@@ -5256,6 +5287,7 @@
     "website": "https://www.dpi.nc.gov",
     "science_page": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "North Carolina Standard Course of Study - Science",
     "adoption_date": "2023 (Implemented 2024)",
     "documents": [
@@ -5343,6 +5375,7 @@
     "website": "https://education.ohio.gov",
     "science_page": "https://education.ohio.gov/Topics/Learning-in-Ohio/Science/Ohios-Learning-Standards-and-MC",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Ohio's Learning Standards for Science",
     "adoption_date": "February 2018",
     "documents": [
@@ -5536,6 +5569,7 @@
     "website": "https://www.pa.gov/agencies/education",
     "science_page": "https://www.pa.gov/agencies/education/programs-and-services/instruction/elementary-and-secondary-education/curriculum/science/science-standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Pennsylvania Integrated Standards for Science, Technology & Engineering, Environmental Literacy & Sustainability (STEELS)",
     "adoption_date": "January 2022",
     "documents": [
@@ -5728,6 +5762,7 @@
     "website": "https://www.tn.gov/education",
     "science_page": "https://www.tn.gov/education/districts/academic-standards/science-standards.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Tennessee Academic Standards for Science",
     "adoption_date": "October 2022 (Implemented 2025-26)",
     "documents": [
@@ -5945,6 +5980,7 @@
     "website": "https://schools.utah.gov",
     "science_page": "https://schools.utah.gov/curr/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Utah Science with Engineering Education (SEEd) Standards",
     "adoption_date": "2019",
     "documents": [
@@ -6138,6 +6174,7 @@
     "website": "https://www.doe.virginia.gov",
     "science_page": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.45,
     "standards_name": "Virginia Science Standards of Learning (SOL)",
     "adoption_date": "2018",
     "documents": [
@@ -6410,6 +6447,7 @@
     "website": "https://dpi.wi.gov",
     "science_page": "https://dpi.wi.gov/science/standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "Wisconsin Standards for Science",
     "adoption_date": "November 13, 2017",
     "documents": [
@@ -6551,6 +6589,7 @@
     "website": "https://education.alaska.gov",
     "science_page": "https://education.alaska.gov/standards/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "Science Standards for Alaska",
     "adoption_date": "2019",
     "documents": [
@@ -6641,6 +6680,7 @@
     "website": "https://www.sde.idaho.gov",
     "science_page": "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.6,
     "standards_name": "Idaho K-12 State Standards for Science",
     "adoption_date": "2022",
     "documents": [
@@ -6796,6 +6836,7 @@
     "website": "https://doe.louisiana.gov",
     "science_page": "https://doe.louisiana.gov/educators/instructional-support/planning-resources/k-12-science-resources",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Louisiana Student Standards for Science (LSSS)",
     "adoption_date": "2017",
     "documents": [
@@ -6871,6 +6912,7 @@
     "website": "https://mdek12.org",
     "science_page": "https://mdek12.org/secondaryeducation/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Mississippi College- and Career-Readiness Standards (MS CCRS) for Science",
     "adoption_date": "2018",
     "documents": [
@@ -6944,6 +6986,7 @@
     "website": "https://dese.mo.gov",
     "science_page": "https://dese.mo.gov/college-career-readiness/curriculum/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Missouri Learning Standards for Science",
     "adoption_date": "April 19, 2016",
     "documents": [
@@ -7018,6 +7061,7 @@
     "website": "https://opi.mt.gov",
     "science_page": "https://opi.mt.gov/Educators/Teaching-Learning/K-12-Content-Standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Montana Science Content Standards",
     "adoption_date": "September 16, 2016",
     "documents": [
@@ -7150,6 +7194,7 @@
     "website": "https://www.education.ne.gov",
     "science_page": "https://www.education.ne.gov/science/standards-and-supporting-documents/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Nebraska College and Career Ready Standards for Science (NCCRS-S)",
     "adoption_date": "September 6, 2024",
     "documents": [
@@ -7383,6 +7428,7 @@
     "website": "https://www.nd.gov/dpi",
     "science_page": "https://www.nd.gov/dpi/districtsschools/north-dakota-education-content-standards/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "North Dakota Science Content Standards",
     "adoption_date": "February 2019",
     "documents": [
@@ -7562,6 +7608,7 @@
     "website": "https://oklahoma.gov/education",
     "science_page": "https://oklahoma.gov/education/services/standards-learning/science.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.6,
     "standards_name": "Oklahoma Academic Standards for Science",
     "adoption_date": "2020",
     "documents": [
@@ -7755,6 +7802,7 @@
     "website": "https://ed.sc.gov",
     "science_page": "https://ed.sc.gov/instruction/standards/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "South Carolina College- and Career-Ready Science Standards",
     "adoption_date": "2021",
     "documents": [
@@ -7978,6 +8026,7 @@
     "website": "https://doe.sd.gov",
     "science_page": "https://doe.sd.gov/contentstandards/science.aspx",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "South Dakota Science Standards",
     "adoption_date": "April 22, 2024",
     "documents": [
@@ -8169,6 +8218,7 @@
     "website": "https://wvde.us",
     "science_page": "https://wvde.us/middle-secondary-learning/science/standards/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "West Virginia College- and Career-Readiness Standards for Science",
     "adoption_date": "August 2021 (Implemented 2022-23)",
     "documents": [
@@ -8375,6 +8425,7 @@
     "website": "https://edu.wyoming.gov",
     "science_page": "https://edu.wyoming.gov/for-district-leadership/standards/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.9,
     "standards_name": "Wyoming Content and Performance Standards (WYCPS) for Science",
     "adoption_date": "July 17, 2024 (Implemented 2025-26)",
     "documents": [

@@ -78,6 +78,7 @@ class StateStandards:
 
     # Standards Info
     ngss_status: str = "pending"  # "direct_adoption", "framework_based", "pending"
+    ngss_alignment: Optional[float] = None  # 0.0–1.0; 1.0 = full NGSS, <1.0 = partial framework
     standards_name: Optional[str] = None
     adoption_date: Optional[str] = None
 
@@ -104,6 +105,31 @@ class StateStandards:
     notes: Optional[str] = None
     research_status: str = "PENDING"  # "COMPLETE" or "PENDING"
     last_updated: Optional[str] = None
+
+
+# ============================================================================
+# HELPERS
+# ============================================================================
+
+
+def fmt_alignment(value: Optional[float]) -> str:
+    """Return a human-readable NGSS alignment string, e.g. '85% (High)'."""
+    if value is None:
+        return "N/A"
+    pct = int(round(value * 100))
+    if value >= 1.0:
+        label = "Full NGSS"
+    elif value >= 0.80:
+        label = "Very High"
+    elif value >= 0.65:
+        label = "High"
+    elif value >= 0.50:
+        label = "Moderate"
+    elif value >= 0.30:
+        label = "Low"
+    else:
+        label = "Minimal"
+    return f"{pct}% ({label})"
 
 
 # ============================================================================
@@ -165,6 +191,20 @@ def load_states_data(json_path: str = None) -> Dict[str, StateStandards]:
 
 # Load the states database
 STATES_DB = load_states_data()
+
+
+def load_ngss_standards(json_path: str = None) -> dict:
+    """Load the core NGSS Performance Expectations reference data."""
+    if json_path is None:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(script_dir, "data", "ngss_standards.json")
+    if not os.path.exists(json_path):
+        return {}
+    with open(json_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+NGSS_STANDARDS = load_ngss_standards()
 
 
 # ============================================================================
@@ -321,7 +361,7 @@ def cmd_search(grade: str):
 
     for state_abbrev, state, docs in found_states:
         print(f"\n{state.state_name} ({state_abbrev})")
-        print(f"  Status: {state.ngss_status.replace('_', ' ').title()}")
+        print(f"  Status: {state.ngss_status.replace('_', ' ').title()}  |  NGSS Alignment: {fmt_alignment(state.ngss_alignment)}")
         print(f"  Standards: {state.standards_name or 'N/A'}")
         print(f"  Documents covering grade {grade}:")
 
@@ -362,6 +402,7 @@ def cmd_state(state_abbrev: str, grade: str = None):
     print(f"\nStandards Information:")
     print(f"  Name: {state.standards_name or 'N/A'}")
     print(f"  NGSS Status: {state.ngss_status.replace('_', ' ').title()}")
+    print(f"  NGSS Alignment: {fmt_alignment(state.ngss_alignment)}")
     print(f"  Adoption Date: {state.adoption_date or 'N/A'}")
 
     if grade:
@@ -592,7 +633,7 @@ def cmd_list():
     for state_abbrev, state in complete_states:
         coverage = get_coverage_summary(state)
         print(f"  {state_abbrev}: {state.state_name}")
-        print(f"       Status: {state.ngss_status.replace('_', ' ').title()}")
+        print(f"       Status: {state.ngss_status.replace('_', ' ').title()}  |  Alignment: {fmt_alignment(state.ngss_alignment)}")
         print(f"       Coverage: {len(coverage)}/13 grades")
         print(f"       Documents: {len(state.documents)}")
         print()
@@ -704,6 +745,101 @@ def show_all_grade_sections(state: StateStandards, show_confidence: bool = False
 # ============================================================================
 
 
+def cmd_ngss(grade: str = None, dci_filter: str = None):
+    """
+    Show core NGSS Performance Expectations for a grade level.
+
+    Args:
+        grade: Grade level (K, 1-12). If None, shows summary table.
+        dci_filter: Optionally filter by DCI code prefix (e.g. 'PS1', 'LS2', 'ESS3').
+    """
+    if not NGSS_STANDARDS:
+        print("Error: NGSS standards reference data not found (data/ngss_standards.json).")
+        return
+
+    band_map = NGSS_STANDARDS.get("grade_band_map", {})
+    standards = NGSS_STANDARDS.get("standards", {})
+    dci_labels = NGSS_STANDARDS.get("disciplinary_core_ideas", {})
+
+    # ── Summary mode ─────────────────────────────────────────────────────────
+    if grade is None:
+        meta = NGSS_STANDARDS.get("metadata", {})
+        counts = meta.get("pe_counts", {})
+        print(f"\n{'=' * 70}")
+        print("NGSS CORE PERFORMANCE EXPECTATIONS — GRADE SUMMARY")
+        print(f"{'=' * 70}")
+        print(f"Source: {meta.get('source','')}")
+        print(f"Total PE entries: {counts.get('total', '?')}\n")
+        print(f"  {'Grade':<8} {'Band':<6} {'PEs':<6} Disciplines covered")
+        print(f"  {'-'*8} {'-'*6} {'-'*6} {'-'*30}")
+        for g in ["K","1","2","3","4","5","6","7","8","9","10","11","12"]:
+            band = band_map.get(g, g)
+            std  = standards.get(band, {})
+            n    = std.get("pe_count", "?")
+            dcis = ", ".join(sorted(std.get("performance_expectations", {}).keys()))
+            print(f"  {g:<8} {band:<6} {n:<6} {dcis}")
+        print(f"\n  Run: ngss <grade>  to see full PEs for a grade.")
+        print(f"  Run: ngss <grade> <DCI>  to filter (e.g. ngss 8 ESS2)")
+        return
+
+    # ── Per-grade mode ────────────────────────────────────────────────────────
+    grade = normalize_grade(grade)
+    band = band_map.get(grade)
+    if band is None:
+        print(f"Error: Grade '{grade}' not recognized. Use K, 1–12.")
+        return
+
+    std = standards.get(band)
+    if std is None:
+        print(f"Error: No NGSS data found for band '{band}'.")
+        return
+
+    label = std.get("ngss_grade_label", f"Grade {grade}")
+    note  = std.get("note", "")
+
+    print(f"\n{'=' * 70}")
+    print(f"NGSS PERFORMANCE EXPECTATIONS — {label.upper()}")
+    print(f"{'=' * 70}")
+    if note:
+        print(f"Note: {note}")
+
+    pes_by_dci = std.get("performance_expectations", {})
+    dci_filter_up = dci_filter.upper() if dci_filter else None
+
+    total_shown = 0
+    for dci_code in sorted(pes_by_dci.keys()):
+        if dci_filter_up and dci_code != dci_filter_up:
+            continue
+        pes = pes_by_dci[dci_code]
+        dci_name = dci_labels.get(dci_code, dci_code)
+        print(f"\n  [{dci_code}] {dci_name}")
+        print(f"  {'-' * 60}")
+        for pe in pes:
+            code   = pe["code"]
+            title  = pe["title"]
+            shared = f"  (shared {pe['shared_band']} band)" if pe.get("shared_band") else ""
+            # Word-wrap title at ~65 chars
+            words, line, lines = title.split(), "", []
+            for w in words:
+                if len(line) + len(w) + 1 > 65:
+                    lines.append(line)
+                    line = w
+                else:
+                    line = (line + " " + w).strip()
+            if line:
+                lines.append(line)
+            print(f"  {code}{shared}")
+            for i, l in enumerate(lines):
+                indent = "    " if i == 0 else "    "
+                print(f"    {l}")
+            total_shown += 1
+
+    print(f"\n  Total PEs shown: {total_shown}")
+    if dci_filter_up:
+        print(f"  (filtered to DCI: {dci_filter_up})")
+    print(f"{'=' * 70}\n")
+
+
 def print_usage():
     """Print usage information."""
     print("""
@@ -742,6 +878,16 @@ Commands:
       Use --show-confidence to display extraction method details
       Example: python state_science_standards_system.py sections WA 3
       Example: python state_science_standards_system.py sections WA --show-confidence
+
+  ngss [grade] [DCI]
+      Show core NGSS Performance Expectations mapped to a grade level
+      No grade: summary table of all grades with PE counts
+      With grade: full PE list for that grade/band (K-5 individual, 6-8 MS, 9-12 HS)
+      With grade + DCI: filter to one Disciplinary Core Idea (e.g. PS1, LS2, ESS3)
+      Example: python state_science_standards_system.py ngss
+      Example: python state_science_standards_system.py ngss 4
+      Example: python state_science_standards_system.py ngss 8 ESS2
+      Example: python state_science_standards_system.py ngss 11 LS4
 
   Grades: Use K for Kindergarten, or numbers 1-12
   State abbreviations: Use two-letter codes (WA, CA, TX, etc.)
@@ -804,6 +950,10 @@ def main():
         grade_args = [a for a in args if not a.startswith("--")]
         grade = grade_args[0] if grade_args else None
         cmd_sections(sys.argv[2], grade, show_confidence=show_confidence)
+    elif command == "ngss":
+        grade_arg = sys.argv[2] if len(sys.argv) > 2 else None
+        dci_arg   = sys.argv[3] if len(sys.argv) > 3 else None
+        cmd_ngss(grade_arg, dci_arg)
     else:
         print(f"Error: Unknown command '{command}'")
         print_usage()
