@@ -17,151 +17,163 @@ Represents a single standards document (PDF, HTML, or interactive).
 | `grade_levels` | List[str] | Grades covered by this document | `["K", "1", "2"]` or `["K", "1", "2", ..., "12"]` |
 | `document_type` | str | Type of document organization | `"complete_k12"`, `"grade_specific"`, `"grade_band"` |
 | `format` | str | Document format | `"PDF"`, `"HTML"`, `"Interactive"` |
-| `page_range` | str \| null | **Grade-specific page ranges** (NEW) | `"K:16-18, 1:19-20, 2:21-26"` or `null` |
+| `page_range` | dict \| null | **DEPRECATED** — grade page ranges (legacy) | `{"K": "4-7", "1": "8-11"}` or `null` |
+| `grade_sections` | dict \| {} | **Rich page/section metadata** (preferred) | See below |
 | `notes` | str \| null | Additional notes about the document | "Based on Framework for K-12 Science Education" |
 | `url_source` | str \| null | Where URL was found | "https://www.alabamaachieves.org/acad-standards/" |
 | `last_verified` | str \| null | Last URL verification date (YYYY-MM-DD) | "2026-02-04" |
 
-### page_range Field (NEW)
+### grade_sections Field (Preferred)
 
-The `page_range` field stores grade-specific page ranges for multi-grade documents. This helps users navigate to specific grade content within large PDFs.
-
-**Format:** Comma-separated list of grade:range pairs
-
-**Example:**
-```json
-"page_range": "K:16-18, 1:19-20, 2:21-26, 3:27-31, 4:32-36, 5:37-44"
-```
+The `grade_sections` field stores rich metadata about grade-specific page locations within a document. It supersedes the legacy `page_range` dict format.
 
 **Structure:**
-- Each entry: `<grade>:<start_page>-<end_page>`
-- Entries separated by comma (`,`)
-- Grades can be: `K`, `1`, `2`, ..., `12`
-- Page numbers are 1-indexed (first page = page 1)
+```json
+"grade_sections": {
+  "K": {
+    "page_ranges": [[4, 7]],
+    "section_ids": [],
+    "confidence": "high",
+    "notes": "Extracted via manual_verified",
+    "needs_review": false
+  },
+  "1": {
+    "page_ranges": [[8, 11]],
+    "section_ids": [],
+    "confidence": "high",
+    "notes": "Extracted via manual_verified",
+    "needs_review": false
+  }
+}
+```
 
-**When to use:**
-- **Use page_range** for multi-grade documents where different grades appear on different page ranges
-- **Use null** for:
-  - Single-grade documents (entire document is for one grade)
-  - Documents without clear grade-based organization
-  - Documents where grades are interleaved throughout
+**Fields per grade entry:**
 
-**Examples:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `page_ranges` | `[[start, end], ...]` | List of page spans (1-indexed) |
+| `section_ids` | `[str, ...]` | Reserved for future section ID mapping |
+| `confidence` | `"high" \| "medium" \| "low"` | Quality of the extraction |
+| `notes` | str | Extraction method description |
+| `needs_review` | bool | True if manual verification is recommended |
 
-1. **Multi-grade K-8 document:**
-   ```json
-   {
-     "title": "Ohio's Learning Standards for Science",
-     "grade_levels": ["K", "1", "2", "3", "4", "5", "6", "7", "8"],
-     "page_range": "K:17-32, 1:33-47, 2:48-62, 3:63-86, 4:87-106, 5:107-124, 6:125-152, 7:153-180, 8:181-387"
-   }
-   ```
+**Confidence levels:**
 
-2. **Single-grade document (page_range = null):**
-   ```json
-   {
-     "title": "Kindergarten Science TEKS",
-     "grade_levels": ["K"],
-     "page_range": null
-   }
-   ```
+| Level | Meaning | When assigned |
+|-------|---------|---------------|
+| `high` | Verified extraction | Manual download, MCP tools, or manual verification |
+| `medium` | Automated extraction | Remote fetch without cross-checking |
+| `low` | Uncertain data | URL broken, or data known to be incomplete |
 
-3. **Complete K-12 with only K extracted:**
-   ```json
-   {
-     "title": "Hawaii NGSS Standards K-12",
-     "grade_levels": ["K", "1", "2", ..., "12"],
-     "page_range": "K:3-533"
-   }
-   ```
+**Multi-range example (grade spans two page blocks):**
+```json
+"9-12": {
+  "page_ranges": [[54, 64], [65, 95]],
+  "section_ids": [],
+  "confidence": "high",
+  "notes": "Extracted via mcp_tools",
+  "needs_review": false
+}
+```
 
-**Note:** The example above shows a case where only Kindergarten page range was extracted from the table of contents. Other grades (1-12) may exist but weren't automatically extracted.
+**When grade_sections is null/empty:**
+- Single-grade documents (entire doc covers one grade) → `grade_sections: {}`
+- Documents where page layout does not separate by grade → `grade_sections: {}`
 
-## Using page_range
+---
+
+### page_range Field (DEPRECATED)
+
+> **⚠ Deprecated as of 2026-02-15.** Use `grade_sections` instead.
+> `page_range` is preserved alongside `grade_sections` during the transition period.
+> It will be removed in a future major release.
+
+**Legacy format:**
+```json
+"page_range": {
+  "K": "4-7",
+  "1": "8-11",
+  "2": "12-16"
+}
+```
+
+**Deprecation timeline:**
+- 2026-02-15: `grade_sections` added alongside `page_range` (additive migration)
+- 2026-Q2: CLI reads `grade_sections` only; `page_range` retained in JSON
+- 2026-Q3: `page_range` removed from `data/states.json`
+
+**Migration:** Run `scripts/migration/migrate_to_grade_sections.py --dry-run` to preview or `--execute` to apply.
+
+---
+
+## Using grade_sections
 
 ### CLI Display
 
-The CLI automatically displays page_range when viewing state information:
+The CLI automatically uses `grade_sections` when showing state information:
 
 ```bash
-python state_science_standards_system.py state OH
+# Show all docs for a state — compact section summary
+python state_science_standards_system.py state WA
+# Output: Pages: Sections: K:4-7 | 1:8-11 | 2:12-16 | ...
+
+# Filter by grade — shows grade-specific pages with confidence
+python state_science_standards_system.py state WA 5
+# Output: Pages: pp. 27-53 (confidence: high)
+
+# Show detailed grade sections
+python state_science_standards_system.py sections WA
+python state_science_standards_system.py sections WA 5
+python state_science_standards_system.py sections WA --show-confidence
 ```
 
-Output includes:
-```
-1. Ohio's Learning Standards for Science and Model Curriculum
-   URL: https://education.ohio.gov/...
-   Covers Grades: K, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-   Format: PDF
-   Pages: K:17-32, 1:33-47, 2:48-62, 3:63-86, ...
-```
-
-### Efficient Parsing
-
-The `parse_by_page_range.py` script demonstrates how to use page_range for efficient grade-specific parsing:
-
-```bash
-# Parse only Kindergarten pages (16-18) instead of entire 120-page PDF
-python parse_by_page_range.py AL K
-```
-
-This approach:
-- Downloads only the specified pages (faster)
-- Reduces processing time
-- Provides grade-specific content extraction
-
-### Parsing page_range String
-
-To parse the page_range string programmatically:
+### Programmatic Access
 
 ```python
-def parse_page_range(page_range_str: str) -> dict:
-    """Parse page_range string into structured format"""
-    if not page_range_str:
-        return {}
+import json
 
-    result = {}
-    pairs = page_range_str.split(',')
+data = json.load(open("data/states.json"))
+wa_doc = data["WA"]["documents"][0]
+gs = wa_doc.get("grade_sections", {})
 
-    for pair in pairs:
-        grade, range_str = pair.strip().split(':')
-        start, end = range_str.split('-')
-        result[grade] = (int(start), int(end))
-
-    return result
-
-# Example
-ranges = parse_page_range("K:16-18, 1:19-20")
-# returns: {"K": (16, 18), "1": (19, 20)}
+# Get page ranges for grade 5
+grade5 = gs.get("5", {})
+for start, end in grade5.get("page_ranges", []):
+    print(f"Grade 5: pages {start}–{end}")
+    print(f"Confidence: {grade5['confidence']}")
+    print(f"Needs review: {grade5['needs_review']}")
 ```
 
 ## Current Coverage
 
-As of 2026-02-05:
+As of 2026-02-15:
 
-- **Total documents:** 80
-- **With page_range:** 14 (17.5%)
-- **Single-grade (null):** 30 (37.5%)
-- **URL errors (cannot extract):** 36 (45%)
+- **Total documents:** 93
+- **With grade_sections:** 52 (56%)
+- **Without section data (null page_range):** 41 (44%) — single-grade or no data
 
-**States with page_range data:**
-- Alabama (K-8): 9 grades extracted
-- Idaho (K-5): 6 grades extracted
-- New Jersey K-5: 6 grades extracted
-- Ohio (K-8): 9 grades extracted
-- Oklahoma (K-8): 9 grades extracted
-- Hawaii, Iowa, Mississippi, Montana (2 docs), North Dakota, Pennsylvania, South Dakota, Utah: Kindergarten only
+**Confidence distribution (238 grade entries across 52 documents):**
+- `high`: 144 (60%) — manual downloads, MCP tools, manual verification
+- `medium`: 94 (39%) — remote automated extraction
+- `low`: 0 (0%)
+- `needs_review`: 3 (1%) — NJ grade 5, WV grades 1 and 4
+
+**States with full K-12 grade_sections:** AL, AZ, HI, MA, OH, OK, SC, TN, WY
+**States with partial grade_sections:** WA (K-5, 9-12), IA, NV, WI, WV, ...
+**States with no section data (empty):** CT, DE, FL, GA, IN, KS, LA, MD, ME, MO, NC, NH, NM, RI, VA, VT, MS
 
 ## Future Enhancements
 
-1. **Increase coverage:** Re-run extraction when more URLs are fixed
-2. **Enhanced patterns:** Add patterns for "High School Biology", "Chemistry", etc.
-3. **Larger TOC search:** Expand from 30 to 50 pages to find more grades
-4. **Manual review:** Manually verify Kindergarten-only extractions for missing grades
-5. **Integration:** Integrate page_range-based parsing into main parser workflow
+1. **Remove page_range** (deprecated): After Q2 2026 transition period
+2. **Fill missing 17 states**: CT, DE, FL, GA, IN, KS, LA, MD, ME, MO, NC, NH, NM, RI, VA, VT, MS need grade_sections data
+3. **Upgrade medium → high**: Re-extract with verification for 94 medium-confidence grades
+4. **Add section_ids**: Map standards sections to specific identifiers for direct linking
+5. **TX grades 9-12**: Complete Texas high school TEKS section data
 
 ## Related Scripts
 
-- `scripts/extract_page_ranges.py` - Extract page ranges from PDFs
-- `scripts/merge_page_ranges.py` - Merge extracted ranges into states.json
-- `parse_by_page_range.py` - Efficient grade-specific parsing using page_range
+- `scripts/migration/migrate_to_grade_sections.py` - Migrate page_range to grade_sections
+- `scripts/migration/extraction_methods.json` - Per-state extraction method registry
+- `scripts/validation/validate_page_ranges.py` - Validate page ranges + confidence quality
+- `scripts/parsing/extract_grade_ranges.py` - Extract page ranges from PDFs
+- `parse_by_page_range.py` - Efficient grade-specific parsing using page ranges
