@@ -816,3 +816,70 @@ Repository cleanup plan: COMPLETE
 2026-02-15 15:45 - HI states.json updated: page_range dict applied to Hawaii NGSS Standards K-12 document
 2026-02-15 15:45 - MS BLOCKED: PDF URL returns 404; page_range stays null; notes updated with block reason
 2026-02-15 15:45 - Plan complete: HI extracted (1/2 states), MS deferred (URL broken)
+
+## Session: 2026-02-15 - Migrate to grade_sections Format
+
+### Plan: migrate-to-grade-sections-format.md
+### Steps: 7/7 complete
+
+2026-02-15 16:43 - Starting plan: migrate-to-grade-sections-format
+2026-02-15 16:43 - Verified prerequisites: cleanup and extraction plans complete, CLI passing, JSON valid
+2026-02-15 16:43 - Baseline tests: CLI passing, 51 states, 93 documents
+
+2026-02-15 16:43 - Step 1/7: Created scripts/migration/migrate_to_grade_sections.py
+                   - Dry-run validated: 52 docs to convert, 41 null (single-grade), 0 errors
+                   - Committed: afe42c4
+
+2026-02-15 16:44 - Step 2/7: Created scripts/migration/extraction_methods.json
+                   - 51 states tagged: remote_automated(43), manual_download(3), mcp_tools(2), toc_extraction(2), manual_verified(1)
+                   - Committed: 364635b
+
+2026-02-15 16:44 - Step 3/7: Generated migration preview (scripts/migration/migration_preview.txt)
+                   - Dry-run output saved for review (173 lines)
+                   - Committed: 72deedb
+
+2026-02-15 16:45 - Step 4/7: Executed migration on data/states.json
+                   - 52 documents converted to grade_sections (additive — page_range preserved)
+                   - 41 skipped (null page_range)
+                   - Both formats coexist, data integrity verified: 51 states, 93 docs
+                   - Committed: f6ed18a
+
+2026-02-15 16:50 - Step 5/7: Updated CLI to use grade_sections
+                   - Added format_doc_pages() helper (grade_sections preferred, falls back to page_range str)
+                   - state command: shows compact section summary
+                   - state <ST> <grade>: shows "pp. 27-53 (confidence: high)"
+                   - sections command: confidence labels High ✓ / Medium ~ / Low !
+                   - Added --show-confidence flag to sections command
+                   - Committed: 93bab4a
+
+2026-02-15 16:52 - Step 6/7: Added confidence-level validation (GS001-GS006)
+                   - GS001: missing grade_sections when page_range exists
+                   - GS002: required keys missing from grade_sections entry
+                   - GS003: low confidence → WARNING
+                   - GS004: needs_review flag → INFO (--verbose)
+                   - GS005: cross-check page_ranges vs page_range string
+                   - GS006: --confidence-report summary
+                   - Results: high=144(60%), medium=94(39%), low=0(0%), review=3/238(1%)
+                   - Committed: d28c62d
+
+2026-02-15 16:55 - Step 7/7: Updated docs/DATA_SCHEMA.md
+                   - Documented grade_sections structure, fields, confidence levels
+                   - Marked page_range as DEPRECATED with Q2/Q3 2026 removal timeline
+                   - Updated coverage stats (52/93 docs, 238 grade entries)
+                   - Committed: 2fdd188
+
+### Final Validation
+- All baseline CLI tests: passing (list, state, search, range, compare, queries, sections)
+- Data integrity: 51 states, 93 docs, grade_sections on 52 docs
+- Validation: 0 errors, 376 warnings (pre-existing PR002/PR004), 13 info
+- GS006 confidence report: high=60%, medium=39%, low=0%, review=1%
+
+### Summary
+- Steps completed: 7/7
+- Commits made: 7
+- Files created: 4 (migration script, extraction_methods.json, preview, backup)
+- Files modified: 4 (states.json, CLI, validate_page_ranges.py, DATA_SCHEMA.md, features.txt, progress.txt)
+- grade_sections coverage: 52/93 documents (56%)
+- Confidence: high=144, medium=94, low=0, review=3
+- Plan moved to .claude/plan/complete/2026-02-15-migrate-to-grade-sections-format-COMPLETE.md
+- features.txt updated: marked complete
