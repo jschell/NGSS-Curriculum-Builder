@@ -16,6 +16,12 @@ import sys
 import json
 import os
 
+PAGE_RANGE_STATUS_LABELS = {
+    "not_applicable_ngss_reference": "N/A (NGSS reference document — no state-specific K-12 PDF)",
+    "not_applicable_multi_document": "N/A (multi-document state — see individual grade PDFs)",
+    "not_applicable_interactive_database": "N/A (interactive database — no PDF)",
+}
+
 
 @dataclass
 class GradeSection:
@@ -45,6 +51,7 @@ class StandardsDocument:
     url_source: Optional[str] = None  # Source URL where document was found
     last_verified: Optional[str] = None  # Last verification date (YYYY-MM-DD)
     special_structure: Optional[str] = None  # Special document structure type
+    page_range_status: Optional[str] = None  # Why page_range is null: "not_applicable_ngss_reference", "not_applicable_multi_document", "not_applicable_interactive_database"
 
 
 @dataclass
@@ -339,6 +346,8 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   Covers Grades: {', '.join(doc.grade_levels)}")
                 if doc.page_range:
                     print(f"   Pages: {doc.page_range}")
+                elif doc.page_range_status:
+                    print(f"   Pages: {PAGE_RANGE_STATUS_LABELS.get(doc.page_range_status, doc.page_range_status)}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
                 print()
@@ -365,6 +374,8 @@ def cmd_state(state_abbrev: str, grade: str = None):
                 print(f"   Format: {doc.format}")
                 if doc.page_range:
                     print(f"   Pages: {doc.page_range}")
+                elif doc.page_range_status:
+                    print(f"   Pages: {PAGE_RANGE_STATUS_LABELS.get(doc.page_range_status, doc.page_range_status)}")
                 if doc.notes:
                     print(f"   Notes: {doc.notes}")
 

@@ -950,7 +950,8 @@
         "page_range": null,
         "notes": "Connecticut adopted NGSS directly (Nov 2015). Standards and resources page.",
         "url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
-        "last_verified": "2026-02-05"
+        "last_verified": "2026-02-05",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1047,7 +1048,8 @@
         "page_range": null,
         "notes": "Delaware uses topical arrangement of NGSS for grades 3-12 (not grade-organized). URL points to topical PDF.",
         "url_source": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1452,7 +1454,8 @@
         "page_range": null,
         "notes": "Kansas adopted NGSS directly in June 2013 as Kansas College and Career Ready Standards for Science.",
         "url_source": "https://www.nextgenscience.org/lead-state-kansas",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1636,7 +1639,8 @@
         "notes": "Maine Science and Engineering Standards (NGSS-aligned, adopted 2019). Individual per-topic files (not grade-band PDFs): Elementary topics as PDF, MS/HS topics as DOCX. No combined grade-band document. Base URL: https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/",
         "last_verified": "2026-02-06",
         "url_source": "https://www.maine.gov/doe/learning/content/science/review",
-        "special_structure": "grade_specific_documents"
+        "special_structure": "grade_specific_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -1710,7 +1714,8 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Maryland adopted NGSS directly as Maryland Science Standards. No single K-12 PDF document."
+        "notes": "Maryland adopted NGSS directly as Maryland Science Standards. No single K-12 PDF document.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1959,7 +1964,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "New Hampshire adopted NGSS directly."
+        "notes": "New Hampshire adopted NGSS directly.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2126,7 +2132,8 @@
         "page_range": null,
         "notes": "NM STEM Ready! = NGSS + 6 New Mexico-specific standards. Standards page with resources.",
         "url_source": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2200,7 +2207,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Rhode Island adopted NGSS directly."
+        "notes": "Rhode Island adopted NGSS directly.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2276,7 +2284,8 @@
         "page_range": null,
         "notes": "Vermont adopted NGSS directly as Vermont Science Standards.",
         "url_source": "https://www.nextgenscience.org/lead-state-vermont",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2612,7 +2621,8 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Searchable database via CPALMS. Four Bodies of Knowledge: Nature of Science, Life Science, Earth Science, Physical Science"
+        "notes": "Searchable database via CPALMS. Four Bodies of Knowledge: Nature of Science, Life Science, Earth Science, Physical Science",
+        "page_range_status": "not_applicable_interactive_database"
       }
     ],
     "assessments": [
@@ -2688,7 +2698,8 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Georgia Standards of Excellence (GSE) for Science. Separate PDFs per course/grade. No combined K-12 document. georgiastandards.org is sunset; active host is gadoe.org.",
-        "special_structure": "grade_band_documents"
+        "special_structure": "grade_band_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -2762,7 +2773,8 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Indiana 2023 Academic Standards for Science. Grade/course-specific individual PDFs. No single K-12 document.",
-        "special_structure": "grade_specific_documents"
+        "special_structure": "grade_specific_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -3036,7 +3048,8 @@
         "format": "HTML",
         "page_range": null,
         "notes": "2023 NC K-12 Science Standards. Grade and course-specific PDFs. No single K-12 combined document.",
-        "special_structure": "grade_band_documents"
+        "special_structure": "grade_band_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -4003,7 +4016,8 @@
         "format": "HTML",
         "page_range": null,
         "notes": "Louisiana Student Standards for Science (LSS, adopted March 2017). Official download is a ZIP archive of individual grade/course PDFs: https://doe.louisiana.gov/docs/default-source/teacher-toolbox-resources/k-12-louisiana-student-standards-for-science.zip. No single combined K-12 PDF.",
-        "special_structure": "web_based_grade_specific"
+        "special_structure": "web_based_grade_specific",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -4149,7 +4163,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Missouri Learning Standards for Science (2016). Two separate PDFs organized by discipline/topic (not by grade): K-5 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-k-5-sboe-2016.pdf) and 6-12 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-6-12-sboe-2016.pdf). Standards organized by topic with grade columns, not grade sections."
+        "notes": "Missouri Learning Standards for Science (2016). Two separate PDFs organized by discipline/topic (not by grade): K-5 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-k-5-sboe-2016.pdf) and 6-12 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-6-12-sboe-2016.pdf). Standards organized by topic with grade columns, not grade sections.",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
