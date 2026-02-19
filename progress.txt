@@ -807,3 +807,140 @@ Tests Passed (5/5):
 - Data integrity (51 states, 48 with page ranges)
 
 Repository cleanup plan: COMPLETE
+2026-02-15 05:51 - Starting plan: extract-hi-ms-page-ranges
+2026-02-15 05:51 - Verified prerequisites: states.json valid, 51 states, git clean
+2026-02-15 05:51 - Baseline tests: CLI passing, JSON valid
+2026-02-15 15:45 - Step 1 BLOCKED: network proxy prevents fetch of HI/MS PDFs and archive.org access
+2026-02-15 15:45 - HI PDF resolved: NGSSReduced-hi.pdf (3.6MB) checked out from origin branch claude/review-active-plans-Aqt6n
+2026-02-15 15:45 - HI page ranges extracted from ToC (offset +29 PDF pages): K=32-37, 1=38-43, 2=44-52, 3=53-62, 4=63-70, 5=71-82, 6-8=83-116, 9-12=117-159
+2026-02-15 15:45 - HI states.json updated: page_range dict applied to Hawaii NGSS Standards K-12 document
+2026-02-15 15:45 - MS BLOCKED: PDF URL returns 404; page_range stays null; notes updated with block reason
+2026-02-15 15:45 - Plan complete: HI extracted (1/2 states), MS deferred (URL broken)
+
+## Session: 2026-02-15 - Migrate to grade_sections Format
+
+### Plan: migrate-to-grade-sections-format.md
+### Steps: 7/7 complete
+
+2026-02-15 16:43 - Starting plan: migrate-to-grade-sections-format
+2026-02-15 16:43 - Verified prerequisites: cleanup and extraction plans complete, CLI passing, JSON valid
+2026-02-15 16:43 - Baseline tests: CLI passing, 51 states, 93 documents
+
+2026-02-15 16:43 - Step 1/7: Created scripts/migration/migrate_to_grade_sections.py
+                   - Dry-run validated: 52 docs to convert, 41 null (single-grade), 0 errors
+                   - Committed: afe42c4
+
+2026-02-15 16:44 - Step 2/7: Created scripts/migration/extraction_methods.json
+                   - 51 states tagged: remote_automated(43), manual_download(3), mcp_tools(2), toc_extraction(2), manual_verified(1)
+                   - Committed: 364635b
+
+2026-02-15 16:44 - Step 3/7: Generated migration preview (scripts/migration/migration_preview.txt)
+                   - Dry-run output saved for review (173 lines)
+                   - Committed: 72deedb
+
+2026-02-15 16:45 - Step 4/7: Executed migration on data/states.json
+                   - 52 documents converted to grade_sections (additive — page_range preserved)
+                   - 41 skipped (null page_range)
+                   - Both formats coexist, data integrity verified: 51 states, 93 docs
+                   - Committed: f6ed18a
+
+2026-02-15 16:50 - Step 5/7: Updated CLI to use grade_sections
+                   - Added format_doc_pages() helper (grade_sections preferred, falls back to page_range str)
+                   - state command: shows compact section summary
+                   - state <ST> <grade>: shows "pp. 27-53 (confidence: high)"
+                   - sections command: confidence labels High ✓ / Medium ~ / Low !
+                   - Added --show-confidence flag to sections command
+                   - Committed: 93bab4a
+
+2026-02-15 16:52 - Step 6/7: Added confidence-level validation (GS001-GS006)
+                   - GS001: missing grade_sections when page_range exists
+                   - GS002: required keys missing from grade_sections entry
+                   - GS003: low confidence → WARNING
+                   - GS004: needs_review flag → INFO (--verbose)
+                   - GS005: cross-check page_ranges vs page_range string
+                   - GS006: --confidence-report summary
+                   - Results: high=144(60%), medium=94(39%), low=0(0%), review=3/238(1%)
+                   - Committed: d28c62d
+
+2026-02-15 16:55 - Step 7/7: Updated docs/DATA_SCHEMA.md
+                   - Documented grade_sections structure, fields, confidence levels
+                   - Marked page_range as DEPRECATED with Q2/Q3 2026 removal timeline
+                   - Updated coverage stats (52/93 docs, 238 grade entries)
+                   - Committed: 2fdd188
+
+### Final Validation
+- All baseline CLI tests: passing (list, state, search, range, compare, queries, sections)
+- Data integrity: 51 states, 93 docs, grade_sections on 52 docs
+- Validation: 0 errors, 376 warnings (pre-existing PR002/PR004), 13 info
+- GS006 confidence report: high=60%, medium=39%, low=0%, review=1%
+
+### Summary
+- Steps completed: 7/7
+- Commits made: 7
+- Files created: 4 (migration script, extraction_methods.json, preview, backup)
+- Files modified: 4 (states.json, CLI, validate_page_ranges.py, DATA_SCHEMA.md, features.txt, progress.txt)
+- grade_sections coverage: 52/93 documents (56%)
+- Confidence: high=144, medium=94, low=0, review=3
+- Plan moved to .claude/plan/complete/2026-02-15-migrate-to-grade-sections-format-COMPLETE.md
+- features.txt updated: marked complete
+
+## Session: 2026-02-15 - Close Extraction Plan
+
+### Plan: close-extraction-record-na-states.md
+### Steps: 3/3 complete (Steps 1-2 done in prior session)
+
+2026-02-15 17:00 - Step 1 (prior): page_range_status added to 15 states in states.json
+2026-02-15 17:00 - Step 2 (prior): CLI N/A display working for all 3 status types
+2026-02-15 17:00 - Step 3: Updated features.txt, archived close-extraction plan
+
+Final state:
+- 15/15 states have page_range_status (N/A documented)
+- CLI: "Pages: N/A (...)" showing for all 3 status types
+- Active plans remaining: extract-va-manual-download, texas-high-school-standards, csv-excel-export
+- Committed: 67e4f27
+
+### Summary
+- Steps completed: 3/3
+- Plan archived: .claude/plan/complete/2026-02-15-close-extraction-record-na-states-COMPLETE.md
+
+## Session: 2026-02-15 - Texas High School Standards
+
+### Plan: texas-high-school-standards.md
+### Steps: 6/6 complete
+
+2026-02-15 17:20 - Starting plan: texas-high-school-standards
+2026-02-15 17:20 - Verified prerequisites: TX K-8 in states.json, CLI passing, git clean
+2026-02-15 17:20 - Baseline: TX missing grades 9-12 (9/13 coverage)
+
+2026-02-15 17:25 - Step 1: Researched TEA HS science URLs via web search
+                   - Found ch112c.pdf contains all 8 HS subjects (same pattern as ch112a/b)
+                   - New section numbers: §112.42-45 (2020 adoption), §112.47-50 (2021 adoption)
+                   - Effective 2024-25 school year
+
+2026-02-15 17:28 - Step 2: Validated ch112c.pdf URL — 403 (TEA bot protection, same as K-8)
+                   - URL confirmed via TEA official index in web search results
+
+2026-02-15 17:30 - Step 3: Added 8 HS docs to data/states.json
+                   - Biology (§112.42), Chemistry (§112.43), IPC (§112.44), Physics (§112.45)
+                   - Aquatic Science (§112.47), Astronomy (§112.48), ESS (§112.49), EnvSystems (§112.50)
+                   - Total docs: 93 → 101
+                   - Committed: 427a26a
+
+2026-02-15 17:32 - Step 4: TX range command shows 13/13 grades COMPLETE
+                   - Grades 9-12 covered; IPC correctly only shows 9-10
+                   - `search 10` and `search 12` include Texas
+
+2026-02-15 17:33 - Step 5: Page range extraction skipped — ch112c.pdf 403 blocked
+                   - HS docs have page_range: null (correct — requires manual download)
+
+2026-02-15 17:35 - Step 6: Updated CLAUDE.md, features.txt, archived plan
+                   - CLAUDE.md: doc count 80→101, TX known issue resolved
+                   - features.txt: TX HS item moved to Done, active plans section empty
+
+### Summary
+- Steps completed: 6/6
+- Commits made: 2 (data + docs)
+- TX coverage: K-12 complete (was K-8)
+- Total docs: 101 (was 93, +8 HS subjects)
+- Active plans: 0 (all complete or in holding)
+- Plan archived: .claude/plan/complete/2026-02-15-texas-high-school-standards-COMPLETE.md

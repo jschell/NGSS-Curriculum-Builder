@@ -6,6 +6,7 @@
     "website": "https://ospi.k12.wa.us",
     "science_page": "https://ospi.k12.wa.us/student-success/resources-subject-area/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Washington State K-12 Science Learning Standards (WSSLS)",
     "adoption_date": "October 2013 (Updated 2024)",
     "documents": [
@@ -41,7 +42,97 @@
         },
         "notes": "Single comprehensive K-12 document, identical to NGSS",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                4,
+                7
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                8,
+                11
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                12,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                17,
+                21
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                22,
+                26
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                27,
+                53
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                54,
+                64
+              ],
+              [
+                65,
+                95
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "WSSLS DCI Arrangement",
@@ -145,6 +236,7 @@
     "website": "https://www.oregon.gov/ode",
     "science_page": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Oregon K-12 Science Standards",
     "adoption_date": "March 2014 (Updated June 2022)",
     "documents": [
@@ -182,7 +274,213 @@
         },
         "notes": "Complete K-12 standards in one document | 2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed. | 2022 Oregon K-12 Science Standards Adopted Version (June 2022). Complete K-12 document with guidance. PDF confirmed.",
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                9,
+                50
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                17,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                20,
+                21
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                23,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                26,
+                28
+              ],
+              [
+                30,
+                32
+              ],
+              [
+                34,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                26,
+                27
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                32,
+                33
+              ],
+              [
+                34,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                29,
+                30
+              ],
+              [
+                33,
+                34
+              ],
+              [
+                35,
+                36
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "9": {
+            "page_ranges": [
+              [
+                37,
+                38
+              ],
+              [
+                41,
+                43
+              ],
+              [
+                46,
+                47
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade K Standards with Guidance",
@@ -197,7 +495,33 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/Pages/default.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                8,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 1 Standards with Guidance",
@@ -212,7 +536,25 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "1": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 2 Standards with Guidance",
@@ -227,7 +569,25 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "2": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 3 Standards with Guidance",
@@ -242,7 +602,25 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "3": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 4 Standards with Guidance",
@@ -257,7 +635,25 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 5 Standards with Guidance",
@@ -272,7 +668,25 @@
         },
         "notes": null,
         "url_source": "https://www.oregon.gov/ode/educator-resources/standards/science/pages/science-standards.aspx",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "5": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                7,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -355,6 +769,7 @@
     "website": "https://www.cde.ca.gov",
     "science_page": "https://www.cde.ca.gov/pd/ca/sc/ngssstandards.asp",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "California Next Generation Science Standards (CA NGSS)",
     "adoption_date": "September 4, 2013",
     "documents": [
@@ -397,7 +812,21 @@
         },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 1 CA NGSS Standards",
@@ -412,7 +841,25 @@
         },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "1": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 2 CA NGSS Standards",
@@ -527,6 +974,7 @@
     "website": "https://tea.texas.gov",
     "science_page": "https://tea.texas.gov/academics/curriculum-standards/teks/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.2,
     "standards_name": "Texas Essential Knowledge and Skills (TEKS) for Science",
     "adoption_date": "December 2021 (K-8), November 2020 (HS)",
     "documents": [
@@ -544,7 +992,41 @@
         "notes": "None | Special structure: three_level_documents | Special structure: three_level_documents | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-04",
-        "special_structure": "level_specific_documents"
+        "special_structure": "level_specific_documents",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                16,
+                17
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 1 Science TEKS",
@@ -559,7 +1041,21 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "1": {
+            "page_ranges": [
+              [
+                4,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 2 Science TEKS",
@@ -574,7 +1070,25 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "2": {
+            "page_ranges": [
+              [
+                8,
+                9
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 3 Science TEKS",
@@ -589,7 +1103,25 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "3": {
+            "page_ranges": [
+              [
+                12,
+                13
+              ],
+              [
+                17,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 4 Science TEKS",
@@ -604,7 +1136,29 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                13,
+                14
+              ],
+              [
+                16,
+                17
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 5 Science TEKS",
@@ -619,7 +1173,41 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "5": {
+            "page_ranges": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                16,
+                18
+              ],
+              [
+                20,
+                22
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 6 Science TEKS",
@@ -634,7 +1222,25 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "6": {
+            "page_ranges": [
+              [
+                0,
+                2
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 7 Science TEKS",
@@ -649,7 +1255,21 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "7": {
+            "page_ranges": [
+              [
+                5,
+                6
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 8 Science TEKS",
@@ -664,7 +1284,155 @@
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "8": {
+            "page_ranges": [
+              [
+                9,
+                10
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
+      },
+      {
+        "title": "Biology TEKS (§112.42)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Biology — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Chemistry TEKS (§112.43)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Chemistry — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Integrated Physics and Chemistry TEKS (§112.44)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "IPC — alternative to separate Chemistry+Physics; grades 9-10; adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Physics TEKS (§112.45)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "High school Physics — adopted 2020, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Aquatic Science TEKS (§112.47)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Astronomy TEKS (§112.48)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Earth Systems Science TEKS (§112.49)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective (formerly \"Earth and Space Science\") — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
+      },
+      {
+        "title": "Environmental Systems TEKS (§112.50)",
+        "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_specific",
+        "format": "PDF",
+        "page_range": null,
+        "grade_sections": {},
+        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
+        "last_verified": "2026-02-15"
       }
     ],
     "assessments": [
@@ -716,6 +1484,7 @@
     "website": "https://www.nysed.gov",
     "science_page": "https://www.nysed.gov/curriculum-instruction/science-learning-standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "New York State P-12 Science Learning Standards (NYSP12SLS)",
     "adoption_date": "2016",
     "documents": [
@@ -735,7 +1504,53 @@
         },
         "notes": "Pre-K through Grade 2",
         "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                4
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                15
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                11,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grades 3-5 Science Learning Standards",
@@ -753,7 +1568,37 @@
         },
         "notes": null,
         "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                9,
+                10
+              ],
+              [
+                13,
+                14
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
@@ -847,6 +1692,7 @@
     "website": "https://dese.ade.arkansas.gov",
     "science_page": "https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Arkansas K-12 Science Standards",
     "adoption_date": "2013",
     "documents": [
@@ -875,7 +1721,21 @@
         },
         "notes": "Arkansas provides grade-specific PDFs. Full list at: https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
         "url_source": "https://dese.ade.arkansas.gov/Offices/learning-services/curriculum-support/science-standards-and-courses",
-        "last_verified": "2026-02-05"
+        "last_verified": "2026-02-05",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                2,
+                17
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -924,6 +1784,7 @@
     "website": "https://portal.ct.gov/SDE",
     "science_page": "https://portal.ct.gov/sde/science/science-standards-and-resources",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Connecticut Next Generation Science Standards (CT NGSS)",
     "adoption_date": "November 4, 2015",
     "documents": [
@@ -950,7 +1811,8 @@
         "page_range": null,
         "notes": "Connecticut adopted NGSS directly (Nov 2015). Standards and resources page.",
         "url_source": "https://portal.ct.gov/sde/science/science-standards-and-resources",
-        "last_verified": "2026-02-05"
+        "last_verified": "2026-02-05",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1021,6 +1883,7 @@
     "website": "https://education.delaware.gov",
     "science_page": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Delaware Science Standards (NGSS)",
     "adoption_date": "September 19, 2013",
     "documents": [
@@ -1047,7 +1910,8 @@
         "page_range": null,
         "notes": "Delaware uses topical arrangement of NGSS for grades 3-12 (not grade-organized). URL points to topical PDF.",
         "url_source": "https://education.delaware.gov/educators/academic-support/standards-and-assessments/science/de-science-standards/",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1097,6 +1961,7 @@
     "website": "https://osse.dc.gov",
     "science_page": "https://osse.dc.gov/service/next-generation-science-standards-ngss-page",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Next Generation Science Standards (NGSS)",
     "adoption_date": "December 18, 2013",
     "documents": [
@@ -1134,7 +1999,129 @@
         },
         "notes": "Organized by grade band (PreK-1, 2-5) then individual grades (6-8), then HS by subject. HS Biology p46, Chemistry p52, Physics p60, Environmental Science p68.",
         "url_source": "https://osse.dc.gov/publication/2016-next-generation-science-standards-faq-overview",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "PreK-1": {
+            "page_ranges": [
+              [
+                4,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2-5": {
+            "page_ranges": [
+              [
+                10,
+                23
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                24,
+                29
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                30,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                36,
+                41
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-ESS": {
+            "page_ranges": [
+              [
+                42,
+                45
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-Bio": {
+            "page_ranges": [
+              [
+                46,
+                51
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-Chem": {
+            "page_ranges": [
+              [
+                52,
+                59
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-Phys": {
+            "page_ranges": [
+              [
+                60,
+                67
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-Env": {
+            "page_ranges": [
+              [
+                68,
+                77
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1183,6 +2170,7 @@
     "website": "https://hawaiipublicschools.org",
     "science_page": "https://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/ngss/Pages/default.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Hawaii Next Generation Science Standards",
     "adoption_date": "February 2016",
     "documents": [
@@ -1206,10 +2194,117 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K": "32-37",
+          "1": "38-43",
+          "2": "44-52",
+          "3": "53-62",
+          "4": "63-70",
+          "5": "71-82",
+          "6-8": "83-116",
+          "9-12": "117-159"
+        },
         "notes": "Three-dimensional approach integrating practices, concepts, and core ideas",
         "url_source": "https://manoa.hawaii.edu/sealearning/standards-alignment/next-generation-science-standards-ngss",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                32,
+                37
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                38,
+                43
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                44,
+                52
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                53,
+                62
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                63,
+                70
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                71,
+                82
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                83,
+                116
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                117,
+                159
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_verified",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1260,6 +2355,7 @@
     "website": "https://www.isbe.net",
     "science_page": "https://www.isbe.net/Pages/Science-Standards.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Illinois Learning Standards for Science",
     "adoption_date": "2014",
     "documents": [
@@ -1288,7 +2384,21 @@
         },
         "notes": "Based on NGSS, adopted 2014",
         "url_source": "https://www.nextgenscience.org/lead-state-illinois",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                3,
+                21
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1338,6 +2448,7 @@
     "website": "https://educate.iowa.gov",
     "science_page": "https://educate.iowa.gov/pk-12/standards/academics/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Iowa Academic Standards for Science",
     "adoption_date": "August 6, 2015 (Revised May 8, 2025)",
     "documents": [
@@ -1375,7 +2486,161 @@
         },
         "notes": "Based on NGSS Performance Expectations, revised 2025",
         "url_source": "https://educate.iowa.gov/pk-12/standards/academics/science",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "12": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                225,
+                226
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                12,
+                13
+              ],
+              [
+                86,
+                87
+              ],
+              [
+                223,
+                224
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ],
+              [
+                29,
+                31
+              ],
+              [
+                33,
+                34
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ],
+              [
+                77,
+                78
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                86,
+                87
+              ],
+              [
+                86,
+                87
+              ],
+              [
+                225,
+                226
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                86,
+                87
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "10": {
+            "page_ranges": [
+              [
+                224,
+                225
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1426,6 +2691,7 @@
     "website": "https://www.ksde.org",
     "science_page": "https://community.ksde.org/Default.aspx?tabid=5785",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Kansas College and Career Ready Standards for Science",
     "adoption_date": "June 2013",
     "documents": [
@@ -1452,7 +2718,8 @@
         "page_range": null,
         "notes": "Kansas adopted NGSS directly in June 2013 as Kansas College and Career Ready Standards for Science.",
         "url_source": "https://www.nextgenscience.org/lead-state-kansas",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1513,6 +2780,7 @@
     "website": "https://www.education.ky.gov",
     "science_page": "https://www.education.ky.gov/curriculum/conpro/science/Pages/default.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Kentucky Academic Standards for Science",
     "adoption_date": "2013 (Revised 2022)",
     "documents": [
@@ -1543,7 +2811,61 @@
         },
         "notes": "Based on Framework for K-12 Science Education",
         "url_source": "https://www.education.ky.gov/curriculum/standards/kyacadstand",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                1,
+                4
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                14,
+                25
+              ],
+              [
+                47,
+                51
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "12": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                9,
+                10
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "High School Science Course Standards",
@@ -1609,6 +2931,7 @@
     "website": "https://www.maine.gov/doe",
     "science_page": "https://www.maine.gov/doe/learning/content/scienceandtech/nextgen",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Maine Science and Engineering Standards",
     "adoption_date": "April 19, 2019",
     "documents": [
@@ -1636,7 +2959,8 @@
         "notes": "Maine Science and Engineering Standards (NGSS-aligned, adopted 2019). Individual per-topic files (not grade-band PDFs): Elementary topics as PDF, MS/HS topics as DOCX. No combined grade-band document. Base URL: https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/",
         "last_verified": "2026-02-06",
         "url_source": "https://www.maine.gov/doe/learning/content/science/review",
-        "special_structure": "grade_specific_documents"
+        "special_structure": "grade_specific_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -1686,6 +3010,7 @@
     "website": "https://www.marylandpublicschools.org",
     "science_page": "https://www.marylandpublicschools.org/about/Pages/DCAA/Science/index.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Maryland Next Generation Science Standards (NGSS)",
     "adoption_date": "June 25, 2013",
     "documents": [
@@ -1710,7 +3035,8 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Maryland adopted NGSS directly as Maryland Science Standards. No single K-12 PDF document."
+        "notes": "Maryland adopted NGSS directly as Maryland Science Standards. No single K-12 PDF document.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -1772,6 +3098,7 @@
     "website": "https://www.michigan.gov/mde",
     "science_page": "https://www.michigan.gov/mde/services/academic-standards/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Michigan K-12 Science Standards",
     "adoption_date": "November 10, 2015",
     "documents": [
@@ -1806,7 +3133,121 @@
         },
         "notes": "Derived from NGSS with Michigan-specific contexts",
         "url_source": "https://www.michigan.gov/mde/services/academic-standards",
-        "last_verified": "2026-02-06"
+        "last_verified": "2026-02-06",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                6,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                11,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                13,
+                14
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via mcp_tools",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1856,6 +3297,7 @@
     "website": "https://doe.nv.gov",
     "science_page": "https://doe.nv.gov/offices/office-of-teaching-and-learning/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Nevada Academic Content Standards for Science (NVACSS)",
     "adoption_date": "February 2014",
     "documents": [
@@ -1885,7 +3327,69 @@
           "6": "116-117",
           "12": "138-139"
         },
-        "notes": "Based on NGSS, adopted February 2014"
+        "notes": "Based on NGSS, adopted February 2014",
+        "grade_sections": {
+          "1": {
+            "page_ranges": [
+              [
+                17,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                87,
+                88
+              ],
+              [
+                110,
+                111
+              ],
+              [
+                175,
+                176
+              ],
+              [
+                181,
+                182
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                116,
+                117
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "12": {
+            "page_ranges": [
+              [
+                138,
+                139
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1935,6 +3439,7 @@
     "website": "https://www.education.nh.gov",
     "science_page": "https://www.education.nh.gov/who-we-are/division-of-learner-support/bureau-of-instructional-support/career-and-college-ready-standards",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "New Hampshire College and Career Ready Science Standards (NGSS)",
     "adoption_date": "2016",
     "documents": [
@@ -1959,7 +3464,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "New Hampshire adopted NGSS directly."
+        "notes": "New Hampshire adopted NGSS directly.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2009,6 +3515,7 @@
     "website": "https://www.nj.gov/education",
     "science_page": "https://www.nj.gov/education/standards/science/curriculum.shtml",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "New Jersey Student Learning Standards for Science (NJSLS-S)",
     "adoption_date": "July 9, 2014 (Updated 2020)",
     "documents": [
@@ -2033,7 +3540,81 @@
           "3": "48-65",
           "4": "66-81"
         },
-        "notes": "Elementary K-5 standards"
+        "notes": "Elementary K-5 standards",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                14,
+                25
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                82,
+                82
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": true
+          },
+          "1": {
+            "page_ranges": [
+              [
+                26,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                36,
+                47
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                48,
+                65
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                66,
+                81
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "NJ Student Learning Standards Science 6-12",
@@ -2100,6 +3681,7 @@
     "website": "https://webnew.ped.state.nm.us",
     "science_page": "https://webnew.ped.state.nm.us/bureaus/math-science/nm-stem-ready-science/",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "NM STEM Ready! Science Standards",
     "adoption_date": "2018",
     "documents": [
@@ -2126,7 +3708,8 @@
         "page_range": null,
         "notes": "NM STEM Ready! = NGSS + 6 New Mexico-specific standards. Standards page with resources.",
         "url_source": "https://web.ped.nm.gov/bureaus/math-and-science-bureau/nm-stem-ready-science",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2176,6 +3759,7 @@
     "website": "https://ride.ri.gov",
     "science_page": "https://www.ride.ri.gov/instructionassessment/science.aspx",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Rhode Island Next Generation Science Standards",
     "adoption_date": "Spring 2013 (Reaffirmed 2024)",
     "documents": [
@@ -2200,7 +3784,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Rhode Island adopted NGSS directly."
+        "notes": "Rhode Island adopted NGSS directly.",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2250,6 +3835,7 @@
     "website": "https://education.vermont.gov",
     "science_page": "https://education.vermont.gov/student-learning/content-areas/science",
     "ngss_status": "direct_adoption",
+    "ngss_alignment": 1.0,
     "standards_name": "Vermont Next Generation Science Standards",
     "adoption_date": "2013",
     "documents": [
@@ -2276,7 +3862,8 @@
         "page_range": null,
         "notes": "Vermont adopted NGSS directly as Vermont Science Standards.",
         "url_source": "https://www.nextgenscience.org/lead-state-vermont",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "not_applicable_ngss_reference"
       }
     ],
     "assessments": [
@@ -2326,6 +3913,7 @@
     "website": "https://www.alabamaachieves.org",
     "science_page": "https://www.alabamaachieves.org/acad-stand/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.35,
     "standards_name": "Alabama Course of Study: Science",
     "adoption_date": "2023",
     "documents": [
@@ -2362,7 +3950,117 @@
         },
         "notes": "Based on Framework for K-12 Science Education (NRC 2012)",
         "url_source": "https://www.alabamaachieves.org/acad-stand/",
-        "last_verified": "2026-02-05"
+        "last_verified": "2026-02-05",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                16,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                19,
+                20
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                21,
+                26
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                27,
+                31
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                32,
+                36
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                37,
+                44
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                45,
+                49
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                50,
+                53
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                54,
+                120
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -2413,6 +4111,7 @@
     "website": "https://www.azed.gov",
     "science_page": "https://www.azed.gov/standards-practices/k-12standards/standards-science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "Arizona Science Standards",
     "adoption_date": "October 2018",
     "documents": [
@@ -2449,7 +4148,133 @@
           "9-12": "68-70, 71-101",
           "8": "60-67"
         },
-        "notes": "Three-dimensional approach based on Framework for K-12 Science Education"
+        "notes": "Three-dimensional approach based on Framework for K-12 Science Education",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                15,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                19,
+                23
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                24,
+                30
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                31,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                36,
+                39
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                40,
+                48
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                49,
+                54
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                55,
+                59
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                68,
+                70
+              ],
+              [
+                71,
+                101
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                60,
+                67
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -2510,6 +4335,7 @@
     "website": "https://www.cde.state.co.us",
     "science_page": "https://www.cde.state.co.us/coscience/statestandards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Colorado Academic Standards (CAS) - Science",
     "adoption_date": "2020",
     "documents": [
@@ -2538,7 +4364,45 @@
           "6-8": "68-114",
           "9-12": "115-200"
         },
-        "notes": "Organized by grade band: P-2, 3-5, MS (6-8), HS (9-12). P-5 starts p.10, 6-8 starts p.68, 9-12 starts p.115."
+        "notes": "Organized by grade band: P-2, 3-5, MS (6-8), HS (9-12). P-5 starts p.10, 6-8 starts p.68, 9-12 starts p.115.",
+        "grade_sections": {
+          "P-5": {
+            "page_ranges": [
+              [
+                10,
+                67
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                68,
+                114
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                115,
+                200
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -2588,6 +4452,7 @@
     "website": "https://www.fldoe.org",
     "science_page": "https://www.fldoe.org/academics/standards/subject-areas/math-science/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.15,
     "standards_name": "Next Generation Sunshine State Standards (NGSSS) for Science",
     "adoption_date": "February 2008",
     "documents": [
@@ -2612,7 +4477,8 @@
         "document_type": "complete_k12",
         "format": "Interactive",
         "page_range": null,
-        "notes": "Searchable database via CPALMS. Four Bodies of Knowledge: Nature of Science, Life Science, Earth Science, Physical Science"
+        "notes": "Searchable database via CPALMS. Four Bodies of Knowledge: Nature of Science, Life Science, Earth Science, Physical Science",
+        "page_range_status": "not_applicable_interactive_database"
       }
     ],
     "assessments": [
@@ -2663,6 +4529,7 @@
     "website": "https://gadoe.org",
     "science_page": "https://gadoe.org/learning/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Georgia Standards of Excellence (GSE) - Science",
     "adoption_date": "2016 (Implemented 2017-18)",
     "documents": [
@@ -2688,7 +4555,8 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Georgia Standards of Excellence (GSE) for Science. Separate PDFs per course/grade. No combined K-12 document. georgiastandards.org is sunset; active host is gadoe.org.",
-        "special_structure": "grade_band_documents"
+        "special_structure": "grade_band_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -2737,6 +4605,7 @@
     "website": "https://www.in.gov/doe",
     "science_page": "https://www.in.gov/doe/students/indiana-academic-standards/science-and-computer-science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.4,
     "standards_name": "Indiana Academic Standards for Science",
     "adoption_date": "2023",
     "documents": [
@@ -2762,7 +4631,8 @@
         "format": "PDF",
         "page_range": null,
         "notes": "Indiana 2023 Academic Standards for Science. Grade/course-specific individual PDFs. No single K-12 document.",
-        "special_structure": "grade_specific_documents"
+        "special_structure": "grade_specific_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -2823,6 +4693,7 @@
     "website": "https://www.doe.mass.edu",
     "science_page": "https://www.doe.mass.edu/stem/ste/standards.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Massachusetts Science and Technology/Engineering Curriculum Framework",
     "adoption_date": "2016",
     "documents": [
@@ -2858,7 +4729,289 @@
           "12": "10-11, 22-23, 74-75, 195-196",
           "9": "76-77, 80-81, 91-92, 96-97, 152-153"
         },
-        "notes": "Includes life, physical, Earth/space science, and technology/engineering"
+        "notes": "Includes life, physical, Earth/space science, and technology/engineering",
+        "grade_sections": {
+          "8": {
+            "page_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                14,
+                15
+              ],
+              [
+                26,
+                27
+              ],
+              [
+                54,
+                55
+              ],
+              [
+                56,
+                60
+              ],
+              [
+                61,
+                64
+              ],
+              [
+                65,
+                66
+              ],
+              [
+                68,
+                70
+              ],
+              [
+                71,
+                72
+              ],
+              [
+                73,
+                74
+              ],
+              [
+                150,
+                153
+              ],
+              [
+                196,
+                197
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                29,
+                30
+              ],
+              [
+                36,
+                38
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                29,
+                30
+              ],
+              [
+                37,
+                41
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                43,
+                45
+              ],
+              [
+                46,
+                47
+              ],
+              [
+                49,
+                50
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                46,
+                51
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                50,
+                54
+              ],
+              [
+                151,
+                153
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                56,
+                58
+              ],
+              [
+                59,
+                61
+              ],
+              [
+                62,
+                64
+              ],
+              [
+                65,
+                67
+              ],
+              [
+                68,
+                74
+              ],
+              [
+                151,
+                153
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ],
+              [
+                57,
+                61
+              ],
+              [
+                62,
+                65
+              ],
+              [
+                66,
+                67
+              ],
+              [
+                69,
+                71
+              ],
+              [
+                72,
+                73
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "12": {
+            "page_ranges": [
+              [
+                10,
+                11
+              ],
+              [
+                22,
+                23
+              ],
+              [
+                74,
+                75
+              ],
+              [
+                195,
+                196
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "9": {
+            "page_ranges": [
+              [
+                76,
+                77
+              ],
+              [
+                80,
+                81
+              ],
+              [
+                91,
+                92
+              ],
+              [
+                96,
+                97
+              ],
+              [
+                152,
+                153
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -2917,6 +5070,7 @@
     "website": "https://education.mn.gov",
     "science_page": "https://education.mn.gov/MDE/dse/stds/sci/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.5,
     "standards_name": "Minnesota Academic Standards in Science",
     "adoption_date": "2019 (Implemented 2024-25)",
     "documents": [
@@ -2952,7 +5106,129 @@
           "8": "59-69",
           "9-12": "70-104"
         },
-        "notes": "2019 Minnesota Academic Standards in Science (Final, rule effective Sept 2021). 104-page PDF organized by grade (K-8) then 9-12. Standards encoded as grade-content codes (e.g. 0P=K-Physics, 1L=G1-Life). Page ranges extracted from benchmark code distribution."
+        "notes": "2019 Minnesota Academic Standards in Science (Final, rule effective Sept 2021). 104-page PDF organized by grade (K-8) then 9-12. Standards encoded as grade-content codes (e.g. 0P=K-Physics, 1L=G1-Life). Page ranges extracted from benchmark code distribution.",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                7,
+                11
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                12,
+                17
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                18,
+                23
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                24,
+                28
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                29,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                36,
+                42
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                43,
+                49
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                50,
+                58
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                59,
+                69
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                70,
+                104
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3011,6 +5287,7 @@
     "website": "https://www.dpi.nc.gov",
     "science_page": "https://www.dpi.nc.gov/districts-schools/classroom-resources/academic-standards/standard-course-study/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "North Carolina Standard Course of Study - Science",
     "adoption_date": "2023 (Implemented 2024)",
     "documents": [
@@ -3036,7 +5313,8 @@
         "format": "HTML",
         "page_range": null,
         "notes": "2023 NC K-12 Science Standards. Grade and course-specific PDFs. No single K-12 combined document.",
-        "special_structure": "grade_band_documents"
+        "special_structure": "grade_band_documents",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -3097,6 +5375,7 @@
     "website": "https://education.ohio.gov",
     "science_page": "https://education.ohio.gov/Topics/Learning-in-Ohio/Science/Ohios-Learning-Standards-and-MC",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Ohio's Learning Standards for Science",
     "adoption_date": "February 2018",
     "documents": [
@@ -3131,7 +5410,117 @@
           "8": "181-387",
           "7": "153-180"
         },
-        "notes": "Adopted February 2018, covers K-8 and high school"
+        "notes": "Adopted February 2018, covers K-8 and high school",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                17,
+                32
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                33,
+                47
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                48,
+                62
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                63,
+                86
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                87,
+                106
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                107,
+                124
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                125,
+                152
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                181,
+                387
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                153,
+                180
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3180,6 +5569,7 @@
     "website": "https://www.pa.gov/agencies/education",
     "science_page": "https://www.pa.gov/agencies/education/programs-and-services/instruction/elementary-and-secondary-education/curriculum/science/science-standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Pennsylvania Integrated Standards for Science, Technology & Engineering, Environmental Literacy & Sustainability (STEELS)",
     "adoption_date": "January 2022",
     "documents": [
@@ -3206,7 +5596,21 @@
         "page_range": {
           "K": "0-46"
         },
-        "notes": "K-12 sequence across strands"
+        "notes": "K-12 sequence across strands",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                46
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Pennsylvania Integrated Standards K-5",
@@ -3229,7 +5633,85 @@
           "4": "4-5",
           "5": "5-6"
         },
-        "notes": "Elementary standards"
+        "notes": "Elementary standards",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                3,
+                4
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                4,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                5,
+                6
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3280,6 +5762,7 @@
     "website": "https://www.tn.gov/education",
     "science_page": "https://www.tn.gov/education/districts/academic-standards/science-standards.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Tennessee Academic Standards for Science",
     "adoption_date": "October 2022 (Implemented 2025-26)",
     "documents": [
@@ -3316,7 +5799,137 @@
           "9-12": "63-73, 74-120, 121-135",
           "8": "58-62"
         },
-        "notes": "Based on Framework for K-12 Science Education | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education. | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education."
+        "notes": "Based on Framework for K-12 Science Education | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education. | Tennessee Academic Standards for Science (updated 10-28-22). Complete K-12 standards document. Based on A Framework for K-12 Science Education.",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                21,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                25,
+                28
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                29,
+                33
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                34,
+                38
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                39,
+                43
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                44,
+                48
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                49,
+                52
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                53,
+                57
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                63,
+                73
+              ],
+              [
+                74,
+                120
+              ],
+              [
+                121,
+                135
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                58,
+                62
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3367,6 +5980,7 @@
     "website": "https://schools.utah.gov",
     "science_page": "https://schools.utah.gov/curr/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Utah Science with Engineering Education (SEEd) Standards",
     "adoption_date": "2019",
     "documents": [
@@ -3400,7 +6014,105 @@
           "7": "48-54",
           "8": "54-60"
         },
-        "notes": "Written by Utah educators using Framework for K-12 Science Education and NGSS"
+        "notes": "Written by Utah educators using Framework for K-12 Science Education and NGSS",
+        "grade_sections": {
+          "1": {
+            "page_ranges": [
+              [
+                20,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                24,
+                28
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                28,
+                32
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                32,
+                38
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                38,
+                42
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                42,
+                48
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                48,
+                54
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                54,
+                60
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3462,6 +6174,7 @@
     "website": "https://www.doe.virginia.gov",
     "science_page": "https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/science/standards-of-learning",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.45,
     "standards_name": "Virginia Science Standards of Learning (SOL)",
     "adoption_date": "2018",
     "documents": [
@@ -3734,6 +6447,7 @@
     "website": "https://dpi.wi.gov",
     "science_page": "https://dpi.wi.gov/science/standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.85,
     "standards_name": "Wisconsin Standards for Science",
     "adoption_date": "November 13, 2017",
     "documents": [
@@ -3763,7 +6477,61 @@
           "1": "16-17",
           "8": "18-19"
         },
-        "notes": "Built from NRC Framework and NGSS, organized in grade bands K-2, 3-5, 6-8, 9-12 | Wisconsin Standards for Science adopted November 13, 2017. Complete PK-12 standards document (119 pages). Based on NGSS framework with Wisconsin-specific adaptations."
+        "notes": "Built from NRC Framework and NGSS, organized in grade bands K-2, 3-5, 6-8, 9-12 | Wisconsin Standards for Science adopted November 13, 2017. Complete PK-12 standards document (119 pages). Based on NGSS framework with Wisconsin-specific adaptations.",
+        "grade_sections": {
+          "12": {
+            "page_ranges": [
+              [
+                13,
+                14
+              ],
+              [
+                16,
+                17
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "11": {
+            "page_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                16,
+                17
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                18,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3821,6 +6589,7 @@
     "website": "https://education.alaska.gov",
     "science_page": "https://education.alaska.gov/standards/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "Science Standards for Alaska",
     "adoption_date": "2019",
     "documents": [
@@ -3847,7 +6616,21 @@
         "page_range": {
           "5": "11-12"
         },
-        "notes": "Based on NGSS with strong focus on Alaskan contexts | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format. | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format."
+        "notes": "Based on NGSS with strong focus on Alaskan contexts | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format. | K-12 Science Standards for Alaska PDF. Direct link from Alaska Department of Education website. Document confirmed as PDF format.",
+        "grade_sections": {
+          "5": {
+            "page_ranges": [
+              [
+                11,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3897,6 +6680,7 @@
     "website": "https://www.sde.idaho.gov",
     "science_page": "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.6,
     "standards_name": "Idaho K-12 State Standards for Science",
     "adoption_date": "2022",
     "documents": [
@@ -3928,7 +6712,81 @@
           "4": "20-24",
           "5": "25-89"
         },
-        "notes": "Three dimensions: disciplinary core ideas, crosscutting concepts, and science/engineering practices"
+        "notes": "Three dimensions: disciplinary core ideas, crosscutting concepts, and science/engineering practices",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                5,
+                8
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                9,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                13,
+                15
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                16,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                20,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                25,
+                89
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3978,6 +6836,7 @@
     "website": "https://doe.louisiana.gov",
     "science_page": "https://doe.louisiana.gov/educators/instructional-support/planning-resources/k-12-science-resources",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.75,
     "standards_name": "Louisiana Student Standards for Science (LSSS)",
     "adoption_date": "2017",
     "documents": [
@@ -4003,7 +6862,8 @@
         "format": "HTML",
         "page_range": null,
         "notes": "Louisiana Student Standards for Science (LSS, adopted March 2017). Official download is a ZIP archive of individual grade/course PDFs: https://doe.louisiana.gov/docs/default-source/teacher-toolbox-resources/k-12-louisiana-student-standards-for-science.zip. No single combined K-12 PDF.",
-        "special_structure": "web_based_grade_specific"
+        "special_structure": "web_based_grade_specific",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -4052,6 +6912,7 @@
     "website": "https://mdek12.org",
     "science_page": "https://mdek12.org/secondaryeducation/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Mississippi College- and Career-Readiness Standards (MS CCRS) for Science",
     "adoption_date": "2018",
     "documents": [
@@ -4076,7 +6937,7 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012)"
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012) URL returns 404 (2026-02-15); page_range extraction blocked until working URL found."
       }
     ],
     "assessments": [
@@ -4125,6 +6986,7 @@
     "website": "https://dese.mo.gov",
     "science_page": "https://dese.mo.gov/college-career-readiness/curriculum/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Missouri Learning Standards for Science",
     "adoption_date": "April 19, 2016",
     "documents": [
@@ -4149,7 +7011,8 @@
         "document_type": "complete_k12",
         "format": "HTML",
         "page_range": null,
-        "notes": "Missouri Learning Standards for Science (2016). Two separate PDFs organized by discipline/topic (not by grade): K-5 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-k-5-sboe-2016.pdf) and 6-12 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-6-12-sboe-2016.pdf). Standards organized by topic with grade columns, not grade sections."
+        "notes": "Missouri Learning Standards for Science (2016). Two separate PDFs organized by discipline/topic (not by grade): K-5 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-k-5-sboe-2016.pdf) and 6-12 (https://dese.mo.gov/sites/dese/files/media/pdf/2021/04/curr-mls-standards-sci-6-12-sboe-2016.pdf). Standards organized by topic with grade columns, not grade sections.",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -4198,6 +7061,7 @@
     "website": "https://opi.mt.gov",
     "science_page": "https://opi.mt.gov/Educators/Teaching-Learning/K-12-Content-Standards",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "Montana Science Content Standards",
     "adoption_date": "September 16, 2016",
     "documents": [
@@ -4224,7 +7088,21 @@
         "page_range": {
           "K": "1-5"
         },
-        "notes": "Includes crosscutting concepts and science/engineering practices"
+        "notes": "Includes crosscutting concepts and science/engineering practices",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                1,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Montana Science Model Curriculum Guide",
@@ -4249,7 +7127,25 @@
         "page_range": {
           "K": "2-13, 28-31"
         },
-        "notes": "Implementation guide"
+        "notes": "Implementation guide",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                2,
+                13
+              ],
+              [
+                28,
+                31
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4298,6 +7194,7 @@
     "website": "https://www.education.ne.gov",
     "science_page": "https://www.education.ne.gov/science/standards-and-supporting-documents/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.7,
     "standards_name": "Nebraska College and Career Ready Standards for Science (NCCRS-S)",
     "adoption_date": "September 6, 2024",
     "documents": [
@@ -4335,7 +7232,153 @@
           "HS-LS": "34-37",
           "HS-ESS": "38-40"
         },
-        "notes": "High school organized by subject: HS-PS (Physical Science), HS-LS (Life Science), HS-ESS (Earth and Space Science). HS Plus courses pages 41-53."
+        "notes": "High school organized by subject: HS-PS (Physical Science), HS-LS (Life Science), HS-ESS (Earth and Space Science). HS Plus courses pages 41-53.",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                5,
+                6
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                7,
+                8
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                9,
+                10
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                11,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                14,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                20,
+                22
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                23,
+                26
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                27,
+                29
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-PS": {
+            "page_ranges": [
+              [
+                30,
+                33
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-LS": {
+            "page_ranges": [
+              [
+                34,
+                37
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "HS-ESS": {
+            "page_ranges": [
+              [
+                38,
+                40
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4385,6 +7428,7 @@
     "website": "https://www.nd.gov/dpi",
     "science_page": "https://www.nd.gov/dpi/districtsschools/north-dakota-education-content-standards/science",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "North Dakota Science Content Standards",
     "adoption_date": "February 2019",
     "documents": [
@@ -4416,7 +7460,105 @@
           "3": "279-280, 279-281, 280-282, 281-294, 296-299, 310-313",
           "5": "307-319"
         },
-        "notes": "Multi-dimensional standards based on Framework for K-12 Science Education"
+        "notes": "Multi-dimensional standards based on Framework for K-12 Science Education",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                4,
+                5
+              ],
+              [
+                296,
+                299
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                218,
+                219
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                261,
+                270
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                270,
+                280
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                279,
+                280
+              ],
+              [
+                279,
+                281
+              ],
+              [
+                280,
+                282
+              ],
+              [
+                281,
+                294
+              ],
+              [
+                296,
+                299
+              ],
+              [
+                310,
+                313
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                307,
+                319
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4466,6 +7608,7 @@
     "website": "https://oklahoma.gov/education",
     "science_page": "https://oklahoma.gov/education/services/standards-learning/science.html",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.6,
     "standards_name": "Oklahoma Academic Standards for Science",
     "adoption_date": "2020",
     "documents": [
@@ -4500,7 +7643,117 @@
           "7": "64-77",
           "8": "78-175"
         },
-        "notes": "Informed by Framework for K-12 Science Education and NGSS"
+        "notes": "Informed by Framework for K-12 Science Education and NGSS",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                9,
+                14
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                15,
+                20
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                21,
+                25
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                26,
+                33
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                34,
+                42
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                43,
+                50
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                51,
+                63
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                64,
+                77
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                78,
+                175
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4549,6 +7802,7 @@
     "website": "https://ed.sc.gov",
     "science_page": "https://ed.sc.gov/instruction/standards/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.65,
     "standards_name": "South Carolina College- and Career-Ready Science Standards",
     "adoption_date": "2021",
     "documents": [
@@ -4586,7 +7840,133 @@
           "9-12": "200-214, 215-235"
         },
         "notes": "South Carolina College- and Career-Ready Science Standards 2021. Complete K-12 document (279 pages). PDF directly served by URL.",
-        "last_verified": "2026-02-06"
+        "last_verified": "2026-02-06",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                12,
+                23
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                24,
+                35
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                36,
+                49
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                50,
+                67
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                68,
+                84
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                85,
+                100
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                101,
+                121
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                122,
+                147
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                148,
+                199
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                200,
+                214
+              ],
+              [
+                215,
+                235
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via manual_download",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4646,6 +8026,7 @@
     "website": "https://doe.sd.gov",
     "science_page": "https://doe.sd.gov/contentstandards/science.aspx",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "South Dakota Science Standards",
     "adoption_date": "April 22, 2024",
     "documents": [
@@ -4677,7 +8058,117 @@
           "4": "1-2, 4-5",
           "5": "2-3, 4-5"
         },
-        "notes": "Four domains: Life, Physical, Earth/Space, and Engineering/Technology. Based on Framework for K-12 Science Education"
+        "notes": "Four domains: Life, Physical, Earth/Space, and Engineering/Technology. Based on Framework for K-12 Science Education",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                10,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4727,6 +8218,7 @@
     "website": "https://wvde.us",
     "science_page": "https://wvde.us/middle-secondary-learning/science/standards/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.8,
     "standards_name": "West Virginia College- and Career-Readiness Standards for Science",
     "adoption_date": "August 2021 (Implemented 2022-23)",
     "documents": [
@@ -4762,7 +8254,129 @@
           "8": "26-27",
           "9-12": "28-56"
         },
-        "notes": "WV College- and Career-Readiness Standards for Science (Policy 2520.3C, August 2021). 56-page image-based PDF. Grade sections identified via browser screenshot scanning. Organized K-8 by grade then HS (9-12) by content area."
+        "notes": "WV College- and Career-Readiness Standards for Science (Policy 2520.3C, August 2021). 56-page image-based PDF. Grade sections identified via browser screenshot scanning. Organized K-8 by grade then HS (9-12) by content area.",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                10,
+                11
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": true
+          },
+          "2": {
+            "page_ranges": [
+              [
+                13,
+                14
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                15,
+                17
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": true
+          },
+          "5": {
+            "page_ranges": [
+              [
+                19,
+                20
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                21,
+                22
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                23,
+                25
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                26,
+                27
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                28,
+                56
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "medium",
+            "notes": "Extracted via remote_automated",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -4811,6 +8425,7 @@
     "website": "https://edu.wyoming.gov",
     "science_page": "https://edu.wyoming.gov/for-district-leadership/standards/science/",
     "ngss_status": "framework_based",
+    "ngss_alignment": 0.9,
     "standards_name": "Wyoming Content and Performance Standards (WYCPS) for Science",
     "adoption_date": "July 17, 2024 (Implemented 2025-26)",
     "documents": [
@@ -4847,7 +8462,105 @@
           "9-12": "51-68"
         },
         "notes": "2021 Wyoming Science Standards (77 pages). K-5 by grade, 6-8 and 9-12 by subject domain.",
-        "last_verified": "2026-02-06"
+        "last_verified": "2026-02-06",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                8,
+                11
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                12,
+                15
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                16,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                20,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                25,
+                29
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                30,
+                34
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                35,
+                49
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                51,
+                68
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via toc_extraction",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [

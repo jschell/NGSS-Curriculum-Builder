@@ -3,7 +3,7 @@
 **Status:** Active
 **Priority:** Medium
 **Estimated Time:** 2-3 hours
-**Dependencies:** cleanup-messy-page-ranges.md, extract-remaining-23-states.md
+**Dependencies:** cleanup-messy-page-ranges.md (complete), extract-remaining-23-states.md (complete 2026-02-15)
 
 ## Overview
 

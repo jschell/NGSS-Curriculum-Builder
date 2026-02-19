@@ -1,6 +1,7 @@
 # Plan: Re-extract Hawaii and Mississippi Page Ranges
 
-**Status:** Active
+**Status:** Complete (partial — HI done, MS blocked)
+**Completed:** 2026-02-15
 **Priority:** High
 **Estimated Time:** 30-45 minutes
 **Dependencies:** None (can run independently)
@@ -161,11 +162,11 @@ If remote fetch fails (403/404), use this procedure:
 
 ## Success Criteria
 
-- [ ] HI has `page_range` dict with grade sections (not null)
-- [ ] MS has `page_range` dict with grade sections (not null)
-- [ ] Both display correctly in CLI
-- [ ] Data integrity: 51 states, valid JSON
-- [ ] Total states with page ranges increases from 33 to 35
+- [x] HI has `page_range` dict with grade sections (not null)
+- [ ] MS has `page_range` dict with grade sections (not null) — BLOCKED: PDF URL 404
+- [x] Both display correctly in CLI (HI verified)
+- [x] Data integrity: 51 states, valid JSON
+- [ ] Total states with page ranges increases from 33 to 35 — only reached 34 (HI only)
 
 ## Rollback Plan
 

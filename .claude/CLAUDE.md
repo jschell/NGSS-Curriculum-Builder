@@ -9,7 +9,7 @@
 **Core Functionality**:
 - Query state science standards by grade level across all 51 jurisdictions
 - Track NGSS direct adoption (21 states) vs. framework-based standards (30 states)
-- Catalog 80 standards documents and 67 state assessments
+- Catalog 101 standards documents and 67 state assessments
 - Fast metadata queries (<20ms) with future document parsing capability
 
 ---
@@ -261,9 +261,9 @@ FOR each step in plan:
 
 ## Project-Specific Context
 
-### Current State (As of 2026-02-04)
+### Current State (As of 2026-02-15)
 - ✅ 51/51 states complete with metadata
-- ✅ 80 documents cataloged
+- ✅ 101 documents cataloged
 - ✅ 67 assessments tracked
 - ✅ JSON data structure (111 KB)
 - ✅ CLI tool fully functional
@@ -284,8 +284,8 @@ FOR each step in plan:
    - Texas: Some TEKS documents return errors
 
 2. **Incomplete Data**:
-   - Texas: Only K-8, missing grades 9-12
-   - Page ranges: Not populated (not currently needed)
+   - Texas: K-12 complete (8 HS subject docs added 2026-02-15; ch112c.pdf URL confirmed, 403 on direct fetch)
+   - Page ranges: Partially populated (52/101 docs with grade_sections)
 
 3. **Performance Considerations**:
    - Metadata queries: <20ms ✅ Fast
@@ -358,7 +358,7 @@ FOR each step in plan:
 
 ### Data Counts
 - States: 51
-- Documents: 80
+- Documents: 101
 - Assessments: 67
 - NGSS states: 21
 - Framework states: 30
