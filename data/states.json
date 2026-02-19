@@ -132,7 +132,8 @@
             "notes": "Extracted via mcp_tools",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "WSSLS DCI Arrangement",
@@ -157,7 +158,8 @@
         "page_range": null,
         "notes": "Organized by Disciplinary Core Ideas",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       },
       {
         "title": "WSSLS Topic Arrangement",
@@ -182,7 +184,8 @@
         "page_range": null,
         "notes": "Organized by topics for easier curriculum planning",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -480,7 +483,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade K Standards with Guidance",
@@ -521,7 +525,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 1 Standards with Guidance",
@@ -554,7 +559,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 2 Standards with Guidance",
@@ -587,7 +593,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 3 Standards with Guidance",
@@ -620,7 +627,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 4 Standards with Guidance",
@@ -653,7 +661,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 5 Standards with Guidance",
@@ -686,7 +695,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -797,7 +807,8 @@
         "notes": "Interactive, searchable database | Special structure: grade_specific_documents | Special structure: grade_specific_documents | California provides separate grade-specific PDFs. Elementary (K-5): one per grade. Middle School (6-8): two models available (Integrated and Discipline-Specific). High School (9-12): organized by discipline.",
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "special_structure": "grade_specific_documents"
+        "special_structure": "grade_specific_documents",
+        "page_range_status": "not_applicable_interactive_database"
       },
       {
         "title": "Kindergarten CA NGSS Standards",
@@ -826,7 +837,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 1 CA NGSS Standards",
@@ -859,7 +871,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 2 CA NGSS Standards",
@@ -872,7 +885,8 @@
         "page_range": null,
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       },
       {
         "title": "Grade 3 CA NGSS Standards",
@@ -885,7 +899,8 @@
         "page_range": null,
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       },
       {
         "title": "Grade 4 CA NGSS Standards",
@@ -898,7 +913,8 @@
         "page_range": null,
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       },
       {
         "title": "Grade 5 CA NGSS Standards",
@@ -911,7 +927,8 @@
         "page_range": null,
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -1320,12 +1337,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "1-4"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                1,
+                4
+              ]
+            ],
+            "section_ids": [
+              "112_42"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.42 (Biology TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "High school Biology â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Chemistry TEKS (Â§112.43)",
@@ -1338,12 +1372,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "5-9"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                5,
+                9
+              ]
+            ],
+            "section_ids": [
+              "112_43"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.43 (Chemistry TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "High school Chemistry â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Integrated Physics and Chemistry TEKS (Â§112.44)",
@@ -1354,12 +1405,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "10-12"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                10,
+                12
+              ]
+            ],
+            "section_ids": [
+              "112_44"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.44 (Integrated Physics and Chemistry TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "IPC â€” alternative to separate Chemistry+Physics; grades 9-10; adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Physics TEKS (Â§112.45)",
@@ -1372,12 +1440,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "13-17"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                13,
+                17
+              ]
+            ],
+            "section_ids": [
+              "112_45"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.45 (Physics TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "High school Physics â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Aquatic Science TEKS (Â§112.47)",
@@ -1390,12 +1475,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "18-21"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                18,
+                21
+              ]
+            ],
+            "section_ids": [
+              "112_47"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.47 (Aquatic Science TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Astronomy TEKS (Â§112.48)",
@@ -1408,12 +1510,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "22-26"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                22,
+                26
+              ]
+            ],
+            "section_ids": [
+              "112_48"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.48 (Astronomy TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Earth Systems Science TEKS (Â§112.49)",
@@ -1426,12 +1545,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "27-31"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                27,
+                31
+              ]
+            ],
+            "section_ids": [
+              "112_49"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.49 (Earth Systems Science TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "HS elective (formerly \"Earth and Space Science\") â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       },
       {
         "title": "Environmental Systems TEKS (Â§112.50)",
@@ -1444,12 +1580,29 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
-        "grade_sections": {},
+        "page_range": {
+          "9-12": "32-39"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                32,
+                39
+              ]
+            ],
+            "section_ids": [
+              "112_50"
+            ],
+            "confidence": "high",
+            "notes": "Extracted via TOC/section parsing from ch112c.pdf (2026-02-19). 112.50 (Environmental Systems TEKS)",
+            "needs_review": false
+          }
+        },
         "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
         "last_verified": "2026-02-15",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -1567,7 +1720,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grades 3-5 Science Learning Standards",
@@ -1615,7 +1769,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
@@ -1630,7 +1785,8 @@
         "page_range": null,
         "notes": "Middle School",
         "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       },
       {
         "title": "High School Science Learning Standards",
@@ -1646,7 +1802,8 @@
         "page_range": null,
         "notes": "Grades 9-12",
         "url_source": "https://www.nysed.gov/curriculum",
-        "last_verified": "2026-02-04"
+        "last_verified": "2026-02-04",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -1752,7 +1909,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -2138,7 +2296,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -2321,7 +2480,8 @@
             "notes": "Extracted via manual_verified",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -2415,7 +2575,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -2657,7 +2818,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -2882,7 +3044,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "High School Science Course Standards",
@@ -2896,7 +3059,8 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "High school course-specific standards"
+        "notes": "High school course-specific standards",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -3264,7 +3428,8 @@
             "notes": "Extracted via mcp_tools",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -3406,7 +3571,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -3631,7 +3797,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "NJ Student Learning Standards Science 6-12",
@@ -3648,7 +3815,8 @@
         "document_type": "grade_band",
         "format": "HTML",
         "page_range": null,
-        "notes": "Middle and high school standards"
+        "notes": "Middle and high school standards",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -4077,7 +4245,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -4291,7 +4460,8 @@
             "notes": "Extracted via manual_download",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -4419,7 +4589,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -5028,7 +5199,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -5245,7 +5417,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -5537,7 +5710,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -5627,7 +5801,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Pennsylvania Integrated Standards K-5",
@@ -5728,7 +5903,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -5946,7 +6122,8 @@
             "notes": "Extracted via manual_download",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -6129,7 +6306,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -6216,7 +6394,8 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Combined 44-page PDF covering 2018 standards K through Physics. BLOCKED: VDOE Akamai CDN returns 403 for automated access. Individual per-grade PDFs also blocked. Browser-only access via Chrome."
+        "notes": "Combined 44-page PDF covering 2018 standards K through Physics. BLOCKED: VDOE Akamai CDN returns 403 for automated access. Individual per-grade PDFs also blocked. Browser-only access via Chrome.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - K",
@@ -6227,7 +6406,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for K. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for K. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 1",
@@ -6238,7 +6418,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 1. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 1. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 2",
@@ -6249,7 +6430,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 2. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 2. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 3",
@@ -6260,7 +6442,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 3. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 3. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 4",
@@ -6271,7 +6454,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 4. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 4. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 5",
@@ -6282,7 +6466,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 5. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 5. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - 6",
@@ -6293,7 +6478,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for 6. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for 6. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Life Science",
@@ -6304,7 +6490,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Life Science. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Life Science. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Physical Science",
@@ -6315,7 +6502,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Physical Science. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Physical Science. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Biology",
@@ -6329,7 +6517,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Biology. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Biology. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Chemistry",
@@ -6343,7 +6532,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Chemistry. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Chemistry. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Earth Science",
@@ -6357,7 +6547,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Earth Science. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Earth Science. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       },
       {
         "title": "2018 Science SOL - Physics",
@@ -6371,7 +6562,8 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": null,
-        "notes": "Individual 2018 SOL document for Physics. BLOCKED: Akamai 403 for automated access."
+        "notes": "Individual 2018 SOL document for Physics. BLOCKED: Akamai 403 for automated access.",
+        "page_range_status": "blocked"
       }
     ],
     "assessments": [
@@ -6548,7 +6740,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -6647,7 +6840,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -6803,7 +6997,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -7267,7 +7462,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Montana Science Model Curriculum Guide",
@@ -7310,7 +7506,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -7543,7 +7740,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -7723,7 +7921,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -7918,7 +8117,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -8131,7 +8331,8 @@
             "notes": "Extracted via manual_download",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -8333,7 +8534,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -8541,7 +8743,8 @@
             "notes": "Extracted via remote_automated",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -8725,7 +8928,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
