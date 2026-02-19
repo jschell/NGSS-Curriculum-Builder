@@ -5,9 +5,11 @@
 ### Active Plans
 ## Holding (Blocked / Future)
 
-- [ ] Extract Virginia page ranges via manual download
+- [x] ~~Extract Virginia page ranges via manual download~~ — INVALIDATED
   - Plan: `.claude/plan/holding/extract-va-manual-download.md`
-  - Blocker: User must manually download PDF from VDOE (Akamai CDN blocks automation)
+  - The "combined K-12" URL (doc ID 23723) is actually just the Grade 2 SOL — data entry error
+  - VA has no combined K-12 PDF; correctly classified as not_applicable_multi_document
+  - Erroneous "All Grades" document entry removed from states.json (2026-02-19)
 
 - [ ] Add CSV/Excel export functionality
   - Plan: `.claude/plan/holding/csv-excel-export.md`

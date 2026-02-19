@@ -1,8 +1,20 @@
 # Plan: Extract Virginia Page Ranges via Manual Download
 
-**Status:** Active
-**Priority:** High
-**Estimated Time:** 20-30 minutes
+**Status:** INVALIDATED (2026-02-19)
+**Priority:** N/A
+**Estimated Time:** N/A
+
+## Invalidation Note
+
+The premise of this plan was wrong. The URL `showpublisheddocument/23723` does NOT contain
+a combined K-12 document — it is the Grade 2 SOL only (confirmed via Wayback Machine download:
+11 pages, front matter + Grade 2 content). The "44-page combined" description was a data entry
+error: document ID 23723 appeared in both the "All Grades" and "Grade 2" entries with the same URL.
+
+VA has no combined K-12 PDF. It is correctly classified as `not_applicable_multi_document`.
+The erroneous "All Grades" document entry has been removed from states.json (2026-02-19).
+
+**Original estimated time:** 20-30 minutes
 **Dependencies:** None (can run independently)
 
 ## Overview

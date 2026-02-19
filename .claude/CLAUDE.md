@@ -263,31 +263,29 @@ FOR each step in plan:
 
 ### Current State (As of 2026-02-19)
 - ✅ 51/51 states complete with metadata
-- ✅ 101 documents cataloged
+- ✅ 100 documents cataloged
 - ✅ 70 assessments tracked
 - ✅ JSON data structure (111 KB)
 - ✅ CLI tool fully functional
 - ✅ PDF/HTML parser implemented
 - ✅ URL validation utility created
 - ✅ grade_sections data with confidence scoring (35/51 states)
-- ✅ page_range_status field on all N/A and blocked documents
-- ✅ Texas K-12 complete (17 docs: K-8 individual + 8 HS courses)
+- ✅ page_range_status on all 100 documents (zero missing)
+- ✅ Texas K-12 complete (17 docs: K-8 individual + 8 HS courses, all extracted)
 - ✅ Mississippi K-12 extracted (TOC parsing 2026-02-19)
-- ⚠️ TX HS documents (8 courses) have page_range status=pending — accessible but not yet extracted
-- ⚠️ VA blocked (Akamai CDN) — manual download required, holding plan exists
+- ✅ Virginia correctly classified as not_applicable_multi_document (13 per-grade docs)
 - ❌ No document content caching
 - ❌ No full-text search
 - ❌ No export functionality (CSV/Excel)
 - ❌ No web API or interface
 
 ### Known Issues
-1. **Blocked URLs**:
-   - Virginia: Akamai CDN returns 403 for all automated access (holding plan: extract-va-manual-download.md)
-   - California: 403 forbidden on CDE website (may be accessible via browser tools)
-
-2. **Pending Extraction**:
-   - TX HS: 8 single-course PDFs at tea.texas.gov with status=pending (short docs, likely extractable)
-   - All other states: Either have grade_sections data, are marked not_applicable, or blocked
+1. **Pending Extraction** (10 docs, all accessible):
+   - CA: grades 2-5 individual PDFs (status=pending)
+   - NY: grades 6-8 and HS PDFs (status=pending)
+   - KY: HS course standards (status=pending)
+   - NJ: grades 6-12 PDF (status=pending)
+   - WA: 2 alternative arrangement docs (DCI, Topic — lower priority)
 
 3. **Performance Considerations**:
    - Metadata queries: <20ms ✅ Fast

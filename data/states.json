@@ -6374,30 +6374,6 @@
     "adoption_date": "2018",
     "documents": [
       {
-        "title": "2018 Science Standards of Learning (All Grades)",
-        "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23723/638043832157670000",
-        "grade_levels": [
-          "K",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
-        ],
-        "document_type": "complete_k12",
-        "format": "PDF",
-        "page_range": null,
-        "notes": "Combined 44-page PDF covering 2018 standards K through Physics. BLOCKED: VDOE Akamai CDN returns 403 for automated access. Individual per-grade PDFs also blocked. Browser-only access via Chrome.",
-        "page_range_status": "blocked"
-      },
-      {
         "title": "2018 Science SOL - K",
         "url": "https://www.doe.virginia.gov/home/showpublisheddocument/23733/638043832182830000",
         "grade_levels": [
@@ -6405,9 +6381,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for K. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 1",
@@ -6417,9 +6392,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 1. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 2",
@@ -6429,9 +6403,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 2. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 3",
@@ -6441,9 +6414,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 3. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 4",
@@ -6453,9 +6425,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 4. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 5",
@@ -6465,9 +6436,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 5. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - 6",
@@ -6477,9 +6447,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for 6. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Life Science",
@@ -6489,9 +6458,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Life Science. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Physical Science",
@@ -6501,9 +6469,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Physical Science. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Biology",
@@ -6516,9 +6483,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Biology. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Chemistry",
@@ -6531,9 +6497,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Chemistry. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Earth Science",
@@ -6546,9 +6511,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Earth Science. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       },
       {
         "title": "2018 Science SOL - Physics",
@@ -6561,9 +6525,8 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
         "notes": "Individual 2018 SOL document for Physics. BLOCKED: Akamai 403 for automated access.",
-        "page_range_status": "blocked"
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
