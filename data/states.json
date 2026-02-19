@@ -1026,7 +1026,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 1 Science TEKS",
@@ -1055,7 +1056,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 2 Science TEKS",
@@ -1088,7 +1090,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 3 Science TEKS",
@@ -1121,7 +1124,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 4 Science TEKS",
@@ -1158,7 +1162,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 5 Science TEKS",
@@ -1207,7 +1212,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 6 Science TEKS",
@@ -1240,7 +1246,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 7 Science TEKS",
@@ -1269,7 +1276,8 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
         "title": "Grade 8 Science TEKS",
@@ -1298,10 +1306,11 @@
             "notes": "Extracted via toc_extraction",
             "needs_review": false
           }
-        }
+        },
+        "page_range_status": "complete"
       },
       {
-        "title": "Biology TEKS (§112.42)",
+        "title": "Biology TEKS (Â§112.42)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1313,12 +1322,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "High school Biology — adopted 2020, effective 2024-25",
+        "notes": "High school Biology â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Chemistry TEKS (§112.43)",
+        "title": "Chemistry TEKS (Â§112.43)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1330,12 +1340,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "High school Chemistry — adopted 2020, effective 2024-25",
+        "notes": "High school Chemistry â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Integrated Physics and Chemistry TEKS (§112.44)",
+        "title": "Integrated Physics and Chemistry TEKS (Â§112.44)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1345,12 +1356,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "IPC — alternative to separate Chemistry+Physics; grades 9-10; adopted 2020, effective 2024-25",
+        "notes": "IPC â€” alternative to separate Chemistry+Physics; grades 9-10; adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Physics TEKS (§112.45)",
+        "title": "Physics TEKS (Â§112.45)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1362,12 +1374,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "High school Physics — adopted 2020, effective 2024-25",
+        "notes": "High school Physics â€” adopted 2020, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Aquatic Science TEKS (§112.47)",
+        "title": "Aquatic Science TEKS (Â§112.47)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1379,12 +1392,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Astronomy TEKS (§112.48)",
+        "title": "Astronomy TEKS (Â§112.48)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1396,12 +1410,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Earth Systems Science TEKS (§112.49)",
+        "title": "Earth Systems Science TEKS (Â§112.49)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1413,12 +1428,13 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "HS elective (formerly \"Earth and Space Science\") — adopted 2021, effective 2024-25",
+        "notes": "HS elective (formerly \"Earth and Space Science\") â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       },
       {
-        "title": "Environmental Systems TEKS (§112.50)",
+        "title": "Environmental Systems TEKS (Â§112.50)",
         "url": "https://tea.texas.gov/about-tea/laws-and-rules/sboe-rules-tac/sboe-tac-currently-in-effect/ch112c.pdf",
         "grade_levels": [
           "9",
@@ -1430,9 +1446,10 @@
         "format": "PDF",
         "page_range": null,
         "grade_sections": {},
-        "notes": "HS elective — adopted 2021, effective 2024-25",
+        "notes": "HS elective â€” adopted 2021, effective 2024-25",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
-        "last_verified": "2026-02-15"
+        "last_verified": "2026-02-15",
+        "page_range_status": "pending"
       }
     ],
     "assessments": [
@@ -6936,8 +6953,156 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
-        "notes": "Based on Framework for K-12 Science Education (NRC 2012) URL returns 404 (2026-02-15); page_range extraction blocked until working URL found."
+        "page_range": {
+          "K": "20-23",
+          "1": "24-27",
+          "2": "28-31",
+          "3": "34-38",
+          "4": "39-42",
+          "5": "43-46",
+          "6": "49-51",
+          "7": "52-55",
+          "8": "56-60",
+          "9-12": "63-133"
+        },
+        "notes": "Based on Framework for K-12 Science Education (NRC 2012). K-8 organized by grade; HS organized by course (13 courses). URL verified accessible 2026-02-19 after prior 404 report.",
+        "grade_sections": {
+          "K": {
+            "page_ranges": [
+              [
+                20,
+                23
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "1": {
+            "page_ranges": [
+              [
+                24,
+                27
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "2": {
+            "page_ranges": [
+              [
+                28,
+                31
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "3": {
+            "page_ranges": [
+              [
+                34,
+                38
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "4": {
+            "page_ranges": [
+              [
+                39,
+                42
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "5": {
+            "page_ranges": [
+              [
+                43,
+                46
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "6": {
+            "page_ranges": [
+              [
+                49,
+                51
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "7": {
+            "page_ranges": [
+              [
+                52,
+                55
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "8": {
+            "page_ranges": [
+              [
+                56,
+                60
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Extracted via TOC parsing (2026-02-19)",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                63,
+                133
+              ]
+            ],
+            "section_ids": [
+              "biology",
+              "botany",
+              "chemistry",
+              "earth_space_science",
+              "environmental_science",
+              "foundations_of_biology",
+              "foundations_of_science_literacy",
+              "genetics",
+              "human_anatomy",
+              "marine_aquatic_science",
+              "physical_science",
+              "physics",
+              "zoology"
+            ],
+            "confidence": "high",
+            "notes": "HS course-based: Biology 63-68, Botany 69-73, Chemistry 74-80, Earth/Space 81-84, Environmental Sci 85-88, Foundations of Bio 89-93, Foundations of Sci Literacy 94-97, Genetics 98-101, Human Anatomy 102-109, Marine Aquatic 110-115, Physical Science 116-121, Physics 122-126, Zoology I/II 127-133",
+            "needs_review": false
+          }
+        },
+        "page_range_status": "complete"
       }
     ],
     "assessments": [

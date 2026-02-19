@@ -15,7 +15,10 @@
 ## Todo
 
 ### High Priority
-- None (moved to active plans)
+- [ ] Extract TX high school course page ranges (8 docs, status=pending)
+  - Documents: Biology, Chemistry, IPC, Physics, Aquatic, Astronomy, Earth Systems, Environmental Systems
+  - Each is a short single-course PDF from tea.texas.gov — likely directly accessible
+  - No active plan yet
 
 ### Medium Priority (Deferred)
 - [ ] None
@@ -75,12 +78,12 @@
   - Confidence validation: GS001-GS006 checks in validate_page_ranges.py
   - CLI updated: grade_sections preferred, --show-confidence flag added
   - DATA_SCHEMA.md updated with deprecation timeline for page_range
-- [x] Extract page ranges for remaining states — 51/51 accounted for (2026-02-15)
-  - 33 states: page_range / grade_sections data extracted (65%)
+- [x] Extract page ranges for remaining states — 51/51 accounted for (2026-02-15, updated 2026-02-19)
+  - 35 states: page_range / grade_sections data extracted (69%)
   - 15 states: documented as N/A via page_range_status field (ngss_reference, multi_document, interactive_database)
   - HI: re-extracted from ToC with +29 page offset (K–9-12, 8 entries)
-  - MS: PDF URL broken (404), deferred — page_range stays null
-  - VA: Akamai CDN blocker — manual download required (see active plan)
+  - MS: Extracted 2026-02-19 via TOC parsing (K-8 by grade, HS by course; URL was accessible despite prior 404 report)
+  - VA: Akamai CDN blocker — manual download required (see holding plan)
 - [x] Complete Texas high school science standards (grades 9-12) (2026-02-15)
   - Added 8 HS subject documents: Bio, Chem, IPC, Physics, Aquatic, Astronomy, ESS, EnvSystems
   - All in ch112c.pdf (§§112.42-112.50, adopted 2020-21, effective 2024-25)
