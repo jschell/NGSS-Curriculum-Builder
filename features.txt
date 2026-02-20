@@ -17,10 +17,7 @@
 ## Todo
 
 ### High Priority
-- [ ] Extract TX high school course page ranges (8 docs, status=pending)
-  - Documents: Biology, Chemistry, IPC, Physics, Aquatic, Astronomy, Earth Systems, Environmental Systems
-  - Each is a short single-course PDF from tea.texas.gov — likely directly accessible
-  - No active plan yet
+- [ ] None — all pending docs resolved (2026-02-19)
 
 ### Medium Priority (Deferred)
 - [ ] None
@@ -97,3 +94,11 @@
   - FL: not_applicable_interactive_database
   - CLI displays meaningful N/A messages for each status type
   - close-extraction-record-na-states plan complete
+- [x] Resolve all remaining pending documents — 0 pending (2026-02-19)
+  - CA grades 2-5: single-grade PDFs marked complete (13-19 pages each)
+  - NY 6-8: fixed broken URL; both NY 6-8 and HS marked complete (band-level docs)
+  - KY HS: reclassified as not_applicable_multi_document (1-page course index PDF)
+  - NJ: split "6-12" entry into separate 6-8 (60pp) and 9-12 (69pp) PDFs; both complete
+  - WA: added missing 6-8 band to WA[0]; extracted DCI Arrangement ranges; resolved duplicate
+  - Final: 71 complete, 30 not_applicable (20 multi_doc, 8 ngss_ref, 2 interactive_db)
+  - Total docs: 101 (added NJ 9-12 entry)
