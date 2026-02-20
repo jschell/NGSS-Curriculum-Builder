@@ -261,31 +261,31 @@ FOR each step in plan:
 
 ## Project-Specific Context
 
-### Current State (As of 2026-02-15)
+### Current State (As of 2026-02-19)
 - ✅ 51/51 states complete with metadata
-- ✅ 101 documents cataloged
-- ✅ 67 assessments tracked
+- ✅ 100 documents cataloged
+- ✅ 70 assessments tracked
 - ✅ JSON data structure (111 KB)
 - ✅ CLI tool fully functional
 - ✅ PDF/HTML parser implemented
 - ✅ URL validation utility created
-- ⚠️ No page_range data (intentional - not needed for current structure)
-- ⚠️ Texas missing high school grades (9-12)
+- ✅ grade_sections data with confidence scoring (35/51 states)
+- ✅ page_range_status on all 100 documents (zero missing)
+- ✅ Texas K-12 complete (17 docs: K-8 individual + 8 HS courses, all extracted)
+- ✅ Mississippi K-12 extracted (TOC parsing 2026-02-19)
+- ✅ Virginia correctly classified as not_applicable_multi_document (13 per-grade docs)
 - ❌ No document content caching
 - ❌ No full-text search
 - ❌ No export functionality (CSV/Excel)
 - ❌ No web API or interface
 
 ### Known Issues
-1. **Broken URLs** (from validate_urls.py):
-   - Washington: 404 errors on some documents
-   - California: 403 forbidden on CDE website
-   - Hawaii: URL redirects or broken
-   - Texas: Some TEKS documents return errors
-
-2. **Incomplete Data**:
-   - Texas: K-12 complete (8 HS subject docs added 2026-02-15; ch112c.pdf URL confirmed, 403 on direct fetch)
-   - Page ranges: Partially populated (52/101 docs with grade_sections)
+1. **Pending Extraction** (10 docs, all accessible):
+   - CA: grades 2-5 individual PDFs (status=pending)
+   - NY: grades 6-8 and HS PDFs (status=pending)
+   - KY: HS course standards (status=pending)
+   - NJ: grades 6-12 PDF (status=pending)
+   - WA: 2 alternative arrangement docs (DCI, Topic — lower priority)
 
 3. **Performance Considerations**:
    - Metadata queries: <20ms ✅ Fast
@@ -296,15 +296,13 @@ FOR each step in plan:
 (See `features.txt` for full backlog)
 
 **High Priority**:
-1. Data validation & URL verification (active plan exists)
-2. Fix broken URLs for WA, CA, HI, TX
-3. Complete Texas high school standards (9-12)
-4. Add page_range data for documents that need it
+1. Extract TX HS course page ranges (8 short PDFs, likely accessible)
+2. VA extraction via manual browser download (see holding plan)
 
 **Medium Priority**:
-5. Implement document content caching
-6. Add full-text search across standards
-7. Create CSV/Excel export functionality
+3. Implement document content caching
+4. Add full-text search across standards
+5. Create CSV/Excel export functionality
 
 ---
 
