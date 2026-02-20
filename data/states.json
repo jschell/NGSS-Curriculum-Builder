@@ -3155,8 +3155,8 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "High school course-specific standards",
-        "page_range_status": "pending"
+        "notes": "KY HS standards are per-course documents accessed via KDE searchable database; this 1-page PDF is a course index listing 17 course codes (Biology I, Chemistry I, Physics I, etc.) and is not a standards document with extractable page ranges",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
