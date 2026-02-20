@@ -3953,24 +3953,15 @@
         "grade_levels": [
           "6",
           "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
+          "8"
         ],
         "document_type": "grade_band",
-        "format": "HTML",
+        "format": "PDF",
         "page_range": {
           "6-8": "1-60"
         },
-        "notes": "Middle and high school standards",
+        "notes": "Middle school (6-8) standards organized by subject area (Physical Science, Life Science, ESS, ETS)",
         "page_range_status": "complete",
-        "grades": [
-          "6",
-          "7",
-          "8"
-        ],
         "grade_sections": {
           "6-8": {
             "page_ranges": [
@@ -3989,12 +3980,6 @@
       {
         "title": "NJ Student Learning Standards Science 9-12",
         "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_9-12.pdf",
-        "grades": [
-          "9",
-          "10",
-          "11",
-          "12"
-        ],
         "page_range": {
           "9-12": "1-69"
         },
@@ -4013,8 +3998,15 @@
           }
         },
         "page_range_status": "complete",
-        "format": "pdf",
-        "notes": "NJ HS science standards organized by subject area, not by individual grade"
+        "format": "PDF",
+        "notes": "NJ HS science standards organized by subject area, not by individual grade",
+        "grade_levels": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "document_type": "grade_band"
       }
     ],
     "assessments": [
