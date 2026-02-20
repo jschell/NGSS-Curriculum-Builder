@@ -882,11 +882,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "2": "1-13"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "2": {
+            "page_ranges": [
+              [
+                1,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 13-page PDF covers Grade 2 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 3 CA NGSS Standards",
@@ -896,11 +912,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "3": "1-18"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "3": {
+            "page_ranges": [
+              [
+                1,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 18-page PDF covers Grade 3 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 4 CA NGSS Standards",
@@ -910,11 +942,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "4": "1-16"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                1,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 16-page PDF covers Grade 4 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 5 CA NGSS Standards",
@@ -924,11 +972,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "5": "1-19"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "5": {
+            "page_ranges": [
+              [
+                1,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 19-page PDF covers Grade 5 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
