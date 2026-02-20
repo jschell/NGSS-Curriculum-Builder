@@ -38,7 +38,8 @@
           "3": "17-21",
           "4": "22-26",
           "5": "27-53",
-          "9-12": "54-64, 65-95"
+          "9-12": "65-102",
+          "6-8": "33-64"
         },
         "notes": "Single comprehensive K-12 document, identical to NGSS",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
@@ -119,17 +120,25 @@
           "9-12": {
             "page_ranges": [
               [
-                54,
-                64
-              ],
-              [
                 65,
-                95
+                102
               ]
             ],
             "section_ids": [],
             "confidence": "high",
-            "notes": "Extracted via mcp_tools",
+            "notes": "High School band: Physical Sciences (pp.65-77), Life Sciences (pp.78-88), Earth/Space (pp.89-100), Engineering (pp.101-102)",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                33,
+                64
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Middle School band: Physical Science (pp.33-42), Life Science (pp.43-53), Earth/Space (pp.54-61), Engineering (pp.62-64)",
             "needs_review": false
           }
         },
@@ -155,11 +164,53 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K-5": "3-46",
+          "6-8": "47-74",
+          "9-12": "75-103"
+        },
         "notes": "Organized by Disciplinary Core Ideas",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "K-5": {
+            "page_ranges": [
+              [
+                3,
+                46
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Elementary: K-5 organized by DCI storylines (Kindergarten p4, Grade 1 p10, Grade 2 p15, through Grade 5)",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                47,
+                74
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "MS: Physical Science (pp.47-55), Life Science (pp.56-64), Earth/Space (pp.65-72), Engineering (pp.73-74)",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                75,
+                103
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "HS: Physical Sciences (pp.75-84), Life Sciences (pp.85-93), Earth/Space (pp.94-101), Engineering (pp.102-103)",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "WSSLS Topic Arrangement",
@@ -182,10 +233,10 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by topics for easier curriculum planning",
+        "notes": "Duplicate URL — same PDF as WA[0] Washington State K-12 Science Learning Standards (Topic Arrangement). Grade sections data stored on WA[0].",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
