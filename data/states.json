@@ -3897,8 +3897,8 @@
         "page_range_status": "complete"
       },
       {
-        "title": "NJ Student Learning Standards Science 6-12",
-        "url": "https://www.nj.gov/education/standards/science/",
+        "title": "NJ Student Learning Standards Science 6-8",
+        "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_6-8.pdf",
         "grade_levels": [
           "6",
           "7",
@@ -3910,9 +3910,60 @@
         ],
         "document_type": "grade_band",
         "format": "HTML",
-        "page_range": null,
+        "page_range": {
+          "6-8": "1-60"
+        },
         "notes": "Middle and high school standards",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grades": [
+          "6",
+          "7",
+          "8"
+        ],
+        "grade_sections": {
+          "6-8": {
+            "page_ranges": [
+              [
+                1,
+                60
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic-organized by subject (Physical Science, Life Science, ESS, ETS); entire 60-page doc covers grades 6-8 MS band",
+            "needs_review": false
+          }
+        }
+      },
+      {
+        "title": "NJ Student Learning Standards Science 9-12",
+        "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_9-12.pdf",
+        "grades": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "page_range": {
+          "9-12": "1-69"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                1,
+                69
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic-organized by subject (Physical Science, Life Science, ESS, ETS); entire 69-page doc covers grades 9-12 HS band",
+            "needs_review": false
+          }
+        },
+        "page_range_status": "complete",
+        "format": "pdf",
+        "notes": "NJ HS science standards organized by subject area, not by individual grade"
       }
     ],
     "assessments": [
