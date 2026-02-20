@@ -9,7 +9,7 @@
 **Core Functionality**:
 - Query state science standards by grade level across all 51 jurisdictions
 - Track NGSS direct adoption (21 states) vs. framework-based standards (30 states)
-- Catalog 101 standards documents and 67 state assessments
+- Catalog 101 standards documents and 70 state assessments
 - Fast metadata queries (<20ms) with future document parsing capability
 
 ---
@@ -123,7 +123,7 @@ uv run parse_standards.py
 # Test: Validate all URLs
 uv run validate_urls.py
 
-# Expected: Check all 80 document URLs, report 404/403 errors
+# Expected: Check all 101 document URLs, report 404/403 errors
 ```
 
 ### Data Integrity Tests
@@ -137,7 +137,7 @@ python -c "import json; print(len(json.load(open('data/states.json'))))"
 
 # Count documents
 python -c "import json; data=json.load(open('data/states.json')); print(sum(len(s['documents']) for s in data.values()))"
-# Expected: 80
+# Expected: 101
 ```
 
 ---
@@ -263,46 +263,44 @@ FOR each step in plan:
 
 ### Current State (As of 2026-02-19)
 - ✅ 51/51 states complete with metadata
-- ✅ 100 documents cataloged
+- ✅ 101 documents cataloged
 - ✅ 70 assessments tracked
-- ✅ JSON data structure (111 KB)
+- ✅ JSON data structure (~200 KB)
 - ✅ CLI tool fully functional
 - ✅ PDF/HTML parser implemented
 - ✅ URL validation utility created
-- ✅ grade_sections data with confidence scoring (35/51 states)
-- ✅ page_range_status on all 100 documents (zero missing)
-- ✅ Texas K-12 complete (17 docs: K-8 individual + 8 HS courses, all extracted)
+- ✅ grade_sections data with confidence scoring (37/51 states)
+- ✅ page_range_status on all 101 documents (zero missing, zero pending)
+- ✅ Texas K-12 complete (17 docs: K-8 via ch112a/ch112b + 8 HS courses extracted)
 - ✅ Mississippi K-12 extracted (TOC parsing 2026-02-19)
 - ✅ Virginia correctly classified as not_applicable_multi_document (13 per-grade docs)
+- ✅ Zero needs_review grade_sections (data quality verified 2026-02-19)
 - ❌ No document content caching
 - ❌ No full-text search
 - ❌ No export functionality (CSV/Excel)
 - ❌ No web API or interface
 
 ### Known Issues
-1. **Pending Extraction** (10 docs, all accessible):
-   - CA: grades 2-5 individual PDFs (status=pending)
-   - NY: grades 6-8 and HS PDFs (status=pending)
-   - KY: HS course standards (status=pending)
-   - NJ: grades 6-12 PDF (status=pending)
-   - WA: 2 alternative arrangement docs (DCI, Topic — lower priority)
-
-3. **Performance Considerations**:
+1. **Performance Considerations**:
    - Metadata queries: <20ms ✅ Fast
    - Document parsing: 1-5 seconds per PDF ⚠️ Slower
    - Full database parse: ~195 seconds ⚠️ Needs caching
+
+2. **Medium-confidence grade_sections** (94 entries across 15 states):
+   - States include IA, MN, NE, WV, OR, DC, CO, TX K-8, NY, NJ, AR, IL, AK, NV, CA K-1
+   - Extracted via automated methods; ranges are plausible but not manually verified
+   - Not blocking — data is usable, just lower confidence
 
 ### Next Priority Work
 (See `features.txt` for full backlog)
 
 **High Priority**:
-1. Extract TX HS course page ranges (8 short PDFs, likely accessible)
-2. VA extraction via manual browser download (see holding plan)
+1. None — all documents fully resolved
 
 **Medium Priority**:
-3. Implement document content caching
-4. Add full-text search across standards
-5. Create CSV/Excel export functionality
+2. Implement document content caching
+3. Add full-text search across standards
+4. Create CSV/Excel export functionality
 
 ---
 
@@ -357,7 +355,7 @@ FOR each step in plan:
 ### Data Counts
 - States: 51
 - Documents: 101
-- Assessments: 67
+- Assessments: 70
 - NGSS states: 21
 - Framework states: 30
 
