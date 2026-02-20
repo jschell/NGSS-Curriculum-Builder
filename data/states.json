@@ -38,7 +38,8 @@
           "3": "17-21",
           "4": "22-26",
           "5": "27-53",
-          "9-12": "54-64, 65-95"
+          "9-12": "65-102",
+          "6-8": "33-64"
         },
         "notes": "Single comprehensive K-12 document, identical to NGSS",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
@@ -119,17 +120,25 @@
           "9-12": {
             "page_ranges": [
               [
-                54,
-                64
-              ],
-              [
                 65,
-                95
+                102
               ]
             ],
             "section_ids": [],
             "confidence": "high",
-            "notes": "Extracted via mcp_tools",
+            "notes": "High School band: Physical Sciences (pp.65-77), Life Sciences (pp.78-88), Earth/Space (pp.89-100), Engineering (pp.101-102)",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                33,
+                64
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Middle School band: Physical Science (pp.33-42), Life Science (pp.43-53), Earth/Space (pp.54-61), Engineering (pp.62-64)",
             "needs_review": false
           }
         },
@@ -155,11 +164,53 @@
         ],
         "document_type": "complete_k12",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "K-5": "3-46",
+          "6-8": "47-74",
+          "9-12": "75-103"
+        },
         "notes": "Organized by Disciplinary Core Ideas",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "K-5": {
+            "page_ranges": [
+              [
+                3,
+                46
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Elementary: K-5 organized by DCI storylines (Kindergarten p4, Grade 1 p10, Grade 2 p15, through Grade 5)",
+            "needs_review": false
+          },
+          "6-8": {
+            "page_ranges": [
+              [
+                47,
+                74
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "MS: Physical Science (pp.47-55), Life Science (pp.56-64), Earth/Space (pp.65-72), Engineering (pp.73-74)",
+            "needs_review": false
+          },
+          "9-12": {
+            "page_ranges": [
+              [
+                75,
+                103
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "HS: Physical Sciences (pp.75-84), Life Sciences (pp.85-93), Earth/Space (pp.94-101), Engineering (pp.102-103)",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "WSSLS Topic Arrangement",
@@ -182,10 +233,10 @@
         "document_type": "complete_k12",
         "format": "PDF",
         "page_range": null,
-        "notes": "Organized by topics for easier curriculum planning",
+        "notes": "Duplicate URL — same PDF as WA[0] Washington State K-12 Science Learning Standards (Topic Arrangement). Grade sections data stored on WA[0].",
         "url_source": "https://ospi.k12.wa.us/student-success/resources-subject-area/science/science-k-12-learning-standards",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete"
       }
     ],
     "assessments": [
@@ -882,11 +933,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "2": "1-13"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "2": {
+            "page_ranges": [
+              [
+                1,
+                13
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 13-page PDF covers Grade 2 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 3 CA NGSS Standards",
@@ -896,11 +963,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "3": "1-18"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "3": {
+            "page_ranges": [
+              [
+                1,
+                18
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 18-page PDF covers Grade 3 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 4 CA NGSS Standards",
@@ -910,11 +993,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "4": "1-16"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "4": {
+            "page_ranges": [
+              [
+                1,
+                16
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 16-page PDF covers Grade 4 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "Grade 5 CA NGSS Standards",
@@ -924,11 +1023,27 @@
         ],
         "document_type": "grade_specific",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "5": "1-19"
+        },
         "notes": null,
         "url_source": "https://www.cde.ca.gov/ci/pl/ngssstandards.asp",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "5": {
+            "page_ranges": [
+              [
+                1,
+                19
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Single-grade document — entire 19-page PDF covers Grade 5 CA NGSS standards",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -1774,7 +1889,7 @@
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
-        "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/6-8-science-learning-standards.pdf",
+        "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/ms-science-learning-standards.pdf",
         "grade_levels": [
           "6",
           "7",
@@ -1782,11 +1897,27 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "6-8": "1-24"
+        },
         "notes": "Middle School",
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "6-8": {
+            "page_ranges": [
+              [
+                1,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic/DCI-organized (MS-PS1, MS-ESS2, etc.); entire 24-page doc covers grades 6-8 MS band",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "High School Science Learning Standards",
@@ -1799,11 +1930,27 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "9-12": "1-30"
+        },
         "notes": "Grades 9-12",
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                1,
+                30
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic/DCI-organized (HS-PS1, HS-LS1, etc.); entire 30-page doc covers grades 9-12 HS band",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
@@ -3059,8 +3206,8 @@
         "document_type": "grade_band",
         "format": "PDF",
         "page_range": null,
-        "notes": "High school course-specific standards",
-        "page_range_status": "pending"
+        "notes": "KY HS standards are per-course documents accessed via KDE searchable database; this 1-page PDF is a course index listing 17 course codes (Biology I, Chemistry I, Physics I, etc.) and is not a standards document with extractable page ranges",
+        "page_range_status": "not_applicable_multi_document"
       }
     ],
     "assessments": [
@@ -3801,22 +3948,65 @@
         "page_range_status": "complete"
       },
       {
-        "title": "NJ Student Learning Standards Science 6-12",
-        "url": "https://www.nj.gov/education/standards/science/",
+        "title": "NJ Student Learning Standards Science 6-8",
+        "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_6-8.pdf",
         "grade_levels": [
           "6",
           "7",
-          "8",
+          "8"
+        ],
+        "document_type": "grade_band",
+        "format": "PDF",
+        "page_range": {
+          "6-8": "1-60"
+        },
+        "notes": "Middle school (6-8) standards organized by subject area (Physical Science, Life Science, ESS, ETS)",
+        "page_range_status": "complete",
+        "grade_sections": {
+          "6-8": {
+            "page_ranges": [
+              [
+                1,
+                60
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic-organized by subject (Physical Science, Life Science, ESS, ETS); entire 60-page doc covers grades 6-8 MS band",
+            "needs_review": false
+          }
+        }
+      },
+      {
+        "title": "NJ Student Learning Standards Science 9-12",
+        "url": "https://www.nj.gov/education/standards/science/Docs/NJSLS-Science_9-12.pdf",
+        "page_range": {
+          "9-12": "1-69"
+        },
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                1,
+                69
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic-organized by subject (Physical Science, Life Science, ESS, ETS); entire 69-page doc covers grades 9-12 HS band",
+            "needs_review": false
+          }
+        },
+        "page_range_status": "complete",
+        "format": "PDF",
+        "notes": "NJ HS science standards organized by subject area, not by individual grade",
+        "grade_levels": [
           "9",
           "10",
           "11",
           "12"
         ],
-        "document_type": "grade_band",
-        "format": "HTML",
-        "page_range": null,
-        "notes": "Middle and high school standards",
-        "page_range_status": "pending"
+        "document_type": "grade_band"
       }
     ],
     "assessments": [
