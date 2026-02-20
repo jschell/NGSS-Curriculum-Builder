@@ -1119,7 +1119,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "K": "0-1, 4-5, 8-9, 12-13, 16-17, 21-22"
+          "K": "1-26"
         },
         "notes": "None | Special structure: three_level_documents | Special structure: three_level_documents | Texas organizes standards in three comprehensive PDFs by school level: Elementary (K-5), Middle School (6-8), and High School (9-12). Each PDF covers all grades within that level.",
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1129,33 +1129,13 @@
           "K": {
             "page_ranges": [
               [
-                0,
-                1
-              ],
-              [
-                4,
-                5
-              ],
-              [
-                8,
-                9
-              ],
-              [
-                12,
-                13
-              ],
-              [
-                16,
-                17
-              ],
-              [
-                21,
-                22
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1170,7 +1150,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "1": "4-5"
+          "1": "1-26"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1179,13 +1159,13 @@
           "1": {
             "page_ranges": [
               [
-                4,
-                5
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1200,7 +1180,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "2": "8-9, 12-13"
+          "2": "1-26"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1209,17 +1189,13 @@
           "2": {
             "page_ranges": [
               [
-                8,
-                9
-              ],
-              [
-                12,
-                13
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1234,7 +1210,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "3": "12-13, 17-18"
+          "3": "1-26"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1243,17 +1219,13 @@
           "3": {
             "page_ranges": [
               [
-                12,
-                13
-              ],
-              [
-                17,
-                18
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1268,7 +1240,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "4": "13-14, 16-17, 21-22"
+          "4": "1-26"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1277,21 +1249,13 @@
           "4": {
             "page_ranges": [
               [
-                13,
-                14
-              ],
-              [
-                16,
-                17
-              ],
-              [
-                21,
-                22
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1306,7 +1270,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "5": "0-1, 4-5, 8-9, 12-13, 16-18, 20-22"
+          "5": "1-26"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1315,33 +1279,13 @@
           "5": {
             "page_ranges": [
               [
-                0,
-                1
-              ],
-              [
-                4,
-                5
-              ],
-              [
-                8,
-                9
-              ],
-              [
-                12,
-                13
-              ],
-              [
-                16,
-                18
-              ],
-              [
-                20,
-                22
+                1,
+                26
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112a.pdf (26pp) covers K-5 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1356,7 +1300,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "6": "0-2, 5-6"
+          "6": "1-15"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1365,17 +1309,13 @@
           "6": {
             "page_ranges": [
               [
-                0,
-                2
-              ],
-              [
-                5,
-                6
+                1,
+                15
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112b.pdf (15pp) covers grades 6-8 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1390,7 +1330,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "7": "5-6"
+          "7": "1-15"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1399,13 +1339,13 @@
           "7": {
             "page_ranges": [
               [
-                5,
-                6
+                1,
+                15
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112b.pdf (15pp) covers grades 6-8 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -1420,7 +1360,7 @@
         "document_type": "grade_specific",
         "format": "PDF",
         "page_range": {
-          "8": "9-10"
+          "8": "1-15"
         },
         "notes": null,
         "url_source": "https://tea.texas.gov/about-tea/laws-and-rules/texas-administrative-code/19-tac-chapter-112",
@@ -1429,13 +1369,13 @@
           "8": {
             "page_ranges": [
               [
-                9,
-                10
+                1,
+                15
               ]
             ],
             "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via toc_extraction",
+            "confidence": "high",
+            "notes": "ch112b.pdf (15pp) covers grades 6-8 as a unit organized by cross-grade strands; no grade-isolated page ranges exist within this document",
             "needs_review": false
           }
         },
@@ -3864,13 +3804,12 @@
         "format": "PDF",
         "page_range": {
           "K": "14-25",
-          "5": "82-82",
           "1": "26-35",
           "2": "36-47",
           "3": "48-65",
           "4": "66-81"
         },
-        "notes": "Elementary K-5 standards",
+        "notes": "NJ K-5 standards PDF (82pp). Grades K-4 have extractable page ranges. Grade 5 PE codes (5-PS1, 5-LS1, etc.) are not present in this standalone PDF — they appear only in the K-12 combined document. Reference NJSLS-Science_K-12.pdf for Grade 5 content.",
         "grade_sections": {
           "K": {
             "page_ranges": [
@@ -3883,18 +3822,6 @@
             "confidence": "high",
             "notes": "Extracted via remote_automated",
             "needs_review": false
-          },
-          "5": {
-            "page_ranges": [
-              [
-                82,
-                82
-              ]
-            ],
-            "section_ids": [],
-            "confidence": "medium",
-            "notes": "Extracted via remote_automated",
-            "needs_review": true
           },
           "1": {
             "page_ranges": [
@@ -8797,8 +8724,8 @@
             ],
             "section_ids": [],
             "confidence": "medium",
-            "notes": "Extracted via remote_automated",
-            "needs_review": true
+            "notes": "Image-based PDF; grade boundary identified via visual screenshot scan. Grade 1 occupies a single page (consistent with thin standards presentation for this grade).",
+            "needs_review": false
           },
           "2": {
             "page_ranges": [
@@ -8833,8 +8760,8 @@
             ],
             "section_ids": [],
             "confidence": "medium",
-            "notes": "Extracted via remote_automated",
-            "needs_review": true
+            "notes": "Image-based PDF; grade boundary identified via visual screenshot scan. Grade 4 occupies a single page (consistent with thin standards presentation for this grade).",
+            "needs_review": false
           },
           "5": {
             "page_ranges": [
