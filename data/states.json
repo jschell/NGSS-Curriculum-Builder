@@ -1838,7 +1838,7 @@
       },
       {
         "title": "Grades 6-8 Science Learning Standards",
-        "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/6-8-science-learning-standards.pdf",
+        "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/ms-science-learning-standards.pdf",
         "grade_levels": [
           "6",
           "7",
@@ -1846,11 +1846,27 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "6-8": "1-24"
+        },
         "notes": "Middle School",
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "6-8": {
+            "page_ranges": [
+              [
+                1,
+                24
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic/DCI-organized (MS-PS1, MS-ESS2, etc.); entire 24-page doc covers grades 6-8 MS band",
+            "needs_review": false
+          }
+        }
       },
       {
         "title": "High School Science Learning Standards",
@@ -1863,11 +1879,27 @@
         ],
         "document_type": "grade_band",
         "format": "PDF",
-        "page_range": null,
+        "page_range": {
+          "9-12": "1-30"
+        },
         "notes": "Grades 9-12",
         "url_source": "https://www.nysed.gov/curriculum",
         "last_verified": "2026-02-04",
-        "page_range_status": "pending"
+        "page_range_status": "complete",
+        "grade_sections": {
+          "9-12": {
+            "page_ranges": [
+              [
+                1,
+                30
+              ]
+            ],
+            "section_ids": [],
+            "confidence": "high",
+            "notes": "Topic/DCI-organized (HS-PS1, HS-LS1, etc.); entire 30-page doc covers grades 9-12 HS band",
+            "needs_review": false
+          }
+        }
       }
     ],
     "assessments": [
