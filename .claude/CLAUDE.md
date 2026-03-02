@@ -275,7 +275,7 @@ FOR each step in plan:
 - ✅ Mississippi K-12 extracted (TOC parsing 2026-02-19)
 - ✅ Virginia correctly classified as not_applicable_multi_document (13 per-grade docs)
 - ✅ Zero needs_review grade_sections (data quality verified 2026-02-19)
-- ❌ No document content caching
+- ✅ Document content cache implemented (2026-03-02) — data/cache/ with 30-day TTL
 - ❌ No full-text search
 - ❌ No export functionality (CSV/Excel)
 - ❌ No web API or interface
@@ -283,8 +283,9 @@ FOR each step in plan:
 ### Known Issues
 1. **Performance Considerations**:
    - Metadata queries: <20ms ✅ Fast
-   - Document parsing: 1-5 seconds per PDF ⚠️ Slower
-   - Full database parse: ~195 seconds ⚠️ Needs caching
+   - Document parsing (cold): 1-5 seconds per PDF ⚠️ Slower
+   - Document parsing (cache hit): <5ms ✅ Fast
+   - Full database parse (cold): ~195 seconds — warm cache first with `uv run scripts/parsing/warmup_cache.py`
 
 2. **Medium-confidence grade_sections** (94 entries across 15 states):
    - States include IA, MN, NE, WV, OR, DC, CO, TX K-8, NY, NJ, AR, IL, AK, NV, CA K-1
@@ -298,9 +299,8 @@ FOR each step in plan:
 1. None — all documents fully resolved
 
 **Medium Priority**:
-2. Implement document content caching
-3. Add full-text search across standards
-4. Create CSV/Excel export functionality
+2. Add full-text search across standards
+3. Create CSV/Excel export functionality
 
 ---
 

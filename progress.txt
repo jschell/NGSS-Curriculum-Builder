@@ -944,3 +944,20 @@ Final state:
 - Total docs: 101 (was 93, +8 HS subjects)
 - Active plans: 0 (all complete or in holding)
 - Plan archived: .claude/plan/complete/2026-02-15-texas-high-school-standards-COMPLETE.md
+
+2026-03-02 - Starting plan: document-content-caching
+2026-03-02 - Verified prerequisites: 51 states, 101 documents, CLI passing, clean git
+
+2026-03-02 - Step 1/6: Created data/cache/ directory, schema README, .gitignore rule
+2026-03-02 - Committed: feat(cache): add data/cache/ directory with schema documentation
+2026-03-02 - Step 2/6: Created scripts/parsing/document_cache.py — all unit tests passing
+2026-03-02 - Committed: feat(cache): implement document_cache.py with read/write/invalidate/status
+2026-03-02 - Step 3/6: Integrated cache lookup+write into scripts/parsing/parse_standards.py
+2026-03-02 - Committed: feat(cache): integrate cache lookup into parse_standards.py
+2026-03-02 - Step 4/6: Created scripts/parsing/warmup_cache.py — dry-run verified (71 parseable docs)
+2026-03-02 - Committed: feat(cache): add warmup_cache.py for batch cache population
+2026-03-02 - Step 5/6: Added cache status + cache clear commands to main CLI
+2026-03-02 - Committed: feat(cli): add cache status and cache clear commands
+2026-03-02 - Step 6/6: Final validation — all 10 CLI commands passing, docs updated
+2026-03-02 - Completed plan: document-content-caching
+2026-03-02 - Steps completed: 6/6 | Commits: 6 | All tests passing | Duration: ~35 min

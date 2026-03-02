@@ -23,7 +23,12 @@
 - [ ] None
 
 ### Other Features
-- [ ] Implement document content caching → `.claude/plan/active/2026-03-02-document-content-caching.md`
+- [x] Implement document content caching (2026-03-02)
+  - data/cache/ with SHA-256 URL keying, 30-day TTL, hit-count tracking
+  - scripts/parsing/document_cache.py (stdlib-only, all unit tests passing)
+  - scripts/parsing/warmup_cache.py (UV script, batch pre-fetch, --dry-run verified)
+  - Integrated into scripts/parsing/parse_standards.py (cache hit <5ms vs cold 1-5s)
+  - CLI: `cache status` and `cache clear [--expired]` commands added
 - [ ] Add full-text search across standards
 - [ ] Create web API layer (REST endpoints)
 - [ ] Build web interface (browser-based UI)
