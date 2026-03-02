@@ -840,6 +840,123 @@ def cmd_ngss(grade: str = None, dci_filter: str = None):
     print(f"{'=' * 70}\n")
 
 
+def _get_cache_module():
+    """
+    Try to import document_cache (stdlib-only) from scripts/parsing/.
+    Returns the module, or None if unavailable (graceful degradation).
+    """
+    import importlib.util
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    module_path = os.path.join(script_dir, "scripts", "parsing", "document_cache.py")
+    if not os.path.exists(module_path):
+        return None
+    try:
+        spec = importlib.util.spec_from_file_location("document_cache", module_path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+    except Exception:
+        return None
+
+
+def cmd_cache(subcommand: str, expired_only: bool = False):
+    """Manage the document content cache."""
+    cache = _get_cache_module()
+    if cache is None:
+        print("Error: document_cache module not found.")
+        print("Expected at: scripts/parsing/document_cache.py")
+        return
+
+    if subcommand == "status":
+        stats = cache.cache_status()
+        total = stats["total_entries"]
+        expired = stats["expired_entries"]
+        size_kb = stats["total_size_kb"]
+        total_docs = sum(len(s["documents"]) for s in STATES_DB.values()
+                         if hasattr(s, "documents")) if False else 101  # known count
+
+        print(f"\n{'=' * 80}")
+        print("DOCUMENT CONTENT CACHE STATUS")
+        print(f"{'=' * 80}\n")
+        print(f"Cache directory: {stats['cache_dir']}")
+        print(f"Total entries:   {total} document(s) cached")
+        print(f"Expired entries: {expired} (TTL: {cache.DEFAULT_TTL_DAYS} days)")
+        print(f"Cache size:      {size_kb:.1f} KB")
+
+        if stats["oldest_entry"]:
+            o = stats["oldest_entry"]
+            print(f"Oldest entry:    {o['fetched_at'][:10]}  {o['document_title'] or o['url'][:60]}")
+        if stats["newest_entry"]:
+            n = stats["newest_entry"]
+            print(f"Newest entry:    {n['fetched_at'][:10]}  {n['document_title'] or n['url'][:60]}")
+
+        print(f"\nCoverage: {total}/101 documents cached ({total * 100 // 101}%)")
+
+        if total < 101:
+            remaining = 101 - total
+            print(f"\nRun to warm remaining {remaining} document(s):")
+            print("  uv run scripts/parsing/warmup_cache.py")
+        else:
+            print("\n✓ All 101 documents cached.")
+
+        print(f"\n{'=' * 80}\n")
+
+    elif subcommand == "clear":
+        stats = cache.cache_status()
+        total = stats["total_entries"]
+        expired = stats["expired_entries"]
+
+        if total == 0:
+            print("Cache is already empty.")
+            return
+
+        if expired_only:
+            target = expired
+            desc = f"expired ({expired} of {total} total)"
+        else:
+            target = total
+            desc = f"all {total}"
+
+        if target == 0:
+            print(f"No {('expired ' if expired_only else '')}entries to remove.")
+            return
+
+        try:
+            answer = input(f"Remove {desc} cache entries? [y/N] ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print("\nAborted.")
+            return
+
+        if answer != "y":
+            print("Aborted.")
+            return
+
+        if expired_only:
+            # Delete only expired entries manually
+            cache_dir = stats["cache_dir"]
+            deleted = 0
+            for fname in os.listdir(cache_dir):
+                if not fname.endswith(".json"):
+                    continue
+                fpath = os.path.join(cache_dir, fname)
+                try:
+                    import json as _json
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        entry = _json.load(f)
+                    if cache._is_expired(entry, cache.DEFAULT_TTL_DAYS):
+                        os.remove(fpath)
+                        deleted += 1
+                except (OSError, ValueError, KeyError):
+                    pass
+            print(f"Removed {deleted} expired cache entries.")
+        else:
+            deleted = cache.invalidate_all()
+            print(f"Removed {deleted} cache entries.")
+    else:
+        print(f"Error: Unknown cache subcommand '{subcommand}'")
+        print("Usage: cache status | cache clear [--expired]")
+
+
 def print_usage():
     """Print usage information."""
     print("""
@@ -888,6 +1005,16 @@ Commands:
       Example: python state_science_standards_system.py ngss 4
       Example: python state_science_standards_system.py ngss 8 ESS2
       Example: python state_science_standards_system.py ngss 11 LS4
+
+  cache status
+      Show document content cache statistics (entry count, size, TTL)
+      Example: python state_science_standards_system.py cache status
+
+  cache clear [--expired]
+      Remove cached parse results (prompts for confirmation)
+      --expired: only remove entries older than the 30-day TTL
+      Example: python state_science_standards_system.py cache clear
+      Example: python state_science_standards_system.py cache clear --expired
 
   Grades: Use K for Kindergarten, or numbers 1-12
   State abbreviations: Use two-letter codes (WA, CA, TX, etc.)
@@ -954,6 +1081,14 @@ def main():
         grade_arg = sys.argv[2] if len(sys.argv) > 2 else None
         dci_arg   = sys.argv[3] if len(sys.argv) > 3 else None
         cmd_ngss(grade_arg, dci_arg)
+    elif command == "cache":
+        subcommand = sys.argv[2] if len(sys.argv) > 2 else "status"
+        if subcommand not in ("status", "clear"):
+            print(f"Error: Unknown cache subcommand '{subcommand}'")
+            print("Usage: cache status | cache clear [--expired]")
+            return
+        expired_only = "--expired" in sys.argv
+        cmd_cache(subcommand, expired_only=expired_only)
     else:
         print(f"Error: Unknown command '{command}'")
         print_usage()
