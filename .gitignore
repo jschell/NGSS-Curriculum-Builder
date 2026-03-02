@@ -27,3 +27,6 @@ cached/
 # Generated reports and patches
 reports/
 patches/
+
+# Document content cache (populated at runtime by warmup_cache.py / parse_standards.py)
+data/cache/*.json
