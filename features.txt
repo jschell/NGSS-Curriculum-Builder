@@ -23,7 +23,7 @@
 - [ ] None
 
 ### Other Features
-- [ ] Implement document content caching
+- [ ] Implement document content caching → `.claude/plan/active/2026-03-02-document-content-caching.md`
 - [ ] Add full-text search across standards
 - [ ] Create web API layer (REST endpoints)
 - [ ] Build web interface (browser-based UI)
