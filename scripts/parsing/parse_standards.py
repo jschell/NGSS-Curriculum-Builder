@@ -32,6 +32,15 @@ import hashlib
 import orjson
 from dataclasses import dataclass, field
 import sys
+import os
+
+# Optional content cache (stdlib-only, graceful fallback if unavailable)
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from document_cache import get_cached, write_cache
+    _CACHE_AVAILABLE = True
+except Exception:  # noqa: BLE001
+    _CACHE_AVAILABLE = False
 
 # =============================================================================
 # PYDANTIC MODELS
@@ -59,6 +68,7 @@ class DocumentParseResult:
     organization: str
     grade_sections: Dict[str, GradeSection]
     parse_errors: List[str] = field(default_factory=list)
+    from_cache: bool = False
 
 
 # =============================================================================
@@ -322,6 +332,39 @@ def extract_grade_sections_by_topic(pages_text: List[str]) -> Dict[str, GradeSec
 
 
 # =============================================================================
+# CACHE HELPERS
+# =============================================================================
+
+
+def _grade_sections_to_dict(grade_sections: Dict[str, GradeSection]) -> dict:
+    """Serialize GradeSection dataclasses to plain dicts for JSON caching."""
+    return {
+        grade: {
+            "page_ranges": section.page_ranges,
+            "section_ids": section.section_ids,
+            "confidence": section.confidence,
+            "notes": section.notes,
+            "needs_review": section.needs_review,
+        }
+        for grade, section in grade_sections.items()
+    }
+
+
+def _grade_sections_from_dict(raw: dict) -> Dict[str, GradeSection]:
+    """Deserialize plain dicts from cache back into GradeSection dataclasses."""
+    return {
+        grade: GradeSection(
+            page_ranges=[tuple(r) for r in data.get("page_ranges", [])],
+            section_ids=data.get("section_ids", []),
+            confidence=data.get("confidence", "high"),
+            notes=data.get("notes"),
+            needs_review=data.get("needs_review", False),
+        )
+        for grade, data in raw.items()
+    }
+
+
+# =============================================================================
 # MAIN PARSING FUNCTION
 # =============================================================================
 
@@ -332,6 +375,20 @@ async def parse_document(document: Dict, cache_dir: Path) -> DocumentParseResult
     url = document["url"]
     title = document["title"]
     format_type = document.get("format", "PDF")
+
+    # --- Content cache lookup (skip network fetch entirely on hit) ---
+    if _CACHE_AVAILABLE:
+        cached = get_cached(url)
+        if cached is not None:
+            return DocumentParseResult(
+                document_title=title,
+                url=url,
+                format_type=format_type,
+                organization="cached",
+                grade_sections=_grade_sections_from_dict(cached.get("grade_sections", {})),
+                parse_errors=cached.get("parse_errors", []),
+                from_cache=True,
+            )
 
     url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
     file_path = cache_dir / f"{url_hash}.{'pdf' if format_type == 'PDF' else 'html'}"
@@ -367,13 +424,32 @@ async def parse_document(document: Dict, cache_dir: Path) -> DocumentParseResult
         organization = "unsupported"
         grade_sections = {}
 
-    return DocumentParseResult(
+    result = DocumentParseResult(
         document_title=title,
         url=url,
         format_type=format_type,
         organization=organization,
         grade_sections=grade_sections,
     )
+
+    # --- Write to content cache (only on successful parse with results) ---
+    if _CACHE_AVAILABLE and grade_sections and organization not in ("error", "unsupported"):
+        try:
+            state_abbrev = document.get("state_abbrev", "")
+            write_cache(
+                url=url,
+                result={
+                    "grade_sections": _grade_sections_to_dict(grade_sections),
+                    "parse_errors": result.parse_errors,
+                },
+                document_title=title,
+                state_abbrev=state_abbrev,
+                format_type=format_type,
+            )
+        except Exception:  # noqa: BLE001
+            pass  # Cache write failure is non-fatal
+
+    return result
 
 
 # =============================================================================
